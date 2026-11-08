@@ -1,0 +1,90 @@
+{
+  "version": "shipsear_mb21_33_train_27_50_val_20261104",
+  "raw_root": "D:/LSJ/Data/shipsEar_AUDIOS",
+  "output_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_mb_train_val_20261104\\data",
+  "generation_seed": 42,
+  "classes": [
+    "PF",
+    "MB",
+    "RV"
+  ],
+  "type_mapping": {
+    "Passenger ferry": "PF",
+    "Motorboat": "MB",
+    "Ro-Ro": "RV"
+  },
+  "restored_recordings": [
+    51,
+    52,
+    58,
+    78
+  ],
+  "source_policy": "official_primary_label_single_and_double",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "target_stride_seconds": 5,
+  "noise_stride_seconds": 1.5,
+  "approximate_type_ratio": {
+    "single": 0.3,
+    "double": 0.6,
+    "noise": 0.1
+  },
+  "context_ratio": {
+    "C0": 0.5,
+    "C1": 0.25,
+    "C2": 0.25
+  },
+  "context_seconds": [
+    0.8,
+    1.2
+  ],
+  "fade_seconds": [
+    0.2,
+    0.3
+  ],
+  "epsilon": 0.1,
+  "sir_definition": "source1_over_source2_before_envelope_db",
+  "sir_db": 0.0,
+  "output_rms": 0.05,
+  "model_input_gain": 1,
+  "additional_noise": false,
+  "single_train_augmentation": {
+    "enabled": true,
+    "flat": 0.5,
+    "edge": 0.25,
+    "middle": 0.25,
+    "realization": "fixed per-source plan, applied by Train loader only; base WAVs unchanged"
+  },
+  "bellhop": {
+    "arm": "P0",
+    "fir_variant": "E99",
+    "channel_count": 39,
+    "retained_energy": 0.99,
+    "source_core_rms": 1,
+    "bank": "physical/CHANNELS_99.mat",
+    "physical_config": "physical/CHANNEL_PROTOCOL.json",
+    "new_ray_solves": false
+  },
+  "split_rule": "Difficulty-guided Train/Val MB exchange. Test retained from the original split.",
+  "pairing_rule": "Approximate type quotas from available single cores; cover all cores; unique within-split pairs.",
+  "label_semantics": "Official primary types of selected recording sources; not exhaustive physical vessel counts",
+  "base_dataset": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "recording_changes": {
+    "ShipsEar_21": [
+      "Val",
+      "Train"
+    ],
+    "ShipsEar_33": [
+      "Val",
+      "Train"
+    ],
+    "ShipsEar_27": [
+      "Train",
+      "Val"
+    ],
+    "ShipsEar_50": [
+      "Train",
+      "Val"
+    ]
+  }
+}

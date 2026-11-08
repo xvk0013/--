@@ -1,0 +1,51 @@
+{
+  "Train": {
+    "samples": 2877,
+    "changed": {
+      "single": 14,
+      "removed_single": 4,
+      "double": 155,
+      "added_single": 1
+    },
+    "by_set": {
+      "PF": 506,
+      "RV": 220,
+      "MB": 135,
+      "PF+MB": 576,
+      "PF+RV": 576,
+      "MB+RV": 576,
+      "E": 288
+    }
+  },
+  "Val": {
+    "samples": 719,
+    "changed": {
+      "single": 14,
+      "removed_single": 1,
+      "double": 115,
+      "added_single": 4
+    },
+    "by_set": {
+      "PF": 168,
+      "RV": 6,
+      "MB": 42,
+      "PF+MB": 144,
+      "PF+RV": 144,
+      "MB+RV": 144,
+      "E": 71
+    }
+  },
+  "Test": {
+    "samples": 877,
+    "changed": {},
+    "by_set": {
+      "PF": 169,
+      "RV": 74,
+      "MB": 19,
+      "PF+MB": 176,
+      "PF+RV": 176,
+      "MB+RV": 176,
+      "E": 87
+    }
+  }
+}

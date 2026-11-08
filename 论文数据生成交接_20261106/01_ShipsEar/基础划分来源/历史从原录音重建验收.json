@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-10T06:31:58.824570+00:00",
+  "reference_experiment": "shipsear_8309_four_train_20261010",
+  "raw_rebuild": {
+    "raw_recordings": 60,
+    "target_components": 1339,
+    "background_recordings": 12,
+    "no_original_component_or_mixed_audio_cache_used": true,
+    "copied_inputs": "generator,metadata,physical,config,prepare_components,RUN_GENERATE only",
+    "matlab_preprocessing_and_convolution_passed": true,
+    "new_bellhop_ray_solves": 0,
+    "wav_header_note": "Every rebuilt WAV differs only in libsndfile PEAK write-time field; all other bytes match. Original WAV files are preserved in the published copy."
+  },
+  "all_4473_samples_byte_identical_to_accepted_experiment": true,
+  "all_manifest_and_level_files_byte_identical": true,
+  "source_pool_and_pairing_plan_byte_identical": true,
+  "splits": {
+    "Train": {
+      "n": 2880,
+      "files": 2884,
+      "byte_identical": true,
+      "rebuilt_arrays_and_manifests_byte_identical": true,
+      "rebuilt_wav_equal_except_peak_write_timestamp": true,
+      "rebuilt_level_values_equal_excluding_wav_file_hash": true,
+      "audio_sha256": "77f15cb1bd0e2948b8d0515846389f583e010dba0cc7e66151949e60b38d9709",
+      "manifest_sha256": "079661469e06acdcb1176c20356c7d231dd4f8faeda643405a362aa50150df02"
+    },
+    "Val": {
+      "n": 716,
+      "files": 720,
+      "byte_identical": true,
+      "rebuilt_arrays_and_manifests_byte_identical": true,
+      "rebuilt_wav_equal_except_peak_write_timestamp": true,
+      "rebuilt_level_values_equal_excluding_wav_file_hash": true,
+      "audio_sha256": "f90faf54e0e8aa327056378373b8893ce27aac24954177ae122805fcb8bd9931",
+      "manifest_sha256": "d06817895107ec163923a7ec85f99425d6f6306acf5211b35ca92e6df36b688a"
+    },
+    "Test": {
+      "n": 877,
+      "files": 881,
+      "byte_identical": true,
+      "rebuilt_arrays_and_manifests_byte_identical": true,
+      "rebuilt_wav_equal_except_peak_write_timestamp": true,
+      "rebuilt_level_values_equal_excluding_wav_file_hash": true,
+      "audio_sha256": "4f196b5db0674213f1f8d39b215797e03113810a50d3e7c7d8ba58bc537433c2",
+      "manifest_sha256": "8432c68cb4b5ce36d3ed892eab717204d9cb3e5719b3dabef44710f4abcc156c"
+    }
+  },
+  "generator_unit_tests": 4,
+  "original_recognizer_weights_and_experiments_modified": false
+}

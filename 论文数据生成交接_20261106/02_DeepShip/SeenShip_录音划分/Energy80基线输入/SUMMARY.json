@@ -1,0 +1,180 @@
+{
+  "status": "complete",
+  "version": "deepship_multitarget_0db_energy80_v1",
+  "plan": {
+    "Train": {
+      "n": 12000,
+      "kind_counts": {
+        "single": 3600,
+        "double": 7200,
+        "background": 1200
+      },
+      "single_per_class": {
+        "Cargo": 900,
+        "Passengership": 900,
+        "Tanker": 900,
+        "Tug": 900
+      },
+      "double_per_pair": {
+        "Cargo+Passengership": 1200,
+        "Cargo+Tanker": 1200,
+        "Cargo+Tug": 1200,
+        "Passengership+Tanker": 1200,
+        "Passengership+Tug": 1200,
+        "Tanker+Tug": 1200
+      },
+      "double_context_counts": {
+        "C2": 1800,
+        "C0": 3600,
+        "C1": 1800
+      },
+      "source_recordings": 426
+    },
+    "Val": {
+      "n": 2000,
+      "kind_counts": {
+        "single": 600,
+        "double": 1200,
+        "background": 200
+      },
+      "single_per_class": {
+        "Cargo": 150,
+        "Passengership": 150,
+        "Tanker": 150,
+        "Tug": 150
+      },
+      "double_per_pair": {
+        "Cargo+Passengership": 200,
+        "Cargo+Tanker": 200,
+        "Cargo+Tug": 200,
+        "Passengership+Tanker": 200,
+        "Passengership+Tug": 200,
+        "Tanker+Tug": 200
+      },
+      "double_context_counts": {
+        "C1": 300,
+        "C0": 600,
+        "C2": 300
+      },
+      "source_recordings": 93
+    },
+    "Test": {
+      "n": 2000,
+      "kind_counts": {
+        "single": 600,
+        "double": 1200,
+        "background": 200
+      },
+      "single_per_class": {
+        "Cargo": 150,
+        "Passengership": 150,
+        "Tanker": 150,
+        "Tug": 150
+      },
+      "double_per_pair": {
+        "Cargo+Passengership": 200,
+        "Cargo+Tanker": 200,
+        "Cargo+Tug": 200,
+        "Passengership+Tanker": 200,
+        "Passengership+Tug": 200,
+        "Tanker+Tug": 200
+      },
+      "double_context_counts": {
+        "C0": 600,
+        "C1": 300,
+        "C2": 300
+      },
+      "source_recordings": 90
+    }
+  },
+  "elapsed_seconds": 142.6442023999989,
+  "rendered": {
+    "Train": {
+      "n": 12000,
+      "kind_counts": {
+        "single": 3600,
+        "double": 7200,
+        "background": 1200
+      },
+      "label_counts": {
+        "1": 900,
+        "2": 900,
+        "3": 900,
+        "4": 900,
+        "5": 1200,
+        "6": 1200,
+        "7": 1200,
+        "8": 1200,
+        "9": 1200,
+        "10": 1200,
+        "0": 1200
+      },
+      "double_context_counts": {
+        "C2": 1800,
+        "C0": 3600,
+        "C1": 1800
+      },
+      "rms_min": 0.04999999995033704,
+      "rms_max": 0.050000000060351706,
+      "maximum_absolute_sample": 2.1400363445281982
+    },
+    "Val": {
+      "n": 2000,
+      "kind_counts": {
+        "single": 600,
+        "double": 1200,
+        "background": 200
+      },
+      "label_counts": {
+        "1": 150,
+        "2": 150,
+        "3": 150,
+        "4": 150,
+        "5": 200,
+        "6": 200,
+        "7": 200,
+        "8": 200,
+        "9": 200,
+        "10": 200,
+        "0": 200
+      },
+      "double_context_counts": {
+        "C1": 300,
+        "C0": 600,
+        "C2": 300
+      },
+      "rms_min": 0.04999999996839258,
+      "rms_max": 0.05000000003409577,
+      "maximum_absolute_sample": 1.2861789464950562
+    },
+    "Test": {
+      "n": 2000,
+      "kind_counts": {
+        "single": 600,
+        "double": 1200,
+        "background": 200
+      },
+      "label_counts": {
+        "1": 150,
+        "2": 150,
+        "3": 150,
+        "4": 150,
+        "5": 200,
+        "6": 200,
+        "7": 200,
+        "8": 200,
+        "9": 200,
+        "10": 200,
+        "0": 200
+      },
+      "double_context_counts": {
+        "C0": 600,
+        "C1": 300,
+        "C2": 300
+      },
+      "rms_min": 0.04999999997075019,
+      "rms_max": 0.050000000028439226,
+      "maximum_absolute_sample": 1.2149560451507568
+    }
+  }
+}

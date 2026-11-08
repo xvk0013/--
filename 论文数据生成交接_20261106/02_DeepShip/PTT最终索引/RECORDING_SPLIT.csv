@@ -1,0 +1,501 @@
+﻿split,recording_id,class_name,split_group_id,ship_name,raw_relative_path,background_rows,single_rows,double_rows
+Train,Passengership/20160505-1,Passengership,Passengership/event_20160505_125658,QUEEN OF,Passengership/20160505-1/1.wav,0,6,15
+Train,Passengership/20160506-2,Passengership,Passengership/event_20160506_081240,CELEBRITY SOLSTICE,Passengership/20160506-2/2.wav,0,8,24
+Train,Passengership/20160506d-3,Passengership,Passengership/event_20160506_233804,MAYNE QUEEN,Passengership/20160506d-3/3.wav,0,9,22
+Train,Passengership/20160507a-4,Passengership,Passengership/event_20160507_043512,MALASPINA,Passengership/20160507a-4/4.wav,0,9,22
+Train,Passengership/20160507b-5,Passengership,Passengership/event_20160507_115325,RUBY PRINCESS,Passengership/20160507b-5/5.wav,0,2,4
+Train,Passengership/20160507c-6,Passengership,Passengership/event_20160507_202625,COASTAL INSPIRATION,Passengership/20160507c-6/6.wav,0,5,13
+Train,Passengership/20160515-8,Passengership,Passengership/event_20160515_062337,KENNICOTT,Passengership/20160515-8/8.wav,0,2,5
+Train,Passengership/20160516a-9,Passengership,Passengership/event_20160516_112116,CARNIVAL LEGEND,Passengership/20160516a-9/9.wav,0,2,6
+Train,Passengership/20160521a-10,Passengership,Passengership/event_20160521_041411,MALASPINA,Passengership/20160521a-10/041411.wav,0,8,21
+Train,Passengership/20160528-12,Passengership,Passengership/event_20160528_040358,MALASPINA,Passengership/20160528-12/12.wav,0,2,5
+Train,Passengership/20160529-13,Passengership,Passengership/event_20160529_083740,KENNICOTT,Passengership/20160529-13/083740.wav,0,8,18
+Train,Passengership/20160606-17,Passengership,Passengership/event_20160606_153056,COASTAL RENAISSANCE,Passengership/20160606-17/17.wav,0,4,13
+Train,Passengership/20160616a-20,Passengership,Passengership/event_20160616_165320,TACHEK,Passengership/20160616a-20/165320.wav,0,8,24
+Train,Passengership/20160616b-21,Passengership,Passengership/event_20160616_200904,TACHEK,Passengership/20160616b-21/200904.wav,0,8,23
+Train,Passengership/20160625a-22,Passengership,Passengership/event_20160625_041906,COLUMBIA,Passengership/20160625a-22/041906.wav,0,9,22
+Train,Passengership/20160629a-23,Passengership,Passengership/event_20160629_135115,BOWEN QUEEN,Passengership/20160629a-23/23.wav,0,8,24
+Train,Passengership/20160629b-24,Passengership,Passengership/event_20160629_135359,BOWEN QUEEN,Passengership/20160629b-24/135359.wav,0,9,21
+Train,Passengership/20160724a-27,Passengership,Passengership/event_20160724_035758,KENNICOTT,Passengership/20160724a-27/27.wav,0,5,13
+Train,Passengership/20160727-29,Passengership,Passengership/event_20160727_111808,CRYSTAL SERENITY,Passengership/20160727-29/29.wav,0,6,19
+Train,Passengership/20160806-30,Passengership,Passengership/20160806-30,,Passengership/20160806-30/30.wav,0,1,3
+Train,Passengership/20160807a-31,Passengership,Passengership/event_20160807_043508,KENNICOTT,Passengership/20160807a-31/31.wav,0,3,6
+Train,Passengership/20160813a-32,Passengership,Passengership/event_20160813_040611,COLUMBIA,Passengership/20160813a-32/32.wav,0,8,24
+Train,Passengership/20160827-35,Passengership,Passengership/20160827-35,,Passengership/20160827-35/043503.wav,0,8,21
+Train,Passengership/20160827-36,Passengership,Passengership/20160827-36,,Passengership/20160827-36/043503.wav,0,8,20
+Train,Passengership/20160827-37,Passengership,Passengership/20160827-37,,Passengership/20160827-37/37.wav,0,8,25
+Train,Passengership/20160909-41,Passengership,Passengership/event_20160909_114625,CELEBRITY SOLSTICE,Passengership/20160909-41/41.wav,0,4,12
+Train,Passengership/20160910-42,Passengership,Passengership/event_20160910_035117,COLUMBIA,Passengership/20160910-42/035117.wav,0,8,21
+Train,Passengership/20160917a-44,Passengership,Passengership/event_20160917_184735,COLUMBIA,Passengership/20160917a-44/184735.wav,0,8,20
+Train,Passengership/20161028a-47,Passengership,Passengership/event_20161028_224803,QUEEN OF,Passengership/20161028a-47/224803.wav,0,9,22
+Train,Passengership/20161102-48,Passengership,Passengership/event_20161102_124450,QUEEN OF,Passengership/20161102-48/124450.wav,0,8,18
+Train,Passengership/20161208-49,Passengership,Passengership/20161208-49,,Passengership/20161208-49/163603.wav,0,9,27
+Train,Passengership/20170111-51,Passengership,Passengership/20170111-51,,Passengership/20170111-51/193600.wav,0,8,22
+Train,Passengership/20170111-52,Passengership,Passengership/20170111-52,,Passengership/20170111-52/193600.wav,0,9,25
+Train,Passengership/20170114-53,Passengership,Passengership/event_20170114_053615,MALASPINA,Passengership/20170114-53/053615.wav,0,8,20
+Train,Passengership/20170202-54,Passengership,Passengership/event_20170202_183738,SALISH ORCA,Passengership/20170202-54/183738.wav,0,8,22
+Train,Passengership/20170218-56,Passengership,Passengership/event_20170218_050212,MALASPINA,Passengership/20170218-56/050212.wav,0,8,22
+Train,Passengership/20170219-57,Passengership,Passengership/20170219-57,,Passengership/20170219-57/153805.wav,0,9,23
+Train,Passengership/20170219-58,Passengership,Passengership/20170219-58,,Passengership/20170219-58/153805.wav,0,1,3
+Train,Passengership/20170312-59,Passengership,Passengership/event_20170312_153853,SPIRIT OF,Passengership/20170312-59/153853.wav,0,8,24
+Train,Passengership/20170330-61,Passengership,Passengership/event_20170330_175151,QUEEN OF,Passengership/20170330-61/175151.wav,0,8,21
+Train,Passengership/20170331-62,Passengership,Passengership/event_20170331_044959,NORTHERN ADVENTURE,Passengership/20170331-62/044959.wav,0,8,21
+Train,Passengership/20170401-63,Passengership,Passengership/20170401-63,,Passengership/20170401-63/000636.wav,0,3,6
+Train,Passengership/20170401-64,Passengership,Passengership/20170401-64,,Passengership/20170401-64/000636.wav,0,1,2
+Train,Passengership/20170408-65,Passengership,Passengership/event_20170408_040520,MALASPINA,Passengership/20170408-65/040520.wav,0,9,22
+Train,Passengership/20170408a-66,Passengership,Passengership/event_20170408_224944,QUEEN OF,Passengership/20170408a-66/224944.wav,0,8,19
+Train,Passengership/20170417-67,Passengership,Passengership/event_20170417_025741,SAFARI QUEST,Passengership/20170417-67/025741.wav,0,9,21
+Train,Passengership/20170430-69,Passengership,Passengership/event_20170430_011712,COASTAL RENAISSANCE,Passengership/20170430-69/011712.wav,0,9,23
+Train,Passengership/20170506a-71,Passengership,Passengership/event_20170506_114552,CORAL PRINCESS,Passengership/20170506a-71/114552.wav,0,8,22
+Train,Passengership/20170508a-73,Passengership,Passengership/20170508a-73,,Passengership/20170508a-73/152055.wav,0,1,4
+Train,Passengership/20170509-74,Passengership,Passengership/event_20170509_174012,SALISH EAGLE,Passengership/20170509-74/174012.wav,0,8,21
+Train,Passengership/20170510-75,Passengership,Passengership/event_20170510_113409,ISLAND PRINCESS,Passengership/20170510-75/113409.wav,0,9,26
+Train,Passengership/20170512a-77,Passengership,Passengership/event_20170512_113827,EUROPA,Passengership/20170512a-77/113827.wav,0,8,20
+Train,Passengership/20170522-85,Passengership,Passengership/event_20170522_110529,DISNEY WONDER,Passengership/20170522-85/110529.wav,0,8,20
+Train,Passengership/20170530a-87,Passengership,Passengership/event_20170530_165315,SALISH EAGLE,Passengership/20170530a-87/165315.wav,0,8,22
+Train,Passengership/20170601-88,Passengership,Passengership/event_20170601_112643,SEABOURN SOJOURN,Passengership/20170601-88/112643.wav,0,8,24
+Train,Passengership/20170603-89,Passengership,Passengership/event_20170603_012058,COASTAL RENAISSANCE,Passengership/20170603-89/012058.wav,0,8,25
+Train,Passengership/20170605-90,Passengership,Passengership/20170605-90,,Passengership/20170605-90/174603.wav,0,1,2
+Train,Passengership/20170605a-91,Passengership,Passengership/event_20170605_191933,SALISH EAGLE,Passengership/20170605a-91/191933.wav,0,4,9
+Train,Passengership/20170613-92,Passengership,Passengership/event_20170613_162550,SALISH EAGLE,Passengership/20170613-92/162550.wav,0,8,21
+Train,Passengership/20170615-93,Passengership,Passengership/event_20170615_124844,QUEEN OF,Passengership/20170615-93/124844.wav,0,9,25
+Train,Passengership/20170616-94,Passengership,Passengership/event_20170616_174832,NORTH ISLAND,Passengership/20170616-94/174832.wav,0,8,21
+Train,Passengership/20170617a-96,Passengership,Passengership/event_20170617_073155,NORTHERN EXPEDITION,Passengership/20170617a-96/073155.wav,0,8,19
+Train,Passengership/20170701-100,Passengership,Passengership/event_20170701_013614,COASTAL INSPIRATION,Passengership/20170701-100/013614.wav,0,8,20
+Train,Passengership/20170716-103,Passengership,Passengership/event_20170716_111744,THE WORLD,Passengership/20170716-103/111744.wav,0,9,26
+Train,Passengership/20170723-105,Passengership,Passengership/20170723-105,,Passengership/20170723-105/095606.wav,0,1,3
+Train,Passengership/20170725-106,Passengership,Passengership/event_20170725_143547,SALISH RAVEN,Passengership/20170725-106/143547.wav,0,6,15
+Train,Passengership/20170729a-107,Passengership,Passengership/20170729a-107,,Passengership/20170729a-107/151035.wav,0,9,23
+Train,Passengership/20170802-108,Passengership,Passengership/event_20170802_230730,V2V EMPRESS,Passengership/20170802-108/230730.wav,0,9,22
+Train,Passengership/20170803-109,Passengership,Passengership/event_20170803_231129,V2V EMPRESS,Passengership/20170803-109/231129.wav,0,9,22
+Train,Passengership/20170808-110,Passengership,Passengership/event_20170808_113313,CRYSTAL SERENITY,Passengership/20170808-110/113313.wav,0,4,10
+Train,Passengership/20170826a-111,Passengership,Passengership/event_20170826_043132,MALASPINA,Passengership/20170826a-111/043132.wav,0,8,21
+Train,Passengership/20170827-112,Passengership,Passengership/event_20170827_033909,COLUMBIA,Passengership/20170827-112/033909.wav,0,8,20
+Train,Passengership/20170906-114,Passengership,Passengership/20170906-114,,Passengership/20170906-114/104632.wav,0,8,21
+Train,Passengership/20170906-115,Passengership,Passengership/20170906-115,,Passengership/20170906-115/104632.wav,0,9,26
+Train,Passengership/20170912a-116,Passengership,Passengership/20170912a-116,,Passengership/20170912a-116/184302.wav,0,9,26
+Train,Passengership/20170912a-117,Passengership,Passengership/20170912a-117,,Passengership/20170912a-117/184302.wav,0,1,3
+Train,Passengership/20170912b-118,Passengership,Passengership/event_20170912_201835,COASTAL INSPIRATION,Passengership/20170912b-118/201835.wav,0,8,25
+Train,Passengership/20170915-119,Passengership,Passengership/event_20170915_210154,NORTHERN ADVENTURE,Passengership/20170915-119/210154.wav,0,4,8
+Train,Passengership/20170925-120,Passengership,Passengership/event_20170925_101039,OOSTERDAM,Passengership/20170925-120/101039.wav,0,9,26
+Train,Passengership/20171007-122,Passengership,Passengership/20171007-122,,Passengership/20171007-122/015806.wav,0,8,23
+Train,Passengership/20171012-123,Passengership,Passengership/event_20171012_165340,SALISH EAGLE,Passengership/20171012-123/165340.wav,0,8,21
+Train,Passengership/20171017-124,Passengership,Passengership/event_20171017_095628,EURODAM 245206000,Passengership/20171017-124/095628.wav,0,1,3
+Train,Passengership/20171105-126,Passengership,Passengership/event_20171105_235036,QUEEN OF,Passengership/20171105-126/235036.wav,0,1,3
+Train,Passengership/20171106-127,Passengership,Passengership/event_20171106_044551,SAFARI QUEST,Passengership/20171106-127/044551.wav,0,9,25
+Train,Passengership/20171106a-128,Passengership,Passengership/event_20171106_184906,QUEEN OF,Passengership/20171106a-128/184906.wav,0,3,7
+Train,Passengership/20171110-129,Passengership,Passengership/20171110-129,,Passengership/20171110-129/224141.wav,0,9,28
+Train,Passengership/20171116-130,Passengership,Passengership/event_20171116_161921,QUEEN OF,Passengership/20171116-130/161921.wav,0,8,23
+Train,Passengership/20171120-131,Passengership,Passengership/event_20171120_163321,QUEEN OF,Passengership/20171120-131/163321.wav,0,9,22
+Train,Passengership/20171122-132,Passengership,Passengership/event_20171122_071915,COASTAL INSPIRATION,Passengership/20171122-132/071915.wav,0,2,5
+Train,Passengership/20171207-133,Passengership,Passengership/event_20171207_162949,SALISH RAVEN,Passengership/20171207-133/162949.wav,0,8,19
+Train,Passengership/20171210-135,Passengership,Passengership/20171210-135,,Passengership/20171210-135/021603.wav,0,9,26
+Train,Passengership/20171229-136,Passengership,Passengership/20171229-136,,Passengership/20171229-136/201102.wav,0,1,2
+Train,Passengership/20180120-139,Passengership,Passengership/event_20180120_191134,V2V EMPRESS,Passengership/20180120-139/191134.wav,0,9,29
+Train,Passengership/20180202-141,Passengership,Passengership/event_20180202_134746,QUEEN OF,Passengership/20180202-141/134746.wav,0,9,27
+Train,Passengership/20180205-142,Passengership,Passengership/20180205-142,,Passengership/20180205-142/230715.wav,0,8,22
+Train,Passengership/20180215-144,Passengership,Passengership/event_20180215_185044,QUEEN OF,Passengership/20180215-144/185044.wav,0,5,14
+Train,Passengership/20180219-145,Passengership,Passengership/event_20180219_034422,QUEEN OF,Passengership/20180219-145/034422.wav,0,9,23
+Train,Passengership/20180313a-147,Passengership,Passengership/event_20180313_181647,V2V EMPRESS,Passengership/20180313a-147/181647.wav,0,8,19
+Train,Passengership/20180320-148,Passengership,Passengership/event_20180320_103759,MAYNE QUEEN,Passengership/20180320-148/103759.wav,0,8,22
+Train,Passengership/20180406-152,Passengership,Passengership/event_20180406_135944,COASTAL CELEBRATION,Passengership/20180406-152/135944.wav,0,8,22
+Train,Passengership/20180412-154,Passengership,Passengership/event_20180412_110230,WESTERDAM,Passengership/20180412-154/110230.wav,0,8,21
+Train,Passengership/20180420-155,Passengership,Passengership/event_20180420_033310,QUEEN OF,Passengership/20180420-155/033310.wav,0,9,22
+Train,Passengership/20180426-156,Passengership,Passengership/event_20180426_114757,SALISH RAVEN,Passengership/20180426-156/114757.wav,0,6,18
+Train,Passengership/20180501-157,Passengership,Passengership/event_20180501_112008,CARNIVAL LEGEND,Passengership/20180501-157/112008.wav,0,8,22
+Train,Passengership/20180502-158,Passengership,Passengership/event_20180502_030648,MAYNE QUEEN,Passengership/20180502-158/030648.wav,0,3,7
+Train,Passengership/20180505a-161,Passengership,Passengership/event_20180505_101511,NIEUW AMSTERDAM,Passengership/20180505a-161/101511.wav,0,8,20
+Train,Passengership/20180506-162,Passengership,Passengership/event_20180506_054035,SPIRIT OF,Passengership/20180506-162/054035.wav,0,8,23
+Train,Passengership/20180506a-163,Passengership,Passengership/event_20180506_105313,ZAANDAM 246442000,Passengership/20180506a-163/105313.wav,0,9,23
+Train,Passengership/20180506b-164,Passengership,Passengership/event_20180506_113050,NOORDAM,Passengership/20180506b-164/113050.wav,0,9,20
+Train,Passengership/20180513-166,Passengership,Passengership/event_20180513_084039,RADIANCE OF,Passengership/20180513-166/084039.wav,0,8,24
+Train,Passengership/20180518-168,Passengership,Passengership/event_20180518_031804,QUEEN OF,Passengership/20180518-168/031804.wav,0,9,24
+Train,Passengership/20180519-169,Passengership,Passengership/event_20180519_012744,COASTAL INSPIRATION,Passengership/20180519-169/012744.wav,0,8,20
+Train,Passengership/20180520-170,Passengership,Passengership/event_20180520_120550,SAFARI QUEST,Passengership/20180520-170/120550.wav,0,9,23
+Train,Passengership/20180522-171,Passengership,Passengership/event_20180522_064727,SAFARI EXPLORER,Passengership/20180522-171/064727.wav,0,1,3
+Train,Passengership/20180524-172,Passengership,Passengership/event_20180524_225612,QUEEN OF,Passengership/20180524-172/225612.wav,0,8,22
+Train,Passengership/20180619-174,Passengership,Passengership/event_20180619_062048,COASTAL RENAISSANCE,Passengership/20180619-174/062048.wav,0,4,10
+Train,Passengership/20180630-175,Passengership,Passengership/event_20180630_094326,SEVEN SEAS,Passengership/20180630-175/094326.wav,0,8,19
+Train,Passengership/20180630a-176,Passengership,Passengership/event_20180630_200100,QUADRA QUEEN,Passengership/20180630a-176/200100.wav,0,1,2
+Train,Passengership/20180703-177,Passengership,Passengership/event_20180703_221012,ICEBERG,Passengership/20180703-177/221012.wav,0,8,22
+Train,Passengership/20180711-178,Passengership,Passengership/event_20180711_094820,SEVEN SEAS,Passengership/20180711-178/094820.wav,0,9,25
+Train,Passengership/20180722-179,Passengership,Passengership/event_20180722_181231,V2V EMPRESS,Passengership/20180722-179/181231.wav,0,9,28
+Train,Passengership/20180821-18,Passengership,Passengership/event_20180821_153439,COASTAL INSPIRATION,Passengership/20180821-18/153439.wav,0,8,21
+Train,Passengership/20180828a-181,Passengership,Passengership/event_20180828_125034,QUEEN OF,Passengership/20180828a-181/125034.wav,0,8,21
+Train,Passengership/20180905b-182,Passengership,Passengership/event_20180905_061547,COASTAL INSPIRATION,Passengership/20180905b-182/061547.wav,0,8,23
+Train,Passengership/20180905c-183,Passengership,Passengership/event_20180905_212331,SPIRIT OF,Passengership/20180905c-183/212331.wav,0,8,16
+Train,Passengership/20180912-25,Passengership,Passengership/event_20180912_034620,QUEEN OF,Passengership/20180912-25/034620.wav,0,8,20
+Train,Passengership/20180914-185,Passengership,Passengership/event_20180914_182348,SPIRIT OF,Passengership/20180914-185/182348.wav,0,9,27
+Train,Passengership/20180915-78,Passengership,Passengership/event_20180915_062231,COASTAL INSPIRATION,Passengership/20180915-78/062231.wav,0,4,10
+Train,Passengership/20180921-186,Passengership,Passengership/event_20180921_111213,CELEBRITY SOLSTICE,Passengership/20180921-186/111213.wav,0,9,24
+Train,Passengership/20180922-187,Passengership,Passengership/event_20180922_124737,NATGEO SEABIRD,Passengership/20180922-187/124737.wav,0,1,2
+Train,Passengership/20180923-188,Passengership,Passengership/event_20180923_012316,V2V EMPRESS,Passengership/20180923-188/012316.wav,0,3,6
+Train,Passengership/20180926-190,Passengership,Passengership/event_20180926_011928,V2V EMPRESS,Passengership/20180926-190/011928.wav,0,5,14
+Train,Passengership/20180926a-191,Passengership,Passengership/event_20180926_012514,COASTAL INSPIRATION,Passengership/20180926a-191/012514.wav,0,1,3
+Train,Passengership/20180929-192,Passengership,Passengership/event_20180929_012612,COASTAL INSPIRATION,Passengership/20180929-192/012612.wav,0,1,3
+Train,Tanker/20160509-1,Tanker,Tanker/event_20160509_123109,KIRKEHOLMEN,Tanker/20160509-1/123109.wav,0,7,16
+Train,Tanker/20160515-3,Tanker,Tanker/event_20160515_020119,CHAMPION EBONY,Tanker/20160515-3/020119.wav,0,8,25
+Train,Tanker/20160516-4,Tanker,Tanker/event_20160516_134837,ESER K,Tanker/20160516-4/134837.wav,0,8,23
+Train,Tanker/20160519-5,Tanker,Tanker/event_20160519_123958,LYNDA VICTORY,Tanker/20160519-5/5.wav,0,6,14
+Train,Tanker/20160531-7,Tanker,Tanker/event_20160531_142749,CHEMBULK NEW,Tanker/20160531-7/142749.wav,0,7,20
+Train,Tanker/20160602-9,Tanker,Tanker/event_20160602_203639,SONGA RUBY,Tanker/20160602-9/9.wav,0,3,7
+Train,Tanker/20160613-13,Tanker,Tanker/event_20160613_061037,HIGH ENDURANCE,Tanker/20160613-13/13.wav,0,6,13
+Train,Tanker/20160619-17,Tanker,Tanker/event_20160619_173821,NORD STEADY,Tanker/20160619-17/173821.wav,0,7,19
+Train,Tanker/20160619a-18,Tanker,Tanker/event_20160619_215854,OVERSEAS ATHENS,Tanker/20160619a-18/18.wav,0,8,21
+Train,Tanker/20160625-19,Tanker,Tanker/event_20160625_141954,CARIBBEAN SPIRIT,Tanker/20160625-19/19.wav,0,2,7
+Train,Tanker/20160702-20,Tanker,Tanker/event_20160702_225342,CHEMICAL AQUARIUS,Tanker/20160702-20/20.wav,0,7,21
+Train,Tanker/20160710a-24,Tanker,Tanker/event_20160710_214304,NINA VICTORY,Tanker/20160710a-24/24.wav,0,4,12
+Train,Tanker/20160714-25,Tanker,Tanker/event_20160714_111759,GINGA COUGAR,Tanker/20160714-25/111759.wav,0,7,17
+Train,Tanker/20160810-29,Tanker,Tanker/event_20160810_173536,ARGENT SUNRISE,Tanker/20160810-29/29.wav,0,7,20
+Train,Tanker/20160810a-30,Tanker,Tanker/event_20160810_215541,KIRKEHOLMEN,Tanker/20160810a-30/30.wav,0,5,12
+Train,Tanker/20160823-31,Tanker,Tanker/event_20160823_041452,EMMA VICTORY,Tanker/20160823-31/041452.wav,0,8,22
+Train,Tanker/20160829-32,Tanker,Tanker/event_20160829_015402,CHAMPION CORNELIA,Tanker/20160829-32/32.wav,0,6,18
+Train,Tanker/20160904-34,Tanker,Tanker/event_20160904_005747,NORD STEADY,Tanker/20160904-34/005747.wav,0,7,19
+Train,Tanker/20160907-36,Tanker,Tanker/event_20160907_094356,YANKUL SILVER,Tanker/20160907-36/094356.wav,0,7,21
+Train,Tanker/20160910-37,Tanker,Tanker/event_20160910_190037,FUJI GALAXY,Tanker/20160910-37/190037.wav,0,8,19
+Train,Tanker/20160927-39,Tanker,Tanker/event_20160927_081031,ARDMORE CHEYENNE,Tanker/20160927-39/39.wav,0,7,17
+Train,Tanker/20161005-41,Tanker,Tanker/event_20161005_075627,KIRKEHOLMEN,Tanker/20161005-41/41.wav,0,7,21
+Train,Tanker/20161021-43,Tanker,Tanker/event_20161021_204409,CHEMBULK MINNEAPOLIS,Tanker/20161021-43/43.wav,0,4,12
+Train,Tanker/20161027-46,Tanker,Tanker/event_20161027_145435,SILVER MUNA,Tanker/20161027-46/145435.wav,0,7,20
+Train,Tanker/20161101-48,Tanker,Tanker/20161101-48,,Tanker/20161101-48/48.wav,0,6,14
+Train,Tanker/20161101a-49,Tanker,Tanker/20161101a-49,,Tanker/20161101a-49/49.wav,0,6,16
+Train,Tanker/20161107-51,Tanker,Tanker/event_20161107_170102,NAVIG8 AQUAMARINE,Tanker/20161107-51/170102.wav,0,8,20
+Train,Tanker/20161110-52,Tanker,Tanker/event_20161110_005212,ARGENT SUNRISE,Tanker/20161110-52/005212.wav,0,7,19
+Train,Tanker/20161113a-53,Tanker,Tanker/event_20161113_212239,KIRKEHOLMEN,Tanker/20161113a-53/212239.wav,0,5,12
+Train,Tanker/20161121-54,Tanker,Tanker/event_20161121_094048,ARGENT DAISY,Tanker/20161121-54/094048.wav,0,8,20
+Train,Tanker/20161123-55,Tanker,Tanker/event_20161123_171423,BUNGA LOTUS,Tanker/20161123-55/171423.wav,0,2,6
+Train,Tanker/20161125-57,Tanker,Tanker/event_20161125_202025,ARGENT SUNRISE,Tanker/20161125-57/202025.wav,0,2,5
+Train,Tanker/20161128-58,Tanker,Tanker/event_20161128_005608,CHAMPION ISTRA,Tanker/20161128-58/005608.wav,0,8,24
+Train,Tanker/20161207-60,Tanker,Tanker/event_20161207_090131,MTM LONDON,Tanker/20161207-60/090131.wav,0,4,9
+Train,Tanker/20161208a-62,Tanker,Tanker/event_20161208_200744,KIRKEHOLMEN,Tanker/20161208a-62/200744.wav,0,4,10
+Train,Tanker/20161211-63,Tanker,Tanker/event_20161211_204245,NORD STEADY,Tanker/20161211-63/204245.wav,0,8,22
+Train,Tanker/20161215-64,Tanker,Tanker/event_20161215_025503,GINGA TIGER,Tanker/20161215-64/025503.wav,0,2,7
+Train,Tanker/20161218-65,Tanker,Tanker/event_20161218_134000,STI QUEENS,Tanker/20161218-65/134000.wav,0,8,21
+Train,Tanker/20161226-66,Tanker,Tanker/event_20161226_123224,THELMA,Tanker/20161226-66/123224.wav,0,1,3
+Train,Tanker/20161227-67,Tanker,Tanker/event_20161227_034311,TORM CAMILLA,Tanker/20161227-67/034311.wav,0,4,10
+Train,Tanker/20170102-68,Tanker,Tanker/event_20170102_001752,GULF STREAM,Tanker/20170102-68/001752.wav,0,7,18
+Train,Tanker/20170119-69,Tanker,Tanker/event_20170119_153739,AMAGI GALAXY,Tanker/20170119-69/153739.wav,0,7,15
+Train,Tanker/20170121-71,Tanker,Tanker/event_20170121_234906,AMAGI GALAXY,Tanker/20170121-71/234906.wav,0,1,3
+Train,Tanker/20170122-72,Tanker,Tanker/event_20170122_031957,CHEMBULK HONGKONG,Tanker/20170122-72/031957.wav,0,1,3
+Train,Tanker/20170122b-74,Tanker,Tanker/event_20170122_050415,BOCHEM SINGAPURA,Tanker/20170122b-74/050415.wav,0,2,4
+Train,Tanker/20170124-75,Tanker,Tanker/event_20170124_085359,TORM ASLAUG,Tanker/20170124-75/085359.wav,0,7,19
+Train,Tanker/20170204-77,Tanker,Tanker/event_20170204_232817,SILVER SAWSAN,Tanker/20170204-77/232817.wav,0,7,17
+Train,Tanker/20170206-79,Tanker,Tanker/event_20170206_081843,GINGA PANTHER,Tanker/20170206-79/081843.wav,0,2,6
+Train,Tanker/20170209-80,Tanker,Tanker/event_20170209_040238,FUJI GALAXY,Tanker/20170209-80/040238.wav,0,7,16
+Train,Tanker/20170216-81,Tanker,Tanker/event_20170216_035911,HIGH MERCURY,Tanker/20170216-81/035911.wav,0,2,5
+Train,Tanker/20170227-83,Tanker,Tanker/event_20170227_235904,GINGA LION,Tanker/20170227-83/235904.wav,0,5,15
+Train,Tanker/20170301-84,Tanker,Tanker/event_20170301_230755,CHAMPION TERN,Tanker/20170301-84/230755.wav,0,2,6
+Train,Tanker/20170309-85,Tanker,Tanker/event_20170309_095437,NORD STEADY,Tanker/20170309-85/095437.wav,0,3,7
+Train,Tanker/20170317-86,Tanker,Tanker/event_20170317_072019,NAVIG8 AMBER,Tanker/20170317-86/072019.wav,0,8,21
+Train,Tanker/20170326-87,Tanker,Tanker/event_20170326_022836,CHERRY GALAXY,Tanker/20170326-87/022836.wav,0,7,21
+Train,Tanker/20170326a-88,Tanker,Tanker/event_20170326_203852,CITRUS EXPRESS,Tanker/20170326a-88/203852.wav,0,4,10
+Train,Tanker/20170326b-89,Tanker,Tanker/event_20170326_231111,ALFRED N,Tanker/20170326b-89/231111.wav,0,8,19
+Train,Tanker/20170327a-91,Tanker,Tanker/event_20170327_224310,GINGA LEOPARD,Tanker/20170327a-91/224310.wav,0,5,11
+Train,Tanker/20170403-92,Tanker,Tanker/event_20170403_044833,KERALA,Tanker/20170403-92/044833.wav,0,5,13
+Train,Tanker/20170403a-93,Tanker,Tanker/event_20170403_102955,ALFRED N,Tanker/20170403a-93/102955.wav,0,8,21
+Train,Tanker/20170404-94,Tanker,Tanker/event_20170404_061416,CHAMPION TRADER,Tanker/20170404-94/061416.wav,0,3,10
+Train,Tanker/20170409-95,Tanker,Tanker/event_20170409_031833,CHEMBULK LINDY,Tanker/20170409-95/031833.wav,0,8,21
+Train,Tanker/20170412-96,Tanker,Tanker/event_20170412_114857,NESTOS 636012507,Tanker/20170412-96/114857.wav,0,2,5
+Train,Tanker/20170413-97,Tanker,Tanker/event_20170413_112445,KIRKEHOLMEN,Tanker/20170413-97/112445.wav,0,8,25
+Train,Tanker/20170420-99,Tanker,Tanker/event_20170420_170815,KAIMON GALAXY,Tanker/20170420-99/170815.wav,0,8,20
+Train,Tanker/20170421-100,Tanker,Tanker/event_20170421_010738,HAFNIA MALACCA,Tanker/20170421-100/010738.wav,0,8,20
+Train,Tanker/20170421a-101,Tanker,Tanker/event_20170421_064626,FUJI GALAXY,Tanker/20170421a-101/064626.wav,0,7,17
+Train,Tanker/20170509-104,Tanker,Tanker/event_20170509_105420,RIO DAUPHIN,Tanker/20170509-104/105420.wav,0,2,6
+Train,Tanker/20170512-107,Tanker,Tanker/event_20170512_081819,HELLAS AVATAR,Tanker/20170512-107/081819.wav,0,2,5
+Train,Tanker/20170516-108,Tanker,Tanker/event_20170516_201729,ELM GALAXY,Tanker/20170516-108/201729.wav,0,2,5
+Train,Tanker/20170525-109,Tanker,Tanker/event_20170525_111532,GINGA LYNX,Tanker/20170525-109/111532.wav,0,3,8
+Train,Tanker/20170530-111,Tanker,Tanker/event_20170530_004426,SILVER ETREMA,Tanker/20170530-111/004426.wav,0,2,6
+Train,Tanker/20170605-112,Tanker,Tanker/event_20170605_143212,NEW CONQUEST,Tanker/20170605-112/143212.wav,0,7,18
+Train,Tanker/20170608-113,Tanker,Tanker/event_20170608_234244,NORD STEADY,Tanker/20170608-113/234244.wav,0,7,20
+Train,Tanker/20170623-117,Tanker,Tanker/event_20170623_232502,SONGA PRIDE,Tanker/20170623-117/232502.wav,0,8,21
+Train,Tanker/20170627-119,Tanker,Tanker/event_20170627_111336,KAIMON GALAXY,Tanker/20170627-119/111336.wav,0,8,19
+Train,Tanker/20170629-120,Tanker,Tanker/event_20170629_215813,KIRKEHOLMEN,Tanker/20170629-120/215813.wav,0,7,19
+Train,Tanker/20170630-121,Tanker,Tanker/event_20170630_210742,ARGENT COSMOS,Tanker/20170630-121/210742.wav,0,4,12
+Train,Tanker/20170704-122,Tanker,Tanker/event_20170704_145807,UACC MESSILA,Tanker/20170704-122/145807.wav,0,8,20
+Train,Tanker/20170705-123,Tanker,Tanker/event_20170705_030515,CHAMPION EBONY,Tanker/20170705-123/030515.wav,0,8,19
+Train,Tanker/20170711-124,Tanker,Tanker/20170711-124,,Tanker/20170711-124/000454.wav,0,1,2
+Train,Tanker/20170711a-239,Tanker,Tanker/event_20170711_191933,ARISTAIOS,Tanker/20170711a-239/191933.wav,0,2,4
+Train,Tanker/20170712a-126,Tanker,Tanker/event_20170712_015656,NORD INSPIRATION,Tanker/20170712a-126/015656.wav,0,6,15
+Train,Tanker/20170720-127,Tanker,Tanker/event_20170720_064114,KIRKEHOLMEN,Tanker/20170720-127/064114.wav,0,3,6
+Train,Tanker/20170723-238,Tanker,Tanker/event_20170723_052014,NORD STEADY,Tanker/20170723-238/052014.wav,0,8,23
+Train,Tanker/20170802-130,Tanker,Tanker/event_20170802_135021,ENERGY CENTURY,Tanker/20170802-130/135021.wav,0,8,22
+Train,Tanker/20170818-132,Tanker,Tanker/event_20170818_060518,ATLANTIC LILY,Tanker/20170818-132/060518.wav,0,1,2
+Train,Tanker/20170824-134,Tanker,Tanker/event_20170824_194518,HARBOUR FASHION,Tanker/20170824-134/194518.wav,0,4,11
+Train,Tanker/20170901-137,Tanker,Tanker/event_20170901_205515,NAVIG8 AMETHYST,Tanker/20170901-137/205515.wav,0,2,5
+Train,Tanker/20170909-138,Tanker,Tanker/event_20170909_191109,GULF PEARL,Tanker/20170909-138/191109.wav,0,8,20
+Train,Tanker/20171013-142,Tanker,Tanker/event_20171013_115050,SILVER HANNAH,Tanker/20171013-142/115050.wav,0,2,6
+Train,Tanker/20171015-144,Tanker,Tanker/event_20171015_090640,STOLT SUN,Tanker/20171015-144/090640.wav,0,7,20
+Train,Tanker/20171023-145,Tanker,Tanker/event_20171023_214849,REINHOLD SCHULTE,Tanker/20171023-145/214849.wav,0,2,4
+Train,Tanker/20171029-147,Tanker,Tanker/event_20171029_012439,CHALLENGE PRELUDE,Tanker/20171029-147/012439.wav,0,4,9
+Train,Tanker/20171031-148,Tanker,Tanker/event_20171031_074400,LIME GALAXY,Tanker/20171031-148/074400.wav,0,1,4
+Train,Tanker/20171108-149,Tanker,Tanker/event_20171108_011449,MTM SANTOS,Tanker/20171108-149/011449.wav,0,2,5
+Train,Tanker/20171110-150,Tanker,Tanker/event_20171110_231243,NORD STEADY,Tanker/20171110-150/231243.wav,0,8,20
+Train,Tanker/20171126-152,Tanker,Tanker/event_20171126_025605,CHAMPION ISTRA,Tanker/20171126-152/025605.wav,0,8,21
+Train,Tanker/20171126a-153,Tanker,Tanker/event_20171126_090000,ARGENT SUNRISE,Tanker/20171126a-153/090000.wav,0,4,11
+Train,Tanker/20171127-154,Tanker,Tanker/event_20171127_162141,OMODOS,Tanker/20171127-154/162141.wav,0,2,5
+Train,Tanker/20171204-156,Tanker,Tanker/event_20171204_222708,KIRKEHOLMEN,Tanker/20171204-156/222708.wav,0,7,20
+Train,Tanker/20171208-158,Tanker,Tanker/event_20171208_193936,TORM EMILIE,Tanker/20171208-158/193936.wav,0,8,20
+Train,Tanker/20171216-159,Tanker,Tanker/event_20171216_160715,KIRKEHOLMEN,Tanker/20171216-159/160715.wav,0,8,20
+Train,Tanker/20171220-240,Tanker,Tanker/20171220-240,,Tanker/20171220-240/222041.wav,0,1,3
+Train,Tanker/20171222-160,Tanker,Tanker/event_20171222_141803,ARGENT ASTER,Tanker/20171222-160/141803.wav,0,2,5
+Train,Tanker/20171222a-161,Tanker,Tanker/event_20171222_152008,SC CAPRICORN,Tanker/20171222a-161/152008.wav,0,4,10
+Train,Tanker/20171223-162,Tanker,Tanker/event_20171223_150450,NORD STEADY,Tanker/20171223-162/150450.wav,0,7,18
+Train,Tanker/20180117-166,Tanker,Tanker/event_20180117_054518,NAVE ORBIT,Tanker/20180117-166/054518.wav,0,5,15
+Train,Tanker/20180119-167,Tanker,Tanker/event_20180119_055815,GULF PEARL,Tanker/20180119-167/055815.wav,0,3,8
+Train,Tanker/20180120-169,Tanker,Tanker/event_20180120_125003,CHALLENGE PRELUDE,Tanker/20180120-169/125003.wav,0,8,23
+Train,Tanker/20180120a-170,Tanker,Tanker/event_20180120_211000,MAERSK TOKYO,Tanker/20180120a-170/211000.wav,0,2,7
+Train,Tanker/20180121-171,Tanker,Tanker/event_20180121_222956,NAVIG8 AMETRINE,Tanker/20180121-171/222956.wav,0,8,21
+Train,Tanker/20180129-172,Tanker,Tanker/event_20180129_025531,XANTHOS,Tanker/20180129-172/025531.wav,0,7,20
+Train,Tanker/20180130-173,Tanker,Tanker/event_20180130_054907,CABO DE,Tanker/20180130-173/054907.wav,0,8,20
+Train,Tanker/20180203-174,Tanker,Tanker/event_20180203_232020,UACC RAS,Tanker/20180203-174/232020.wav,0,8,19
+Train,Tanker/20180206-175,Tanker,Tanker/event_20180206_104114,ZAO GALAXY,Tanker/20180206-175/104114.wav,0,8,20
+Train,Tanker/20180211-178,Tanker,Tanker/event_20180211_180933,MELATI 5,Tanker/20180211-178/180933.wav,0,2,6
+Train,Tanker/20180221-179,Tanker,Tanker/event_20180221_020619,SONGA PRIDE,Tanker/20180221-179/020619.wav,0,8,21
+Train,Tanker/20180226-180,Tanker,Tanker/event_20180226_033811,NAVE SEXTANS,Tanker/20180226-180/033811.wav,0,7,18
+Train,Tanker/20180303-181,Tanker,Tanker/event_20180303_060850,PAMISOS 636014809,Tanker/20180303-181/060850.wav,0,7,18
+Train,Tanker/20180314-183,Tanker,Tanker/event_20180314_155725,OTTO H,Tanker/20180314-183/155725.wav,0,2,6
+Train,Tanker/20180314a-184,Tanker,Tanker/event_20180314_171300,NORDISLE,Tanker/20180314a-184/171300.wav,0,8,21
+Train,Tanker/20180316-185,Tanker,Tanker/event_20180316_163653,PELICAN STATE,Tanker/20180316-185/163653.wav,0,4,14
+Train,Tanker/20180316a-186,Tanker,Tanker/event_20180316_174010,TORM AMALIE,Tanker/20180316a-186/174010.wav,0,7,18
+Train,Tanker/20180402-187,Tanker,Tanker/event_20180402_060415,ARPEGGIO,Tanker/20180402-187/060415.wav,0,8,20
+Train,Tanker/20180405-188,Tanker,Tanker/event_20180405_025825,SELECAO,Tanker/20180405-188/025825.wav,0,2,5
+Train,Tanker/20180411-189,Tanker,Tanker/event_20180411_081047,CHEMBULK LINDY,Tanker/20180411-189/081047.wav,0,2,5
+Train,Tanker/20180411a-190,Tanker,Tanker/event_20180411_193519,SEAVOYAGER,Tanker/20180411a-190/193519.wav,0,2,4
+Train,Tanker/20180413-191,Tanker,Tanker/event_20180413_212814,KIRKEHOLMEN,Tanker/20180413-191/212814.wav,0,2,5
+Train,Tanker/20180417-192,Tanker,Tanker/event_20180417_005456,FG ROTTERDAM,Tanker/20180417-192/005456.wav,0,8,22
+Train,Tanker/20180418-193,Tanker,Tanker/event_20180418_004704,NAVIG8 ALMANDINE,Tanker/20180418-193/004704.wav,0,7,16
+Train,Tanker/20180422a-196,Tanker,Tanker/20180422a-196,,Tanker/20180422a-196/171529.wav,0,2,5
+Train,Tanker/20180422b-197,Tanker,Tanker/20180422b-197,,Tanker/20180422b-197/171240.wav,0,1,3
+Train,Tanker/20180423-198,Tanker,Tanker/event_20180423_063301,AZALEA GALAXY,Tanker/20180423-198/063301.wav,0,2,7
+Train,Tanker/20180425-199,Tanker,Tanker/event_20180425_083048,TORM CARINA,Tanker/20180425-199/083048.wav,0,8,20
+Train,Tanker/20180430-200,Tanker,Tanker/event_20180430_033225,AMERICAN FREEDOM,Tanker/20180430-200/033225.wav,0,7,18
+Train,Tanker/20180506-201,Tanker,Tanker/event_20180506_014248,CABO KAMUI,Tanker/20180506-201/014248.wav,0,8,22
+Train,Tanker/20180507-202,Tanker,Tanker/event_20180507_212341,CTG MAGNESIUM,Tanker/20180507-202/212341.wav,0,7,20
+Train,Tanker/20180508-203,Tanker,Tanker/event_20180508_232237,SEAWAYS VISAYAS,Tanker/20180508-203/232237.wav,0,4,13
+Train,Tanker/20180509-204,Tanker,Tanker/event_20180509_124919,AQUALEADER,Tanker/20180509-204/124919.wav,0,7,20
+Train,Tanker/20180510-205,Tanker,Tanker/event_20180510_062026,LOUIS P,Tanker/20180510-205/062026.wav,0,8,28
+Train,Tanker/20180515a-207,Tanker,Tanker/event_20180515_224627,GREEN SKY,Tanker/20180515a-207/224627.wav,0,8,21
+Train,Tanker/20180519-208,Tanker,Tanker/event_20180519_103407,KERALA,Tanker/20180519-208/103407.wav,0,8,23
+Train,Tanker/20180520-209,Tanker,Tanker/event_20180520_130618,HERMIONE,Tanker/20180520-209/130618.wav,0,4,10
+Train,Tanker/20180523-210,Tanker,Tanker/event_20180523_171217,INTREPID SEAHAWK,Tanker/20180523-210/171217.wav,0,2,5
+Train,Tanker/20180529-211,Tanker,Tanker/event_20180529_093622,ARISTOKLIS,Tanker/20180529-211/093622.wav,0,6,19
+Train,Tanker/20180602-212,Tanker,Tanker/event_20180602_172529,M/T CHAMPION,Tanker/20180602-212/172529.wav,0,2,4
+Train,Tanker/20180604-213,Tanker,Tanker/event_20180604_122139,HODAKA GALAXY,Tanker/20180604-213/122139.wav,0,2,5
+Train,Tanker/20180607-214,Tanker,Tanker/event_20180607_124208,KIRKEHOLMEN,Tanker/20180607-214/124208.wav,0,2,5
+Train,Tanker/20180610-215,Tanker,Tanker/event_20180610_135143,BW LIBRA,Tanker/20180610-215/135143.wav,0,8,20
+Train,Tanker/20180612-216,Tanker,Tanker/event_20180612_032309,NAVIG8 AMESSI,Tanker/20180612-216/032309.wav,0,8,22
+Train,Tanker/20180612a-217,Tanker,Tanker/event_20180612_230757,NAEBA GALAXY,Tanker/20180612a-217/230757.wav,0,8,19
+Train,Tanker/20180618-219,Tanker,Tanker/event_20180618_031247,TAVROPOS 636016731,Tanker/20180618-219/031247.wav,0,6,15
+Train,Tanker/20180629-220,Tanker,Tanker/event_20180629_001835,PANAGIA THALASSINI,Tanker/20180629-220/001835.wav,0,8,20
+Train,Tanker/20180630-221,Tanker,Tanker/event_20180630_173807,SERENE SEA,Tanker/20180630-221/173807.wav,0,5,13
+Train,Tanker/20180702-222,Tanker,Tanker/event_20180702_172918,NORD SUPREME,Tanker/20180702-222/172918.wav,0,7,20
+Train,Tanker/20180703-223,Tanker,Tanker/20180703-223,,Tanker/20180703-223/143323.wav,0,8,21
+Train,Tanker/20180705-224,Tanker,Tanker/event_20170705_144030,MAERSK TIANJIN,Tanker/20180705-224/144030.wav,0,2,6
+Train,Tanker/20180710-225,Tanker,Tanker/event_20180710_065625,FAIRCHEM FILLY,Tanker/20180710-225/065625.wav,0,7,23
+Train,Tanker/20180710a-226,Tanker,Tanker/20180710a-226,,Tanker/20180710a-226/070051.wav,0,2,6
+Train,Tanker/20180725a-228,Tanker,Tanker/event_20180725_222512,NAVIG8 STELLAR,Tanker/20180725a-228/222512.wav,0,7,19
+Train,Tanker/20180725b-229,Tanker,Tanker/event_20180725_233127,BOCHEM LONDON,Tanker/20180725b-229/233127.wav,0,8,21
+Train,Tanker/20180821-230,Tanker,Tanker/event_20180821_005202,THOMAS ZAFIRAS,Tanker/20180821-230/005202.wav,0,8,23
+Train,Tanker/20180826-232,Tanker,Tanker/event_20180826_010604,CHAMPION TIDE,Tanker/20180826-232/010604.wav,0,4,10
+Train,Tanker/20180904-233,Tanker,Tanker/event_20180904_183908,KIRKEHOLMEN,Tanker/20180904-233/183908.wav,0,3,9
+Train,Tanker/20180914-234,Tanker,Tanker/event_20180914_024440,SM OSPREY,Tanker/20180914-234/024440.wav,0,2,5
+Train,Tanker/20180915-235,Tanker,Tanker/event_20180915_150156,KIRKEHOLMEN,Tanker/20180915-235/150156.wav,0,8,23
+Train,Tanker/20180927-236,Tanker,Tanker/20180927-236,,Tanker/20180927-236/173410.wav,0,4,14
+Train,Tug/20171104-1,Tug,Tug/event_20171104_200959,SEASPAN QUEEN,Tug/20171104-1/200959.wav,0,20,50
+Train,Tug/20171105-2,Tug,Tug/event_20171105_052000,SEASPAN RAVEN,Tug/20171105-2/052000.wav,0,20,51
+Train,Tug/20171105b-3,Tug,Tug/event_20171105_231504,SEASPAN RAVEN,Tug/20171105b-3/231504.wav,0,20,55
+Train,Tug/20171106-4,Tug,Tug/event_20171106_144640,GLENDALE,Tug/20171106-4/144640.wav,0,2,5
+Train,Tug/20171106a-5,Tug,Tug/event_20171106_162112,SEASPAN RAVEN,Tug/20171106a-5/162112.wav,0,20,52
+Train,Tug/20171107a-6,Tug,Tug/event_20171107_095309,JOSE NARVAEZ,Tug/20171107a-6/095309.wav,0,20,53
+Train,Tug/20171111-7,Tug,Tug/event_20171111_025236,SEASPAN COMMANDER,Tug/20171111-7/025236.wav,0,20,54
+Train,Tug/20171114-8,Tug,Tug/event_20171114_072235,SEASPAN RAVEN,Tug/20171114-8/072235.wav,0,20,48
+Train,Tug/20171115-9,Tug,Tug/event_20171115_133938,MILLENNIUMSTAR,Tug/20171115-9/9.wav,0,2,6
+Train,Tug/20171116-10,Tug,Tug/event_20171116_065145,SEASPAN OSPREY,Tug/20171116-10/065145.wav,0,2,5
+Train,Tug/20171116a-11,Tug,Tug/event_20171116_221717,OCEAN BETTY,Tug/20171116a-11/221717.wav,0,20,50
+Train,Tug/20171118-12,Tug,Tug/event_20171118_082934,OCEAN BETTY,Tug/20171118-12/082934.wav,0,20,51
+Train,Tug/20171118a-13,Tug,Tug/event_20171118_141340,JOSE NARVAEZ,Tug/20171118a-13/141340.wav,0,20,50
+Train,Tug/20171118d-16,Tug,Tug/event_20171118_234607,SEA IMP,Tug/20171118d-16/234607.wav,0,20,53
+Train,Tug/20171120-17,Tug,Tug/event_20171120_034014,SEASPAN QUEEN,Tug/20171120-17/034014.wav,0,20,53
+Train,Tug/20171121-19,Tug,Tug/event_20171121_101117,SEASPAN COMMANDER,Tug/20171121-19/101117.wav,0,20,54
+Train,Tug/20171122a-20,Tug,Tug/event_20171122_124609,NORTH ARM,Tug/20171122a-20/124609.wav,0,20,47
+Train,Tug/20171123-21,Tug,Tug/20171123-21,,Tug/20171123-21/035104.wav,0,20,56
+Train,Tug/20171124-22,Tug,Tug/event_20171124_012051,JOSE NARVAEZ,Tug/20171124-22/012051.wav,0,20,46
+Train,Tug/20171127-23,Tug,Tug/event_20171127_065148,SEASPAN COMMANDER,Tug/20171127-23/065148.wav,0,20,57
+Train,Tug/20171127a-24,Tug,Tug/event_20171127_105442,CALVIN,Tug/20171127a-24/105442.wav,0,20,56
+Train,Tug/20171128a-26,Tug,Tug/event_20171128_103033,CALVIN,Tug/20171128a-26/103033.wav,0,20,54
+Train,Tug/20171128b-27,Tug,Tug/event_20171128_120847,ARCTIC TAGLU,Tug/20171128b-27/120847.wav,0,20,54
+Train,Tug/20171128c-28,Tug,Tug/event_20171128_190038,SEASPAN COMMANDER,Tug/20171128c-28/190038.wav,0,20,60
+Train,Tug/20171129-30,Tug,Tug/event_20171129_011700,SEASPAN RAVEN,Tug/20171129-30/011700.wav,0,20,53
+Train,Tug/20171130a-31,Tug,Tug/event_20171130_211648,SEASPAN COMMANDER,Tug/20171130a-31/211648.wav,0,20,53
+Train,Tug/20171201-32,Tug,Tug/20171201-32,,Tug/20171201-32/024235.wav,0,20,55
+Train,Tug/20171201c-34,Tug,Tug/event_20171201_123228,SEASPAN RAVEN,Tug/20171201c-34/123228.wav,0,20,55
+Train,Tug/20171202-37,Tug,Tug/event_20171202_071515,SEASPAN EAGLE,Tug/20171202-37/071515.wav,0,20,57
+Train,Tug/20171203-39,Tug,Tug/event_20171203_032822,OCEAN GORDON,Tug/20171203-39/032822.wav,0,20,57
+Train,Tug/20171203a-40,Tug,Tug/event_20171203_113510,SEASPAN COMMANDER,Tug/20171203a-40/40.wav,0,20,54
+Train,Tug/20171203c-41,Tug,Tug/event_20171203_194116,SEASPAN COMMANDER,Tug/20171203c-41/194116.wav,0,20,52
+Train,Tug/20171204-42,Tug,Tug/event_20171204_034437,SEASPAN EAGLE,Tug/20171204-42/034437.wav,0,20,56
+Train,Tug/20171207-45,Tug,Tug/event_20171207_004027,SEASPAN EAGLE,Tug/20171207-45/004027.wav,0,20,55
+Train,Tug/20171209-48,Tug,Tug/event_20171209_041322,SEASPAN RAVEN,Tug/20171209-48/041322.wav,0,20,55
+Train,Tug/20171213-51,Tug,Tug/event_20171213_065742,SEASPAN EAGLE,Tug/20171213-51/065742.wav,0,20,52
+Train,Tug/20171213a-52,Tug,Tug/event_20171213_071716,SEASPAN RAVEN,Tug/20171213a-52/071716.wav,0,20,52
+Train,Tug/20171214a-53,Tug,Tug/20171214a-53,,Tug/20171214a-53/184639.wav,0,20,58
+Train,Tug/20171215-54,Tug,Tug/event_20171215_005343,SEASPAN RAVEN,Tug/20171215-54/005343.wav,0,20,49
+Train,Tug/20171215a-55,Tug,Tug/event_20171215_103412,ISLAND TUGGER,Tug/20171215a-55/103412.wav,0,20,61
+Train,Tug/20171215e-56,Tug,Tug/20171215e-56,,Tug/20171215e-56/170639.wav,0,15,36
+Train,Tug/20171217-58,Tug,Tug/event_20171217_020446,CALVIN,Tug/20171217-58/020446.wav,0,20,51
+Train,Tug/20171221-61,Tug,Tug/event_20171221_114923,SEASPAN RAVEN,Tug/20171221-61/114923.wav,0,20,59
+Train,Tug/20171223b-63,Tug,Tug/event_20171223_233721,SEASPAN COMMANDER,Tug/20171223b-63/233721.wav,0,19,52
+Train,Tug/20171227a-66,Tug,Tug/event_20171227_110853,CALVIN,Tug/20171227a-66/110853.wav,0,20,53
+Train,Tug/20171229b-68,Tug,Tug/event_20171229_200347,CALVIN,Tug/20171229b-68/200347.wav,0,20,56
+Train,Tug/20171230a-69,Tug,Tug/event_20171230_163503,OCEAN BETTY,Tug/20171230a-69/163503.wav,0,20,52
+Train,Tug/20171231a-70,Tug,Tug/event_20171231_215301,SEASPAN RAVEN,Tug/20171231a-70/215301.wav,0,20,47
+Val,Passengership/20160514-7,Passengership,Passengership/event_20160514_113853,CORAL PRINCESS,Passengership/20160514-7/113853.wav,0,8,20
+Val,Passengership/20160603-15,Passengership,Passengership/event_20160603_042208,COLUMBIA,Passengership/20160603-15/042208.wav,0,7,20
+Val,Passengership/20160604-16,Passengership,Passengership/event_20160604_040249,MALASPINA,Passengership/20160604-16/16.wav,0,1,3
+Val,Passengership/20160716-26,Passengership,Passengership/event_20160716_035748,COLUMBIA,Passengership/20160716-26/035748.wav,0,8,19
+Val,Passengership/20160724b-28,Passengership,Passengership/event_20160724_110548,COLUMBIA,Passengership/20160724b-28/110548.wav,0,8,19
+Val,Passengership/20160820a-33,Passengership,Passengership/event_20160820_202935,COASTAL INSPIRATION,Passengership/20160820a-33/33.wav,0,8,21
+Val,Passengership/20160821a-34,Passengership,Passengership/event_20160821_174334,QUEEN OF,Passengership/20160821a-34/174334.wav,0,8,24
+Val,Passengership/20160904a-39,Passengership,Passengership/event_20160904_035818,KENNICOTT,Passengership/20160904a-39/035818.wav,0,8,21
+Val,Passengership/20160908a-40,Passengership,Passengership/event_20160908_174717,QUEEN OF,Passengership/20160908a-40/174717.wav,0,8,17
+Val,Passengership/20170215-55,Passengership,Passengership/event_20170215_152700,SPIRIT OF,Passengership/20170215-55/152700.wav,0,8,21
+Val,Passengership/20170429a-68,Passengership,Passengership/event_20170429_102113,OOSTERDAM,Passengership/20170429a-68/102113.wav,0,2,5
+Val,Passengership/20170511a-76,Passengership,Passengership/event_20170511_195844,V2V EMPRESS,Passengership/20170511a-76/195844.wav,0,8,22
+Val,Passengership/20170514-80,Passengership,Passengership/event_20170514_060420,KENNICOTT,Passengership/20170514-80/060420.wav,0,4,12
+Val,Passengership/20170520a-84,Passengership,Passengership/event_20170520_174851,QUEEN OF,Passengership/20170520a-84/174851.wav,0,2,6
+Val,Passengership/20170527-86,Passengership,Passengership/event_20170527_013032,COASTAL RENAISSANCE,Passengership/20170527-86/013032.wav,0,4,12
+Val,Passengership/20170616a-95,Passengership,Passengership/event_20170616_231343,NORTH ISLAND,Passengership/20170616a-95/231343.wav,0,8,22
+Val,Passengership/20170627a-98,Passengership,Passengership/event_20170627_152638,COASTAL RENAISSANCE,Passengership/20170627a-98/152638.wav,0,8,23
+Val,Passengership/20170629-99,Passengership,Passengership/event_20170629_012112,COASTAL RENAISSANCE,Passengership/20170629-99/012112.wav,0,8,21
+Val,Passengership/20170709-101,Passengership,Passengership/event_20170709_095127,SEVEN SEAS,Passengership/20170709-101/095127.wav,0,2,5
+Val,Passengership/20170715-102,Passengership,Passengership/event_20170715_041047,MALASPINA,Passengership/20170715-102/041047.wav,0,8,24
+Val,Passengership/20170720a-104,Passengership,Passengership/event_20170720_110917,CRYSTAL SERENITY,Passengership/20170720a-104/110917.wav,0,2,5
+Val,Passengership/20170905-113,Passengership,Passengership/event_20170905_224957,QUEEN OF,Passengership/20170905-113/224957.wav,0,2,6
+Val,Passengership/20171208d-134,Passengership,Passengership/event_20171208_023937,COASTAL RENAISSANCE,Passengership/20171208d-134/023937.wav,0,2,6
+Val,Passengership/20180307-146,Passengership,Passengership/event_20180307_075607,SALISH RAVEN,Passengership/20180307-146/075607.wav,0,2,4
+Val,Passengership/20180329-150,Passengership,Passengership/event_20180329_181312,V2V EMPRESS,Passengership/20180329-150/181312.wav,0,6,18
+Val,Passengership/20180505-160,Passengership,Passengership/event_20180505_063136,QUEEN OF,Passengership/20180505-160/063136.wav,0,2,5
+Val,Passengership/20180511-165,Passengership,Passengership/event_20180511_101015,CELEBRITY SOLSTICE,Passengership/20180511-165/101015.wav,0,1,2
+Val,Passengership/20180514-167,Passengership,Passengership/event_20180514_181453,V2V EMPRESS,Passengership/20180514-167/181453.wav,0,1,2
+Val,Passengership/20180827-180,Passengership,Passengership/event_20180827_182309,V2V EMPRESS,Passengership/20180827-180/182309.wav,0,6,15
+Val,Tanker/20160511-2,Tanker,Tanker/event_20160511_030034,CHERRY GALAXY,Tanker/20160511-2/2.wav,0,7,21
+Val,Tanker/20160526-6,Tanker,Tanker/event_20160526_193813,CHAMPION EBONY,Tanker/20160526-6/6.wav,0,8,20
+Val,Tanker/20160601-8,Tanker,Tanker/event_20160601_142520,KIRKEHOLMEN,Tanker/20160601-8/8.wav,0,3,7
+Val,Tanker/20160602a-10,Tanker,Tanker/event_20160602_225434,NAVE ORBIT,Tanker/20160602a-10/10.wav,0,3,8
+Val,Tanker/20160604-11,Tanker,Tanker/event_20160604_171238,CHAMPION CORNELIA,Tanker/20160604-11/171238.wav,0,8,21
+Val,Tanker/20160615-14,Tanker,Tanker/event_20160615_063659,ARGENT SUNRISE,Tanker/20160615-14/14.wav,0,2,7
+Val,Tanker/20160616-15,Tanker,Tanker/event_20160616_214515,ARGENT DAISY,Tanker/20160616-15/214515.wav,0,3,6
+Val,Tanker/20160703-21,Tanker,Tanker/event_20160703_163943,ARGENT DAISY,Tanker/20160703-21/21.wav,0,1,4
+Val,Tanker/20160704-22,Tanker,Tanker/event_20160704_111311,OVERSEAS ATHENS,Tanker/20160704-22/111311.wav,0,2,5
+Val,Tanker/20160710-23,Tanker,Tanker/event_20160710_104049,HIGH ENDURANCE,Tanker/20160710-23/104049.wav,0,7,17
+Val,Tanker/20160906-35,Tanker,Tanker/event_20160906_083920,KIRKEHOLMEN,Tanker/20160906-35/35.wav,0,2,5
+Val,Tanker/20160924-38,Tanker,Tanker/event_20160924_023333,ARGENT DAISY,Tanker/20160924-38/38.wav,0,3,8
+Val,Tanker/20161002-40,Tanker,Tanker/event_20161002_130331,CHEMBULK NEW,Tanker/20161002-40/130331.wav,0,7,18
+Val,Tanker/20161022-44,Tanker,Tanker/event_20161022_030503,NORD STEADY,Tanker/20161022-44/030503.wav,0,7,19
+Val,Tanker/20161024-45,Tanker,Tanker/event_20161024_061514,CHERRY GALAXY,Tanker/20161024-45/061514.wav,0,7,19
+Val,Tanker/20161106-50,Tanker,Tanker/event_20161106_200001,CHERRY GALAXY,Tanker/20161106-50/50.wav,0,1,3
+Val,Tanker/20161206-59,Tanker,Tanker/event_20161206_221722,CHEMBULK NEW,Tanker/20161206-59/221722.wav,0,2,4
+Val,Tanker/20170203-76,Tanker,Tanker/event_20170203_002153,ESER K,Tanker/20170203-76/002153.wav,0,4,9
+Val,Tanker/20170327-90,Tanker,Tanker/event_20170327_112002,NORD STEADY,Tanker/20170327-90/112002.wav,0,1,2
+Val,Tanker/20170425-102,Tanker,Tanker/event_20170425_231243,NORD STEADY,Tanker/20170425-102/231243.wav,0,7,18
+Val,Tanker/20170507-103,Tanker,Tanker/event_20170507_213103,KIRKEHOLMEN,Tanker/20170507-103/213103.wav,0,7,19
+Val,Tanker/20170511-106,Tanker,Tanker/event_20170511_050253,NORD STEADY,Tanker/20170511-106/050253.wav,0,7,18
+Val,Tanker/20170614-115,Tanker,Tanker/event_20170614_021303,LIME GALAXY,Tanker/20170614-115/021303.wav,0,2,5
+Val,Tanker/20170621-116,Tanker,Tanker/event_20170621_221235,KAIMON GALAXY,Tanker/20170621-116/221235.wav,0,2,4
+Val,Tanker/20170712-125,Tanker,Tanker/event_20170712_013547,CHAMPION EBONY,Tanker/20170712-125/013547.wav,0,2,6
+Val,Tanker/20170728-129,Tanker,Tanker/event_20170728_202445,KIRKEHOLMEN,Tanker/20170728-129/202445.wav,0,7,19
+Val,Tanker/20170822-133,Tanker,Tanker/event_20170822_172736,KIRKEHOLMEN,Tanker/20170822-133/172736.wav,0,7,24
+Val,Tanker/20170826-135,Tanker,Tanker/event_20170826_005931,NORD INSPIRATION,Tanker/20170826-135/005931.wav,0,6,16
+Val,Tanker/20170920-139,Tanker,Tanker/event_20170920_232910,NORD STEADY,Tanker/20170920-139/232910.wav,0,2,7
+Val,Tanker/20171014-143,Tanker,Tanker/event_20171014_115751,CHEMBULK LINDY,Tanker/20171014-143/115751.wav,0,3,7
+Val,Tanker/20171024-146,Tanker,Tanker/event_20171024_085126,MTM LONDON,Tanker/20171024-146/085126.wav,0,2,7
+Val,Tanker/20180206a-176,Tanker,Tanker/event_20170206_131726,CHERRY GALAXY,Tanker/20180206a-176/131726.wav,0,7,17
+Val,Tanker/20180208-177,Tanker,Tanker/event_20180208_234708,ARGENT SUNRISE,Tanker/20180208-177/234708.wav,0,2,6
+Val,Tanker/20180422-195,Tanker,Tanker/event_20180422_171202,CARIBBEAN SPIRIT,Tanker/20180422-195/171202.wav,0,2,6
+Val,Tanker/20180515-206,Tanker,Tanker/event_20180515_031557,CHAMPION ISTRA,Tanker/20180515-206/031557.wav,0,3,8
+Val,Tanker/20180616-218,Tanker,Tanker/event_20180616_225427,CHEMBULK LINDY,Tanker/20180616-218/225427.wav,0,4,10
+Val,Tug/20171118c-15,Tug,Tug/event_20171118_185844,OCEAN BETTY,Tug/20171118c-15/185844.wav,0,17,49
+Val,Tug/20171120a-18,Tug,Tug/event_20171120_054508,JOSE NARVAEZ,Tug/20171120a-18/054508.wav,0,17,46
+Val,Tug/20171128-25,Tug,Tug/event_20171128_052238,SEASPAN COMMANDER,Tug/20171128-25/052238.wav,0,4,9
+Val,Tug/20171128d-29,Tug,Tug/event_20171128_193239,SEASPAN QUEEN,Tug/20171128d-29/193239.wav,0,4,11
+Val,Tug/20171201b-33,Tug,Tug/event_20171201_082249,OCEAN BETTY,Tug/20171201b-33/082249.wav,0,17,46
+Val,Tug/20171201e-36,Tug,Tug/event_20171201_190230,SEASPAN COMMANDER,Tug/20171201e-36/190230.wav,0,18,44
+Val,Tug/20171205-44,Tug,Tug/event_20171205_145246,SEASPAN RAVEN,Tug/20171205-44/145246.wav,0,17,47
+Val,Tug/20171212a-50,Tug,Tug/event_20171212_094549,SEASPAN COMMANDER,Tug/20171212a-50/094549.wav,0,17,40
+Val,Tug/20171225-64,Tug,Tug/event_20171225_015934,SEASPAN RAVEN,Tug/20171225-64/015934.wav,0,17,44
+Val,Tug/20171226-65,Tug,Tug/event_20171226_043830,SEASPAN RAVEN,Tug/20171226-65/043830.wav,0,18,51
+Val,Tug/20171229a-67,Tug,Tug/event_20171229_195709,SEASPAN COMMANDER,Tug/20171229a-67/195709.wav,0,4,13
+Test,Passengership/20160522-11,Passengership,Passengership/event_20160522_182048,CRYSTAL SERENITY,Passengership/20160522-11/182048.wav,0,8,22
+Test,Passengership/20160601c-14,Passengership,Passengership/event_20160601_035047,QUEEN OF,Passengership/20160601c-14/14.wav,0,4,9
+Test,Passengership/20160831-38,Passengership,Passengership/event_20160831_034757,QUEEN OF,Passengership/20160831-38/034757.wav,0,1,4
+Test,Passengership/20160916a-43,Passengership,Passengership/event_20160916_124641,QUEEN OF,Passengership/20160916a-43/124641.wav,0,8,21
+Test,Passengership/20161003b-45,Passengership,Passengership/event_20161003_175305,QUEEN OF,Passengership/20161003b-45/175305.wav,0,8,21
+Test,Passengership/20161019a-46,Passengership,Passengership/event_20161019_174803,QUEEN OF,Passengership/20161019a-46/174803.wav,0,8,19
+Test,Passengership/20161214-50,Passengership,Passengership/event_20161214_162017,COASTAL INSPIRATION,Passengership/20161214-50/50.wav,0,1,3
+Test,Passengership/20170322-60,Passengership,Passengership/event_20170322_061551,COASTAL INSPIRATION,Passengership/20170322-60/061551.wav,0,1,3
+Test,Passengership/20170503c-70,Passengership,Passengership/event_20170503_201813,SALISH EAGLE,Passengership/20170503c-70/201813.wav,0,1,4
+Test,Passengership/20170508-72,Passengership,Passengership/event_20170508_035234,SAFARI QUEST,Passengership/20170508-72/035234.wav,0,7,18
+Test,Passengership/20170513a-79,Passengership,Passengership/event_20170513_201854,COASTAL RENAISSANCE,Passengership/20170513a-79/201854.wav,0,2,5
+Test,Passengership/20170517a-82,Passengership,Passengership/event_20170517_162940,SALISH EAGLE,Passengership/20170517a-82/162940.wav,0,1,3
+Test,Passengership/20170517b-83,Passengership,Passengership/event_20170517_225337,QUEEN OF,Passengership/20170517b-83/225337.wav,0,8,20
+Test,Passengership/20170625-97,Passengership,Passengership/event_20170625_000157,V2V EMPRESS,Passengership/20170625-97/000157.wav,0,3,7
+Test,Passengership/20171001-121,Passengership,Passengership/event_20171001_105017,EURODAM 245206000,Passengership/20171001-121/105017.wav,0,3,8
+Test,Passengership/20171020a-125,Passengership,Passengership/event_20171020_201024,QUEEN OF,Passengership/20171020a-125/201024.wav,0,8,20
+Test,Passengership/20180125-140,Passengership,Passengership/event_20180125_071504,COASTAL RENAISSANCE,Passengership/20180125-140/071504.wav,0,8,23
+Test,Passengership/20180213-143,Passengership,Passengership/event_20180213_234934,QUEEN OF,Passengership/20180213-143/234934.wav,0,7,19
+Test,Passengership/20180326-149,Passengership,Passengership/event_20180326_180641,V2V EMPRESS,Passengership/20180326-149/180641.wav,0,8,22
+Test,Passengership/20180330-151,Passengership,Passengership/event_20180330_032743,NORTHERN ADVENTURE,Passengership/20180330-151/032743.wav,0,8,19
+Test,Passengership/20180406a-153,Passengership,Passengership/event_20180406_151655,SALISH RAVEN,Passengership/20180406a-153/151655.wav,0,8,22
+Test,Passengership/20180503-159,Passengership,Passengership/event_20180503_153434,SALISH RAVEN,Passengership/20180503-159/153434.wav,0,8,21
+Test,Passengership/20180617-173,Passengership,Passengership/event_20180617_201949,COASTAL RENAISSANCE,Passengership/20180617-173/201949.wav,0,8,24
+Test,Passengership/20180905a-19,Passengership,Passengership/event_20180905_211808,SPIRIT OF,Passengership/20180905a-19/211808.wav,0,8,22
+Test,Passengership/20180913-184,Passengership,Passengership/event_20180913_181821,V2V EMPRESS,Passengership/20180913-184/181821.wav,0,5,14
+Test,Passengership/20180917-81,Passengership,Passengership/event_20180917_035007,QUEEN OF,Passengership/20180917-81/035007.wav,0,1,2
+Test,Passengership/20180925-189,Passengership,Passengership/event_20180925_012450,COASTAL INSPIRATION,Passengership/20180925-189/012450.wav,0,1,3
+Test,Passengership/20181003-193,Passengership,Passengership/event_20181003_012519,V2V EMPRESS,Passengership/20181003-193/012519.wav,0,8,22
+Test,Tanker/20160612-12,Tanker,Tanker/event_20160612_211030,KIRKEHOLMEN,Tanker/20160612-12/12.wav,0,3,8
+Test,Tanker/20160617-16,Tanker,Tanker/event_20160617_225229,LOUIS P,Tanker/20160617-16/225229.wav,0,7,20
+Test,Tanker/20160714a-26,Tanker,Tanker/event_20160714_141202,NORD STEADY,Tanker/20160714a-26/141202.wav,0,3,6
+Test,Tanker/20160724-27,Tanker,Tanker/event_20160724_025459,HIGH ENDURANCE,Tanker/20160724-27/025459.wav,0,7,18
+Test,Tanker/20160808-28,Tanker,Tanker/event_20160808_203415,NORD STEADY,Tanker/20160808-28/203415.wav,0,7,17
+Test,Tanker/20160831-33,Tanker,Tanker/event_20160831_210639,KIRKEHOLMEN,Tanker/20160831-33/33.wav,0,2,4
+Test,Tanker/20161009-42,Tanker,Tanker/event_20161009_151318,AMAGI GALAXY,Tanker/20161009-42/42.wav,0,5,11
+Test,Tanker/20161030-47,Tanker,Tanker/event_20161030_043924,KIRKEHOLMEN,Tanker/20161030-47/47.wav,0,2,5
+Test,Tanker/20161113-237,Tanker,Tanker/event_20161113_174452,NAVIG8 AQUAMARINE,Tanker/20161113-237/174452.wav,0,7,18
+Test,Tanker/20161124-56,Tanker,Tanker/event_20161124_095256,LOUIS P,Tanker/20161124-56/095256.wav,0,3,8
+Test,Tanker/20161208-61,Tanker,Tanker/event_20161208_135535,FUJI GALAXY,Tanker/20161208-61/135535.wav,0,2,5
+Test,Tanker/20170120-70,Tanker,Tanker/event_20170120_070941,BOCHEM LONDON,Tanker/20170120-70/070941.wav,0,7,19
+Test,Tanker/20170122a-73,Tanker,Tanker/event_20170122_032130,CHEMBULK HONGKONG,Tanker/20170122a-73/032130.wav,0,2,7
+Test,Tanker/20170205-78,Tanker,Tanker/event_20170205_163939,HIGH MERCURY,Tanker/20170205-78/163939.wav,0,4,11
+Test,Tanker/20170219-82,Tanker,Tanker/event_20170219_104435,NORD STEADY,Tanker/20170219-82/104435.wav,0,8,19
+Test,Tanker/20170419-98,Tanker,Tanker/event_20170419_021347,AMAGI GALAXY,Tanker/20170419-98/021347.wav,0,7,18
+Test,Tanker/20170510-105,Tanker,Tanker/event_20170510_041848,SILVER ETREMA,Tanker/20170510-105/041848.wav,0,7,19
+Test,Tanker/20170529-110,Tanker,Tanker/event_20170529_124845,CHAMPION ISTRA,Tanker/20170529-110/124845.wav,0,3,8
+Test,Tanker/20170612-114,Tanker,Tanker/event_20170612_013848,CHEMBULK LINDY,Tanker/20170612-114/013848.wav,0,1,3
+Test,Tanker/20170625-118,Tanker,Tanker/event_20170625_180527,NORD STEADY,Tanker/20170625-118/180527.wav,0,7,20
+Test,Tanker/20170723a-128,Tanker,Tanker/event_20170723_192900,AMAGI GALAXY,Tanker/20170723a-128/192900.wav,0,3,10
+Test,Tanker/20170815-131,Tanker,Tanker/event_20170815_215556,AMAGI GALAXY,Tanker/20170815-131/215556.wav,0,1,2
+Test,Tanker/20170828-136,Tanker,Tanker/event_20170828_215454,KIRKEHOLMEN,Tanker/20170828-136/215454.wav,0,7,19
+Test,Tanker/20170923-140,Tanker,Tanker/event_20170923_064301,KAIMON GALAXY,Tanker/20170923-140/064301.wav,0,4,12
+Test,Tanker/20171008-141,Tanker,Tanker/event_20171008_053342,NORD STEADY,Tanker/20171008-141/053342.wav,0,7,22
+Test,Tanker/20171121-151,Tanker,Tanker/event_20171121_180451,CHEMBULK LINDY,Tanker/20171121-151/180451.wav,0,2,7
+Test,Tanker/20171128-155,Tanker,Tanker/event_20171128_013710,NORD STEADY,Tanker/20171128-155/013710.wav,0,2,5
+Test,Tanker/20171207-157,Tanker,Tanker/event_20171207_150539,NORD STEADY,Tanker/20171207-157/150539.wav,0,8,20
+Test,Tanker/20171230-163,Tanker,Tanker/event_20171230_032310,AMAGI GALAXY,Tanker/20171230-163/032310.wav,0,1,2
+Test,Tanker/20171230a-164,Tanker,Tanker/event_20171230_195035,SEAWAYS VISAYAS,Tanker/20171230a-164/195035.wav,0,3,9
+Test,Tanker/20171230b-165,Tanker,Tanker/event_20171230_032319,AMAGI GALAXY,Tanker/20171230b-165/032319.wav,0,1,3
+Test,Tanker/20180119a-168,Tanker,Tanker/event_20180119_055857,GULF PEARL,Tanker/20180119a-168/055857.wav,0,1,4
+Test,Tanker/20180311-182,Tanker,Tanker/event_20180311_212409,CABO DE,Tanker/20180311-182/212409.wav,0,3,7
+Test,Tanker/20180421-194,Tanker,Tanker/event_20180421_025328,NAVIG8 STELLAR,Tanker/20180421-194/025328.wav,0,3,7
+Test,Tanker/20180725-227,Tanker,Tanker/event_20180725_013354,ARISTOKLIS,Tanker/20180725-227/013354.wav,0,7,19
+Test,Tanker/20180822-231,Tanker,Tanker/event_20180822_142019,SONGA PRIDE,Tanker/20180822-231/142019.wav,0,3,8
+Test,Tug/20171118b-14,Tug,Tug/event_20171118_161506,SEASPAN RAVEN,Tug/20171118b-14/161506.wav,0,15,41
+Test,Tug/20171201d-35,Tug,Tug/event_20171201_125826,SEA IMP,Tug/20171201d-35/125826.wav,0,15,42
+Test,Tug/20171202a-38,Tug,Tug/event_20171202_145149,SEASPAN EAGLE,Tug/20171202a-38/145149.wav,0,15,35
+Test,Tug/20171204a-43,Tug,Tug/event_20171204_081356,SEASPAN EAGLE,Tug/20171204a-43/081356.wav,0,15,41
+Test,Tug/20171207a-46,Tug,Tug/event_20171207_052942,OCEAN GORDON,Tug/20171207a-46/052942.wav,0,15,39
+Test,Tug/20171207b-47,Tug,Tug/event_20171207_114556,SEASPAN EAGLE,Tug/20171207b-47/114556.wav,0,15,34
+Test,Tug/20171210-49,Tug,Tug/event_20171210_132956,SEASPAN EAGLE,Tug/20171210-49/49.wav,0,15,40
+Test,Tug/20171217a-59,Tug,Tug/event_20171217_050224,SEASPAN RAVEN,Tug/20171217a-59/050224.wav,0,15,43
+Test,Tug/20171219a-60,Tug,Tug/event_20171219_210546,OCEAN BETTY,Tug/20171219a-60/210546.wav,0,15,42
+Test,Tug/20171221a-62,Tug,Tug/event_20171221_144544,JOSE NARVAEZ,Tug/20171221a-62/144544.wav,0,15,43

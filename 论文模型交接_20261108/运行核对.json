@@ -1,0 +1,43 @@
+{
+  "cpu_smoke": [
+    {
+      "run_id": "SE-Q0-MBTrainValSwap-13",
+      "input_shape": [
+        2,
+        80000
+      ],
+      "output_shape": [
+        2,
+        7
+      ]
+    },
+    {
+      "run_id": "SE-Q0-ShortLocal-GN-13",
+      "input_shape": [
+        2,
+        80000
+      ],
+      "output_shape": [
+        2,
+        7
+      ]
+    },
+    {
+      "run_id": "DS-Q0-PTT-SeenShip-13",
+      "input_shape": [
+        2,
+        80000
+      ],
+      "output_shape": [
+        2,
+        7
+      ]
+    }
+  ],
+  "gn_cuda_replay": {
+    "condition": "original",
+    "samples": 64,
+    "predictions_equal": 64,
+    "max_abs_probability_difference": 0.0
+  }
+}

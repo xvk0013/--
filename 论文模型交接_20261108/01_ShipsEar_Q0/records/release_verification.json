@@ -1,0 +1,62 @@
+{
+  "Val_original": {
+    "n": 719,
+    "acc": 71.3490959666203,
+    "probability_max_abs_error": 0.0
+  },
+  "Val_10dB": {
+    "n": 719,
+    "acc": 67.4547983310153,
+    "probability_max_abs_error": 0.0
+  },
+  "Val_5dB": {
+    "n": 719,
+    "acc": 64.95132127955495,
+    "probability_max_abs_error": 0.0
+  },
+  "Val_0dB": {
+    "n": 719,
+    "acc": 62.16968011126565,
+    "probability_max_abs_error": 0.0
+  },
+  "Val_-5dB": {
+    "n": 719,
+    "acc": 56.189151599443676,
+    "probability_max_abs_error": 0.0
+  },
+  "Val_-10dB": {
+    "n": 719,
+    "acc": 48.67872044506258,
+    "probability_max_abs_error": 0.0
+  },
+  "Test_original": {
+    "n": 877,
+    "acc": 87.9133409350057,
+    "probability_max_abs_error": 0.0
+  },
+  "Test_10dB": {
+    "n": 877,
+    "acc": 84.15051311288484,
+    "probability_max_abs_error": 0.0
+  },
+  "Test_5dB": {
+    "n": 877,
+    "acc": 80.95781071835803,
+    "probability_max_abs_error": 0.0
+  },
+  "Test_0dB": {
+    "n": 877,
+    "acc": 74.230330672748,
+    "probability_max_abs_error": 0.0
+  },
+  "Test_-5dB": {
+    "n": 877,
+    "acc": 63.283922462941845,
+    "probability_max_abs_error": 0.0
+  },
+  "Test_-10dB": {
+    "n": 877,
+    "acc": 46.52223489167617,
+    "probability_max_abs_error": 0.0
+  }
+}

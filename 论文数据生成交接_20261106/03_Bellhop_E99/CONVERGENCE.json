@@ -1,0 +1,2089 @@
+{
+  "status": "all_80_engineering_passed",
+  "identity": "precision_30e92c553784_v1",
+  "solver": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\tools\\bellhop_precision_30e92c553784_v1\\bellhop.exe",
+  "solver_sha256": "30e92c5537841d4fc5eb8845e963470cdf531af3cefaa14224f8045283b4bdfa",
+  "backend": "WSL Ubuntu-22.04; frozen 2D ASCII ARR candidate",
+  "results": [
+    {
+      "complete": true,
+      "frequency_hz": 50,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq50Hz.arr",
+      "arr_sha256": "9553459d16082d42c1f350af8ec018f6fa3e9688aafe4ab44de979e9d73470e9",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.030732028247706988,
+          "level_error_db_max": 0.13609850828390063,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0019380061325405542,
+          "level_error_db_max": 0.0039161020226125831,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 150,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq150Hz.arr",
+      "arr_sha256": "355f394c0e66b1121a5947634f53d86f3f4573932a57acf44653ce075e40963d",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016872422421245602,
+          "level_error_db_max": 0.061627247408592628,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00045915043805209175,
+          "level_error_db_max": 0.0031061933919632571,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 250,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq250Hz.arr",
+      "arr_sha256": "485af43071c57fbd653058a30e66b081c3b091628a07fd60fb2045fe17619d9f",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.011095061332107185,
+          "level_error_db_max": 0.0061041613183373811,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00059394268645475011,
+          "level_error_db_max": 0.0014558417661292798,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 350,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq350Hz.arr",
+      "arr_sha256": "7a69aec4e3b8a3db3c048db605492f1110b57749e497605ddd80ceeb256589b3",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016008097749046345,
+          "level_error_db_max": 0.00975225216340697,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00055895586742647167,
+          "level_error_db_max": 0.0017795075043387169,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 450,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq450Hz.arr",
+      "arr_sha256": "da19a913be9dedfddd1f1ec8050ba7f8a23a405edc796ca38985dd729dcec2b4",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.036685237899286738,
+          "level_error_db_max": 0.012172628158289079,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00093850280737441864,
+          "level_error_db_max": 0.002249361914381293,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 550,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq550Hz.arr",
+      "arr_sha256": "f1f57cbae29445b81052b751fdb6add708fbf99b5e6a72422c922d29aa2e4982",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.025703553550356664,
+          "level_error_db_max": 0.0090690094394723,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00089360376479291094,
+          "level_error_db_max": 0.0019945580699409341,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 650,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq650Hz.arr",
+      "arr_sha256": "13f3770fa3ced26a1d9cb8ee798e1ca6b62bcc0aee41b819b24062f26a6a67a6",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.034962207237386279,
+          "level_error_db_max": 0.01092950322880778,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.000597451075703574,
+          "level_error_db_max": 0.0013521665923083002,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 750,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq750Hz.arr",
+      "arr_sha256": "e56154d740e134d03e37e09b414da2ca7b601269a16200ca25d317d49d1bdf30",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.026566890691816187,
+          "level_error_db_max": 0.039713369674860936,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0010625644173301442,
+          "level_error_db_max": 0.0025403239003028428,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 850,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq850Hz.arr",
+      "arr_sha256": "b4d34ab17546bbaeda74f652e035d9c9914679410065450ea5826ebec3548170",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.02262488067451672,
+          "level_error_db_max": 0.0044203741891409853,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0021589655882987631,
+          "level_error_db_max": 0.0033398237534014311,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 950,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq950Hz.arr",
+      "arr_sha256": "20370fb37e7468dde262956c7d2378771f7c2d4149c2d45bf01ce8cfd4fe3864",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.024757094628802424,
+          "level_error_db_max": 0.013398964224079529,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.004300671974131462,
+          "level_error_db_max": 0.012891747351819999,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1050,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1050Hz.arr",
+      "arr_sha256": "3fe460866393f4c13e4bccdf573eade00f15541b072d0c47b1d23d9552754c72",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.036922079952410689,
+          "level_error_db_max": 0.0066656571987102758,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00058776320907003759,
+          "level_error_db_max": 0.0020287425938816358,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1150,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1150Hz.arr",
+      "arr_sha256": "06b7abb84db7d414d9b45289df094097fd4387aa64ba981c3ea03c5639e64d8b",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016739713986028745,
+          "level_error_db_max": 0.0034635715083221421,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0042566265174025456,
+          "level_error_db_max": 0.018996496741945954,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1250,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1250Hz.arr",
+      "arr_sha256": "f619ce9604cc6914b9c763448cf555cd5ddbb9198a6006c598fd8bb2665a9d9b",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.023288810957046695,
+          "level_error_db_max": 0.004406420982851462,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0015262515335423004,
+          "level_error_db_max": 0.0028283496770017086,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1350,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1350Hz.arr",
+      "arr_sha256": "234cea0443738dd4c2bc3b9d5d8c8d235d935274e347cd1732e345a375c63fad",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.043233588005490577,
+          "level_error_db_max": 0.01649810464461075,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00070509260485280667,
+          "level_error_db_max": 0.0017061816558485027,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1450,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1450Hz.arr",
+      "arr_sha256": "be680a928db4154bac69dc3a5995d7a6339fb676e26735d9d0e3a572fc296f5b",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.065789999119944279,
+          "level_error_db_max": 0.078930906761526087,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00073096807517325328,
+          "level_error_db_max": 0.004180338299735578,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1550,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1550Hz.arr",
+      "arr_sha256": "7a25ea1e2143c7d815d1d35c469817fc051af622cc1c4d8bcdd3cf73154c4556",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.030931097192180124,
+          "level_error_db_max": 0.025638625327613875,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0031738041669376387,
+          "level_error_db_max": 0.009169079778498325,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1650,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1650Hz.arr",
+      "arr_sha256": "691134c74d3771efa462f8999a25d5e6d87a67c2d802cd0608e04c483930367c",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.018530789346360269,
+          "level_error_db_max": 0.00980740155814847,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0034772162082336655,
+          "level_error_db_max": 0.0051577568642986182,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1750,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1750Hz.arr",
+      "arr_sha256": "cdb20abd6497696452ecfe15b41db854dacab9897342e6500f806119ff7d39e6",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013150000922662154,
+          "level_error_db_max": 0.0037168342315081907,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0021117011405941818,
+          "level_error_db_max": 0.0077016681482694142,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1850,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1850Hz.arr",
+      "arr_sha256": "5b14c07bf77784cb5576de15176cf95d9efd9c7f85b25635567f7bad6a2e05a2",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.014664744988138077,
+          "level_error_db_max": 0.0040465948805926376,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0013795799782112274,
+          "level_error_db_max": 0.0050549248865335433,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 1950,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq1950Hz.arr",
+      "arr_sha256": "4ab5e7984ca4fe3e54913e6f26cce8fdffdc489af4065917a83bbb474e08bcee",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.01687450843861513,
+          "level_error_db_max": 0.004719104901600376,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0010222996458845346,
+          "level_error_db_max": 0.0010202969503584109,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2050,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2050Hz.arr",
+      "arr_sha256": "3968b1e5886e3709439251cf763d5a20f4e3c936432ed7430df668628dc1ecce",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.02079649529881827,
+          "level_error_db_max": 0.0040600060103570318,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0010848656736882742,
+          "level_error_db_max": 0.00265236114134929,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2150,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2150Hz.arr",
+      "arr_sha256": "623af9540db4c063eef7dc612bbe5256137810dec9a86284b45b541f5b65aa86",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.010613386559542783,
+          "level_error_db_max": 0.0044412343694356319,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0011295430061987609,
+          "level_error_db_max": 0.0016084133209638123,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2250,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2250Hz.arr",
+      "arr_sha256": "750efc4de328419ebd28b12bb6d75794faf127e9a770cd077d4c14668bba167c",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.017049230551786674,
+          "level_error_db_max": 0.0039504918830979814,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0011781553800180827,
+          "level_error_db_max": 0.0035853003968386956,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2350,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2350Hz.arr",
+      "arr_sha256": "a7c256d90205dd20eb6d6a36deed5fda4767fcc4b063e1b98c41780a9bcd265a",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.015688206137388732,
+          "level_error_db_max": 0.0097649547386522186,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0012289548762018925,
+          "level_error_db_max": 0.0039618031291429393,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2450,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2450Hz.arr",
+      "arr_sha256": "98e9cb74e3c7879f68d604b78c6f79f60ed7a17e881831abcd0a2db96a85f579",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.017860198528865161,
+          "level_error_db_max": 0.0054120950768731385,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0015048057013113585,
+          "level_error_db_max": 0.0021394693445723665,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2550,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2550Hz.arr",
+      "arr_sha256": "bc5ebd3c314cab735be23996222425fa723359e42dd22310bda765afacd83271",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.010815131930730264,
+          "level_error_db_max": 0.0034070901425783786,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0040201625447623124,
+          "level_error_db_max": 0.0084003818599857269,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2650,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2650Hz.arr",
+      "arr_sha256": "35a7d183bc2d70797e1bf48eedc85eb373a64629fefea5bcf7f90c22c6e21fd0",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0092396998314636034,
+          "level_error_db_max": 0.0026269098513296328,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0017569948386980995,
+          "level_error_db_max": 0.0017017061219349538,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2750,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2750Hz.arr",
+      "arr_sha256": "1d16ee18a6da39ae03f885c38f589895156266a6354c2ec0b11d22e0a9f1086f",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.014863371618359152,
+          "level_error_db_max": 0.012880481991668483,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0030835103642407285,
+          "level_error_db_max": 0.006523695339630535,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2850,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2850Hz.arr",
+      "arr_sha256": "4e30ec11d11c11b2a40def081f23ab242702b9999e2abf7805baa85ce8c683ae",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016760254710058705,
+          "level_error_db_max": 0.014689372578237783,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.005250171010519198,
+          "level_error_db_max": 0.016036005030937849,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 2950,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq2950Hz.arr",
+      "arr_sha256": "f69118ea3f107b1178c315af262b1e189c8a6c906c0c66b0296829f660e2f0a6",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.014119769350746176,
+          "level_error_db_max": 0.015953869002876445,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0029915454731991816,
+          "level_error_db_max": 0.0059054709003010415,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3050,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3050Hz.arr",
+      "arr_sha256": "8203a65c57253bea11e66c9c3248e08c8cb50cc9392621d10e71ff77d57fd7b6",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0079775434546555737,
+          "level_error_db_max": 0.0027425315220435667,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0018153049172075456,
+          "level_error_db_max": 0.0043291616488417024,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3150,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3150Hz.arr",
+      "arr_sha256": "f73df07d58332b00102413e8f446d26747cfac9fafb6c263b9fde92785722b9c",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013658182591493772,
+          "level_error_db_max": 0.0049659752093256758,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.00252589225657884,
+          "level_error_db_max": 0.0030578900401039338,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3250,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3250Hz.arr",
+      "arr_sha256": "1952016e05a94e5f9148aac557c2dfb21ebeded88ef04c108c9cb80f483bd387",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013470730163425202,
+          "level_error_db_max": 0.0032536042202104573,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0022928722031654676,
+          "level_error_db_max": 0.0036674496468709203,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3350,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3350Hz.arr",
+      "arr_sha256": "0e23f5473c16487529107915d01d166c0d199b2434b1c77eecead19f3afc8372",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.011720855960705323,
+          "level_error_db_max": 0.0059303270157181178,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0026459417715746646,
+          "level_error_db_max": 0.0072400813274921009,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3450,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3450Hz.arr",
+      "arr_sha256": "92956ff6e75551815c6c05011b93e64157419b089f4fabcea3d89a7d9c1be140",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.018592386724009258,
+          "level_error_db_max": 0.027086275579640086,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0018182219459991487,
+          "level_error_db_max": 0.0021695683543204395,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3550,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3550Hz.arr",
+      "arr_sha256": "464dcdd38cd4e913e383025d560d198d1eff9ca7f1342798f8f056dc96ff275b",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.010467756064960485,
+          "level_error_db_max": 0.0078805320512201332,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0019338361277962911,
+          "level_error_db_max": 0.004519384609520039,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3650,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3650Hz.arr",
+      "arr_sha256": "f651d208c51835de0a48a892be53aff348a7387730bb17155b1f6c268bad753c",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.012900534538732258,
+          "level_error_db_max": 0.017021534762314987,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0019152956810306316,
+          "level_error_db_max": 0.0029681749812014982,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3750,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3750Hz.arr",
+      "arr_sha256": "6a75c2f3bef78de6f3ea1dedc5bde99974f85126c49632ab1c2937c824889789",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0082526482326425316,
+          "level_error_db_max": 0.0034626129078393132,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0019663251573035566,
+          "level_error_db_max": 0.0021233956248426274,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3850,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3850Hz.arr",
+      "arr_sha256": "26ab88972d096fe31d090a877bf6b3371e97e45ca9673017195f09616ff31691",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.011186697612751997,
+          "level_error_db_max": 0.0135272862037335,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0020079182581098556,
+          "level_error_db_max": 0.0025585453805020697,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 3950,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq3950Hz.arr",
+      "arr_sha256": "8acdb9ff7df868cf146ed7f96a1ddc41df7de9ea3e6c123170f05daa164473bc",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.009388809726242479,
+          "level_error_db_max": 0.0056860000559894285,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0020778917698653608,
+          "level_error_db_max": 0.001528565513289584,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4050,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4050Hz.arr",
+      "arr_sha256": "4fd511fae836c67877aa6792cc65a063f09d801f5075dce1347be27635603164",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016175851714870845,
+          "level_error_db_max": 0.033688647546347684,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.002130735683613166,
+          "level_error_db_max": 0.00067955399304384133,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4150,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4150Hz.arr",
+      "arr_sha256": "fe4d5d2b5d7b852cdc975f947b3eb5edd626f3d932a9665613e9834685537041",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.017290276528105431,
+          "level_error_db_max": 0.015362427956773578,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0021789023948248585,
+          "level_error_db_max": 0.00092351550443081263,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4250,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4250Hz.arr",
+      "arr_sha256": "b8362e3790d56cb99b337fc441719b33190a85521ce5386cf9e7a1dfe207764a",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013006595780971974,
+          "level_error_db_max": 0.047083772550679429,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0022331295702874092,
+          "level_error_db_max": 0.0018369732456604546,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4350,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4350Hz.arr",
+      "arr_sha256": "3f70a9eef29a053c5b06c6b11d7295f3d831b59e4590f3dec3c7dd2c65d4f679",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016481472299462511,
+          "level_error_db_max": 0.030413436458385512,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0022494292227093243,
+          "level_error_db_max": 0.0052019661482797432,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4450,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4450Hz.arr",
+      "arr_sha256": "25cd90fb485e55c068a56307dc3bf07e00921268856df547c2b6156ee1fd7b1d",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.010444347562366998,
+          "level_error_db_max": 0.023914609535390638,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0023425281365037115,
+          "level_error_db_max": 0.0038514478110724727,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4550,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4550Hz.arr",
+      "arr_sha256": "dba0afcccd494c340b0e69eb59e8f9e263d01b8baf4a40d320971da30b384a19",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0077807996643631527,
+          "level_error_db_max": 0.0088656098552823952,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0023950660064613349,
+          "level_error_db_max": 0.0031811190717965219,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4650,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4650Hz.arr",
+      "arr_sha256": "53937f43d558ab5b0de543f223e206001b256d55b891ff00d5fccafa73d95c4b",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016927030530522216,
+          "level_error_db_max": 0.031763835574435795,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0024415237364612419,
+          "level_error_db_max": 0.0026251145141076579,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4750,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4750Hz.arr",
+      "arr_sha256": "661388b52c947b279c52777ef06b89be9c40e0e345c918bfb414b4e31b396c92",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.011716592983420758,
+          "level_error_db_max": 0.013234142217863265,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0024958357440675333,
+          "level_error_db_max": 0.0020718314941150355,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4850,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4850Hz.arr",
+      "arr_sha256": "8f513920605c7a1bf36cfc88e9bd6b20b19ec182d084c4ed69eb1cfbb68e46c6",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013891457962217638,
+          "level_error_db_max": 0.025483166361672339,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0025469398027266562,
+          "level_error_db_max": 0.0028653992349504933,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 4950,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq4950Hz.arr",
+      "arr_sha256": "40a95f0241cb2bc6248cfecc901f502fa3c74b6787ed3ee1b4b67bb1babfde03",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013036720642600346,
+          "level_error_db_max": 0.0078142821781228937,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0026093070141731765,
+          "level_error_db_max": 0.0017896397530928099,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5050,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5050Hz.arr",
+      "arr_sha256": "1dc99b79c4d9644ba9d829c36b00ec789b70206c1a0d8da9dbf9cf0358634592",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013355449390089671,
+          "level_error_db_max": 0.046172327886146829,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0026565316402960958,
+          "level_error_db_max": 0.0025582761691155574,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5150,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5150Hz.arr",
+      "arr_sha256": "755e132e4c1f352eca0ea1ec7c712f884054414f844952191a68cdfed3d9dd2f",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.01522077872753793,
+          "level_error_db_max": 0.0051742100423485052,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0027037492054576176,
+          "level_error_db_max": 0.0018316773737712786,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5250,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5250Hz.arr",
+      "arr_sha256": "66383566790b6245e00171eaa5b88de3fb251825acc8a3c08c1413b31a44a81c",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0070460366459954111,
+          "level_error_db_max": 0.00888993913502637,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0027693738679729226,
+          "level_error_db_max": 0.003243621644645775,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5350,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5350Hz.arr",
+      "arr_sha256": "456754bf56ccb82306b9343b821415fb2239a037b1f990e47b236ed87ad28460",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.012573960110456086,
+          "level_error_db_max": 0.015725673645166246,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.002821316968576135,
+          "level_error_db_max": 0.0032694744116259803,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5450,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5450Hz.arr",
+      "arr_sha256": "9da9d1c73082e49aec7529a9336e160424627bbf6713ed20fd9d69c1908173b4",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.01997014774826085,
+          "level_error_db_max": 0.0051450464690737958,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0028711922930581982,
+          "level_error_db_max": 0.0020221349079015318,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5550,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5550Hz.arr",
+      "arr_sha256": "3440694ad0d8a93ad5eb6ce21c3d61f80206a660cbcc106e909a0602ed10cb81",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013994373570693436,
+          "level_error_db_max": 0.038353180735361453,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0029184351746582692,
+          "level_error_db_max": 0.006357699387766598,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5650,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5650Hz.arr",
+      "arr_sha256": "581773767829ac5d1f717413df2161e2754a6163a04b251a603d6bc1062dd6f5",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.014525466000056646,
+          "level_error_db_max": 0.031682299675997443,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0029682353111893777,
+          "level_error_db_max": 0.0050774691771094272,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5750,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5750Hz.arr",
+      "arr_sha256": "b1c777f489b534f70985ac8f0730b0bcdd742f2760f5fda0c8ea7f02fcbd0726",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.022543799868609191,
+          "level_error_db_max": 0.097559500427492285,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0030442334058454644,
+          "level_error_db_max": 0.0040009058693639861,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5850,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5850Hz.arr",
+      "arr_sha256": "5d3e5dd1154eba871492b7919c1db1391861fed27ec4b000d2e4d2da0abd25bd",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0099958049712032,
+          "level_error_db_max": 0.014075317505257617,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0030855712363572719,
+          "level_error_db_max": 0.0032521413134125659,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 5950,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq5950Hz.arr",
+      "arr_sha256": "8f68858aca6eb80997b15ea1ea090129665a149ad89da62c554d33ef04b9d20e",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.019406784722719037,
+          "level_error_db_max": 0.023216304591675129,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0031359153801989894,
+          "level_error_db_max": 0.0026996143075362958,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6050,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6050Hz.arr",
+      "arr_sha256": "6aad8dcfa2ee6b6726e89ac74e60ddbe06e1116bb47d6251952a0bad49caca4d",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0067270174682338849,
+          "level_error_db_max": 0.0053250973486097183,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0031811824231547051,
+          "level_error_db_max": 0.0022484053361338683,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6150,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6150Hz.arr",
+      "arr_sha256": "c9722e5e0881a4ca5ee9b82528fa83f24c7d82a2dd6706a6026d29f2c1950c46",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0082005213111501721,
+          "level_error_db_max": 0.0083266842243608641,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0032319069308878127,
+          "level_error_db_max": 0.0021751865749949245,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6250,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6250Hz.arr",
+      "arr_sha256": "7dfff4d7a5bd06eca0bdfdb65a0a6308d0b4cb6f6ced19258bf26bdc7b988be7",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.014656928168151362,
+          "level_error_db_max": 0.025108426283605677,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0033394267682274608,
+          "level_error_db_max": 0.0038930307284527287,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6350,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6350Hz.arr",
+      "arr_sha256": "423c9fec536b0925ecbdc6d50253d73f59a8cd20a8a29590de81d3ef46722aaf",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0083593462809184484,
+          "level_error_db_max": 0.010100879284924218,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.003353017903361281,
+          "level_error_db_max": 0.002806760779632554,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6450,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6450Hz.arr",
+      "arr_sha256": "3df757cb85a6812ac02e068997fc59df57f06a99ed6ae26c44418df7f3dda40c",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013335501633755437,
+          "level_error_db_max": 0.039030879496491436,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0033998325723552268,
+          "level_error_db_max": 0.0037305225351461318,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6550,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6550Hz.arr",
+      "arr_sha256": "ce2aa4926c17b1382de2b935759a490e91682f40fe9e1aa04292add125a95f25",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016904028140859412,
+          "level_error_db_max": 0.014377520855551258,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0034439498781652931,
+          "level_error_db_max": 0.0034590196600300669,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6650,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6650Hz.arr",
+      "arr_sha256": "52de948e621024c61fe3861ea5e9bafcd5728430699437f3c99c1ffe33add10e",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0073450974646388023,
+          "level_error_db_max": 0.010271375618144086,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0034984625500091011,
+          "level_error_db_max": 0.0020663438903455117,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6750,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6750Hz.arr",
+      "arr_sha256": "3658363324ec4a9b61b26d61c6a73297ce85cee94a4dc31312b4b2c3610e68a8",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.016669890481071349,
+          "level_error_db_max": 0.017212604405892735,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0036448300702889053,
+          "level_error_db_max": 0.0024049547273611231,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6850,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6850Hz.arr",
+      "arr_sha256": "c6156504a99dfa264ce07145f286f21cb1d38ec022a8c1438f3c69ad82241d26",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0097662025233726038,
+          "level_error_db_max": 0.015445196130072761,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0036145999313245475,
+          "level_error_db_max": 0.0025101949985358949,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 6950,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq6950Hz.arr",
+      "arr_sha256": "2c6c9e7c4bc74e99545506baa22910bd3c3034cc02965b7d48da6b83163a0d13",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.013410390333139635,
+          "level_error_db_max": 0.034381182252151539,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0036629409443120543,
+          "level_error_db_max": 0.0028171564867261432,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7050,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7050Hz.arr",
+      "arr_sha256": "cba91c54ac9b9ab70736c50c849f1c6ee65706e7620882e23ddc0754558df762",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0098476564300842857,
+          "level_error_db_max": 0.0060966355470783691,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0037076467469087473,
+          "level_error_db_max": 0.0018472217944043572,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7150,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7150Hz.arr",
+      "arr_sha256": "8dff2594df870183dfd820923768be7ffe868f18d3efbd9b20ed50057f4500e1",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.018479239135325704,
+          "level_error_db_max": 0.034519144072342224,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0037661900393678957,
+          "level_error_db_max": 0.0037685522050981152,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7250,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7250Hz.arr",
+      "arr_sha256": "ef12af23b947b7db6848f913ae4fa091a02fb4c5bdf2298cedbd9a82f6a59be0",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.014748461722059325,
+          "level_error_db_max": 0.029022393249648854,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0039184410908160612,
+          "level_error_db_max": 0.0043722832693266515,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7350,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7350Hz.arr",
+      "arr_sha256": "15e66a9d13e5578970774efb345214b7ecfdc6fd5b85520de79df3ee47daddf9",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0071267033204987194,
+          "level_error_db_max": 0.0037713774192713314,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.003879290236197003,
+          "level_error_db_max": 0.0025818795250025965,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7450,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7450Hz.arr",
+      "arr_sha256": "e37f98f0512eafd12d6b12d06cdfcc6b79fe98541baf4fcc2bd1668a3d2b5d5f",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.009338612705997687,
+          "level_error_db_max": 0.013128199932255877,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0039259744472069594,
+          "level_error_db_max": 0.0015704704087471974,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7550,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7550Hz.arr",
+      "arr_sha256": "9f183ea9ecbfaf176914825a2b4689e7d7d272d5d45ace2075446ce71659a68c",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.01121061175901515,
+          "level_error_db_max": 0.011024915706609979,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.003970548518765246,
+          "level_error_db_max": 0.0010579193001027068,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7650,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7650Hz.arr",
+      "arr_sha256": "f9032a7780d15f53eb2e2919292145027e2bc69528975547502da4151433ef04",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.010464857054392072,
+          "level_error_db_max": 0.017215207420086812,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0040434847384225488,
+          "level_error_db_max": 0.0035351477809244607,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7750,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7750Hz.arr",
+      "arr_sha256": "cc29ce48be149172e11116a5b95e6a47ea0fd4ccd42d2e5217b3df4fdb5f794c",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.018283301257748016,
+          "level_error_db_max": 0.03494180510635498,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0041712462367108922,
+          "level_error_db_max": 0.0050106813789867382,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7850,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7850Hz.arr",
+      "arr_sha256": "056aed8a9beb51f260eeef7b5c1a5aa05c33b51a3f8905f01ade23aee46fb9e2",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.010650806000411862,
+          "level_error_db_max": 0.014651222972584046,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0041422146370878833,
+          "level_error_db_max": 0.0034076163292535246,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "frequency_hz": 7950,
+      "arr_file": "D:\\LSJ\\Code\\UART\\MUART V6.0\\UART M2\\data_gen_v8_single_physical\\acoustics\\arr_v8_precision_30e92c553784_v1\\ReceiverAzi1freq7950Hz.arr",
+      "arr_sha256": "d4dfbbd619044b417b3955d65d18e25d6de8ba0e8b27db45354f23d66b9cda39",
+      "beams": 25920,
+      "step_m": 5,
+      "checks": [
+        {
+          "check": "beams",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0071079426761966116,
+          "level_error_db_max": 0.0090175772949175441,
+          "passed": true
+        },
+        {
+          "check": "step",
+          "base_beams": 25920,
+          "base_step_m": 5,
+          "relative_error_max": 0.0041889921199826765,
+          "level_error_db_max": 0.0038871853128157612,
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

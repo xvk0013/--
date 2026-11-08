@@ -1,0 +1,336 @@
+{
+  "conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB",
+    "-5dB",
+    "-10dB"
+  ],
+  "run_files": {
+    "BN": {
+      "experiment_id": "SE-Q0-ShortLocal-13",
+      "status": "历史版，短窗归一化对照",
+      "directory": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13",
+      "files": {
+        "results.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/results.json",
+        "selection_sealed.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/selection_sealed.json",
+        "config_resolved.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/config_resolved.json",
+        "history.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/history.json"
+      },
+      "predictions": {
+        "Val_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_original.npz",
+        "Val_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_10dB.npz",
+        "Val_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_5dB.npz",
+        "Val_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_0dB.npz",
+        "Val_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_-5dB.npz",
+        "Val_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_-10dB.npz",
+        "Test_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_original.npz",
+        "Test_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_10dB.npz",
+        "Test_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_5dB.npz",
+        "Test_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_0dB.npz",
+        "Test_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_-5dB.npz",
+        "Test_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_-10dB.npz"
+      },
+      "original_recording_stats": {
+        "Val_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_original_recordings.json",
+        "Val_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_10dB_recordings.json",
+        "Val_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_5dB_recordings.json",
+        "Val_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_0dB_recordings.json",
+        "Val_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_-5dB_recordings.json",
+        "Val_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Val_-10dB_recordings.json",
+        "Test_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_original_recordings.json",
+        "Test_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_10dB_recordings.json",
+        "Test_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_5dB_recordings.json",
+        "Test_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_0dB_recordings.json",
+        "Test_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_-5dB_recordings.json",
+        "Test_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-13/Test_-10dB_recordings.json"
+      }
+    },
+    "GN": {
+      "experiment_id": "SE-Q0-ShortLocal-GN-13",
+      "status": "当前研究参照冻结版，论文最终主模型无记录",
+      "directory": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13",
+      "files": {
+        "results.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/results.json",
+        "selection_sealed.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/selection_sealed.json",
+        "config_resolved.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/config_resolved.json",
+        "history.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/history.json"
+      },
+      "predictions": {
+        "Val_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_original.npz",
+        "Val_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_10dB.npz",
+        "Val_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_5dB.npz",
+        "Val_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_0dB.npz",
+        "Val_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_-5dB.npz",
+        "Val_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_-10dB.npz",
+        "Test_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_original.npz",
+        "Test_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_10dB.npz",
+        "Test_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_5dB.npz",
+        "Test_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_0dB.npz",
+        "Test_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_-5dB.npz",
+        "Test_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_-10dB.npz"
+      },
+      "original_recording_stats": {
+        "Val_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_original_recordings.json",
+        "Val_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_10dB_recordings.json",
+        "Val_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_5dB_recordings.json",
+        "Val_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_0dB_recordings.json",
+        "Val_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_-5dB_recordings.json",
+        "Val_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Val_-10dB_recordings.json",
+        "Test_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_original_recordings.json",
+        "Test_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_10dB_recordings.json",
+        "Test_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_5dB_recordings.json",
+        "Test_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_0dB_recordings.json",
+        "Test_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_-5dB_recordings.json",
+        "Test_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_shortlocal_gn_freeze_20261108/snapshot/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-13/Test_-10dB_recordings.json"
+      }
+    },
+    "Q0-MB": {
+      "experiment_id": "SE-Q0-MBTrainValSwap-13",
+      "status": "历史版，同划分 Q0 独立发布",
+      "directory": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13",
+      "files": {
+        "results.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/results.json",
+        "selection_sealed.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/selection_sealed.json",
+        "config_resolved.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/config_resolved.json",
+        "history.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/history.json"
+      },
+      "predictions": {
+        "Val_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_original.npz",
+        "Val_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_10dB.npz",
+        "Val_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_5dB.npz",
+        "Val_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_0dB.npz",
+        "Val_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_-5dB.npz",
+        "Val_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_-10dB.npz",
+        "Test_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_original.npz",
+        "Test_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_10dB.npz",
+        "Test_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_5dB.npz",
+        "Test_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_0dB.npz",
+        "Test_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_-5dB.npz",
+        "Test_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_-10dB.npz"
+      },
+      "original_recording_stats": {
+        "Val_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_original_recordings.json",
+        "Val_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_10dB_recordings.json",
+        "Val_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_5dB_recordings.json",
+        "Val_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_0dB_recordings.json",
+        "Val_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_-5dB_recordings.json",
+        "Val_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Val_-10dB_recordings.json",
+        "Test_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_original_recordings.json",
+        "Test_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_10dB_recordings.json",
+        "Test_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_5dB_recordings.json",
+        "Test_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_0dB_recordings.json",
+        "Test_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_-5dB_recordings.json",
+        "Test_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-MBTrainValSwap-13/Test_-10dB_recordings.json"
+      }
+    },
+    "Bilinear": {
+      "experiment_id": "SE-Q0-ShortLocal-GN-Bilinear-13",
+      "status": "历史版，未采纳的完整训练候选",
+      "directory": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13",
+      "files": {
+        "results.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/results.json",
+        "selection_sealed.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/selection_sealed.json",
+        "config_resolved.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/config_resolved.json",
+        "history.json": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/history.json"
+      },
+      "predictions": {
+        "Val_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_original.npz",
+        "Val_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_10dB.npz",
+        "Val_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_5dB.npz",
+        "Val_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_0dB.npz",
+        "Val_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_-5dB.npz",
+        "Val_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_-10dB.npz",
+        "Test_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_original.npz",
+        "Test_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_10dB.npz",
+        "Test_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_5dB.npz",
+        "Test_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_0dB.npz",
+        "Test_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_-5dB.npz",
+        "Test_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_-10dB.npz"
+      },
+      "original_recording_stats": {
+        "Val_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_original_recordings.json",
+        "Val_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_10dB_recordings.json",
+        "Val_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_5dB_recordings.json",
+        "Val_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_0dB_recordings.json",
+        "Val_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_-5dB_recordings.json",
+        "Val_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Val_-10dB_recordings.json",
+        "Test_original": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_original_recordings.json",
+        "Test_10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_10dB_recordings.json",
+        "Test_5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_5dB_recordings.json",
+        "Test_0dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_0dB_recordings.json",
+        "Test_-5dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_-5dB_recordings.json",
+        "Test_-10dB": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_finalization_20261103/runs/SE-Q0-ShortLocal-GN-Bilinear-13/Test_-10dB_recordings.json"
+      }
+    },
+    "PTT Q0": {
+      "experiment_id": "DS-Q0-PTT-SeenShip-13",
+      "status": "PTT Q0 封存版，当前 PTT 已完成自研结果",
+      "directory": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13",
+      "files": {
+        "results.json": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/results.json",
+        "selection_sealed.json": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/selection_sealed.json",
+        "config_resolved.json": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/config_resolved.json",
+        "history.json": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/history.json"
+      },
+      "predictions": {
+        "Val_original": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Val_original.npz",
+        "Val_10dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Val_10dB.npz",
+        "Val_5dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Val_5dB.npz",
+        "Val_0dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Val_0dB.npz",
+        "Val_-5dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Val_-5dB.npz",
+        "Val_-10dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Val_-10dB.npz",
+        "Test_original": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Test_original.npz",
+        "Test_10dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Test_10dB.npz",
+        "Test_5dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Test_5dB.npz",
+        "Test_0dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Test_0dB.npz",
+        "Test_-5dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Test_-5dB.npz",
+        "Test_-10dB": "D:/LSJ/Code/UART/deepship/01_模型/Q0_DeepShip/runs/DS-Q0-PTT-SeenShip-13/Test_-10dB.npz"
+      },
+      "original_recording_stats": "无记录",
+      "derived_recording_stats": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/模型补充_20261108/P1-3_PTT_Q0逐录音.csv"
+    }
+  },
+  "external_package_npz": {
+    "SE-EXT-SFAC32-MB-13": {
+      "dataset": "ShipsEar_MB",
+      "package": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/外部模型对比_论文交接_20261107.zip",
+      "entries": {
+        "Val_original": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Val_original.npz",
+        "Val_10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Val_10dB.npz",
+        "Val_5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Val_5dB.npz",
+        "Val_0dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Val_0dB.npz",
+        "Val_-5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Val_-5dB.npz",
+        "Val_-10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Val_-10dB.npz",
+        "Test_original": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Test_original.npz",
+        "Test_10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Test_10dB.npz",
+        "Test_5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Test_5dB.npz",
+        "Test_0dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Test_0dB.npz",
+        "Test_-5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Test_-5dB.npz",
+        "Test_-10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SFAC32-MB-13/Test_-10dB.npz"
+      },
+      "present_count": 12,
+      "expected_count": 12,
+      "missing": []
+    },
+    "SE-EXT-TRLA-MB-13": {
+      "dataset": "ShipsEar_MB",
+      "package": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/外部模型对比_论文交接_20261107.zip",
+      "entries": {
+        "Val_original": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Val_original.npz",
+        "Val_10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Val_10dB.npz",
+        "Val_5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Val_5dB.npz",
+        "Val_0dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Val_0dB.npz",
+        "Val_-5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Val_-5dB.npz",
+        "Val_-10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Val_-10dB.npz",
+        "Test_original": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Test_original.npz",
+        "Test_10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Test_10dB.npz",
+        "Test_5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Test_5dB.npz",
+        "Test_0dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Test_0dB.npz",
+        "Test_-5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Test_-5dB.npz",
+        "Test_-10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-TRLA-MB-13/Test_-10dB.npz"
+      },
+      "present_count": 12,
+      "expected_count": 12,
+      "missing": []
+    },
+    "SE-EXT-SW-MB-13": {
+      "dataset": "ShipsEar_MB",
+      "package": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/外部模型对比_论文交接_20261107.zip",
+      "entries": {
+        "Val_original": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Val_original.npz",
+        "Val_10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Val_10dB.npz",
+        "Val_5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Val_5dB.npz",
+        "Val_0dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Val_0dB.npz",
+        "Val_-5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Val_-5dB.npz",
+        "Val_-10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Val_-10dB.npz",
+        "Test_original": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Test_original.npz",
+        "Test_10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Test_10dB.npz",
+        "Test_5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Test_5dB.npz",
+        "Test_0dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Test_0dB.npz",
+        "Test_-5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Test_-5dB.npz",
+        "Test_-10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-SW-MB-13/Test_-10dB.npz"
+      },
+      "present_count": 12,
+      "expected_count": 12,
+      "missing": []
+    },
+    "SE-EXT-RCMOE-MB-13": {
+      "dataset": "ShipsEar_MB",
+      "package": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/外部模型对比_论文交接_20261107.zip",
+      "entries": {
+        "Val_original": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Val_original.npz",
+        "Val_10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Val_10dB.npz",
+        "Val_5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Val_5dB.npz",
+        "Val_0dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Val_0dB.npz",
+        "Val_-5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Val_-5dB.npz",
+        "Val_-10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Val_-10dB.npz",
+        "Test_original": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Test_original.npz",
+        "Test_10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Test_10dB.npz",
+        "Test_5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Test_5dB.npz",
+        "Test_0dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Test_0dB.npz",
+        "Test_-5dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Test_-5dB.npz",
+        "Test_-10dB": "外部模型对比_论文交接_20261107/证据/ShipsEar_MB/SE-EXT-RCMOE-MB-13/Test_-10dB.npz"
+      },
+      "present_count": 12,
+      "expected_count": 12,
+      "missing": []
+    },
+    "DS-EXT-SFAC32-PTT-13": {
+      "dataset": "DeepShip_PTT",
+      "package": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/外部模型对比_论文交接_20261107.zip",
+      "entries": {
+        "Val_original": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Val_original.npz",
+        "Val_10dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Val_10dB.npz",
+        "Val_5dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Val_5dB.npz",
+        "Val_0dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Val_0dB.npz",
+        "Val_-5dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Val_-5dB.npz",
+        "Val_-10dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Val_-10dB.npz",
+        "Test_original": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Test_original.npz",
+        "Test_10dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Test_10dB.npz",
+        "Test_5dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Test_5dB.npz",
+        "Test_0dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Test_0dB.npz",
+        "Test_-5dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Test_-5dB.npz",
+        "Test_-10dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-SFAC32-PTT-13/Test_-10dB.npz"
+      },
+      "present_count": 12,
+      "expected_count": 12,
+      "missing": []
+    },
+    "DS-EXT-TRLA-PTT-13": {
+      "dataset": "DeepShip_PTT",
+      "package": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/外部模型对比_论文交接_20261107.zip",
+      "entries": {
+        "Val_original": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Val_original.npz",
+        "Val_10dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Val_10dB.npz",
+        "Val_5dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Val_5dB.npz",
+        "Val_0dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Val_0dB.npz",
+        "Val_-5dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Val_-5dB.npz",
+        "Val_-10dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Val_-10dB.npz",
+        "Test_original": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Test_original.npz",
+        "Test_10dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Test_10dB.npz",
+        "Test_5dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Test_5dB.npz",
+        "Test_0dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Test_0dB.npz",
+        "Test_-5dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Test_-5dB.npz",
+        "Test_-10dB": "外部模型对比_论文交接_20261107/证据/DeepShip_PTT/DS-EXT-TRLA-PTT-13/Test_-10dB.npz"
+      },
+      "present_count": 12,
+      "expected_count": 12,
+      "missing": []
+    }
+  },
+  "derived_inputs": {
+    "ShipsEar_index": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_mb_train_val_20261104/data/DATA_INDEX.csv",
+    "PTT_index": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/论文数据生成交接_20261106/02_DeepShip/PTT最终索引/DATA_INDEX.csv",
+    "official_inventory": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_all_recording_metadata_audit_20261004/official_catalogue.json",
+    "historical_target_predictions": "D:/LSJ/Code/UART/final/data_gen_v8_single_physical/research/shipsear_all_recording_metadata_audit_20261004/baseline_all_recordings_ranked.csv"
+  },
+  "verification": {
+    "frozen_GN_equals_active_run": true,
+    "metric_checks": "Val 和 Test 每档逐样本 ID、标签、交汇条件已对齐。五项准确率由封存预测复算并与结果核对。",
+    "grouping": "同一样本按其两路不重复的源录音 ID 分别计入。含两条源录音的混合可出现在两个录音组。",
+    "per_recording_pair": "GN/BN 每档分组样本数和集合 ACC 与两份原逐录音 JSON 一致。",
+    "PTT_background": "合成背景不具有源录音 ID，逐录音 CSV 统计有源录音 ID 的样本。"
+  }
+}

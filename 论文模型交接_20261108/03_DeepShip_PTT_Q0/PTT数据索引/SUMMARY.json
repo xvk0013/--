@@ -1,0 +1,78 @@
+{
+  "version": "deepship_multitarget_0db_energy80_seen_ship_ptt_v1",
+  "parent_version": "deepship_multitarget_0db_energy80_seen_ship_v1",
+  "by_split": {
+    "Train": {
+      "n": 7500,
+      "by_count": {
+        "1": 2700,
+        "2": 3600,
+        "0": 1200
+      },
+      "by_set": {
+        "Passengership": 900,
+        "Tanker": 900,
+        "Tug": 900,
+        "Passengership+Tanker": 1200,
+        "Passengership+Tug": 1200,
+        "Tanker+Tug": 1200,
+        "E": 1200
+      },
+      "double_context": {
+        "C0": 1800,
+        "C1": 900,
+        "C2": 900
+      }
+    },
+    "Val": {
+      "n": 1250,
+      "by_count": {
+        "1": 450,
+        "2": 600,
+        "0": 200
+      },
+      "by_set": {
+        "Passengership": 150,
+        "Tanker": 150,
+        "Tug": 150,
+        "Passengership+Tanker": 200,
+        "Passengership+Tug": 200,
+        "Tanker+Tug": 200,
+        "E": 200
+      },
+      "double_context": {
+        "C1": 150,
+        "C0": 300,
+        "C2": 150
+      }
+    },
+    "Test": {
+      "n": 1250,
+      "by_count": {
+        "1": 450,
+        "2": 600,
+        "0": 200
+      },
+      "by_set": {
+        "Passengership": 150,
+        "Tanker": 150,
+        "Tug": 150,
+        "Passengership+Tanker": 200,
+        "Passengership+Tug": 200,
+        "Tanker+Tug": 200,
+        "E": 200
+      },
+      "double_context": {
+        "C0": 300,
+        "C1": 150,
+        "C2": 150
+      }
+    }
+  },
+  "recording_groups": {
+    "Train": 350,
+    "Val": 76,
+    "Test": 74
+  },
+  "n_distinct_recordings": 500
+}

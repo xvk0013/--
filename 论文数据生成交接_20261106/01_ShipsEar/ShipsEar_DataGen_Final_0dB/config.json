@@ -1,0 +1,87 @@
+{
+  "version": "shipsear_datagen_final_0db_index_v1",
+  "raw_root": "D:/LSJ/Data/shipsEar_AUDIOS",
+  "output_directory": "datasets/shipsear_pf_mb_rv_0db",
+  "generation_seed": 42,
+  "classes": [
+    "PF",
+    "MB",
+    "RV"
+  ],
+  "type_mapping": {
+    "Passenger ferry": "PF",
+    "Motorboat": "MB",
+    "Ro-Ro": "RV"
+  },
+  "restored_recordings": [
+    51,
+    52,
+    58,
+    78
+  ],
+  "source_policy": "official_primary_label_single_and_double",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "target_stride_seconds": 5,
+  "noise_stride_seconds": 1.5,
+  "approximate_type_ratio": {
+    "single": 0.3,
+    "double": 0.6,
+    "noise": 0.1
+  },
+  "context_ratio": {
+    "C0": 0.5,
+    "C1": 0.25,
+    "C2": 0.25
+  },
+  "context_seconds": [
+    0.8,
+    1.2
+  ],
+  "fade_seconds": [
+    0.2,
+    0.3
+  ],
+  "epsilon": 0.1,
+  "sir_definition": "source1_over_source2_before_envelope_db",
+  "sir_db": 0.0,
+  "output_rms": 0.05,
+  "model_input_gain": 1,
+  "additional_noise": false,
+  "single_train_augmentation": {
+    "enabled": true,
+    "flat": 0.5,
+    "edge": 0.25,
+    "middle": 0.25,
+    "realization": "fixed per-source plan, applied by Train loader only; base WAVs unchanged"
+  },
+  "bellhop": {
+    "arm": "P0",
+    "fir_variant": "E99",
+    "channel_count": 39,
+    "retained_energy": 0.99,
+    "source_core_rms": 1,
+    "bank": "physical/CHANNELS_99.mat",
+    "physical_config": "physical/CHANNEL_PROTOCOL.json",
+    "new_ray_solves": false
+  },
+  "split_rule": "Keep recording ownership in metadata/recordings.json; reuse DATA_INDEX.csv for the accepted dataset.",
+  "pairing_rule": "Approximate type quotas from available single cores; cover all cores; unique within-split pairs.",
+  "label_semantics": "Official primary types of selected recording sources; not exhaustive physical vessel counts",
+  "triple": {
+    "enabled": false,
+    "output_directory": "datasets/shipsear_pf_mb_rv_triple_0db_v1",
+    "samples_per_split": null,
+    "context_ratio": {
+      "C0": 0.5,
+      "C1": 0.25,
+      "C2": 0.25
+    },
+    "relative_level_db": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "export_wavs": false
+  }
+}
