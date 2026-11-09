@@ -1,0 +1,126 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "representation": {
+    "long_fft": 8192,
+    "long_hop": 1024,
+    "short_fft": 2048,
+    "short_hop": 256,
+    "frequency_range_hz": [
+      0,
+      4000
+    ],
+    "channels": [
+      16,
+      32,
+      64
+    ],
+    "summary_grid": [
+      8,
+      4
+    ],
+    "summary_statistics": [
+      "mean",
+      "std"
+    ],
+    "per_resolution_output": 256,
+    "candidate_neural_output": 512,
+    "frequency_kernel": 5,
+    "time_kernel": 5
+  },
+  "axis_kernel": 7,
+  "initial_center_gain": 3.5841841220855715,
+  "localized_block": 2,
+  "encoder": {
+    "dims": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "depths": [
+      1,
+      1,
+      4,
+      2
+    ],
+    "heads": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "windows": [
+      7,
+      7
+    ],
+    "mlp_ratio": 2.0,
+    "drop_path": 0.0,
+    "scan_backend": "cuda",
+    "band_fusion": "early",
+    "input_channels": 2
+  },
+  "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_frequency_localize_20261029\\runs\\seed13\\L1_local_center_best.pt",
+  "arms": [
+    "T0_short_continue",
+    "T1_l1_tfblocks"
+  ],
+  "adaptation_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_short_contrast_20261030\\runs\\seed13\\S0_short_continue_best.pt",
+  "max_epochs": 40,
+  "min_epochs": 20,
+  "joint_patience": 10,
+  "classifier_lr": 0.0001,
+  "count_readout_lr": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "noise_probabilities": [
+    0.7,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06
+  ],
+  "val_protection": {
+    "single_min": 86.32394366197182,
+    "double_min": 67.98148148148148,
+    "background_min": 79.28169014084507,
+    "minus10_double_min": 43.675925925925924
+  },
+  "initialization": "Both cloneS0e15 for inherited parameters. T1 replaces three short blocks by freshly seeded L1-style pre-LN TF-separate/FFN blocks at16/32/64channels. No old-M2weights copied across incompatible shapes. Candidate initial function differs; control exactly replays source.",
+  "training": "Freeze long path, outer512LN and scattering. Both update whole short path and publicTabM. Existing/new middleblocks both3e-4, other short/public1e-4,count3e-4. Sameonline70% original+6%eachnoisy,seed13,orderandpublicdropout. No presenceaux/denoiser/thirdbranch.",
+  "selection": "Source-based Valguards original S/D/BG,-10D and finalset MBrecall Single/Double original/-10 within1pp. Rank eligibility,-10meanSD,-MBfalse,-10ACC,originalACC. Candidate epoch0 is NEW architecture diagnostic, not source fallback; no eligible model means do not adopt. Source retained independently. Seal beforeTest.",
+  "prediction": "Frozen scattering + long/short spectra; candidatechanges three short encoding blocks, same8x4summary and256short/512neural interface; public7set+count, member softmaxthenmean32. No truecount,SNR,sourceorcleanwave input.",
+  "source_val_MB_recall": {
+    "original": {
+      "Single": 48.717948717948715,
+      "Double": 62.5
+    },
+    "-10dB": {
+      "Single": 79.48717948717949,
+      "Double": 76.04166666666666
+    }
+  },
+  "MB_recall_tolerance_pp": 1.0,
+  "encoder_lr": 0.0001,
+  "block_lr": 0.0003,
+  "replacement_kernel": 7,
+  "ffn_ratio": 2.0,
+  "ffn_dropout": 0.0
+}

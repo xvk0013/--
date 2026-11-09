@@ -1,0 +1,2059 @@
+﻿experiment_id,model,split,condition,true_set,predicted_set,n
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,E,E,87
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,E,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,E,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,E,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,E,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,E,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,E,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF,PF,154
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF,MB,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF,RV,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF,PF+MB,8
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF,PF+RV,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB,PF,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB,MB,16
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB,PF+MB,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,RV,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,RV,RV,72
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,RV,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,RV,PF+RV,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,RV,MB+RV,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+MB,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+MB,PF,17
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+MB,MB,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+MB,PF+MB,149
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+MB,PF+RV,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+MB,MB+RV,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+RV,PF,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+RV,RV,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+RV,PF+MB,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+RV,PF+RV,133
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,PF+RV,MB+RV,28
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB+RV,PF,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB+RV,MB,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB+RV,RV,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB+RV,PF+MB,8
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB+RV,PF+RV,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,original,MB+RV,MB+RV,160
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,E,E,87
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,E,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,E,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,E,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,E,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,E,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,E,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF,PF,135
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF,MB,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF,RV,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF,PF+MB,17
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF,PF+RV,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF,MB+RV,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB,MB,16
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB,PF+MB,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,RV,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,RV,RV,70
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,RV,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,RV,PF+RV,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,RV,MB+RV,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+MB,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+MB,PF,20
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+MB,MB,10
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+MB,PF+MB,138
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+MB,PF+RV,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+MB,MB+RV,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+RV,PF,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+RV,RV,13
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+RV,PF+MB,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+RV,PF+RV,130
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,PF+RV,MB+RV,22
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB+RV,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB+RV,RV,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB+RV,PF+MB,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB+RV,PF+RV,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,10dB,MB+RV,MB+RV,162
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,E,E,87
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,E,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,E,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,E,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,E,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,E,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,E,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF,E,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF,PF,129
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF,MB,9
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF,RV,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF,PF+MB,18
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF,PF+RV,8
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF,MB+RV,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB,MB,16
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB,PF+MB,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,RV,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,RV,RV,70
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,RV,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,RV,PF+RV,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,RV,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+MB,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+MB,PF,21
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+MB,MB,10
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+MB,PF+MB,138
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+MB,PF+RV,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+MB,MB+RV,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+RV,PF,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+RV,RV,15
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+RV,PF+MB,9
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+RV,PF+RV,128
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,PF+RV,MB+RV,20
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB+RV,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB+RV,RV,8
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB+RV,PF+MB,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB+RV,PF+RV,20
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,5dB,MB+RV,MB+RV,142
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,E,E,87
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,E,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,E,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,E,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,E,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,E,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,E,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF,E,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF,PF,118
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF,MB,7
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF,RV,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF,PF+MB,17
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF,PF+RV,16
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF,MB+RV,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB,PF,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB,MB,14
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB,PF+MB,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,RV,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,RV,RV,70
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,RV,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,RV,PF+RV,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,RV,MB+RV,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+MB,E,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+MB,PF,25
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+MB,MB,11
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+MB,PF+MB,128
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+MB,PF+RV,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+MB,MB+RV,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+RV,PF,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+RV,RV,18
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+RV,PF+MB,9
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+RV,PF+RV,117
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,PF+RV,MB+RV,27
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB+RV,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB+RV,RV,19
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB+RV,PF+MB,9
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB+RV,PF+RV,31
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,0dB,MB+RV,MB+RV,117
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,E,E,87
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,E,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,E,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,E,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,E,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,E,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,E,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF,E,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF,PF,104
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF,MB,8
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF,RV,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF,PF+MB,28
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF,PF+RV,18
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF,MB+RV,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB,PF,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB,MB,12
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB,PF+MB,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,RV,PF,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,RV,RV,64
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,RV,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,RV,PF+RV,8
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,RV,MB+RV,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+MB,E,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+MB,PF,43
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+MB,MB,10
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+MB,PF+MB,106
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+MB,PF+RV,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+MB,MB+RV,9
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+RV,PF,7
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+RV,RV,30
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+RV,PF+MB,12
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+RV,PF+RV,103
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,PF+RV,MB+RV,24
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB+RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB+RV,PF,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB+RV,RV,32
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB+RV,PF+MB,12
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB+RV,PF+RV,48
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-5dB,MB+RV,MB+RV,79
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,E,E,87
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,E,PF,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,E,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,E,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,E,PF+MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,E,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,E,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF,E,15
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF,PF,118
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF,MB,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF,PF+MB,20
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF,PF+RV,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF,MB+RV,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB,E,2
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB,PF,10
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB,MB,6
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB,PF+MB,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB,PF+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB,MB+RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,RV,E,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,RV,PF,9
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,RV,RV,47
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,RV,PF+MB,1
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,RV,PF+RV,8
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,RV,MB+RV,9
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+MB,E,16
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+MB,PF,101
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+MB,MB,7
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+MB,RV,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+MB,PF+MB,45
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+MB,PF+RV,4
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+MB,MB+RV,3
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+RV,E,5
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+RV,PF,40
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+RV,RV,18
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+RV,PF+MB,21
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+RV,PF+RV,67
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,PF+RV,MB+RV,25
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB+RV,E,9
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB+RV,PF,43
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB+RV,MB,0
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB+RV,RV,19
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB+RV,PF+MB,19
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB+RV,PF+RV,48
+SE-Q0-MBTrainValSwap-13,Q0-MB,Test,-10dB,MB+RV,MB+RV,38
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,E,E,87
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,E,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,E,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,E,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,E,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,E,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,E,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF,PF,144
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF,MB,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF,RV,8
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF,PF+MB,9
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF,PF+RV,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF,MB+RV,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB,PF,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB,MB,13
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB,PF+MB,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,RV,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,RV,RV,73
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,RV,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,RV,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,RV,MB+RV,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+MB,PF,23
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+MB,MB,9
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+MB,PF+MB,137
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+MB,PF+RV,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+MB,MB+RV,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+RV,PF,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+RV,RV,11
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+RV,PF+MB,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+RV,PF+RV,121
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,PF+RV,MB+RV,41
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB+RV,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB+RV,RV,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB+RV,PF+MB,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB+RV,PF+RV,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,original,MB+RV,MB+RV,167
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,E,E,87
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,E,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,E,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,E,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,E,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,E,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,E,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF,E,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF,PF,136
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF,MB,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF,RV,7
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF,PF+MB,15
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF,PF+RV,6
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF,MB+RV,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB,MB,17
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB,PF+MB,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,RV,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,RV,RV,71
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,RV,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,RV,PF+RV,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,RV,MB+RV,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+MB,PF,21
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+MB,MB,13
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+MB,PF+MB,136
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+MB,PF+RV,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+MB,MB+RV,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+RV,PF,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+RV,RV,11
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+RV,PF+MB,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+RV,PF+RV,129
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,PF+RV,MB+RV,29
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB+RV,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB+RV,RV,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB+RV,PF+MB,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB+RV,PF+RV,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,10dB,MB+RV,MB+RV,163
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,E,E,86
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,E,PF,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,E,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,E,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,E,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,E,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,E,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF,E,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF,PF,134
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF,MB,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF,RV,10
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF,PF+MB,15
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF,PF+RV,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB,PF,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB,MB,16
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB,PF+MB,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,RV,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,RV,RV,73
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,RV,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,RV,PF+RV,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,RV,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+MB,PF,19
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+MB,MB,18
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+MB,PF+MB,133
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+MB,PF+RV,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+MB,MB+RV,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+RV,PF,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+RV,RV,19
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+RV,PF+MB,6
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+RV,PF+RV,120
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,PF+RV,MB+RV,28
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB+RV,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB+RV,RV,6
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB+RV,PF+MB,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB+RV,PF+RV,14
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,5dB,MB+RV,MB+RV,151
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,E,E,84
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,E,PF,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,E,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,E,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,E,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,E,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,E,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF,PF,127
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF,MB,7
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF,RV,11
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF,PF+MB,20
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF,PF+RV,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB,PF,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB,MB,17
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB,PF+MB,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,RV,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,RV,RV,73
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,RV,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,RV,PF+RV,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,RV,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+MB,PF,23
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+MB,MB,21
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+MB,PF+MB,120
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+MB,PF+RV,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+MB,MB+RV,7
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+RV,PF,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+RV,RV,30
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+RV,PF+MB,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+RV,PF+RV,111
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,PF+RV,MB+RV,27
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB+RV,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB+RV,RV,11
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB+RV,PF+MB,6
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB+RV,PF+RV,23
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,0dB,MB+RV,MB+RV,136
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,E,E,87
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,E,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,E,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,E,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,E,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,E,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,E,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF,E,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF,PF,116
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF,MB,12
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF,RV,9
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF,PF+MB,19
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF,PF+RV,9
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF,MB+RV,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB,PF,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB,MB,16
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB,PF+MB,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,RV,PF,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,RV,RV,72
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,RV,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,RV,PF+RV,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,RV,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+MB,PF,23
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+MB,MB,21
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+MB,RV,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+MB,PF+MB,115
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+MB,PF+RV,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+MB,MB+RV,9
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+RV,PF,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+RV,RV,38
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+RV,PF+MB,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+RV,PF+RV,104
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,PF+RV,MB+RV,26
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB+RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB+RV,PF,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB+RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB+RV,RV,29
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB+RV,PF+MB,7
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB+RV,PF+RV,26
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-5dB,MB+RV,MB+RV,113
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,E,E,87
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,E,PF,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,E,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,E,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,E,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,E,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,E,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF,E,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF,PF,100
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF,MB,17
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF,RV,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF,PF+MB,28
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF,PF+RV,9
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF,MB+RV,8
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB,PF,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB,MB,15
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB,PF+MB,1
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB,PF+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB,MB+RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,RV,E,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,RV,PF,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,RV,MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,RV,RV,57
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,RV,PF+MB,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,RV,PF+RV,4
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,RV,MB+RV,10
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+MB,E,8
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+MB,PF,32
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+MB,MB,35
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+MB,RV,0
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+MB,PF+MB,88
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+MB,PF+RV,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+MB,MB+RV,8
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+RV,E,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+RV,PF,15
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+RV,MB,2
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+RV,RV,18
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+RV,PF+MB,16
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+RV,PF+RV,63
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,PF+RV,MB+RV,59
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB+RV,E,3
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB+RV,PF,5
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB+RV,MB,6
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB+RV,RV,14
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB+RV,PF+MB,19
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB+RV,PF+RV,20
+SE-Q0-ShortLocal-13,ShortLocal-BN,Test,-10dB,MB+RV,MB+RV,109
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,E,E,87
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,E,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,E,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,E,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,E,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,E,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,E,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF,PF,146
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF,MB,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF,RV,7
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF,PF+MB,9
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF,PF+RV,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF,MB+RV,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB,PF,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB,MB,15
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB,PF+MB,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,RV,RV,73
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,RV,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,RV,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,RV,MB+RV,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+MB,PF,21
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+MB,MB,9
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+MB,PF+MB,141
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+MB,PF+RV,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+MB,MB+RV,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+RV,PF,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+RV,RV,7
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+RV,PF+MB,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+RV,PF+RV,128
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,PF+RV,MB+RV,33
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB+RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB+RV,RV,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB+RV,PF+MB,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB+RV,PF+RV,11
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,original,MB+RV,MB+RV,157
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,E,E,87
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,E,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,E,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,E,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,E,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,E,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,E,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF,E,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF,PF,138
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF,MB,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF,RV,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF,PF+MB,14
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF,PF+RV,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF,MB+RV,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB,MB,17
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB,PF+MB,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,RV,RV,70
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,RV,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,RV,PF+RV,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,RV,MB+RV,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+MB,PF,20
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+MB,MB,9
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+MB,PF+MB,141
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+MB,PF+RV,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+MB,MB+RV,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+RV,PF,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+RV,RV,8
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+RV,PF+MB,7
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+RV,PF+RV,137
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,PF+RV,MB+RV,22
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB+RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB+RV,RV,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB+RV,PF+MB,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB+RV,PF+RV,24
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,10dB,MB+RV,MB+RV,145
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,E,E,87
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,E,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,E,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,E,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,E,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,E,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,E,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF,E,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF,PF,134
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF,MB,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF,RV,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF,PF+MB,17
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF,PF+RV,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF,MB+RV,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB,PF,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB,MB,16
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB,PF+MB,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,RV,RV,71
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,RV,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,RV,PF+RV,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,RV,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+MB,PF,19
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+MB,MB,7
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+MB,PF+MB,141
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+MB,PF+RV,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+MB,MB+RV,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+RV,PF,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+RV,RV,10
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+RV,PF+MB,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+RV,PF+RV,138
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,PF+RV,MB+RV,21
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB+RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB+RV,RV,7
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB+RV,PF+MB,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB+RV,PF+RV,30
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,5dB,MB+RV,MB+RV,134
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,E,E,87
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,E,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,E,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,E,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,E,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,E,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,E,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF,E,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF,PF,127
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF,MB,7
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF,RV,7
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF,PF+MB,18
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF,PF+RV,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF,MB+RV,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB,PF,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB,MB,15
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB,PF+MB,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,RV,RV,69
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,RV,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,RV,PF+RV,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,RV,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+MB,PF,23
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+MB,MB,12
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+MB,PF+MB,128
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+MB,PF+RV,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+MB,MB+RV,7
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+RV,PF,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+RV,RV,14
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+RV,PF+MB,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+RV,PF+RV,134
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,PF+RV,MB+RV,21
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB+RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB+RV,RV,14
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB+RV,PF+MB,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB+RV,PF+RV,44
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,0dB,MB+RV,MB+RV,113
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,E,E,87
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,E,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,E,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,E,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,E,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,E,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,E,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF,E,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF,PF,112
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF,MB,11
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF,RV,8
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF,PF+MB,20
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF,PF+RV,12
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF,MB+RV,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB,PF,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB,MB,14
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB,PF+MB,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,RV,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,RV,RV,68
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,RV,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,RV,PF+RV,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,RV,MB+RV,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+MB,E,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+MB,PF,24
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+MB,MB,19
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+MB,RV,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+MB,PF+MB,101
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+MB,PF+RV,15
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+MB,MB+RV,13
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+RV,PF,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+RV,RV,23
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+RV,PF+MB,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+RV,PF+RV,129
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,PF+RV,MB+RV,19
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB+RV,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB+RV,PF,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB+RV,RV,29
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB+RV,PF+MB,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB+RV,PF+RV,56
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-5dB,MB+RV,MB+RV,86
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,E,E,87
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,E,PF,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,E,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,E,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,E,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,E,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,E,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF,E,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF,PF,94
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF,MB,16
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF,RV,9
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF,PF+MB,15
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF,PF+RV,24
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF,MB+RV,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB,E,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB,PF,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB,MB,15
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB,RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB,PF+MB,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB,PF+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB,MB+RV,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,RV,E,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,RV,PF,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,RV,RV,63
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,RV,PF+MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,RV,PF+RV,5
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,RV,MB+RV,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+MB,E,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+MB,PF,31
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+MB,MB,29
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+MB,RV,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+MB,PF+MB,68
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+MB,PF+RV,14
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+MB,MB+RV,26
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+RV,E,1
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+RV,PF,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+RV,RV,38
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+RV,PF+MB,6
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+RV,PF+RV,94
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,PF+RV,MB+RV,31
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB+RV,E,3
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB+RV,PF,4
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB+RV,MB,0
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB+RV,RV,45
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB+RV,PF+MB,2
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB+RV,PF+RV,40
+SE-Q0-ShortLocal-GN-13,ShortLocal-GN,Test,-10dB,MB+RV,MB+RV,82
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,E,E,81
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,E,PF,6
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,E,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,E,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,E,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,E,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,E,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF,PF,138
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF,MB,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF,RV,12
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF,PF+MB,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF,PF+RV,10
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF,MB+RV,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB,PF,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB,MB,15
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,RV,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,RV,RV,69
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,RV,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,RV,PF+RV,5
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,RV,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+MB,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+MB,PF,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+MB,MB,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+MB,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+MB,PF+MB,150
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+MB,PF+RV,8
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+MB,MB+RV,11
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+RV,PF,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+RV,RV,8
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+RV,PF+MB,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+RV,PF+RV,129
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,PF+RV,MB+RV,36
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB+RV,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB+RV,RV,5
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB+RV,PF+MB,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB+RV,PF+RV,19
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,original,MB+RV,MB+RV,148
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,E,E,81
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,E,PF,6
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,E,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,E,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,E,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,E,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,E,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF,PF,125
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF,MB,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF,RV,13
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF,PF+MB,9
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF,PF+RV,14
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF,MB+RV,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB,PF,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB,MB,15
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB,PF+MB,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,RV,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,RV,RV,72
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,RV,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,RV,PF+RV,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,RV,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+MB,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+MB,PF,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+MB,MB,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+MB,RV,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+MB,PF+MB,149
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+MB,PF+RV,9
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+MB,MB+RV,13
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+RV,PF,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+RV,RV,18
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+RV,PF+MB,5
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+RV,PF+RV,115
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,PF+RV,MB+RV,34
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB+RV,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB+RV,RV,6
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB+RV,PF+MB,7
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB+RV,PF+RV,24
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,10dB,MB+RV,MB+RV,139
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,E,E,86
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,E,PF,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,E,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,E,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,E,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,E,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,E,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF,PF,127
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF,MB,8
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF,RV,11
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF,PF+MB,8
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF,PF+RV,9
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF,MB+RV,6
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB,PF,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB,MB,15
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB,PF+MB,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,RV,PF,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,RV,RV,71
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,RV,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,RV,PF+RV,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,RV,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+MB,E,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+MB,PF,10
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+MB,MB,6
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+MB,RV,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+MB,PF+MB,134
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+MB,PF+RV,10
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+MB,MB+RV,14
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+RV,PF,5
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+RV,RV,30
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+RV,PF+MB,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+RV,PF+RV,113
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,PF+RV,MB+RV,24
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB+RV,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB+RV,MB,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB+RV,RV,10
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB+RV,PF+MB,7
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB+RV,PF+RV,22
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,5dB,MB+RV,MB+RV,136
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,E,E,87
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,E,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,E,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,E,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,E,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,E,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,E,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF,PF,122
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF,MB,9
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF,RV,15
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF,PF+MB,7
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF,PF+RV,11
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF,MB+RV,5
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB,PF,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB,MB,15
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB,PF+MB,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,RV,PF,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,RV,RV,71
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,RV,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,RV,PF+RV,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,RV,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+MB,E,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+MB,PF,25
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+MB,MB,16
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+MB,RV,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+MB,PF+MB,102
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+MB,PF+RV,12
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+MB,MB+RV,18
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+RV,PF,7
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+RV,RV,42
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+RV,PF+MB,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+RV,PF+RV,109
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,PF+RV,MB+RV,16
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB+RV,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB+RV,MB,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB+RV,RV,23
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB+RV,PF+MB,6
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB+RV,PF+RV,26
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,0dB,MB+RV,MB+RV,119
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,E,E,87
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,E,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,E,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,E,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,E,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,E,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,E,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF,E,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF,PF,99
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF,MB,13
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF,RV,17
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF,PF+MB,9
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF,PF+RV,18
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF,MB+RV,11
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB,E,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB,PF,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB,MB,10
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB,PF+MB,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB,MB+RV,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,RV,PF,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,RV,RV,67
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,RV,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,RV,PF+RV,5
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,RV,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+MB,E,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+MB,PF,28
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+MB,MB,14
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+MB,RV,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+MB,PF+MB,74
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+MB,PF+RV,16
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+MB,MB+RV,39
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+RV,E,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+RV,PF,6
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+RV,RV,60
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+RV,PF+MB,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+RV,PF+RV,92
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,PF+RV,MB+RV,16
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB+RV,E,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB+RV,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB+RV,MB,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB+RV,RV,45
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB+RV,PF+MB,4
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB+RV,PF+RV,22
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-5dB,MB+RV,MB+RV,102
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,E,E,87
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,E,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,E,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,E,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,E,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,E,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,E,MB+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF,E,18
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF,PF,64
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF,MB,14
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF,RV,17
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF,PF+MB,9
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF,PF+RV,14
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF,MB+RV,33
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB,E,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB,PF,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB,MB,9
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB,RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB,PF+MB,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB,PF+RV,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB,MB+RV,5
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,RV,E,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,RV,PF,3
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,RV,RV,58
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,RV,PF+MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,RV,PF+RV,5
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,RV,MB+RV,7
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+MB,E,17
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+MB,PF,28
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+MB,MB,21
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+MB,RV,1
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+MB,PF+MB,25
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+MB,PF+RV,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+MB,MB+RV,82
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+RV,E,8
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+RV,PF,8
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+RV,RV,52
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+RV,PF+MB,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+RV,PF+RV,53
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,PF+RV,MB+RV,53
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB+RV,E,7
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB+RV,PF,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB+RV,MB,0
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB+RV,RV,22
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB+RV,PF+MB,2
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB+RV,PF+RV,10
+SE-EXT-SFAC32-MB-13,ShuffleFAC-32,Test,-10dB,MB+RV,MB+RV,135
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,E,E,86
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,E,PF,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,E,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,E,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,E,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,E,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,E,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF,E,6
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF,PF,93
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF,MB,15
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF,RV,2
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF,PF+MB,34
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF,PF+RV,14
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF,MB+RV,5
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB,PF,2
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB,MB,10
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB,PF+MB,6
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB,MB+RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,RV,RV,62
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,RV,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,RV,PF+RV,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,RV,MB+RV,4
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+MB,PF,14
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+MB,MB,12
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+MB,PF+MB,138
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+MB,PF+RV,4
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+MB,MB+RV,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+RV,PF,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+RV,MB,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+RV,RV,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+RV,PF+MB,9
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+RV,PF+RV,108
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,PF+RV,MB+RV,40
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB+RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB+RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB+RV,RV,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB+RV,PF+MB,14
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB+RV,PF+RV,19
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,original,MB+RV,MB+RV,140
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,E,E,86
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,E,PF,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,E,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,E,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,E,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,E,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,E,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF,E,6
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF,PF,95
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF,MB,14
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF,PF+MB,32
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF,PF+RV,17
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF,MB+RV,5
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB,PF,2
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB,MB,9
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB,PF+MB,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB,MB+RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,RV,RV,57
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,RV,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,RV,PF+RV,13
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,RV,MB+RV,4
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+MB,PF,14
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+MB,MB,11
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+MB,PF+MB,139
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+MB,PF+RV,4
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+MB,MB+RV,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+RV,PF,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+RV,MB,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+RV,RV,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+RV,PF+MB,10
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+RV,PF+RV,109
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,PF+RV,MB+RV,40
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB+RV,PF,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB+RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB+RV,RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB+RV,PF+MB,15
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB+RV,PF+RV,21
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,10dB,MB+RV,MB+RV,138
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,E,E,84
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,E,PF,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,E,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,E,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,E,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,E,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,E,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF,E,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF,PF,96
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF,MB,15
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF,PF+MB,33
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF,PF+RV,17
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF,MB+RV,5
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB,PF,2
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB,MB,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB,PF+MB,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB,MB+RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,RV,RV,54
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,RV,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,RV,PF+RV,15
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,RV,MB+RV,5
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+MB,PF,14
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+MB,MB,9
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+MB,PF+MB,145
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+MB,PF+RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+MB,MB+RV,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+RV,PF,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+RV,MB,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+RV,RV,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+RV,PF+MB,10
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+RV,PF+RV,105
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,PF+RV,MB+RV,44
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB+RV,PF,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB+RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB+RV,RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB+RV,PF+MB,18
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB+RV,PF+RV,19
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,5dB,MB+RV,MB+RV,137
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,E,E,81
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,E,PF,6
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,E,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,E,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,E,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,E,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,E,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF,E,2
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF,PF,95
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF,MB,6
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF,RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF,PF+MB,43
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF,PF+RV,15
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF,MB+RV,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB,PF,2
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB,MB,5
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB,PF+MB,12
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,RV,RV,45
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,RV,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,RV,PF+RV,22
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,RV,MB+RV,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+MB,PF,11
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+MB,MB,5
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+MB,PF+MB,150
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+MB,PF+RV,2
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+MB,MB+RV,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+RV,PF,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+RV,MB,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+RV,RV,11
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+RV,PF+MB,10
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+RV,PF+RV,104
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,PF+RV,MB+RV,43
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB+RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB+RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB+RV,RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB+RV,PF+MB,22
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB+RV,PF+RV,16
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,0dB,MB+RV,MB+RV,137
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,E,E,57
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,E,PF,30
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,E,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,E,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,E,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,E,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,E,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF,PF,76
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF,MB,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF,RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF,PF+MB,60
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF,PF+RV,20
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF,MB+RV,9
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB,PF,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB,MB,5
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB,PF+MB,13
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,RV,RV,37
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,RV,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,RV,PF+RV,28
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,RV,MB+RV,9
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+MB,PF,11
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+MB,MB,5
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+MB,PF+MB,148
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+MB,PF+RV,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+MB,MB+RV,9
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+RV,PF,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+RV,RV,8
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+RV,PF+MB,9
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+RV,PF+RV,100
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,PF+RV,MB+RV,56
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB+RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB+RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB+RV,RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB+RV,PF+MB,20
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB+RV,PF+RV,12
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-5dB,MB+RV,MB+RV,143
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,E,E,31
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,E,PF,48
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,E,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,E,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,E,PF+MB,7
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,E,PF+RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,E,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF,PF,48
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF,RV,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF,PF+MB,97
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF,PF+RV,14
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF,MB+RV,9
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB,PF,1
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB,MB,2
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB,PF+MB,16
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB,PF+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB,MB+RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,RV,RV,11
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,RV,PF+MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,RV,PF+RV,30
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,RV,MB+RV,33
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+MB,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+MB,PF,13
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+MB,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+MB,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+MB,PF+MB,157
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+MB,PF+RV,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+MB,MB+RV,3
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+RV,PF,4
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+RV,RV,4
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+RV,PF+MB,33
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+RV,PF+RV,72
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,PF+RV,MB+RV,63
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB+RV,E,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB+RV,PF,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB+RV,MB,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB+RV,RV,0
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB+RV,PF+MB,38
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB+RV,PF+RV,22
+SE-EXT-TRLA-MB-13,TResNet-LA,Test,-10dB,MB+RV,MB+RV,116
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,E,E,87
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,E,PF,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,E,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,E,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,E,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,E,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,E,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF,PF,148
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF,MB,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF,RV,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF,PF+MB,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF,PF+RV,10
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF,MB+RV,1
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB,PF,11
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB,MB,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB,PF+MB,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,RV,PF,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,RV,RV,65
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,RV,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,RV,PF+RV,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,RV,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+MB,PF,73
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+MB,MB,10
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+MB,PF+MB,87
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+MB,PF+RV,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+MB,MB+RV,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+RV,PF,26
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+RV,RV,8
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+RV,PF+MB,17
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+RV,PF+RV,113
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,PF+RV,MB+RV,12
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB+RV,PF,8
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB+RV,MB,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB+RV,RV,3
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB+RV,PF+MB,27
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB+RV,PF+RV,55
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,original,MB+RV,MB+RV,77
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,E,E,87
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,E,PF,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,E,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,E,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,E,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,E,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,E,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF,PF,135
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF,MB,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF,RV,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF,PF+MB,10
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF,PF+RV,13
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF,MB+RV,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB,PF,10
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB,MB,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB,PF+MB,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,RV,PF,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,RV,RV,65
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,RV,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,RV,PF+RV,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,RV,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+MB,PF,70
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+MB,MB,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+MB,PF+MB,92
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+MB,PF+RV,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+MB,MB+RV,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+RV,PF,31
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+RV,RV,11
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+RV,PF+MB,17
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+RV,PF+RV,104
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,PF+RV,MB+RV,13
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB+RV,PF,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB+RV,MB,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB+RV,RV,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB+RV,PF+MB,35
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB+RV,PF+RV,47
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,10dB,MB+RV,MB+RV,76
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,E,E,87
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,E,PF,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,E,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,E,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,E,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,E,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,E,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF,PF,135
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF,MB,3
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF,RV,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF,PF+MB,10
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF,PF+RV,13
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF,MB+RV,3
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB,PF,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB,MB,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB,PF+MB,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,RV,PF,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,RV,RV,65
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,RV,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,RV,PF+RV,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,RV,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+MB,PF,68
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+MB,MB,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+MB,PF+MB,94
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+MB,PF+RV,1
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+MB,MB+RV,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+RV,PF,31
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+RV,RV,16
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+RV,PF+MB,12
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+RV,PF+RV,98
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,PF+RV,MB+RV,19
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB+RV,PF,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB+RV,MB,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB+RV,RV,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB+RV,PF+MB,38
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB+RV,PF+RV,46
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,5dB,MB+RV,MB+RV,74
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,E,E,87
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,E,PF,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,E,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,E,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,E,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,E,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,E,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF,PF,138
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF,MB,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF,RV,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF,PF+MB,8
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF,PF+RV,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF,MB+RV,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB,PF,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB,MB,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB,PF+MB,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,RV,PF,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,RV,RV,67
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,RV,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,RV,PF+RV,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,RV,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+MB,PF,73
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+MB,MB,11
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+MB,PF+MB,84
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+MB,PF+RV,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+MB,MB+RV,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+RV,PF,37
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+RV,RV,26
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+RV,PF+MB,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+RV,PF+RV,82
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,PF+RV,MB+RV,22
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB+RV,PF,10
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB+RV,MB,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB+RV,RV,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB+RV,PF+MB,40
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB+RV,PF+RV,36
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,0dB,MB+RV,MB+RV,77
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,E,E,87
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,E,PF,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,E,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,E,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,E,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,E,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,E,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF,PF,140
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF,MB,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF,RV,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF,PF+MB,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF,PF+RV,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF,MB+RV,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB,E,1
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB,PF,8
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB,MB,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB,PF+MB,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,RV,PF,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,RV,RV,65
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,RV,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,RV,PF+RV,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,RV,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+MB,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+MB,PF,91
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+MB,MB,11
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+MB,PF+MB,62
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+MB,PF+RV,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+MB,MB+RV,8
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+RV,PF,44
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+RV,MB,1
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+RV,RV,45
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+RV,PF+MB,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+RV,PF+RV,58
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,PF+RV,MB+RV,23
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB+RV,PF,13
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB+RV,MB,8
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB+RV,RV,24
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB+RV,PF+MB,21
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB+RV,PF+RV,23
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-5dB,MB+RV,MB+RV,87
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,E,E,86
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,E,PF,1
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,E,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,E,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,E,PF+MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,E,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,E,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF,E,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF,PF,123
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF,MB,4
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF,RV,5
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF,PF+MB,16
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF,PF+RV,13
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF,MB+RV,1
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB,E,7
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB,PF,3
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB,PF+MB,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB,PF+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB,MB+RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,RV,PF,6
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,RV,RV,45
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,RV,PF+MB,3
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,RV,PF+RV,12
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,RV,MB+RV,8
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+MB,E,20
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+MB,PF,80
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+MB,MB,2
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+MB,RV,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+MB,PF+MB,68
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+MB,PF+RV,3
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+MB,MB+RV,3
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+RV,E,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+RV,PF,48
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+RV,RV,9
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+RV,PF+MB,14
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+RV,PF+RV,74
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,PF+RV,MB+RV,31
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB+RV,E,11
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB+RV,PF,19
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB+RV,MB,0
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB+RV,RV,3
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB+RV,PF+MB,44
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB+RV,PF+RV,42
+SE-EXT-SW-MB-13,Sun–Wang CNN,Test,-10dB,MB+RV,MB+RV,57
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,E,E,54
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,E,PF,19
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,E,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,E,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,E,PF+MB,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,E,PF+RV,9
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,E,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF,PF,143
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF,MB,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF,RV,15
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF,PF+MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF,PF+RV,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF,MB+RV,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB,PF,8
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB,MB,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB,PF+MB,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,RV,PF,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,RV,RV,71
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,RV,PF+MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,RV,PF+RV,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,RV,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+MB,PF,19
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+MB,MB,13
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+MB,PF+MB,133
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+MB,PF+RV,7
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+MB,MB+RV,4
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+RV,PF,6
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+RV,RV,15
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+RV,PF+MB,7
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+RV,PF+RV,133
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,PF+RV,MB+RV,15
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB+RV,PF,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB+RV,MB,6
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB+RV,RV,14
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB+RV,PF+MB,32
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB+RV,PF+RV,48
+SE-EXT-RCMOE-MB-13,RCMoE,Test,original,MB+RV,MB+RV,71
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,E,E,36
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,E,PF,36
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,E,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,E,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,E,PF+MB,7
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,E,PF+RV,8
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,E,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF,PF,141
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF,MB,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF,RV,8
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF,PF+MB,9
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF,PF+RV,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF,MB+RV,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB,PF,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB,MB,9
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB,PF+MB,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,RV,PF,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,RV,RV,54
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,RV,PF+MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,RV,PF+RV,17
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,RV,MB+RV,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+MB,PF,22
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+MB,MB,25
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+MB,PF+MB,125
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+MB,PF+RV,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+MB,MB+RV,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+RV,PF,16
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+RV,RV,6
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+RV,PF+MB,9
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+RV,PF+RV,130
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,PF+RV,MB+RV,15
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB+RV,PF,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB+RV,MB,6
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB+RV,RV,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB+RV,PF+MB,50
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB+RV,PF+RV,42
+SE-EXT-RCMOE-MB-13,RCMoE,Test,10dB,MB+RV,MB+RV,73
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,E,E,28
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,E,PF,43
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,E,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,E,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,E,PF+MB,9
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,E,PF+RV,7
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,E,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF,PF,134
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF,MB,4
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF,RV,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF,PF+MB,19
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF,PF+RV,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF,MB+RV,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB,PF,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB,MB,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB,PF+MB,4
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,RV,PF,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,RV,RV,62
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,RV,PF+MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,RV,PF+RV,9
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,RV,MB+RV,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+MB,PF,17
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+MB,MB,25
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+MB,PF+MB,134
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+RV,PF,28
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+RV,RV,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+RV,PF+MB,21
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+RV,PF+RV,92
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,PF+RV,MB+RV,25
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB+RV,PF,4
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB+RV,MB,15
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB+RV,RV,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB+RV,PF+MB,57
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB+RV,PF+RV,30
+SE-EXT-RCMOE-MB-13,RCMoE,Test,5dB,MB+RV,MB+RV,68
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,E,E,29
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,E,PF,34
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,E,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,E,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,E,PF+MB,18
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,E,PF+RV,6
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,E,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF,PF,123
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF,MB,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF,RV,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF,PF+MB,33
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF,PF+RV,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF,MB+RV,6
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB,PF,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB,MB,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB,PF+MB,8
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,RV,PF,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,RV,RV,63
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,RV,PF+MB,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,RV,PF+RV,7
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,RV,MB+RV,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+MB,PF,12
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+MB,MB,30
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+MB,PF+MB,134
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+RV,PF,51
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+RV,MB,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+RV,RV,22
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+RV,PF+MB,26
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+RV,PF+RV,59
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,PF+RV,MB+RV,17
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB+RV,PF,6
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB+RV,MB,19
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB+RV,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB+RV,PF+MB,85
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB+RV,PF+RV,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,0dB,MB+RV,MB+RV,56
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,E,E,47
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,E,PF,20
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,E,MB,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,E,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,E,PF+MB,17
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,E,PF+RV,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,E,MB+RV,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF,PF,108
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF,MB,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF,PF+MB,53
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF,PF+RV,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF,MB+RV,4
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB,PF,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB,MB,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB,PF+MB,9
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,RV,PF,16
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,RV,RV,46
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,RV,PF+MB,3
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,RV,PF+RV,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,RV,MB+RV,4
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+MB,PF,20
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+MB,MB,26
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+MB,PF+MB,130
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+RV,PF,77
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+RV,RV,13
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+RV,PF+MB,40
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+RV,PF+RV,33
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,PF+RV,MB+RV,13
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB+RV,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB+RV,PF,13
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB+RV,MB,19
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB+RV,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB+RV,PF+MB,111
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB+RV,PF+RV,7
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-5dB,MB+RV,MB+RV,26
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,E,E,58
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,E,PF,14
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,E,MB,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,E,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,E,PF+MB,14
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,E,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,E,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF,E,8
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF,PF,100
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF,MB,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF,PF+MB,58
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF,MB+RV,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB,E,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB,PF,4
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB,MB,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB,PF+MB,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,RV,E,5
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,RV,PF,40
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,RV,RV,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,RV,PF+MB,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,RV,PF+RV,15
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,RV,MB+RV,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+MB,E,8
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+MB,PF,48
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+MB,MB,19
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+MB,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+MB,PF+MB,101
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+MB,PF+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+MB,MB+RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+RV,E,10
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+RV,PF,91
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+RV,MB,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+RV,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+RV,PF+MB,67
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+RV,PF+RV,7
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,PF+RV,MB+RV,1
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB+RV,E,16
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB+RV,PF,45
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB+RV,MB,21
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB+RV,RV,0
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB+RV,PF+MB,91
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB+RV,PF+RV,2
+SE-EXT-RCMOE-MB-13,RCMoE,Test,-10dB,MB+RV,MB+RV,1

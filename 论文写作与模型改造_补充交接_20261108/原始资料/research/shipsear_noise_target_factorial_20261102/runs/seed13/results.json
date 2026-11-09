@@ -1,0 +1,4480 @@
+{
+  "config": {
+    "seed": 13,
+    "source_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13\\V1_stored_single_best.pt",
+    "source_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13",
+    "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+    "splits": [
+      "Train",
+      "Val"
+    ],
+    "conditions": [
+      "original",
+      "10dB",
+      "5dB",
+      "0dB"
+    ],
+    "strengths": {
+      "absent": 0,
+      "equal": 1,
+      "weak6dB": 0.5011872336272722
+    },
+    "power_modes": [
+      "anchor_fixed",
+      "total_snr"
+    ],
+    "noise_seed_tag": 7602,
+    "batch_size": 32,
+    "evaluation_batch_size": 64,
+    "output_rms": 0.05,
+    "training": false,
+    "test_used": false,
+    "first_stage_only": true
+  },
+  "source_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13\\V1_stored_single_best.pt",
+  "training": false,
+  "test_used": false,
+  "selection": {
+    "Train": {
+      "directed_pairs": 1728,
+      "unique_C0_doubles": 864,
+      "anchor_class_counts": {
+        "PF": 576,
+        "MB": 576,
+        "RV": 576
+      },
+      "unique_anchor_sources": 736,
+      "unique_anchor_recordings": 30
+    },
+    "Val": {
+      "directed_pairs": 432,
+      "unique_C0_doubles": 216,
+      "anchor_class_counts": {
+        "PF": 144,
+        "MB": 144,
+        "RV": 144
+      },
+      "unique_anchor_sources": 159,
+      "unique_anchor_recordings": 10
+    }
+  },
+  "official_replay": {
+    "original": {
+      "n": 716,
+      "prediction_mismatches": 0,
+      "maximum_probability_difference": 0.0
+    },
+    "10dB": {
+      "n": 716,
+      "prediction_mismatches": 0,
+      "maximum_probability_difference": 0.0
+    },
+    "5dB": {
+      "n": 716,
+      "prediction_mismatches": 0,
+      "maximum_probability_difference": 0.0
+    },
+    "0dB": {
+      "n": 716,
+      "prediction_mismatches": 0,
+      "maximum_probability_difference": 0.0
+    }
+  },
+  "splits": {
+    "Train": {
+      "conditions": [
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "added_strength": "absent",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 100.0,
+          "count_acc": 100.0,
+          "to_single_pct": 100.0,
+          "to_double_pct": 0.0,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 0.0,
+          "candidate_probability_mean": 8.955967206934004e-05,
+          "anchor_presence_pct": 100.0,
+          "edge_margin_mean": -15.205388069152832,
+          "type_only_edge_mean": -10.897257804870605,
+          "type_logit_edge_mean": -14.180815696716309,
+          "count_edge_mean": -5.5828399658203125,
+          "type_only_correct_set_acc": 100.0,
+          "type_only_to_double_pct": 0.0,
+          "type_only_to_single_pct": 100.0,
+          "type_only_candidate_presence_pct": 0.0,
+          "first_block": {
+            "gate_mean": 1.141570806503296,
+            "direct_rms": 2.8319051265716553,
+            "cross_rms": 0.9680935144424438
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 0.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            },
+            "MB": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 0.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            },
+            "RV": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 0.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.05,
+            "output_rms_mean": 0.050000000000482964,
+            "output_rms_max_error": 2.817578739766624e-10
+          },
+          "source_macro_acc": 100.0,
+          "recording_macro_acc": 100.0
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "added_strength": "equal",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 100.0,
+          "count_acc": 100.0,
+          "to_single_pct": 0.0,
+          "to_double_pct": 100.0,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 100.0,
+          "candidate_probability_mean": 0.998852183031655,
+          "anchor_presence_pct": 100.0,
+          "edge_margin_mean": 11.33213996887207,
+          "type_only_edge_mean": 7.6131744384765625,
+          "type_logit_edge_mean": 9.560302734375,
+          "count_edge_mean": 4.796258926391602,
+          "type_only_correct_set_acc": 100.0,
+          "type_only_to_double_pct": 100.0,
+          "type_only_to_single_pct": 0.0,
+          "type_only_candidate_presence_pct": 100.0,
+          "first_block": {
+            "gate_mean": 1.1696157455444336,
+            "direct_rms": 2.059481382369995,
+            "cross_rms": 0.5508851408958435
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            },
+            "MB": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            },
+            "RV": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.03535148924831553,
+            "output_rms_mean": 0.05000000000000963,
+            "output_rms_max_error": 1.7624095238755189e-10
+          },
+          "source_macro_acc": 100.0,
+          "recording_macro_acc": 100.0
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "added_strength": "weak6dB",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 81.25,
+          "count_acc": 83.91203703703704,
+          "to_single_pct": 16.087962962962962,
+          "to_double_pct": 83.91203703703704,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 81.36574074074075,
+          "candidate_probability_mean": 0.7448132417598083,
+          "anchor_presence_pct": 99.88425925925925,
+          "edge_margin_mean": 3.291494369506836,
+          "type_only_edge_mean": 1.6002233028411865,
+          "type_logit_edge_mean": 2.3848156929016113,
+          "count_edge_mean": 2.88571834564209,
+          "type_only_correct_set_acc": 70.83333333333334,
+          "type_only_to_double_pct": 72.22222222222221,
+          "type_only_to_single_pct": 27.77777777777778,
+          "type_only_candidate_presence_pct": 71.00694444444444,
+          "first_block": {
+            "gate_mean": 1.1676805019378662,
+            "direct_rms": 2.1176469326019287,
+            "cross_rms": 0.5569643974304199
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 77.25694444444444,
+              "candidate_presence_pct": 77.60416666666666,
+              "source_macro_acc": 76.33161512027492,
+              "recording_macro_acc": 77.52758850516534
+            },
+            "MB": {
+              "n": 576,
+              "acc": 80.20833333333334,
+              "candidate_presence_pct": 80.20833333333334,
+              "source_macro_acc": 79.61870255348515,
+              "recording_macro_acc": 81.0263214152103
+            },
+            "RV": {
+              "n": 576,
+              "acc": 86.28472222222221,
+              "candidate_presence_pct": 86.28472222222221,
+              "source_macro_acc": 85.19841269841271,
+              "recording_macro_acc": 85.12840512614063
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.04469601024973456,
+            "output_rms_mean": 0.050000000000722536,
+            "output_rms_max_error": 2.8888169634200267e-10
+          },
+          "source_macro_acc": 79.47787267080744,
+          "recording_macro_acc": 79.33729004027636
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "added_strength": "absent",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 98.49537037037037,
+          "count_acc": 98.66898148148148,
+          "to_single_pct": 98.66898148148148,
+          "to_double_pct": 1.3310185185185186,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 0.5787037037037037,
+          "candidate_probability_mean": 0.023572045081534473,
+          "anchor_presence_pct": 99.82638888888889,
+          "edge_margin_mean": -7.813257217407227,
+          "type_only_edge_mean": -6.309725284576416,
+          "type_logit_edge_mean": -7.574521541595459,
+          "count_edge_mean": -2.010291814804077,
+          "type_only_correct_set_acc": 98.90046296296296,
+          "type_only_to_double_pct": 0.9259259259259258,
+          "type_only_to_single_pct": 99.07407407407408,
+          "type_only_candidate_presence_pct": 0.4629629629629629,
+          "first_block": {
+            "gate_mean": 1.1341527700424194,
+            "direct_rms": 2.225710868835449,
+            "cross_rms": 0.6972892880439758
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 97.91666666666666,
+              "candidate_presence_pct": 1.0416666666666665,
+              "source_macro_acc": 97.42268041237114,
+              "recording_macro_acc": 96.71062462923925
+            },
+            "MB": {
+              "n": 576,
+              "acc": 99.82638888888889,
+              "candidate_presence_pct": 0.0,
+              "source_macro_acc": 99.87922705314008,
+              "recording_macro_acc": 99.89711934156378
+            },
+            "RV": {
+              "n": 576,
+              "acc": 97.74305555555556,
+              "candidate_presence_pct": 0.6944444444444444,
+              "source_macro_acc": 98.13492063492063,
+              "recording_macro_acc": 97.7729342793881
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.0,
+            "actual_total_snr_min": 9.999999999999996,
+            "actual_total_snr_max": 10.000000000000002,
+            "anchor_to_noise_db_mean": 10.0,
+            "common_gain_mean": 0.04767350279649219,
+            "output_rms_mean": 0.04999999999999976,
+            "output_rms_max_error": 3.8085702647183695e-10
+          },
+          "source_macro_acc": 98.08650362318842,
+          "recording_macro_acc": 97.77280400795149
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "added_strength": "equal",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 99.5949074074074,
+          "count_acc": 99.65277777777779,
+          "to_single_pct": 0.3472222222222222,
+          "to_double_pct": 99.65277777777779,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 99.82638888888889,
+          "candidate_probability_mean": 0.974477264381814,
+          "anchor_presence_pct": 99.76851851851852,
+          "edge_margin_mean": 7.975527286529541,
+          "type_only_edge_mean": 5.59568977355957,
+          "type_logit_edge_mean": 6.911396026611328,
+          "count_edge_mean": 3.233612537384033,
+          "type_only_correct_set_acc": 98.37962962962963,
+          "type_only_to_double_pct": 98.37962962962963,
+          "type_only_to_single_pct": 1.6203703703703702,
+          "type_only_candidate_presence_pct": 99.24768518518519,
+          "first_block": {
+            "gate_mean": 1.1406265497207642,
+            "direct_rms": 1.9508821964263916,
+            "cross_rms": 0.57362961769104
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 99.65277777777779,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 99.74226804123711,
+              "recording_macro_acc": 99.75014697236921
+            },
+            "MB": {
+              "n": 576,
+              "acc": 99.30555555555556,
+              "candidate_presence_pct": 99.47916666666666,
+              "source_macro_acc": 99.31159420289856,
+              "recording_macro_acc": 99.18392255892256
+            },
+            "RV": {
+              "n": 576,
+              "acc": 99.82638888888889,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 99.84126984126985,
+              "recording_macro_acc": 99.91319444444443
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 13.011327887230369,
+            "actual_total_snr_min": 12.770851454962422,
+            "actual_total_snr_max": 13.263386327651109,
+            "anchor_to_noise_db_mean": 10.0,
+            "common_gain_mean": 0.034499969053724246,
+            "output_rms_mean": 0.05000000000014412,
+            "output_rms_max_error": 1.9592973077298126e-10
+          },
+          "source_macro_acc": 99.68976449275362,
+          "recording_macro_acc": 99.59658439554272
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "added_strength": "weak6dB",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 69.79166666666666,
+          "count_acc": 74.18981481481481,
+          "to_single_pct": 25.810185185185187,
+          "to_double_pct": 74.18981481481481,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 70.08101851851852,
+          "candidate_probability_mean": 0.6503468779862531,
+          "anchor_presence_pct": 99.71064814814815,
+          "edge_margin_mean": 1.830296516418457,
+          "type_only_edge_mean": 0.6958500742912292,
+          "type_logit_edge_mean": 0.9124141931533813,
+          "count_edge_mean": 1.703903079032898,
+          "type_only_correct_set_acc": 59.66435185185185,
+          "type_only_to_double_pct": 61.979166666666664,
+          "type_only_to_single_pct": 38.02083333333333,
+          "type_only_candidate_presence_pct": 59.95370370370371,
+          "first_block": {
+            "gate_mean": 1.1315836906433105,
+            "direct_rms": 1.9698028564453125,
+            "cross_rms": 0.5919162631034851
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 67.01388888888889,
+              "candidate_presence_pct": 67.88194444444444,
+              "source_macro_acc": 66.49484536082474,
+              "recording_macro_acc": 67.55233388554458
+            },
+            "MB": {
+              "n": 576,
+              "acc": 70.48611111111111,
+              "candidate_presence_pct": 70.48611111111111,
+              "source_macro_acc": 70.42443064182194,
+              "recording_macro_acc": 71.82580433969324
+            },
+            "RV": {
+              "n": 576,
+              "acc": 71.875,
+              "candidate_presence_pct": 71.875,
+              "source_macro_acc": 70.31746031746032,
+              "recording_macro_acc": 68.82447665056361
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.974077619414285,
+            "actual_total_snr_min": 10.782459997103262,
+            "actual_total_snr_max": 11.177146108251236,
+            "anchor_to_noise_db_mean": 10.0,
+            "common_gain_mean": 0.043010947872672955,
+            "output_rms_mean": 0.05000000000080888,
+            "output_rms_max_error": 2.579845989614249e-10
+          },
+          "source_macro_acc": 68.32233436853002,
+          "recording_macro_acc": 68.96158929829109
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "added_strength": "absent",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 95.08101851851852,
+          "count_acc": 95.37037037037037,
+          "to_single_pct": 95.37037037037037,
+          "to_double_pct": 4.62962962962963,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 2.488425925925926,
+          "candidate_probability_mean": 0.06310569081824877,
+          "anchor_presence_pct": 99.71064814814815,
+          "edge_margin_mean": -4.9247894287109375,
+          "type_only_edge_mean": -4.315706729888916,
+          "type_logit_edge_mean": -5.056819915771484,
+          "count_edge_mean": -0.8934008479118347,
+          "type_only_correct_set_acc": 97.04861111111111,
+          "type_only_to_double_pct": 2.7777777777777777,
+          "type_only_to_single_pct": 97.22222222222221,
+          "type_only_candidate_presence_pct": 1.3888888888888888,
+          "first_block": {
+            "gate_mean": 1.1120495796203613,
+            "direct_rms": 2.036334991455078,
+            "cross_rms": 0.7323997020721436
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 93.05555555555556,
+              "candidate_presence_pct": 3.9930555555555554,
+              "source_macro_acc": 92.91237113402062,
+              "recording_macro_acc": 90.32828874641683
+            },
+            "MB": {
+              "n": 576,
+              "acc": 97.56944444444444,
+              "candidate_presence_pct": 1.3888888888888888,
+              "source_macro_acc": 97.72256728778466,
+              "recording_macro_acc": 97.78859074493992
+            },
+            "RV": {
+              "n": 576,
+              "acc": 94.61805555555556,
+              "candidate_presence_pct": 2.083333333333333,
+              "source_macro_acc": 95.015873015873,
+              "recording_macro_acc": 94.55062399355879
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.0,
+            "actual_total_snr_min": 4.999999999999998,
+            "actual_total_snr_max": 5.000000000000002,
+            "anchor_to_noise_db_mean": 5.0,
+            "common_gain_mean": 0.04358228598342769,
+            "output_rms_mean": 0.05000000000052327,
+            "output_rms_max_error": 2.067310836406655e-10
+          },
+          "source_macro_acc": 94.414466873706,
+          "recording_macro_acc": 92.98861287068796
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "added_strength": "equal",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 98.66898148148148,
+          "count_acc": 99.07407407407408,
+          "to_single_pct": 0.9259259259259258,
+          "to_double_pct": 99.07407407407408,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 99.30555555555556,
+          "candidate_probability_mean": 0.9548240128218131,
+          "anchor_presence_pct": 99.36342592592592,
+          "edge_margin_mean": 6.592609405517578,
+          "type_only_edge_mean": 4.629916667938232,
+          "type_logit_edge_mean": 5.5855255126953125,
+          "count_edge_mean": 2.6200969219207764,
+          "type_only_correct_set_acc": 96.4699074074074,
+          "type_only_to_double_pct": 96.875,
+          "type_only_to_single_pct": 3.125,
+          "type_only_candidate_presence_pct": 98.14814814814815,
+          "first_block": {
+            "gate_mean": 1.1183817386627197,
+            "direct_rms": 1.8983229398727417,
+            "cross_rms": 0.6116856336593628
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 98.4375,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 98.4536082474227,
+              "recording_macro_acc": 97.58622662808854
+            },
+            "MB": {
+              "n": 576,
+              "acc": 98.61111111111111,
+              "candidate_presence_pct": 98.95833333333334,
+              "source_macro_acc": 98.84057971014492,
+              "recording_macro_acc": 98.34754956977179
+            },
+            "RV": {
+              "n": 576,
+              "acc": 98.95833333333334,
+              "candidate_presence_pct": 98.95833333333334,
+              "source_macro_acc": 98.92857142857143,
+              "recording_macro_acc": 98.33465428743962
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 8.01132788723037,
+            "actual_total_snr_min": 7.770851454962423,
+            "actual_total_snr_max": 8.263386327651109,
+            "anchor_to_noise_db_mean": 5.0,
+            "common_gain_mean": 0.0328506406846432,
+            "output_rms_mean": 0.05000000000032422,
+            "output_rms_max_error": 1.6073756908818737e-10
+          },
+          "source_macro_acc": 98.66168478260869,
+          "recording_macro_acc": 97.88946627652864
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "added_strength": "weak6dB",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 70.19675925925925,
+          "count_acc": 75.92592592592592,
+          "to_single_pct": 24.074074074074073,
+          "to_double_pct": 75.92592592592592,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 70.25462962962963,
+          "candidate_probability_mean": 0.6294326489682213,
+          "anchor_presence_pct": 99.88425925925925,
+          "edge_margin_mean": 1.5520217418670654,
+          "type_only_edge_mean": 0.533110499382019,
+          "type_logit_edge_mean": 0.667194664478302,
+          "count_edge_mean": 1.4250379800796509,
+          "type_only_correct_set_acc": 58.333333333333336,
+          "type_only_to_double_pct": 61.68981481481482,
+          "type_only_to_single_pct": 38.31018518518518,
+          "type_only_candidate_presence_pct": 58.62268518518518,
+          "first_block": {
+            "gate_mean": 1.1068795919418335,
+            "direct_rms": 1.9030898809432983,
+            "cross_rms": 0.6400797963142395
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 73.26388888888889,
+              "candidate_presence_pct": 73.4375,
+              "source_macro_acc": 72.46563573883161,
+              "recording_macro_acc": 72.83201957599421
+            },
+            "MB": {
+              "n": 576,
+              "acc": 72.39583333333334,
+              "candidate_presence_pct": 72.39583333333334,
+              "source_macro_acc": 72.62767425810904,
+              "recording_macro_acc": 74.24089439367218
+            },
+            "RV": {
+              "n": 576,
+              "acc": 64.93055555555556,
+              "candidate_presence_pct": 64.93055555555556,
+              "source_macro_acc": 62.126984126984134,
+              "recording_macro_acc": 60.75940183843262
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.974077619414286,
+            "actual_total_snr_min": 5.782459997103261,
+            "actual_total_snr_max": 6.177146108251237,
+            "anchor_to_noise_db_mean": 5.0,
+            "common_gain_mean": 0.039934846664122024,
+            "output_rms_mean": 0.04999999999994059,
+            "output_rms_max_error": 2.1677801914643524e-10
+          },
+          "source_macro_acc": 69.54613095238095,
+          "recording_macro_acc": 72.04742024754142
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "added_strength": "absent",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 82.98611111111111,
+          "count_acc": 83.44907407407408,
+          "to_single_pct": 83.44907407407408,
+          "to_double_pct": 16.493055555555554,
+          "to_background_pct": 0.057870370370370364,
+          "candidate_presence_pct": 8.159722222222223,
+          "candidate_probability_mean": 0.1606243240661719,
+          "anchor_presence_pct": 99.30555555555556,
+          "edge_margin_mean": -2.391035795211792,
+          "type_only_edge_mean": -2.39241623878479,
+          "type_logit_edge_mean": -2.7646548748016357,
+          "count_edge_mean": -0.09692997485399246,
+          "type_only_correct_set_acc": 88.54166666666666,
+          "type_only_to_double_pct": 11.168981481481481,
+          "type_only_to_single_pct": 88.83101851851852,
+          "type_only_candidate_presence_pct": 5.439814814814815,
+          "first_block": {
+            "gate_mean": 1.0868083238601685,
+            "direct_rms": 1.9309325218200684,
+            "cross_rms": 0.7747297883033752
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 74.13194444444444,
+              "candidate_presence_pct": 12.67361111111111,
+              "source_macro_acc": 74.14089347079037,
+              "recording_macro_acc": 70.65356067860318
+            },
+            "MB": {
+              "n": 576,
+              "acc": 89.93055555555556,
+              "candidate_presence_pct": 5.381944444444445,
+              "source_macro_acc": 89.87577639751554,
+              "recording_macro_acc": 87.42112641914228
+            },
+            "RV": {
+              "n": 576,
+              "acc": 84.89583333333334,
+              "candidate_presence_pct": 6.423611111111111,
+              "source_macro_acc": 86.42063492063491,
+              "recording_macro_acc": 86.1766346282877
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": -5.580598764776021e-18,
+            "actual_total_snr_min": -2.892982399659862e-15,
+            "actual_total_snr_max": 1.928654933106574e-15,
+            "anchor_to_noise_db_mean": -5.580598764776021e-18,
+            "common_gain_mean": 0.035355888920565855,
+            "output_rms_mean": 0.049999999999598185,
+            "output_rms_max_error": 1.718871572853331e-10
+          },
+          "source_macro_acc": 80.5949145962733,
+          "recording_macro_acc": 77.23613779573336
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "added_strength": "equal",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 95.37037037037037,
+          "count_acc": 98.20601851851852,
+          "to_single_pct": 1.7939814814814814,
+          "to_double_pct": 98.20601851851852,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 97.68518518518519,
+          "candidate_probability_mean": 0.9085011775368724,
+          "anchor_presence_pct": 97.68518518518519,
+          "edge_margin_mean": 4.831338405609131,
+          "type_only_edge_mean": 3.3706328868865967,
+          "type_logit_edge_mean": 3.9558427333831787,
+          "count_edge_mean": 1.8795969486236572,
+          "type_only_correct_set_acc": 91.08796296296296,
+          "type_only_to_double_pct": 93.57638888888889,
+          "type_only_to_single_pct": 6.423611111111111,
+          "type_only_candidate_presence_pct": 95.48611111111111,
+          "first_block": {
+            "gate_mean": 1.091007113456726,
+            "direct_rms": 1.857470989227295,
+            "cross_rms": 0.6669679284095764
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 94.79166666666666,
+              "candidate_presence_pct": 98.95833333333334,
+              "source_macro_acc": 94.37285223367698,
+              "recording_macro_acc": 94.36075244597575
+            },
+            "MB": {
+              "n": 576,
+              "acc": 95.83333333333334,
+              "candidate_presence_pct": 97.74305555555556,
+              "source_macro_acc": 95.46238785369219,
+              "recording_macro_acc": 94.73550317994763
+            },
+            "RV": {
+              "n": 576,
+              "acc": 95.48611111111111,
+              "candidate_presence_pct": 96.35416666666666,
+              "source_macro_acc": 95.8015873015873,
+              "recording_macro_acc": 94.99675003354803
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 3.0113278872303706,
+            "actual_total_snr_min": 2.7708514549624224,
+            "actual_total_snr_max": 3.2633863276511077,
+            "anchor_to_noise_db_mean": -5.580598764776021e-18,
+            "common_gain_mean": 0.02886589099462922,
+            "output_rms_mean": 0.0499999999999755,
+            "output_rms_max_error": 1.387924983276001e-10
+          },
+          "source_macro_acc": 94.98479554865425,
+          "recording_macro_acc": 94.53677742492455
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "added_strength": "weak6dB",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 67.5925925925926,
+          "count_acc": 78.29861111111111,
+          "to_single_pct": 21.70138888888889,
+          "to_double_pct": 78.29861111111111,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 68.40277777777779,
+          "candidate_probability_mean": 0.594187630109205,
+          "anchor_presence_pct": 99.18981481481481,
+          "edge_margin_mean": 1.1979631185531616,
+          "type_only_edge_mean": 0.3774287700653076,
+          "type_logit_edge_mean": 0.43507564067840576,
+          "count_edge_mean": 1.057471752166748,
+          "type_only_correct_set_acc": 55.32407407407407,
+          "type_only_to_double_pct": 62.15277777777778,
+          "type_only_to_single_pct": 37.84722222222222,
+          "type_only_candidate_presence_pct": 56.481481481481474,
+          "first_block": {
+            "gate_mean": 1.0803967714309692,
+            "direct_rms": 1.8639719486236572,
+            "cross_rms": 0.702109158039093
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 72.39583333333334,
+              "candidate_presence_pct": 74.82638888888889,
+              "source_macro_acc": 71.30584192439862,
+              "recording_macro_acc": 70.58968251823681
+            },
+            "MB": {
+              "n": 576,
+              "acc": 70.83333333333334,
+              "candidate_presence_pct": 70.83333333333334,
+              "source_macro_acc": 71.39406487232574,
+              "recording_macro_acc": 72.52481828870718
+            },
+            "RV": {
+              "n": 576,
+              "acc": 59.548611111111114,
+              "candidate_presence_pct": 59.548611111111114,
+              "source_macro_acc": 57.69047619047619,
+              "recording_macro_acc": 58.542274724906065
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 0.9740776194142853,
+            "actual_total_snr_min": 0.7824599971032615,
+            "actual_total_snr_max": 1.1771461082512373,
+            "anchor_to_noise_db_mean": -5.580598764776021e-18,
+            "common_gain_mean": 0.03332341060047679,
+            "output_rms_mean": 0.0499999999997981,
+            "output_rms_max_error": 1.8899122544713265e-10
+          },
+          "source_macro_acc": 67.43756469979296,
+          "recording_macro_acc": 69.96548247004486
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "added_strength": "absent",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 100.0,
+          "count_acc": 100.0,
+          "to_single_pct": 100.0,
+          "to_double_pct": 0.0,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 0.0,
+          "candidate_probability_mean": 8.955967206934004e-05,
+          "anchor_presence_pct": 100.0,
+          "edge_margin_mean": -15.205388069152832,
+          "type_only_edge_mean": -10.897257804870605,
+          "type_logit_edge_mean": -14.180815696716309,
+          "count_edge_mean": -5.5828399658203125,
+          "type_only_correct_set_acc": 100.0,
+          "type_only_to_double_pct": 0.0,
+          "type_only_to_single_pct": 100.0,
+          "type_only_candidate_presence_pct": 0.0,
+          "first_block": {
+            "gate_mean": 1.141570806503296,
+            "direct_rms": 2.8319051265716553,
+            "cross_rms": 0.9680935144424438
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 0.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            },
+            "MB": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 0.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            },
+            "RV": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 0.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.05,
+            "output_rms_mean": 0.050000000000482964,
+            "output_rms_max_error": 2.817578739766624e-10
+          },
+          "source_macro_acc": 100.0,
+          "recording_macro_acc": 100.0
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "added_strength": "equal",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 100.0,
+          "count_acc": 100.0,
+          "to_single_pct": 0.0,
+          "to_double_pct": 100.0,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 100.0,
+          "candidate_probability_mean": 0.998852183031655,
+          "anchor_presence_pct": 100.0,
+          "edge_margin_mean": 11.33213996887207,
+          "type_only_edge_mean": 7.6131744384765625,
+          "type_logit_edge_mean": 9.560302734375,
+          "count_edge_mean": 4.796258926391602,
+          "type_only_correct_set_acc": 100.0,
+          "type_only_to_double_pct": 100.0,
+          "type_only_to_single_pct": 0.0,
+          "type_only_candidate_presence_pct": 100.0,
+          "first_block": {
+            "gate_mean": 1.1696157455444336,
+            "direct_rms": 2.059481382369995,
+            "cross_rms": 0.5508851408958435
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            },
+            "MB": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            },
+            "RV": {
+              "n": 576,
+              "acc": 100.0,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 100.0,
+              "recording_macro_acc": 100.0
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.03535148924831553,
+            "output_rms_mean": 0.05000000000000963,
+            "output_rms_max_error": 1.7624095238755189e-10
+          },
+          "source_macro_acc": 100.0,
+          "recording_macro_acc": 100.0
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "added_strength": "weak6dB",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 81.25,
+          "count_acc": 83.91203703703704,
+          "to_single_pct": 16.087962962962962,
+          "to_double_pct": 83.91203703703704,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 81.36574074074075,
+          "candidate_probability_mean": 0.7448132417598083,
+          "anchor_presence_pct": 99.88425925925925,
+          "edge_margin_mean": 3.291494369506836,
+          "type_only_edge_mean": 1.6002233028411865,
+          "type_logit_edge_mean": 2.3848156929016113,
+          "count_edge_mean": 2.88571834564209,
+          "type_only_correct_set_acc": 70.83333333333334,
+          "type_only_to_double_pct": 72.22222222222221,
+          "type_only_to_single_pct": 27.77777777777778,
+          "type_only_candidate_presence_pct": 71.00694444444444,
+          "first_block": {
+            "gate_mean": 1.1676805019378662,
+            "direct_rms": 2.1176469326019287,
+            "cross_rms": 0.5569643974304199
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 77.25694444444444,
+              "candidate_presence_pct": 77.60416666666666,
+              "source_macro_acc": 76.33161512027492,
+              "recording_macro_acc": 77.52758850516534
+            },
+            "MB": {
+              "n": 576,
+              "acc": 80.20833333333334,
+              "candidate_presence_pct": 80.20833333333334,
+              "source_macro_acc": 79.61870255348515,
+              "recording_macro_acc": 81.0263214152103
+            },
+            "RV": {
+              "n": 576,
+              "acc": 86.28472222222221,
+              "candidate_presence_pct": 86.28472222222221,
+              "source_macro_acc": 85.19841269841271,
+              "recording_macro_acc": 85.12840512614063
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.04469601024973456,
+            "output_rms_mean": 0.050000000000722536,
+            "output_rms_max_error": 2.8888169634200267e-10
+          },
+          "source_macro_acc": 79.47787267080744,
+          "recording_macro_acc": 79.33729004027636
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "added_strength": "absent",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 98.49537037037037,
+          "count_acc": 98.66898148148148,
+          "to_single_pct": 98.66898148148148,
+          "to_double_pct": 1.3310185185185186,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 0.5787037037037037,
+          "candidate_probability_mean": 0.023572045081534473,
+          "anchor_presence_pct": 99.82638888888889,
+          "edge_margin_mean": -7.813257217407227,
+          "type_only_edge_mean": -6.309725284576416,
+          "type_logit_edge_mean": -7.574521541595459,
+          "count_edge_mean": -2.010291814804077,
+          "type_only_correct_set_acc": 98.90046296296296,
+          "type_only_to_double_pct": 0.9259259259259258,
+          "type_only_to_single_pct": 99.07407407407408,
+          "type_only_candidate_presence_pct": 0.4629629629629629,
+          "first_block": {
+            "gate_mean": 1.1341527700424194,
+            "direct_rms": 2.225710868835449,
+            "cross_rms": 0.6972892880439758
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 97.91666666666666,
+              "candidate_presence_pct": 1.0416666666666665,
+              "source_macro_acc": 97.42268041237114,
+              "recording_macro_acc": 96.71062462923925
+            },
+            "MB": {
+              "n": 576,
+              "acc": 99.82638888888889,
+              "candidate_presence_pct": 0.0,
+              "source_macro_acc": 99.87922705314008,
+              "recording_macro_acc": 99.89711934156378
+            },
+            "RV": {
+              "n": 576,
+              "acc": 97.74305555555556,
+              "candidate_presence_pct": 0.6944444444444444,
+              "source_macro_acc": 98.13492063492063,
+              "recording_macro_acc": 97.7729342793881
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.0,
+            "actual_total_snr_min": 9.999999999999996,
+            "actual_total_snr_max": 10.000000000000002,
+            "anchor_to_noise_db_mean": 10.0,
+            "common_gain_mean": 0.04767350279649219,
+            "output_rms_mean": 0.04999999999999976,
+            "output_rms_max_error": 3.8085702647183695e-10
+          },
+          "source_macro_acc": 98.08650362318842,
+          "recording_macro_acc": 97.77280400795149
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "added_strength": "equal",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 99.01620370370371,
+          "count_acc": 99.24768518518519,
+          "to_single_pct": 0.7523148148148148,
+          "to_double_pct": 99.24768518518519,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 99.47916666666666,
+          "candidate_probability_mean": 0.9647065907297808,
+          "anchor_presence_pct": 99.53703703703704,
+          "edge_margin_mean": 7.170950412750244,
+          "type_only_edge_mean": 5.037202835083008,
+          "type_logit_edge_mean": 6.149403095245361,
+          "count_edge_mean": 2.873579263687134,
+          "type_only_correct_set_acc": 97.04861111111111,
+          "type_only_to_double_pct": 97.2800925925926,
+          "type_only_to_single_pct": 2.7199074074074074,
+          "type_only_candidate_presence_pct": 98.49537037037037,
+          "first_block": {
+            "gate_mean": 1.1280661821365356,
+            "direct_rms": 1.918305516242981,
+            "cross_rms": 0.5928545594215393
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 99.13194444444444,
+              "candidate_presence_pct": 100.0,
+              "source_macro_acc": 99.01202749140893,
+              "recording_macro_acc": 98.96723646723648
+            },
+            "MB": {
+              "n": 576,
+              "acc": 98.78472222222221,
+              "candidate_presence_pct": 98.95833333333334,
+              "source_macro_acc": 98.9009661835749,
+              "recording_macro_acc": 98.41184998129442
+            },
+            "RV": {
+              "n": 576,
+              "acc": 99.13194444444444,
+              "candidate_presence_pct": 99.47916666666666,
+              "source_macro_acc": 99.03174603174604,
+              "recording_macro_acc": 98.83988778180355
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.0,
+            "actual_total_snr_min": 9.999999999999998,
+            "actual_total_snr_max": 10.0,
+            "anchor_to_noise_db_mean": 6.9886721127696285,
+            "common_gain_mean": 0.03370675516283576,
+            "output_rms_mean": 0.0499999999995525,
+            "output_rms_max_error": 1.5402613212645022e-10
+          },
+          "source_macro_acc": 98.99682971014492,
+          "recording_macro_acc": 98.78788565291057
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "added_strength": "weak6dB",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 69.9074074074074,
+          "count_acc": 74.30555555555556,
+          "to_single_pct": 25.694444444444443,
+          "to_double_pct": 74.30555555555556,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 70.13888888888889,
+          "candidate_probability_mean": 0.6455575028707495,
+          "anchor_presence_pct": 99.76851851851852,
+          "edge_margin_mean": 1.7740321159362793,
+          "type_only_edge_mean": 0.654817521572113,
+          "type_logit_edge_mean": 0.8511756658554077,
+          "count_edge_mean": 1.6527268886566162,
+          "type_only_correct_set_acc": 59.49074074074075,
+          "type_only_to_double_pct": 62.094907407407405,
+          "type_only_to_single_pct": 37.905092592592595,
+          "type_only_candidate_presence_pct": 59.780092592592595,
+          "first_block": {
+            "gate_mean": 1.12722909450531,
+            "direct_rms": 1.95602285861969,
+            "cross_rms": 0.6000451445579529
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 68.05555555555556,
+              "candidate_presence_pct": 68.75,
+              "source_macro_acc": 67.74054982817869,
+              "recording_macro_acc": 68.63251511065336
+            },
+            "MB": {
+              "n": 576,
+              "acc": 71.00694444444444,
+              "candidate_presence_pct": 71.00694444444444,
+              "source_macro_acc": 71.16804692891651,
+              "recording_macro_acc": 71.97544893378226
+            },
+            "RV": {
+              "n": 576,
+              "acc": 70.65972222222221,
+              "candidate_presence_pct": 70.65972222222221,
+              "source_macro_acc": 69.0079365079365,
+              "recording_macro_acc": 67.2661701556629
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.0,
+            "actual_total_snr_min": 9.999999999999998,
+            "actual_total_snr_max": 10.0,
+            "anchor_to_noise_db_mean": 9.025922380585714,
+            "common_gain_mean": 0.042616462733077135,
+            "output_rms_mean": 0.049999999999600274,
+            "output_rms_max_error": 2.582213748381079e-10
+          },
+          "source_macro_acc": 68.74482401656316,
+          "recording_macro_acc": 69.498760762093
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "added_strength": "absent",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 95.08101851851852,
+          "count_acc": 95.37037037037037,
+          "to_single_pct": 95.37037037037037,
+          "to_double_pct": 4.62962962962963,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 2.488425925925926,
+          "candidate_probability_mean": 0.06310569081824877,
+          "anchor_presence_pct": 99.71064814814815,
+          "edge_margin_mean": -4.9247894287109375,
+          "type_only_edge_mean": -4.315706729888916,
+          "type_logit_edge_mean": -5.056819915771484,
+          "count_edge_mean": -0.8934008479118347,
+          "type_only_correct_set_acc": 97.04861111111111,
+          "type_only_to_double_pct": 2.7777777777777777,
+          "type_only_to_single_pct": 97.22222222222221,
+          "type_only_candidate_presence_pct": 1.3888888888888888,
+          "first_block": {
+            "gate_mean": 1.1120495796203613,
+            "direct_rms": 2.036334991455078,
+            "cross_rms": 0.7323997020721436
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 93.05555555555556,
+              "candidate_presence_pct": 3.9930555555555554,
+              "source_macro_acc": 92.91237113402062,
+              "recording_macro_acc": 90.32828874641683
+            },
+            "MB": {
+              "n": 576,
+              "acc": 97.56944444444444,
+              "candidate_presence_pct": 1.3888888888888888,
+              "source_macro_acc": 97.72256728778466,
+              "recording_macro_acc": 97.78859074493992
+            },
+            "RV": {
+              "n": 576,
+              "acc": 94.61805555555556,
+              "candidate_presence_pct": 2.083333333333333,
+              "source_macro_acc": 95.015873015873,
+              "recording_macro_acc": 94.55062399355879
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.0,
+            "actual_total_snr_min": 4.999999999999998,
+            "actual_total_snr_max": 5.000000000000002,
+            "anchor_to_noise_db_mean": 5.0,
+            "common_gain_mean": 0.04358228598342769,
+            "output_rms_mean": 0.05000000000052327,
+            "output_rms_max_error": 2.067310836406655e-10
+          },
+          "source_macro_acc": 94.414466873706,
+          "recording_macro_acc": 92.98861287068796
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "added_strength": "equal",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 97.2800925925926,
+          "count_acc": 98.61111111111111,
+          "to_single_pct": 1.3888888888888888,
+          "to_double_pct": 98.61111111111111,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 98.49537037037037,
+          "candidate_probability_mean": 0.9308203067146552,
+          "anchor_presence_pct": 98.78472222222221,
+          "edge_margin_mean": 5.569803714752197,
+          "type_only_edge_mean": 3.89532732963562,
+          "type_logit_edge_mean": 4.626465797424316,
+          "count_edge_mean": 2.1911075115203857,
+          "type_only_correct_set_acc": 94.09722222222221,
+          "type_only_to_double_pct": 95.25462962962963,
+          "type_only_to_single_pct": 4.74537037037037,
+          "type_only_candidate_presence_pct": 96.75925925925925,
+          "first_block": {
+            "gate_mean": 1.10232412815094,
+            "direct_rms": 1.8711698055267334,
+            "cross_rms": 0.6439143419265747
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 96.52777777777779,
+              "candidate_presence_pct": 99.47916666666666,
+              "source_macro_acc": 96.43470790378007,
+              "recording_macro_acc": 95.88627854490063
+            },
+            "MB": {
+              "n": 576,
+              "acc": 97.56944444444444,
+              "candidate_presence_pct": 98.09027777777779,
+              "source_macro_acc": 97.44478951000688,
+              "recording_macro_acc": 97.83134252578698
+            },
+            "RV": {
+              "n": 576,
+              "acc": 97.74305555555556,
+              "candidate_presence_pct": 97.91666666666666,
+              "source_macro_acc": 97.6984126984127,
+              "recording_macro_acc": 97.32915660225441
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.0,
+            "actual_total_snr_min": 5.0,
+            "actual_total_snr_max": 5.000000000000001,
+            "anchor_to_noise_db_mean": 1.9886721127696294,
+            "common_gain_mean": 0.030814204887540494,
+            "output_rms_mean": 0.04999999999983253,
+            "output_rms_max_error": 1.421571541038169e-10
+          },
+          "source_macro_acc": 96.98466614906833,
+          "recording_macro_acc": 96.61408554490191
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "added_strength": "weak6dB",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 69.38657407407408,
+          "count_acc": 76.38888888888889,
+          "to_single_pct": 23.61111111111111,
+          "to_double_pct": 76.38888888888889,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 69.50231481481481,
+          "candidate_probability_mean": 0.6246967208090894,
+          "anchor_presence_pct": 99.82638888888889,
+          "edge_margin_mean": 1.5005067586898804,
+          "type_only_edge_mean": 0.510173499584198,
+          "type_logit_edge_mean": 0.6262729167938232,
+          "count_edge_mean": 1.3671767711639404,
+          "type_only_correct_set_acc": 57.8125,
+          "type_only_to_double_pct": 61.57407407407407,
+          "type_only_to_single_pct": 38.425925925925924,
+          "type_only_candidate_presence_pct": 58.333333333333336,
+          "first_block": {
+            "gate_mean": 1.1017512083053589,
+            "direct_rms": 1.8932353258132935,
+            "cross_rms": 0.652079701423645
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 73.4375,
+              "candidate_presence_pct": 73.78472222222221,
+              "source_macro_acc": 72.59450171821304,
+              "recording_macro_acc": 72.73543310096984
+            },
+            "MB": {
+              "n": 576,
+              "acc": 72.04861111111111,
+              "candidate_presence_pct": 72.04861111111111,
+              "source_macro_acc": 72.80710835058663,
+              "recording_macro_acc": 73.46805355138689
+            },
+            "RV": {
+              "n": 576,
+              "acc": 62.673611111111114,
+              "candidate_presence_pct": 62.673611111111114,
+              "source_macro_acc": 60.04761904761905,
+              "recording_macro_acc": 59.240262681159415
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.0,
+            "actual_total_snr_min": 5.0,
+            "actual_total_snr_max": 5.000000000000001,
+            "anchor_to_noise_db_mean": 4.025922380585715,
+            "common_gain_mean": 0.03895929788685345,
+            "output_rms_mean": 0.050000000000208246,
+            "output_rms_max_error": 1.7245143507649274e-10
+          },
+          "source_macro_acc": 69.05441252587991,
+          "recording_macro_acc": 71.60570219411393
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "added_strength": "absent",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 82.98611111111111,
+          "count_acc": 83.44907407407408,
+          "to_single_pct": 83.44907407407408,
+          "to_double_pct": 16.493055555555554,
+          "to_background_pct": 0.057870370370370364,
+          "candidate_presence_pct": 8.159722222222223,
+          "candidate_probability_mean": 0.1606243240661719,
+          "anchor_presence_pct": 99.30555555555556,
+          "edge_margin_mean": -2.391035795211792,
+          "type_only_edge_mean": -2.39241623878479,
+          "type_logit_edge_mean": -2.7646548748016357,
+          "count_edge_mean": -0.09692997485399246,
+          "type_only_correct_set_acc": 88.54166666666666,
+          "type_only_to_double_pct": 11.168981481481481,
+          "type_only_to_single_pct": 88.83101851851852,
+          "type_only_candidate_presence_pct": 5.439814814814815,
+          "first_block": {
+            "gate_mean": 1.0868083238601685,
+            "direct_rms": 1.9309325218200684,
+            "cross_rms": 0.7747297883033752
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 74.13194444444444,
+              "candidate_presence_pct": 12.67361111111111,
+              "source_macro_acc": 74.14089347079037,
+              "recording_macro_acc": 70.65356067860318
+            },
+            "MB": {
+              "n": 576,
+              "acc": 89.93055555555556,
+              "candidate_presence_pct": 5.381944444444445,
+              "source_macro_acc": 89.87577639751554,
+              "recording_macro_acc": 87.42112641914228
+            },
+            "RV": {
+              "n": 576,
+              "acc": 84.89583333333334,
+              "candidate_presence_pct": 6.423611111111111,
+              "source_macro_acc": 86.42063492063491,
+              "recording_macro_acc": 86.1766346282877
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": -5.580598764776021e-18,
+            "actual_total_snr_min": -2.892982399659862e-15,
+            "actual_total_snr_max": 1.928654933106574e-15,
+            "anchor_to_noise_db_mean": -5.580598764776021e-18,
+            "common_gain_mean": 0.035355888920565855,
+            "output_rms_mean": 0.049999999999598185,
+            "output_rms_max_error": 1.718871572853331e-10
+          },
+          "source_macro_acc": 80.5949145962733,
+          "recording_macro_acc": 77.23613779573336
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "added_strength": "equal",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 90.74074074074075,
+          "count_acc": 96.75925925925925,
+          "to_single_pct": 3.2407407407407405,
+          "to_double_pct": 96.75925925925925,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 95.48611111111111,
+          "candidate_probability_mean": 0.8592512395735155,
+          "anchor_presence_pct": 95.25462962962963,
+          "edge_margin_mean": 3.653315305709839,
+          "type_only_edge_mean": 2.54219388961792,
+          "type_logit_edge_mean": 2.930417060852051,
+          "count_edge_mean": 1.3885533809661865,
+          "type_only_correct_set_acc": 85.12731481481481,
+          "type_only_to_double_pct": 90.39351851851852,
+          "type_only_to_single_pct": 9.606481481481481,
+          "type_only_candidate_presence_pct": 92.76620370370371,
+          "first_block": {
+            "gate_mean": 1.0745234489440918,
+            "direct_rms": 1.8452941179275513,
+            "cross_rms": 0.7028615474700928
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 89.0625,
+              "candidate_presence_pct": 97.74305555555556,
+              "source_macro_acc": 88.27319587628865,
+              "recording_macro_acc": 87.88134908302179
+            },
+            "MB": {
+              "n": 576,
+              "acc": 91.14583333333334,
+              "candidate_presence_pct": 95.48611111111111,
+              "source_macro_acc": 90.73153899240856,
+              "recording_macro_acc": 89.47890946502058
+            },
+            "RV": {
+              "n": 576,
+              "acc": 92.01388888888889,
+              "candidate_presence_pct": 93.22916666666666,
+              "source_macro_acc": 92.6111111111111,
+              "recording_macro_acc": 91.85793243424584
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 0.0,
+            "actual_total_snr_min": 0.0,
+            "actual_total_snr_max": 0.0,
+            "anchor_to_noise_db_mean": -3.0113278872303706,
+            "common_gain_mean": 0.02499788614556371,
+            "output_rms_mean": 0.04999999999991459,
+            "output_rms_max_error": 1.2124812959202202e-10
+          },
+          "source_macro_acc": 89.9718555900621,
+          "recording_macro_acc": 88.7582755327438
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "added_strength": "weak6dB",
+          "n": 1728,
+          "unique_anchor_sources": 736,
+          "unique_anchor_recordings": 30,
+          "correct_set_acc": 65.68287037037037,
+          "count_acc": 78.125,
+          "to_single_pct": 21.875,
+          "to_double_pct": 78.125,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 66.95601851851852,
+          "candidate_probability_mean": 0.5834642218008683,
+          "anchor_presence_pct": 98.72685185185185,
+          "edge_margin_mean": 1.1094857454299927,
+          "type_only_edge_mean": 0.345490425825119,
+          "type_logit_edge_mean": 0.39517465233802795,
+          "count_edge_mean": 0.9705540537834167,
+          "type_only_correct_set_acc": 53.41435185185185,
+          "type_only_to_double_pct": 61.342592592592595,
+          "type_only_to_single_pct": 38.657407407407405,
+          "type_only_candidate_presence_pct": 54.97685185185185,
+          "first_block": {
+            "gate_mean": 1.0756691694259644,
+            "direct_rms": 1.8602519035339355,
+            "cross_rms": 0.7155601382255554
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 576,
+              "acc": 71.18055555555556,
+              "candidate_presence_pct": 74.82638888888889,
+              "source_macro_acc": 70.40378006872852,
+              "recording_macro_acc": 69.58157598198193
+            },
+            "MB": {
+              "n": 576,
+              "acc": 68.22916666666666,
+              "candidate_presence_pct": 68.40277777777779,
+              "source_macro_acc": 68.36266390614217,
+              "recording_macro_acc": 68.19354256854257
+            },
+            "RV": {
+              "n": 576,
+              "acc": 57.638888888888886,
+              "candidate_presence_pct": 57.638888888888886,
+              "source_macro_acc": 55.03174603174603,
+              "recording_macro_acc": 56.439819008319915
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 0.0,
+            "actual_total_snr_min": 0.0,
+            "actual_total_snr_max": 0.0,
+            "anchor_to_noise_db_mean": -0.9740776194142853,
+            "common_gain_mean": 0.031605545023802646,
+            "output_rms_mean": 0.04999999999939617,
+            "output_rms_max_error": 1.53004227343434e-10
+          },
+          "source_macro_acc": 65.63502846790891,
+          "recording_macro_acc": 67.85099026058393
+        }
+      ],
+      "responses": [
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "strength": "equal",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1728,
+          "noise_false_candidate_pct": 0.0,
+          "noise_false_double_pct": 0.0,
+          "source_candidate_gain_pp": 100.0,
+          "source_margin_gain": 26.537527084350586,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 100.0,
+          "clean_correct_double_retention_pct": 100.0,
+          "complete_pair_success_pct": 100.0,
+          "clean_both_correct_n": 1728,
+          "clean_both_correct_pair_retention_pct": 100.0,
+          "noise_single_margin_shift": 0.0,
+          "noise_double_margin_shift": 0.0,
+          "type_logit_source_gain": 23.741117477416992,
+          "count_logit_source_gain": 10.379097938537598,
+          "type_logit_single_noise_shift": 0.0,
+          "count_logit_single_noise_shift": 0.0,
+          "source_macro": {
+            "noise_false_candidate_pct": 0.0,
+            "noise_false_double_pct": 0.0,
+            "source_candidate_gain_pp": 100.0,
+            "source_margin_gain": 26.196760383637056,
+            "complete_pair_success_pct": 100.0,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 0.0,
+            "noise_false_double_pct": 0.0,
+            "source_candidate_gain_pp": 100.0,
+            "source_margin_gain": 26.795914871019235,
+            "complete_pair_success_pct": 100.0,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "strength": "weak6dB",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1404,
+          "noise_false_candidate_pct": 0.0,
+          "noise_false_double_pct": 0.0,
+          "source_candidate_gain_pp": 81.36574074074075,
+          "source_margin_gain": 18.49687957763672,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 100.0,
+          "clean_correct_double_retention_pct": 100.0,
+          "complete_pair_success_pct": 81.25,
+          "clean_both_correct_n": 1404,
+          "clean_both_correct_pair_retention_pct": 100.0,
+          "noise_single_margin_shift": 0.0,
+          "noise_double_margin_shift": 0.0,
+          "type_logit_source_gain": 16.565631866455078,
+          "count_logit_source_gain": 8.468559265136719,
+          "type_logit_single_noise_shift": 0.0,
+          "count_logit_single_noise_shift": 0.0,
+          "source_macro": {
+            "noise_false_candidate_pct": 0.0,
+            "noise_false_double_pct": 0.0,
+            "source_candidate_gain_pp": 79.56845238095238,
+            "source_margin_gain": 18.26501852273941,
+            "complete_pair_success_pct": 79.47787267080744,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 0.0,
+            "noise_false_double_pct": 0.0,
+            "source_candidate_gain_pp": 79.70766041064671,
+            "source_margin_gain": 18.556891176712675,
+            "complete_pair_success_pct": 79.33729004027636,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "strength": "equal",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1728,
+          "noise_false_candidate_pct": 0.5787037037037037,
+          "noise_false_double_pct": 1.3310185185185186,
+          "source_candidate_gain_pp": 99.24768518518518,
+          "source_margin_gain": 15.788785934448242,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 98.49537037037037,
+          "clean_correct_double_retention_pct": 99.5949074074074,
+          "complete_pair_success_pct": 98.09027777777779,
+          "clean_both_correct_n": 1728,
+          "clean_both_correct_pair_retention_pct": 98.09027777777779,
+          "noise_single_margin_shift": 7.392129898071289,
+          "noise_double_margin_shift": -3.3566129207611084,
+          "type_logit_source_gain": 14.485917091369629,
+          "count_logit_source_gain": 5.243905067443848,
+          "type_logit_single_noise_shift": 6.606294631958008,
+          "count_logit_single_noise_shift": 3.5725481510162354,
+          "source_macro": {
+            "noise_false_candidate_pct": 0.8718297101449274,
+            "noise_false_double_pct": 1.6417572463768115,
+            "source_candidate_gain_pp": 99.0330615942029,
+            "source_margin_gain": 15.483188808612201,
+            "complete_pair_success_pct": 97.77626811594205,
+            "clean_correct_single_retention_pct": 98.08650362318842,
+            "clean_correct_double_retention_pct": 99.68976449275362
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 1.1089335759852064,
+            "noise_false_double_pct": 2.1156842399117557,
+            "source_candidate_gain_pp": 98.78513208058044,
+            "source_margin_gain": 15.80431047222646,
+            "complete_pair_success_pct": 97.36938840349421,
+            "clean_correct_single_retention_pct": 97.77280400795149,
+            "clean_correct_double_retention_pct": 99.59658439554272
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "strength": "weak6dB",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1404,
+          "noise_false_candidate_pct": 0.5787037037037037,
+          "noise_false_double_pct": 1.3310185185185186,
+          "source_candidate_gain_pp": 69.50231481481481,
+          "source_margin_gain": 9.6435546875,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 98.49537037037037,
+          "clean_correct_double_retention_pct": 81.33903133903134,
+          "complete_pair_success_pct": 68.75,
+          "clean_both_correct_n": 1404,
+          "clean_both_correct_pair_retention_pct": 80.12820512820514,
+          "noise_single_margin_shift": 7.392129898071289,
+          "noise_double_margin_shift": -1.4611977338790894,
+          "type_logit_source_gain": 8.48693561553955,
+          "count_logit_source_gain": 3.7141950130462646,
+          "type_logit_single_noise_shift": 6.606294631958008,
+          "count_logit_single_noise_shift": 3.5725481510162354,
+          "source_macro": {
+            "noise_false_candidate_pct": 0.8718297101449274,
+            "noise_false_double_pct": 1.6417572463768115,
+            "source_candidate_gain_pp": 67.83546842650104,
+            "source_margin_gain": 9.473171535717404,
+            "complete_pair_success_pct": 66.95231625258799,
+            "clean_correct_single_retention_pct": 98.08650362318842,
+            "clean_correct_double_retention_pct": 80.4469696969697
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 1.1089335759852064,
+            "noise_false_double_pct": 2.1156842399117557,
+            "source_candidate_gain_pp": 68.71781176862135,
+            "source_margin_gain": 9.75040481441951,
+            "complete_pair_success_pct": 67.42467166465951,
+            "clean_correct_single_retention_pct": 97.77280400795149,
+            "clean_correct_double_retention_pct": 81.01743325713309
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "strength": "equal",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1728,
+          "noise_false_candidate_pct": 2.488425925925926,
+          "noise_false_double_pct": 4.62962962962963,
+          "source_candidate_gain_pp": 96.81712962962963,
+          "source_margin_gain": 11.517398834228516,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 95.08101851851852,
+          "clean_correct_double_retention_pct": 98.66898148148148,
+          "complete_pair_success_pct": 93.80787037037037,
+          "clean_both_correct_n": 1728,
+          "clean_both_correct_pair_retention_pct": 93.80787037037037,
+          "noise_single_margin_shift": 10.280597686767578,
+          "noise_double_margin_shift": -4.739530563354492,
+          "type_logit_source_gain": 10.642345428466797,
+          "count_logit_source_gain": 3.513498067855835,
+          "type_logit_single_noise_shift": 9.123995780944824,
+          "count_logit_single_noise_shift": 4.689439296722412,
+          "source_macro": {
+            "noise_false_candidate_pct": 3.1964932712215317,
+            "noise_false_double_pct": 5.04205486542443,
+            "source_candidate_gain_pp": 96.3370212215321,
+            "source_margin_gain": 11.307172027942928,
+            "complete_pair_success_pct": 93.2120212215321,
+            "clean_correct_single_retention_pct": 94.414466873706,
+            "clean_correct_double_retention_pct": 98.66168478260869
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 4.2746045968981505,
+            "noise_false_double_pct": 6.736885911860241,
+            "source_candidate_gain_pp": 95.2328787891971,
+            "source_margin_gain": 11.475138167730227,
+            "complete_pair_success_pct": 90.96354923268667,
+            "clean_correct_single_retention_pct": 92.98861287068796,
+            "clean_correct_double_retention_pct": 97.88946627652864
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "strength": "weak6dB",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1404,
+          "noise_false_candidate_pct": 2.488425925925926,
+          "noise_false_double_pct": 4.62962962962963,
+          "source_candidate_gain_pp": 67.76620370370371,
+          "source_margin_gain": 6.476810932159424,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 95.08101851851852,
+          "clean_correct_double_retention_pct": 79.05982905982906,
+          "complete_pair_success_pct": 66.37731481481481,
+          "clean_both_correct_n": 1404,
+          "clean_both_correct_pair_retention_pct": 74.57264957264957,
+          "noise_single_margin_shift": 10.280597686767578,
+          "noise_double_margin_shift": -1.7394723892211914,
+          "type_logit_source_gain": 5.7240142822265625,
+          "count_logit_source_gain": 2.318438768386841,
+          "type_logit_single_noise_shift": 9.123995780944824,
+          "count_logit_single_noise_shift": 4.689439296722412,
+          "source_macro": {
+            "noise_false_candidate_pct": 3.1964932712215317,
+            "noise_false_double_pct": 5.04205486542443,
+            "source_candidate_gain_pp": 66.41757246376811,
+            "source_margin_gain": 6.387794282773267,
+            "complete_pair_success_pct": 65.22644927536231,
+            "clean_correct_single_retention_pct": 94.414466873706,
+            "clean_correct_double_retention_pct": 79.06818181818183
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 4.2746045968981505,
+            "noise_false_double_pct": 6.736885911860241,
+            "source_candidate_gain_pp": 67.80904753470126,
+            "source_margin_gain": 6.5865865761978135,
+            "complete_pair_success_pct": 66.69501527606104,
+            "clean_correct_single_retention_pct": 92.98861287068796,
+            "clean_correct_double_retention_pct": 82.03094791589295
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "strength": "equal",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1728,
+          "noise_false_candidate_pct": 8.159722222222223,
+          "noise_false_double_pct": 16.493055555555554,
+          "source_candidate_gain_pp": 89.52546296296296,
+          "source_margin_gain": 7.222374439239502,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 82.98611111111111,
+          "clean_correct_double_retention_pct": 95.37037037037037,
+          "complete_pair_success_pct": 79.57175925925925,
+          "clean_both_correct_n": 1728,
+          "clean_both_correct_pair_retention_pct": 79.57175925925925,
+          "noise_single_margin_shift": 12.814351081848145,
+          "noise_double_margin_shift": -6.500802040100098,
+          "type_logit_source_gain": 6.7204976081848145,
+          "count_logit_source_gain": 1.9765268564224243,
+          "type_logit_single_noise_shift": 11.416160583496094,
+          "count_logit_single_noise_shift": 5.485909938812256,
+          "source_macro": {
+            "noise_false_candidate_pct": 9.314505693581781,
+            "noise_false_double_pct": 18.521933229813662,
+            "source_candidate_gain_pp": 88.60863095238095,
+            "source_margin_gain": 7.126854338237774,
+            "complete_pair_success_pct": 77.1399456521739,
+            "clean_correct_single_retention_pct": 80.5949145962733,
+            "clean_correct_double_retention_pct": 94.98479554865425
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.113000507103413,
+            "noise_false_double_pct": 21.828155922756515,
+            "source_candidate_gain_pp": 86.50852106932764,
+            "source_margin_gain": 7.327632432976359,
+            "complete_pair_success_pct": 73.19084722137173,
+            "clean_correct_single_retention_pct": 77.23613779573336,
+            "clean_correct_double_retention_pct": 94.53677742492455
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "strength": "weak6dB",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1404,
+          "noise_false_candidate_pct": 8.159722222222223,
+          "noise_false_double_pct": 16.493055555555554,
+          "source_candidate_gain_pp": 60.243055555555564,
+          "source_margin_gain": 3.588999032974243,
+          "source_positive_margin_delta_pct": 99.82638888888889,
+          "clean_correct_single_retention_pct": 82.98611111111111,
+          "clean_correct_double_retention_pct": 74.002849002849,
+          "complete_pair_success_pct": 54.97685185185185,
+          "clean_both_correct_n": 1404,
+          "clean_both_correct_pair_retention_pct": 60.18518518518518,
+          "noise_single_margin_shift": 12.814351081848145,
+          "noise_double_margin_shift": -2.0935308933258057,
+          "type_logit_source_gain": 3.19973087310791,
+          "count_logit_source_gain": 1.1544016599655151,
+          "type_logit_single_noise_shift": 11.416160583496094,
+          "count_logit_single_noise_shift": 5.485909938812256,
+          "source_macro": {
+            "noise_false_candidate_pct": 9.314505693581781,
+            "noise_false_double_pct": 18.521933229813662,
+            "source_candidate_gain_pp": 59.594979296066256,
+            "source_margin_gain": 3.585578363996161,
+            "complete_pair_success_pct": 53.419707556935826,
+            "clean_correct_single_retention_pct": 80.5949145962733,
+            "clean_correct_double_retention_pct": 74.71067821067821
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.113000507103413,
+            "noise_false_double_pct": 21.828155922756515,
+            "source_candidate_gain_pp": 59.55699372465229,
+            "source_margin_gain": 3.772120621103686,
+            "complete_pair_success_pct": 53.851538176835334,
+            "clean_correct_single_retention_pct": 77.23613779573336,
+            "clean_correct_double_retention_pct": 76.56764766639532
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "strength": "equal",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1728,
+          "noise_false_candidate_pct": 0.0,
+          "noise_false_double_pct": 0.0,
+          "source_candidate_gain_pp": 100.0,
+          "source_margin_gain": 26.537527084350586,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 100.0,
+          "clean_correct_double_retention_pct": 100.0,
+          "complete_pair_success_pct": 100.0,
+          "clean_both_correct_n": 1728,
+          "clean_both_correct_pair_retention_pct": 100.0,
+          "noise_single_margin_shift": 0.0,
+          "noise_double_margin_shift": 0.0,
+          "type_logit_source_gain": 23.741117477416992,
+          "count_logit_source_gain": 10.379097938537598,
+          "type_logit_single_noise_shift": 0.0,
+          "count_logit_single_noise_shift": 0.0,
+          "source_macro": {
+            "noise_false_candidate_pct": 0.0,
+            "noise_false_double_pct": 0.0,
+            "source_candidate_gain_pp": 100.0,
+            "source_margin_gain": 26.196760383637056,
+            "complete_pair_success_pct": 100.0,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 0.0,
+            "noise_false_double_pct": 0.0,
+            "source_candidate_gain_pp": 100.0,
+            "source_margin_gain": 26.795914871019235,
+            "complete_pair_success_pct": 100.0,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "strength": "weak6dB",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1404,
+          "noise_false_candidate_pct": 0.0,
+          "noise_false_double_pct": 0.0,
+          "source_candidate_gain_pp": 81.36574074074075,
+          "source_margin_gain": 18.49687957763672,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 100.0,
+          "clean_correct_double_retention_pct": 100.0,
+          "complete_pair_success_pct": 81.25,
+          "clean_both_correct_n": 1404,
+          "clean_both_correct_pair_retention_pct": 100.0,
+          "noise_single_margin_shift": 0.0,
+          "noise_double_margin_shift": 0.0,
+          "type_logit_source_gain": 16.565631866455078,
+          "count_logit_source_gain": 8.468559265136719,
+          "type_logit_single_noise_shift": 0.0,
+          "count_logit_single_noise_shift": 0.0,
+          "source_macro": {
+            "noise_false_candidate_pct": 0.0,
+            "noise_false_double_pct": 0.0,
+            "source_candidate_gain_pp": 79.56845238095238,
+            "source_margin_gain": 18.26501852273941,
+            "complete_pair_success_pct": 79.47787267080744,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 0.0,
+            "noise_false_double_pct": 0.0,
+            "source_candidate_gain_pp": 79.70766041064671,
+            "source_margin_gain": 18.556891176712675,
+            "complete_pair_success_pct": 79.33729004027636,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "strength": "equal",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1728,
+          "noise_false_candidate_pct": 0.5787037037037037,
+          "noise_false_double_pct": 1.3310185185185186,
+          "source_candidate_gain_pp": 98.90046296296295,
+          "source_margin_gain": 14.984208106994629,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 98.49537037037037,
+          "clean_correct_double_retention_pct": 99.01620370370371,
+          "complete_pair_success_pct": 97.56944444444444,
+          "clean_both_correct_n": 1728,
+          "clean_both_correct_pair_retention_pct": 97.56944444444444,
+          "noise_single_margin_shift": 7.392129898071289,
+          "noise_double_margin_shift": -4.161190032958984,
+          "type_logit_source_gain": 13.72392463684082,
+          "count_logit_source_gain": 4.883871078491211,
+          "type_logit_single_noise_shift": 6.606294631958008,
+          "count_logit_single_noise_shift": 3.5725481510162354,
+          "source_macro": {
+            "noise_false_candidate_pct": 0.8718297101449274,
+            "noise_false_double_pct": 1.6417572463768115,
+            "source_candidate_gain_pp": 98.75226449275362,
+            "source_margin_gain": 14.72985965207867,
+            "complete_pair_success_pct": 97.21920289855072,
+            "clean_correct_single_retention_pct": 98.08650362318842,
+            "clean_correct_double_retention_pct": 98.99682971014492
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 1.1089335759852064,
+            "noise_false_double_pct": 2.1156842399117557,
+            "source_candidate_gain_pp": 98.45138797436125,
+            "source_margin_gain": 15.079609460668959,
+            "complete_pair_success_pct": 96.64615974633215,
+            "clean_correct_single_retention_pct": 97.77280400795149,
+            "clean_correct_double_retention_pct": 98.78788565291057
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "strength": "weak6dB",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1404,
+          "noise_false_candidate_pct": 0.5787037037037037,
+          "noise_false_double_pct": 1.3310185185185186,
+          "source_candidate_gain_pp": 69.56018518518518,
+          "source_margin_gain": 9.587288856506348,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 98.49537037037037,
+          "clean_correct_double_retention_pct": 81.12535612535613,
+          "complete_pair_success_pct": 68.86574074074075,
+          "clean_both_correct_n": 1404,
+          "clean_both_correct_pair_retention_pct": 79.91452991452992,
+          "noise_single_margin_shift": 7.392129898071289,
+          "noise_double_margin_shift": -1.5174620151519775,
+          "type_logit_source_gain": 8.42569637298584,
+          "count_logit_source_gain": 3.6630187034606934,
+          "type_logit_single_noise_shift": 6.606294631958008,
+          "count_logit_single_noise_shift": 3.5725481510162354,
+          "source_macro": {
+            "noise_false_candidate_pct": 0.8718297101449274,
+            "noise_false_double_pct": 1.6417572463768115,
+            "source_candidate_gain_pp": 68.12208850931677,
+            "source_margin_gain": 9.43010217923185,
+            "complete_pair_success_pct": 67.37480590062113,
+            "clean_correct_single_retention_pct": 98.08650362318842,
+            "clean_correct_double_retention_pct": 80.26262626262627
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 1.1089335759852064,
+            "noise_false_double_pct": 2.1156842399117557,
+            "source_candidate_gain_pp": 68.6994276768677,
+            "source_margin_gain": 9.728140741718043,
+            "complete_pair_success_pct": 67.9502376030991,
+            "clean_correct_single_retention_pct": 97.77280400795149,
+            "clean_correct_double_retention_pct": 81.27556833101892
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "strength": "equal",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1728,
+          "noise_false_candidate_pct": 2.488425925925926,
+          "noise_false_double_pct": 4.62962962962963,
+          "source_candidate_gain_pp": 96.00694444444444,
+          "source_margin_gain": 10.494592666625977,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 95.08101851851852,
+          "clean_correct_double_retention_pct": 97.2800925925926,
+          "complete_pair_success_pct": 92.5925925925926,
+          "clean_both_correct_n": 1728,
+          "clean_both_correct_pair_retention_pct": 92.5925925925926,
+          "noise_single_margin_shift": 10.280597686767578,
+          "noise_double_margin_shift": -5.762336254119873,
+          "type_logit_source_gain": 9.683284759521484,
+          "count_logit_source_gain": 3.084508180618286,
+          "type_logit_single_noise_shift": 9.123995780944824,
+          "count_logit_single_noise_shift": 4.689439296722412,
+          "source_macro": {
+            "noise_false_candidate_pct": 3.1964932712215317,
+            "noise_false_double_pct": 5.04205486542443,
+            "source_candidate_gain_pp": 95.58844461697723,
+            "source_margin_gain": 10.361743771835513,
+            "complete_pair_success_pct": 91.70483954451348,
+            "clean_correct_single_retention_pct": 94.414466873706,
+            "clean_correct_double_retention_pct": 96.98466614906833
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 4.2746045968981505,
+            "noise_false_double_pct": 6.736885911860241,
+            "source_candidate_gain_pp": 94.80501076569506,
+            "source_margin_gain": 10.62262994084767,
+            "complete_pair_success_pct": 89.75553716048023,
+            "clean_correct_single_retention_pct": 92.98861287068796,
+            "clean_correct_double_retention_pct": 96.61408554490191
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "strength": "weak6dB",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1404,
+          "noise_false_candidate_pct": 2.488425925925926,
+          "noise_false_double_pct": 4.62962962962963,
+          "source_candidate_gain_pp": 67.01388888888889,
+          "source_margin_gain": 6.425295829772949,
+          "source_positive_margin_delta_pct": 100.0,
+          "clean_correct_single_retention_pct": 95.08101851851852,
+          "clean_correct_double_retention_pct": 77.42165242165242,
+          "complete_pair_success_pct": 65.56712962962963,
+          "clean_both_correct_n": 1404,
+          "clean_both_correct_pair_retention_pct": 72.93447293447294,
+          "noise_single_margin_shift": 10.280597686767578,
+          "noise_double_margin_shift": -1.7909873723983765,
+          "type_logit_source_gain": 5.6830925941467285,
+          "count_logit_source_gain": 2.26057767868042,
+          "type_logit_single_noise_shift": 9.123995780944824,
+          "count_logit_single_noise_shift": 4.689439296722412,
+          "source_macro": {
+            "noise_false_candidate_pct": 3.1964932712215317,
+            "noise_false_double_pct": 5.04205486542443,
+            "source_candidate_gain_pp": 65.97114389233954,
+            "source_margin_gain": 6.353388440187858,
+            "complete_pair_success_pct": 64.73473084886128,
+            "clean_correct_single_retention_pct": 94.414466873706,
+            "clean_correct_double_retention_pct": 77.75
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 4.2746045968981505,
+            "noise_false_double_pct": 6.736885911860241,
+            "source_candidate_gain_pp": 67.40317177518054,
+            "source_margin_gain": 6.574617744725919,
+            "complete_pair_success_pct": 66.25329722263352,
+            "clean_correct_single_retention_pct": 92.98861287068796,
+            "clean_correct_double_retention_pct": 80.26056171899666
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "strength": "equal",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1728,
+          "noise_false_candidate_pct": 8.159722222222223,
+          "noise_false_double_pct": 16.493055555555554,
+          "source_candidate_gain_pp": 87.32638888888889,
+          "source_margin_gain": 6.044351100921631,
+          "source_positive_margin_delta_pct": 99.88425925925925,
+          "clean_correct_single_retention_pct": 82.98611111111111,
+          "clean_correct_double_retention_pct": 90.74074074074075,
+          "complete_pair_success_pct": 76.21527777777779,
+          "clean_both_correct_n": 1728,
+          "clean_both_correct_pair_retention_pct": 76.21527777777779,
+          "noise_single_margin_shift": 12.814351081848145,
+          "noise_double_margin_shift": -7.6788249015808105,
+          "type_logit_source_gain": 5.695072174072266,
+          "count_logit_source_gain": 1.4854832887649536,
+          "type_logit_single_noise_shift": 11.416160583496094,
+          "count_logit_single_noise_shift": 5.485909938812256,
+          "source_macro": {
+            "noise_false_candidate_pct": 9.314505693581781,
+            "noise_false_double_pct": 18.521933229813662,
+            "source_candidate_gain_pp": 86.64499223602483,
+            "source_margin_gain": 6.020054620245229,
+            "complete_pair_success_pct": 73.70309265010351,
+            "clean_correct_single_retention_pct": 80.5949145962733,
+            "clean_correct_double_retention_pct": 89.9718555900621
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.113000507103413,
+            "noise_false_double_pct": 21.828155922756515,
+            "source_candidate_gain_pp": 84.51038988223821,
+            "source_margin_gain": 6.2001555218918165,
+            "complete_pair_success_pct": 69.49421103466148,
+            "clean_correct_single_retention_pct": 77.23613779573336,
+            "clean_correct_double_retention_pct": 88.7582755327438
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "strength": "weak6dB",
+          "n": 1728,
+          "single_n": 1728,
+          "double_n": 1404,
+          "noise_false_candidate_pct": 8.159722222222223,
+          "noise_false_double_pct": 16.493055555555554,
+          "source_candidate_gain_pp": 58.7962962962963,
+          "source_margin_gain": 3.500521659851074,
+          "source_positive_margin_delta_pct": 99.88425925925925,
+          "clean_correct_single_retention_pct": 82.98611111111111,
+          "clean_correct_double_retention_pct": 71.58119658119658,
+          "complete_pair_success_pct": 53.47222222222222,
+          "clean_both_correct_n": 1404,
+          "clean_both_correct_pair_retention_pct": 58.19088319088319,
+          "noise_single_margin_shift": 12.814351081848145,
+          "noise_double_margin_shift": -2.1820085048675537,
+          "type_logit_source_gain": 3.159829616546631,
+          "count_logit_source_gain": 1.0674841403961182,
+          "type_logit_single_noise_shift": 11.416160583496094,
+          "count_logit_single_noise_shift": 5.485909938812256,
+          "source_macro": {
+            "noise_false_candidate_pct": 9.314505693581781,
+            "noise_false_double_pct": 18.521933229813662,
+            "source_candidate_gain_pp": 58.36988871635611,
+            "source_margin_gain": 3.5083721164290025,
+            "complete_pair_success_pct": 52.21273291925465,
+            "clean_correct_single_retention_pct": 80.5949145962733,
+            "clean_correct_double_retention_pct": 72.3495670995671
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.113000507103413,
+            "noise_false_double_pct": 21.828155922756515,
+            "source_candidate_gain_pp": 58.188274343128754,
+            "source_margin_gain": 3.701264388446478,
+            "complete_pair_success_pct": 52.66081114631687,
+            "clean_correct_single_retention_pct": 77.23613779573336,
+            "clean_correct_double_retention_pct": 74.06766168019877
+          }
+        }
+      ]
+    },
+    "Val": {
+      "conditions": [
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "added_strength": "absent",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 84.72222222222221,
+          "count_acc": 94.21296296296296,
+          "to_single_pct": 94.21296296296296,
+          "to_double_pct": 5.787037037037037,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 6.944444444444445,
+          "candidate_probability_mean": 0.08011746152890914,
+          "anchor_presence_pct": 90.50925925925925,
+          "edge_margin_mean": -14.683243751525879,
+          "type_only_edge_mean": -9.905845642089844,
+          "type_logit_edge_mean": -14.18644905090332,
+          "count_edge_mean": -6.9073262214660645,
+          "type_only_correct_set_acc": 84.72222222222221,
+          "type_only_to_double_pct": 5.787037037037037,
+          "type_only_to_single_pct": 94.21296296296296,
+          "type_only_candidate_presence_pct": 6.944444444444445,
+          "first_block": {
+            "gate_mean": 1.1263747215270996,
+            "direct_rms": 3.249868392944336,
+            "cross_rms": 1.243484377861023
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 94.44444444444444,
+              "candidate_presence_pct": 2.083333333333333,
+              "source_macro_acc": 93.85964912280701,
+              "recording_macro_acc": 92.36111111111111
+            },
+            "MB": {
+              "n": 144,
+              "acc": 76.38888888888889,
+              "candidate_presence_pct": 11.805555555555555,
+              "source_macro_acc": 76.92307692307693,
+              "recording_macro_acc": 59.523809523809526
+            },
+            "RV": {
+              "n": 144,
+              "acc": 83.33333333333334,
+              "candidate_presence_pct": 6.944444444444445,
+              "source_macro_acc": 83.33333333333334,
+              "recording_macro_acc": 83.33333333333334
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.05,
+            "output_rms_mean": 0.05000000000072046,
+            "output_rms_max_error": 2.142899052648417e-10
+          },
+          "source_macro_acc": 89.30817610062893,
+          "recording_macro_acc": 81.60714285714285
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "added_strength": "equal",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 48.61111111111111,
+          "count_acc": 59.25925925925925,
+          "to_single_pct": 40.74074074074074,
+          "to_double_pct": 59.25925925925925,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 73.61111111111111,
+          "candidate_probability_mean": 0.7207583097195288,
+          "anchor_presence_pct": 73.61111111111111,
+          "edge_margin_mean": 4.488344669342041,
+          "type_only_edge_mean": 3.650690793991089,
+          "type_logit_edge_mean": 4.828377723693848,
+          "count_edge_mean": 1.1580119132995605,
+          "type_only_correct_set_acc": 43.05555555555556,
+          "type_only_to_double_pct": 52.31481481481482,
+          "type_only_to_single_pct": 47.68518518518518,
+          "type_only_candidate_presence_pct": 70.83333333333334,
+          "first_block": {
+            "gate_mean": 1.1798027753829956,
+            "direct_rms": 2.174726724624634,
+            "cross_rms": 0.5761027336120605
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 50.0,
+              "candidate_presence_pct": 68.05555555555556,
+              "source_macro_acc": 49.122807017543856,
+              "recording_macro_acc": 47.62218457870631
+            },
+            "MB": {
+              "n": 144,
+              "acc": 30.555555555555557,
+              "candidate_presence_pct": 85.41666666666666,
+              "source_macro_acc": 29.1025641025641,
+              "recording_macro_acc": 29.705687830687832
+            },
+            "RV": {
+              "n": 144,
+              "acc": 65.27777777777779,
+              "candidate_presence_pct": 67.36111111111111,
+              "source_macro_acc": 65.60453435453437,
+              "recording_macro_acc": 65.60453435453437
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.03533857852929046,
+            "output_rms_mean": 0.049999999999601794,
+            "output_rms_max_error": 1.764452195462951e-10
+          },
+          "source_macro_acc": 44.834133371869214,
+          "recording_macro_acc": 44.045470531883566
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "added_strength": "weak6dB",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 36.574074074074076,
+          "count_acc": 46.75925925925926,
+          "to_single_pct": 53.24074074074075,
+          "to_double_pct": 46.75925925925926,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 51.388888888888886,
+          "candidate_probability_mean": 0.5109703098896203,
+          "anchor_presence_pct": 83.79629629629629,
+          "edge_margin_mean": -0.06904496252536774,
+          "type_only_edge_mean": -0.04947492852807045,
+          "type_logit_edge_mean": -0.2825300693511963,
+          "count_edge_mean": -0.12003100663423538,
+          "type_only_correct_set_acc": 31.48148148148148,
+          "type_only_to_double_pct": 39.120370370370374,
+          "type_only_to_single_pct": 60.879629629629626,
+          "type_only_candidate_presence_pct": 46.06481481481482,
+          "first_block": {
+            "gate_mean": 1.1742372512817383,
+            "direct_rms": 2.2844250202178955,
+            "cross_rms": 0.6045624613761902
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 37.5,
+              "candidate_presence_pct": 51.388888888888886,
+              "source_macro_acc": 35.526315789473685,
+              "recording_macro_acc": 34.55929637994855
+            },
+            "MB": {
+              "n": 144,
+              "acc": 25.694444444444443,
+              "candidate_presence_pct": 56.25,
+              "source_macro_acc": 25.427350427350433,
+              "recording_macro_acc": 30.06283068783069
+            },
+            "RV": {
+              "n": 144,
+              "acc": 46.52777777777778,
+              "candidate_presence_pct": 46.52777777777778,
+              "source_macro_acc": 46.4957264957265,
+              "recording_macro_acc": 46.4957264957265
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.04468301753994807,
+            "output_rms_mean": 0.05000000000069099,
+            "output_rms_max_error": 1.6288014687004804e-10
+          },
+          "source_macro_acc": 33.46315110466054,
+          "recording_macro_acc": 34.40399968389099
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "added_strength": "absent",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 80.78703703703704,
+          "count_acc": 92.82407407407408,
+          "to_single_pct": 92.82407407407408,
+          "to_double_pct": 6.712962962962964,
+          "to_background_pct": 0.4629629629629629,
+          "candidate_presence_pct": 9.25925925925926,
+          "candidate_probability_mean": 0.10786295634193747,
+          "anchor_presence_pct": 87.5,
+          "edge_margin_mean": -8.988107681274414,
+          "type_only_edge_mean": -6.534422874450684,
+          "type_logit_edge_mean": -8.096936225891113,
+          "count_edge_mean": -3.277853012084961,
+          "type_only_correct_set_acc": 80.32407407407408,
+          "type_only_to_double_pct": 6.944444444444445,
+          "type_only_to_single_pct": 92.5925925925926,
+          "type_only_candidate_presence_pct": 9.49074074074074,
+          "first_block": {
+            "gate_mean": 1.1510950326919556,
+            "direct_rms": 2.3857696056365967,
+            "cross_rms": 0.7870466709136963
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 90.27777777777779,
+              "candidate_presence_pct": 4.166666666666666,
+              "source_macro_acc": 89.91228070175438,
+              "recording_macro_acc": 88.83928571428572
+            },
+            "MB": {
+              "n": 144,
+              "acc": 70.13888888888889,
+              "candidate_presence_pct": 16.666666666666664,
+              "source_macro_acc": 69.74358974358974,
+              "recording_macro_acc": 46.93452380952381
+            },
+            "RV": {
+              "n": 144,
+              "acc": 81.94444444444444,
+              "candidate_presence_pct": 6.944444444444445,
+              "source_macro_acc": 82.14285714285715,
+              "recording_macro_acc": 82.14285714285715
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.0,
+            "actual_total_snr_min": 9.999999999999996,
+            "actual_total_snr_max": 10.000000000000002,
+            "anchor_to_noise_db_mean": 10.0,
+            "common_gain_mean": 0.04767643325961083,
+            "output_rms_mean": 0.05000000000086898,
+            "output_rms_max_error": 2.382425437486013e-10
+          },
+          "source_macro_acc": 84.67205750224619,
+          "recording_macro_acc": 75.59821428571428
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "added_strength": "equal",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 45.83333333333333,
+          "count_acc": 57.407407407407405,
+          "to_single_pct": 42.592592592592595,
+          "to_double_pct": 57.407407407407405,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 71.75925925925925,
+          "candidate_probability_mean": 0.7141707470986939,
+          "anchor_presence_pct": 71.99074074074075,
+          "edge_margin_mean": 3.243743896484375,
+          "type_only_edge_mean": 2.8339788913726807,
+          "type_logit_edge_mean": 3.5976877212524414,
+          "count_edge_mean": 0.6234156489372253,
+          "type_only_correct_set_acc": 43.05555555555556,
+          "type_only_to_double_pct": 52.31481481481482,
+          "type_only_to_single_pct": 47.68518518518518,
+          "type_only_candidate_presence_pct": 71.06481481481481,
+          "first_block": {
+            "gate_mean": 1.1585659980773926,
+            "direct_rms": 1.9948759078979492,
+            "cross_rms": 0.5899654626846313
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 45.13888888888889,
+              "candidate_presence_pct": 66.66666666666666,
+              "source_macro_acc": 42.98245614035088,
+              "recording_macro_acc": 43.260340203274986
+            },
+            "MB": {
+              "n": 144,
+              "acc": 29.166666666666668,
+              "candidate_presence_pct": 82.63888888888889,
+              "source_macro_acc": 26.111111111111107,
+              "recording_macro_acc": 25.122354497354493
+            },
+            "RV": {
+              "n": 144,
+              "acc": 63.19444444444444,
+              "candidate_presence_pct": 65.97222222222221,
+              "source_macro_acc": 62.65720390720389,
+              "recording_macro_acc": 62.65720390720389
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 13.014465481095115,
+            "actual_total_snr_min": 12.953381147175024,
+            "actual_total_snr_max": 13.11678631923609,
+            "anchor_to_noise_db_mean": 10.0,
+            "common_gain_mean": 0.03448854960328464,
+            "output_rms_mean": 0.04999999999933466,
+            "output_rms_max_error": 1.378482397673686e-10
+          },
+          "source_macro_acc": 39.58664501117332,
+          "recording_macro_acc": 39.758630861891724
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "added_strength": "weak6dB",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 31.48148148148148,
+          "count_acc": 40.27777777777778,
+          "to_single_pct": 59.72222222222222,
+          "to_double_pct": 40.27777777777778,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 44.675925925925924,
+          "candidate_probability_mean": 0.44741219717934233,
+          "anchor_presence_pct": 84.02777777777779,
+          "edge_margin_mean": -0.8448411226272583,
+          "type_only_edge_mean": -0.6655433177947998,
+          "type_logit_edge_mean": -0.900246798992157,
+          "count_edge_mean": -0.2931377589702606,
+          "type_only_correct_set_acc": 28.47222222222222,
+          "type_only_to_double_pct": 36.11111111111111,
+          "type_only_to_single_pct": 63.888888888888886,
+          "type_only_candidate_presence_pct": 41.43518518518518,
+          "first_block": {
+            "gate_mean": 1.1508172750473022,
+            "direct_rms": 2.0320138931274414,
+            "cross_rms": 0.632923424243927
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 34.02777777777778,
+              "candidate_presence_pct": 45.13888888888889,
+              "source_macro_acc": 32.89473684210527,
+              "recording_macro_acc": 32.629085889955455
+            },
+            "MB": {
+              "n": 144,
+              "acc": 23.61111111111111,
+              "candidate_presence_pct": 52.083333333333336,
+              "source_macro_acc": 23.504273504273502,
+              "recording_macro_acc": 25.085978835978835
+            },
+            "RV": {
+              "n": 144,
+              "acc": 36.80555555555556,
+              "candidate_presence_pct": 36.80555555555556,
+              "source_macro_acc": 35.67571317571317,
+              "recording_macro_acc": 35.67571317571317
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.976580354058472,
+            "actual_total_snr_min": 10.927687709252382,
+            "actual_total_snr_max": 11.0587451453713,
+            "anchor_to_noise_db_mean": 10.0,
+            "common_gain_mean": 0.04300101266487176,
+            "output_rms_mean": 0.04999999999949439,
+            "output_rms_max_error": 2.1863291038703991e-10
+          },
+          "source_macro_acc": 30.696358149188335,
+          "recording_macro_acc": 30.670816502338237
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "added_strength": "absent",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 78.00925925925925,
+          "count_acc": 89.81481481481481,
+          "to_single_pct": 89.81481481481481,
+          "to_double_pct": 9.49074074074074,
+          "to_background_pct": 0.6944444444444444,
+          "candidate_presence_pct": 9.953703703703704,
+          "candidate_probability_mean": 0.13240380450396516,
+          "anchor_presence_pct": 87.26851851851852,
+          "edge_margin_mean": -5.83834171295166,
+          "type_only_edge_mean": -4.487893581390381,
+          "type_logit_edge_mean": -5.421655654907227,
+          "count_edge_mean": -1.8049392700195312,
+          "type_only_correct_set_acc": 77.77777777777779,
+          "type_only_to_double_pct": 10.87962962962963,
+          "type_only_to_single_pct": 88.6574074074074,
+          "type_only_candidate_presence_pct": 9.953703703703704,
+          "first_block": {
+            "gate_mean": 1.1369086503982544,
+            "direct_rms": 2.1205477714538574,
+            "cross_rms": 0.8509949445724487
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 85.41666666666666,
+              "candidate_presence_pct": 5.555555555555555,
+              "source_macro_acc": 85.52631578947368,
+              "recording_macro_acc": 83.47763347763349
+            },
+            "MB": {
+              "n": 144,
+              "acc": 66.66666666666666,
+              "candidate_presence_pct": 17.36111111111111,
+              "source_macro_acc": 66.58119658119658,
+              "recording_macro_acc": 42.083333333333336
+            },
+            "RV": {
+              "n": 144,
+              "acc": 81.94444444444444,
+              "candidate_presence_pct": 6.944444444444445,
+              "source_macro_acc": 82.14285714285715,
+              "recording_macro_acc": 82.14285714285715
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.0,
+            "actual_total_snr_min": 4.9999999999999964,
+            "actual_total_snr_max": 5.000000000000002,
+            "anchor_to_noise_db_mean": 5.0,
+            "common_gain_mean": 0.043586262738786435,
+            "output_rms_mean": 0.05000000000027692,
+            "output_rms_max_error": 2.2248329567542413e-10
+          },
+          "source_macro_acc": 80.75172207247678,
+          "recording_macro_acc": 70.92586580086581
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "added_strength": "equal",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 47.22222222222222,
+          "count_acc": 60.64814814814815,
+          "to_single_pct": 39.351851851851855,
+          "to_double_pct": 60.64814814814815,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 72.45370370370371,
+          "candidate_probability_mean": 0.7091673902630917,
+          "anchor_presence_pct": 72.68518518518519,
+          "edge_margin_mean": 2.963620901107788,
+          "type_only_edge_mean": 2.517956018447876,
+          "type_logit_edge_mean": 3.092825412750244,
+          "count_edge_mean": 0.6636121273040771,
+          "type_only_correct_set_acc": 44.907407407407405,
+          "type_only_to_double_pct": 56.25,
+          "type_only_to_single_pct": 43.75,
+          "type_only_candidate_presence_pct": 70.83333333333334,
+          "first_block": {
+            "gate_mean": 1.1415205001831055,
+            "direct_rms": 1.9111175537109375,
+            "cross_rms": 0.6444065570831299
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 50.69444444444444,
+              "candidate_presence_pct": 70.83333333333334,
+              "source_macro_acc": 48.24561403508772,
+              "recording_macro_acc": 48.771684233640755
+            },
+            "MB": {
+              "n": 144,
+              "acc": 31.25,
+              "candidate_presence_pct": 85.41666666666666,
+              "source_macro_acc": 28.290598290598286,
+              "recording_macro_acc": 26.620370370370367
+            },
+            "RV": {
+              "n": 144,
+              "acc": 59.72222222222222,
+              "candidate_presence_pct": 61.111111111111114,
+              "source_macro_acc": 58.92094017094017,
+              "recording_macro_acc": 58.92094017094017
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 8.014465481095115,
+            "actual_total_snr_min": 7.953381147175024,
+            "actual_total_snr_max": 8.11678631923609,
+            "anchor_to_noise_db_mean": 5.0,
+            "common_gain_mean": 0.032841187256626964,
+            "output_rms_mean": 0.05000000000179791,
+            "output_rms_max_error": 1.3403379101051272e-10
+          },
+          "source_macro_acc": 43.75383002741493,
+          "recording_macro_acc": 43.141215668389584
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "added_strength": "weak6dB",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 31.01851851851852,
+          "count_acc": 42.129629629629626,
+          "to_single_pct": 57.407407407407405,
+          "to_double_pct": 42.129629629629626,
+          "to_background_pct": 0.4629629629629629,
+          "candidate_presence_pct": 43.98148148148148,
+          "candidate_probability_mean": 0.4533650849991811,
+          "anchor_presence_pct": 84.49074074074075,
+          "edge_margin_mean": -0.41334033012390137,
+          "type_only_edge_mean": -0.4733799695968628,
+          "type_logit_edge_mean": -0.593574583530426,
+          "count_edge_mean": 0.055478837341070175,
+          "type_only_correct_set_acc": 28.935185185185187,
+          "type_only_to_double_pct": 38.425925925925924,
+          "type_only_to_single_pct": 61.342592592592595,
+          "type_only_candidate_presence_pct": 41.43518518518518,
+          "first_block": {
+            "gate_mean": 1.130898118019104,
+            "direct_rms": 1.9292237758636475,
+            "cross_rms": 0.7021424770355225
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 35.41666666666667,
+              "candidate_presence_pct": 46.52777777777778,
+              "source_macro_acc": 33.771929824561404,
+              "recording_macro_acc": 33.80446546207416
+            },
+            "MB": {
+              "n": 144,
+              "acc": 25.694444444444443,
+              "candidate_presence_pct": 53.47222222222222,
+              "source_macro_acc": 25.598290598290596,
+              "recording_macro_acc": 26.663359788359784
+            },
+            "RV": {
+              "n": 144,
+              "acc": 31.944444444444443,
+              "candidate_presence_pct": 31.944444444444443,
+              "source_macro_acc": 30.681818181818183,
+              "recording_macro_acc": 30.681818181818183
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.976580354058472,
+            "actual_total_snr_min": 5.927687709252382,
+            "actual_total_snr_max": 6.058745145371302,
+            "anchor_to_noise_db_mean": 5.0,
+            "common_gain_mean": 0.03992793130822844,
+            "output_rms_mean": 0.050000000000696515,
+            "output_rms_max_error": 1.1707673025496135e-10
+          },
+          "source_macro_acc": 31.6504669334858,
+          "recording_macro_acc": 31.34986903193425
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "added_strength": "absent",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 67.82407407407408,
+          "count_acc": 78.24074074074075,
+          "to_single_pct": 78.24074074074075,
+          "to_double_pct": 20.13888888888889,
+          "to_background_pct": 1.6203703703703702,
+          "candidate_presence_pct": 14.351851851851851,
+          "candidate_probability_mean": 0.19359836016248322,
+          "anchor_presence_pct": 86.80555555555556,
+          "edge_margin_mean": -2.933596611022949,
+          "type_only_edge_mean": -2.5318524837493896,
+          "type_logit_edge_mean": -2.9762003421783447,
+          "count_edge_mean": -0.6115185618400574,
+          "type_only_correct_set_acc": 70.83333333333334,
+          "type_only_to_double_pct": 17.36111111111111,
+          "type_only_to_single_pct": 81.25,
+          "type_only_candidate_presence_pct": 13.425925925925927,
+          "first_block": {
+            "gate_mean": 1.113250970840454,
+            "direct_rms": 1.96670401096344,
+            "cross_rms": 0.8920382261276245
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 71.52777777777779,
+              "candidate_presence_pct": 11.805555555555555,
+              "source_macro_acc": 71.05263157894737,
+              "recording_macro_acc": 66.98555822197126
+            },
+            "MB": {
+              "n": 144,
+              "acc": 60.416666666666664,
+              "candidate_presence_pct": 19.444444444444446,
+              "source_macro_acc": 60.76923076923077,
+              "recording_macro_acc": 36.38888888888889
+            },
+            "RV": {
+              "n": 144,
+              "acc": 71.52777777777779,
+              "candidate_presence_pct": 11.805555555555555,
+              "source_macro_acc": 72.37179487179488,
+              "recording_macro_acc": 72.37179487179488
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": -1.0491525677778823e-16,
+            "actual_total_snr_min": -3.857309866213149e-15,
+            "actual_total_snr_max": 1.928654933106574e-15,
+            "anchor_to_noise_db_mean": -1.0491525677778823e-16,
+            "common_gain_mean": 0.03535966221430593,
+            "output_rms_mean": 0.0499999999995518,
+            "output_rms_max_error": 6.453304557396677e-11
+          },
+          "source_macro_acc": 68.58006773101113,
+          "recording_macro_acc": 58.34518108702892
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "added_strength": "equal",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 51.388888888888886,
+          "count_acc": 66.89814814814815,
+          "to_single_pct": 31.944444444444443,
+          "to_double_pct": 66.89814814814815,
+          "to_background_pct": 1.1574074074074074,
+          "candidate_presence_pct": 73.61111111111111,
+          "candidate_probability_mean": 0.7085597299406285,
+          "anchor_presence_pct": 75.0,
+          "edge_margin_mean": 2.5950210094451904,
+          "type_only_edge_mean": 2.050405740737915,
+          "type_logit_edge_mean": 2.42501163482666,
+          "count_edge_mean": 0.7174522280693054,
+          "type_only_correct_set_acc": 43.51851851851852,
+          "type_only_to_double_pct": 56.018518518518526,
+          "type_only_to_single_pct": 43.28703703703704,
+          "type_only_candidate_presence_pct": 70.37037037037037,
+          "first_block": {
+            "gate_mean": 1.1158902645111084,
+            "direct_rms": 1.8550214767456055,
+            "cross_rms": 0.7231652736663818
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 56.25,
+              "candidate_presence_pct": 74.30555555555556,
+              "source_macro_acc": 54.385964912280706,
+              "recording_macro_acc": 54.51594751866491
+            },
+            "MB": {
+              "n": 144,
+              "acc": 36.80555555555556,
+              "candidate_presence_pct": 84.72222222222221,
+              "source_macro_acc": 32.56410256410256,
+              "recording_macro_acc": 30.978835978835978
+            },
+            "RV": {
+              "n": 144,
+              "acc": 61.111111111111114,
+              "candidate_presence_pct": 61.80555555555556,
+              "source_macro_acc": 60.921994671994675,
+              "recording_macro_acc": 60.921994671994675
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 3.014465481095115,
+            "actual_total_snr_min": 2.9533811471750244,
+            "actual_total_snr_max": 3.116786319236089,
+            "anchor_to_noise_db_mean": -1.0491525677778823e-16,
+            "common_gain_mean": 0.028859974420201412,
+            "output_rms_mean": 0.0500000000004904,
+            "output_rms_max_error": 8.411701890587153e-11
+          },
+          "source_macro_acc": 49.28007527064131,
+          "recording_macro_acc": 48.0954187720492
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "added_strength": "weak6dB",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 33.33333333333333,
+          "count_acc": 50.0,
+          "to_single_pct": 49.30555555555556,
+          "to_double_pct": 50.0,
+          "to_background_pct": 0.6944444444444444,
+          "candidate_presence_pct": 46.06481481481482,
+          "candidate_probability_mean": 0.4752295232314804,
+          "anchor_presence_pct": 84.95370370370371,
+          "edge_margin_mean": 0.10587193071842194,
+          "type_only_edge_mean": -0.18762168288230896,
+          "type_logit_edge_mean": -0.22236573696136475,
+          "count_edge_mean": 0.33836671710014343,
+          "type_only_correct_set_acc": 29.86111111111111,
+          "type_only_to_double_pct": 42.592592592592595,
+          "type_only_to_single_pct": 56.94444444444444,
+          "type_only_candidate_presence_pct": 43.05555555555556,
+          "first_block": {
+            "gate_mean": 1.1052271127700806,
+            "direct_rms": 1.8736408948898315,
+            "cross_rms": 0.7790321111679077
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 39.58333333333333,
+              "candidate_presence_pct": 52.083333333333336,
+              "source_macro_acc": 36.84210526315789,
+              "recording_macro_acc": 36.46901860217078
+            },
+            "MB": {
+              "n": 144,
+              "acc": 31.944444444444443,
+              "candidate_presence_pct": 57.638888888888886,
+              "source_macro_acc": 31.495726495726494,
+              "recording_macro_acc": 32.880291005291
+            },
+            "RV": {
+              "n": 144,
+              "acc": 28.47222222222222,
+              "candidate_presence_pct": 28.47222222222222,
+              "source_macro_acc": 27.530663780663783,
+              "recording_macro_acc": 27.530663780663783
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 0.9765803540584712,
+            "actual_total_snr_min": 0.9276877092523825,
+            "actual_total_snr_max": 1.0587451453713015,
+            "anchor_to_noise_db_mean": -1.0491525677778823e-16,
+            "common_gain_mean": 0.03332046627066068,
+            "output_rms_mean": 0.05000000000103366,
+            "output_rms_max_error": 6.976109967471444e-11
+          },
+          "source_macro_acc": 35.17935418878815,
+          "recording_macro_acc": 34.49856484095615
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "added_strength": "absent",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 84.72222222222221,
+          "count_acc": 94.21296296296296,
+          "to_single_pct": 94.21296296296296,
+          "to_double_pct": 5.787037037037037,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 6.944444444444445,
+          "candidate_probability_mean": 0.08011746152890914,
+          "anchor_presence_pct": 90.50925925925925,
+          "edge_margin_mean": -14.683243751525879,
+          "type_only_edge_mean": -9.905845642089844,
+          "type_logit_edge_mean": -14.18644905090332,
+          "count_edge_mean": -6.9073262214660645,
+          "type_only_correct_set_acc": 84.72222222222221,
+          "type_only_to_double_pct": 5.787037037037037,
+          "type_only_to_single_pct": 94.21296296296296,
+          "type_only_candidate_presence_pct": 6.944444444444445,
+          "first_block": {
+            "gate_mean": 1.1263747215270996,
+            "direct_rms": 3.249868392944336,
+            "cross_rms": 1.243484377861023
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 94.44444444444444,
+              "candidate_presence_pct": 2.083333333333333,
+              "source_macro_acc": 93.85964912280701,
+              "recording_macro_acc": 92.36111111111111
+            },
+            "MB": {
+              "n": 144,
+              "acc": 76.38888888888889,
+              "candidate_presence_pct": 11.805555555555555,
+              "source_macro_acc": 76.92307692307693,
+              "recording_macro_acc": 59.523809523809526
+            },
+            "RV": {
+              "n": 144,
+              "acc": 83.33333333333334,
+              "candidate_presence_pct": 6.944444444444445,
+              "source_macro_acc": 83.33333333333334,
+              "recording_macro_acc": 83.33333333333334
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.05,
+            "output_rms_mean": 0.05000000000072046,
+            "output_rms_max_error": 2.142899052648417e-10
+          },
+          "source_macro_acc": 89.30817610062893,
+          "recording_macro_acc": 81.60714285714285
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "added_strength": "equal",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 48.61111111111111,
+          "count_acc": 59.25925925925925,
+          "to_single_pct": 40.74074074074074,
+          "to_double_pct": 59.25925925925925,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 73.61111111111111,
+          "candidate_probability_mean": 0.7207583097195288,
+          "anchor_presence_pct": 73.61111111111111,
+          "edge_margin_mean": 4.488344669342041,
+          "type_only_edge_mean": 3.650690793991089,
+          "type_logit_edge_mean": 4.828377723693848,
+          "count_edge_mean": 1.1580119132995605,
+          "type_only_correct_set_acc": 43.05555555555556,
+          "type_only_to_double_pct": 52.31481481481482,
+          "type_only_to_single_pct": 47.68518518518518,
+          "type_only_candidate_presence_pct": 70.83333333333334,
+          "first_block": {
+            "gate_mean": 1.1798027753829956,
+            "direct_rms": 2.174726724624634,
+            "cross_rms": 0.5761027336120605
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 50.0,
+              "candidate_presence_pct": 68.05555555555556,
+              "source_macro_acc": 49.122807017543856,
+              "recording_macro_acc": 47.62218457870631
+            },
+            "MB": {
+              "n": 144,
+              "acc": 30.555555555555557,
+              "candidate_presence_pct": 85.41666666666666,
+              "source_macro_acc": 29.1025641025641,
+              "recording_macro_acc": 29.705687830687832
+            },
+            "RV": {
+              "n": 144,
+              "acc": 65.27777777777779,
+              "candidate_presence_pct": 67.36111111111111,
+              "source_macro_acc": 65.60453435453437,
+              "recording_macro_acc": 65.60453435453437
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.03533857852929046,
+            "output_rms_mean": 0.049999999999601794,
+            "output_rms_max_error": 1.764452195462951e-10
+          },
+          "source_macro_acc": 44.834133371869214,
+          "recording_macro_acc": 44.045470531883566
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "added_strength": "weak6dB",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 36.574074074074076,
+          "count_acc": 46.75925925925926,
+          "to_single_pct": 53.24074074074075,
+          "to_double_pct": 46.75925925925926,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 51.388888888888886,
+          "candidate_probability_mean": 0.5109703098896203,
+          "anchor_presence_pct": 83.79629629629629,
+          "edge_margin_mean": -0.06904496252536774,
+          "type_only_edge_mean": -0.04947492852807045,
+          "type_logit_edge_mean": -0.2825300693511963,
+          "count_edge_mean": -0.12003100663423538,
+          "type_only_correct_set_acc": 31.48148148148148,
+          "type_only_to_double_pct": 39.120370370370374,
+          "type_only_to_single_pct": 60.879629629629626,
+          "type_only_candidate_presence_pct": 46.06481481481482,
+          "first_block": {
+            "gate_mean": 1.1742372512817383,
+            "direct_rms": 2.2844250202178955,
+            "cross_rms": 0.6045624613761902
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 37.5,
+              "candidate_presence_pct": 51.388888888888886,
+              "source_macro_acc": 35.526315789473685,
+              "recording_macro_acc": 34.55929637994855
+            },
+            "MB": {
+              "n": 144,
+              "acc": 25.694444444444443,
+              "candidate_presence_pct": 56.25,
+              "source_macro_acc": 25.427350427350433,
+              "recording_macro_acc": 30.06283068783069
+            },
+            "RV": {
+              "n": 144,
+              "acc": 46.52777777777778,
+              "candidate_presence_pct": 46.52777777777778,
+              "source_macro_acc": 46.4957264957265,
+              "recording_macro_acc": 46.4957264957265
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": null,
+            "actual_total_snr_min": null,
+            "actual_total_snr_max": null,
+            "anchor_to_noise_db_mean": null,
+            "common_gain_mean": 0.04468301753994807,
+            "output_rms_mean": 0.05000000000069099,
+            "output_rms_max_error": 1.6288014687004804e-10
+          },
+          "source_macro_acc": 33.46315110466054,
+          "recording_macro_acc": 34.40399968389099
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "added_strength": "absent",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 80.78703703703704,
+          "count_acc": 92.82407407407408,
+          "to_single_pct": 92.82407407407408,
+          "to_double_pct": 6.712962962962964,
+          "to_background_pct": 0.4629629629629629,
+          "candidate_presence_pct": 9.25925925925926,
+          "candidate_probability_mean": 0.10786295634193747,
+          "anchor_presence_pct": 87.5,
+          "edge_margin_mean": -8.988107681274414,
+          "type_only_edge_mean": -6.534422874450684,
+          "type_logit_edge_mean": -8.096936225891113,
+          "count_edge_mean": -3.277853012084961,
+          "type_only_correct_set_acc": 80.32407407407408,
+          "type_only_to_double_pct": 6.944444444444445,
+          "type_only_to_single_pct": 92.5925925925926,
+          "type_only_candidate_presence_pct": 9.49074074074074,
+          "first_block": {
+            "gate_mean": 1.1510950326919556,
+            "direct_rms": 2.3857696056365967,
+            "cross_rms": 0.7870466709136963
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 90.27777777777779,
+              "candidate_presence_pct": 4.166666666666666,
+              "source_macro_acc": 89.91228070175438,
+              "recording_macro_acc": 88.83928571428572
+            },
+            "MB": {
+              "n": 144,
+              "acc": 70.13888888888889,
+              "candidate_presence_pct": 16.666666666666664,
+              "source_macro_acc": 69.74358974358974,
+              "recording_macro_acc": 46.93452380952381
+            },
+            "RV": {
+              "n": 144,
+              "acc": 81.94444444444444,
+              "candidate_presence_pct": 6.944444444444445,
+              "source_macro_acc": 82.14285714285715,
+              "recording_macro_acc": 82.14285714285715
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.0,
+            "actual_total_snr_min": 9.999999999999996,
+            "actual_total_snr_max": 10.000000000000002,
+            "anchor_to_noise_db_mean": 10.0,
+            "common_gain_mean": 0.04767643325961083,
+            "output_rms_mean": 0.05000000000086898,
+            "output_rms_max_error": 2.382425437486013e-10
+          },
+          "source_macro_acc": 84.67205750224619,
+          "recording_macro_acc": 75.59821428571428
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "added_strength": "equal",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 47.4537037037037,
+          "count_acc": 59.72222222222222,
+          "to_single_pct": 40.27777777777778,
+          "to_double_pct": 59.72222222222222,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 72.68518518518519,
+          "candidate_probability_mean": 0.7107063356344754,
+          "anchor_presence_pct": 72.68518518518519,
+          "edge_margin_mean": 3.0817911624908447,
+          "type_only_edge_mean": 2.6450631618499756,
+          "type_logit_edge_mean": 3.29872727394104,
+          "count_edge_mean": 0.639784574508667,
+          "type_only_correct_set_acc": 44.44444444444444,
+          "type_only_to_double_pct": 55.32407407407407,
+          "type_only_to_single_pct": 44.675925925925924,
+          "type_only_candidate_presence_pct": 71.52777777777779,
+          "first_block": {
+            "gate_mean": 1.1495734453201294,
+            "direct_rms": 1.9438490867614746,
+            "cross_rms": 0.6189382076263428
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 50.69444444444444,
+              "candidate_presence_pct": 70.13888888888889,
+              "source_macro_acc": 48.68421052631579,
+              "recording_macro_acc": 48.350057249513775
+            },
+            "MB": {
+              "n": 144,
+              "acc": 31.25,
+              "candidate_presence_pct": 84.72222222222221,
+              "source_macro_acc": 28.247863247863247,
+              "recording_macro_acc": 26.428571428571423
+            },
+            "RV": {
+              "n": 144,
+              "acc": 60.416666666666664,
+              "candidate_presence_pct": 63.19444444444444,
+              "source_macro_acc": 59.83974358974359,
+              "recording_macro_acc": 59.83974358974359
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.0,
+            "actual_total_snr_min": 9.999999999999998,
+            "actual_total_snr_max": 10.0,
+            "anchor_to_noise_db_mean": 6.985534518904884,
+            "common_gain_mean": 0.033695185792096086,
+            "output_rms_mean": 0.05000000000027588,
+            "output_rms_max_error": 1.1643272457284581e-10
+          },
+          "source_macro_acc": 44.09248508305112,
+          "recording_macro_acc": 42.92258013725405
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "added_strength": "weak6dB",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 30.555555555555557,
+          "count_acc": 39.81481481481482,
+          "to_single_pct": 60.18518518518518,
+          "to_double_pct": 39.81481481481482,
+          "to_background_pct": 0.0,
+          "candidate_presence_pct": 43.75,
+          "candidate_probability_mean": 0.4444509546121604,
+          "anchor_presence_pct": 84.02777777777779,
+          "edge_margin_mean": -0.8136206865310669,
+          "type_only_edge_mean": -0.6703742742538452,
+          "type_logit_edge_mean": -0.8862505555152893,
+          "count_edge_mean": -0.24013349413871765,
+          "type_only_correct_set_acc": 28.240740740740737,
+          "type_only_to_double_pct": 35.879629629629626,
+          "type_only_to_single_pct": 64.12037037037037,
+          "type_only_candidate_presence_pct": 40.74074074074074,
+          "first_block": {
+            "gate_mean": 1.147508144378662,
+            "direct_rms": 2.0110809803009033,
+            "cross_rms": 0.6463199853897095
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 33.33333333333333,
+              "candidate_presence_pct": 45.13888888888889,
+              "source_macro_acc": 32.01754385964912,
+              "recording_macro_acc": 31.904448208796037
+            },
+            "MB": {
+              "n": 144,
+              "acc": 23.61111111111111,
+              "candidate_presence_pct": 51.388888888888886,
+              "source_macro_acc": 23.504273504273502,
+              "recording_macro_acc": 25.085978835978835
+            },
+            "RV": {
+              "n": 144,
+              "acc": 34.72222222222222,
+              "candidate_presence_pct": 34.72222222222222,
+              "source_macro_acc": 33.69158619158619,
+              "recording_macro_acc": 33.69158619158619
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 10.0,
+            "actual_total_snr_min": 9.999999999999998,
+            "actual_total_snr_max": 10.0,
+            "anchor_to_noise_db_mean": 9.023419645941528,
+            "common_gain_mean": 0.0426058373846992,
+            "output_rms_mean": 0.05000000000113169,
+            "output_rms_max_error": 1.473115518457746e-10
+          },
+          "source_macro_acc": 29.99255461519612,
+          "recording_macro_acc": 30.037621195229892
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "added_strength": "absent",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 78.00925925925925,
+          "count_acc": 89.81481481481481,
+          "to_single_pct": 89.81481481481481,
+          "to_double_pct": 9.49074074074074,
+          "to_background_pct": 0.6944444444444444,
+          "candidate_presence_pct": 9.953703703703704,
+          "candidate_probability_mean": 0.13240380450396516,
+          "anchor_presence_pct": 87.26851851851852,
+          "edge_margin_mean": -5.83834171295166,
+          "type_only_edge_mean": -4.487893581390381,
+          "type_logit_edge_mean": -5.421655654907227,
+          "count_edge_mean": -1.8049392700195312,
+          "type_only_correct_set_acc": 77.77777777777779,
+          "type_only_to_double_pct": 10.87962962962963,
+          "type_only_to_single_pct": 88.6574074074074,
+          "type_only_candidate_presence_pct": 9.953703703703704,
+          "first_block": {
+            "gate_mean": 1.1369086503982544,
+            "direct_rms": 2.1205477714538574,
+            "cross_rms": 0.8509949445724487
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 85.41666666666666,
+              "candidate_presence_pct": 5.555555555555555,
+              "source_macro_acc": 85.52631578947368,
+              "recording_macro_acc": 83.47763347763349
+            },
+            "MB": {
+              "n": 144,
+              "acc": 66.66666666666666,
+              "candidate_presence_pct": 17.36111111111111,
+              "source_macro_acc": 66.58119658119658,
+              "recording_macro_acc": 42.083333333333336
+            },
+            "RV": {
+              "n": 144,
+              "acc": 81.94444444444444,
+              "candidate_presence_pct": 6.944444444444445,
+              "source_macro_acc": 82.14285714285715,
+              "recording_macro_acc": 82.14285714285715
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.0,
+            "actual_total_snr_min": 4.9999999999999964,
+            "actual_total_snr_max": 5.000000000000002,
+            "anchor_to_noise_db_mean": 5.0,
+            "common_gain_mean": 0.043586262738786435,
+            "output_rms_mean": 0.05000000000027692,
+            "output_rms_max_error": 2.2248329567542413e-10
+          },
+          "source_macro_acc": 80.75172207247678,
+          "recording_macro_acc": 70.92586580086581
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "added_strength": "equal",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 50.46296296296296,
+          "count_acc": 64.58333333333334,
+          "to_single_pct": 34.49074074074074,
+          "to_double_pct": 64.58333333333334,
+          "to_background_pct": 0.9259259259259258,
+          "candidate_presence_pct": 72.68518518518519,
+          "candidate_probability_mean": 0.7111795167195076,
+          "anchor_presence_pct": 74.53703703703704,
+          "edge_margin_mean": 2.7848551273345947,
+          "type_only_edge_mean": 2.26431941986084,
+          "type_logit_edge_mean": 2.7134029865264893,
+          "count_edge_mean": 0.7128127217292786,
+          "type_only_correct_set_acc": 45.601851851851855,
+          "type_only_to_double_pct": 58.10185185185185,
+          "type_only_to_single_pct": 41.43518518518518,
+          "type_only_candidate_presence_pct": 71.06481481481481,
+          "first_block": {
+            "gate_mean": 1.1263738870620728,
+            "direct_rms": 1.872463345527649,
+            "cross_rms": 0.6914751529693604
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 55.55555555555556,
+              "candidate_presence_pct": 72.91666666666666,
+              "source_macro_acc": 53.94736842105263,
+              "recording_macro_acc": 53.509865738126614
+            },
+            "MB": {
+              "n": 144,
+              "acc": 36.80555555555556,
+              "candidate_presence_pct": 84.02777777777779,
+              "source_macro_acc": 32.05128205128205,
+              "recording_macro_acc": 30.469576719576715
+            },
+            "RV": {
+              "n": 144,
+              "acc": 59.02777777777778,
+              "candidate_presence_pct": 61.111111111111114,
+              "source_macro_acc": 58.52772227772228,
+              "recording_macro_acc": 58.52772227772228
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.0,
+            "actual_total_snr_min": 5.0,
+            "actual_total_snr_max": 5.000000000000001,
+            "anchor_to_noise_db_mean": 1.9855345189048847,
+            "common_gain_mean": 0.030803954197247657,
+            "output_rms_mean": 0.050000000000604346,
+            "output_rms_max_error": 1.0833262759080142e-10
+          },
+          "source_macro_acc": 48.749473796643606,
+          "recording_macro_acc": 47.099564686521205
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "added_strength": "weak6dB",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 32.175925925925924,
+          "count_acc": 43.75,
+          "to_single_pct": 55.78703703703704,
+          "to_double_pct": 43.75,
+          "to_background_pct": 0.4629629629629629,
+          "candidate_presence_pct": 43.98148148148148,
+          "candidate_probability_mean": 0.45599108155587204,
+          "anchor_presence_pct": 85.87962962962963,
+          "edge_margin_mean": -0.30972766876220703,
+          "type_only_edge_mean": -0.42486631870269775,
+          "type_logit_edge_mean": -0.5192640423774719,
+          "count_edge_mean": 0.12034435570240021,
+          "type_only_correct_set_acc": 28.240740740740737,
+          "type_only_to_double_pct": 37.96296296296296,
+          "type_only_to_single_pct": 61.57407407407407,
+          "type_only_candidate_presence_pct": 40.27777777777778,
+          "first_block": {
+            "gate_mean": 1.1259841918945312,
+            "direct_rms": 1.9130326509475708,
+            "cross_rms": 0.7169398069381714
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 34.72222222222222,
+              "candidate_presence_pct": 45.83333333333333,
+              "source_macro_acc": 32.45614035087719,
+              "recording_macro_acc": 32.49537298450342
+            },
+            "MB": {
+              "n": 144,
+              "acc": 29.166666666666668,
+              "candidate_presence_pct": 53.47222222222222,
+              "source_macro_acc": 28.974358974358978,
+              "recording_macro_acc": 31.01851851851852
+            },
+            "RV": {
+              "n": 144,
+              "acc": 32.63888888888889,
+              "candidate_presence_pct": 32.63888888888889,
+              "source_macro_acc": 31.677489177489175,
+              "recording_macro_acc": 31.677489177489175
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 5.0,
+            "actual_total_snr_min": 5.0,
+            "actual_total_snr_max": 5.000000000000001,
+            "anchor_to_noise_db_mean": 4.023419645941528,
+            "common_gain_mean": 0.03895036396208437,
+            "output_rms_mean": 0.05000000000018742,
+            "output_rms_max_error": 1.4965103461994644e-10
+          },
+          "source_macro_acc": 31.572735440659972,
+          "recording_macro_acc": 31.97052826400652
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "added_strength": "absent",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 67.82407407407408,
+          "count_acc": 78.24074074074075,
+          "to_single_pct": 78.24074074074075,
+          "to_double_pct": 20.13888888888889,
+          "to_background_pct": 1.6203703703703702,
+          "candidate_presence_pct": 14.351851851851851,
+          "candidate_probability_mean": 0.19359836016248322,
+          "anchor_presence_pct": 86.80555555555556,
+          "edge_margin_mean": -2.933596611022949,
+          "type_only_edge_mean": -2.5318524837493896,
+          "type_logit_edge_mean": -2.9762003421783447,
+          "count_edge_mean": -0.6115185618400574,
+          "type_only_correct_set_acc": 70.83333333333334,
+          "type_only_to_double_pct": 17.36111111111111,
+          "type_only_to_single_pct": 81.25,
+          "type_only_candidate_presence_pct": 13.425925925925927,
+          "first_block": {
+            "gate_mean": 1.113250970840454,
+            "direct_rms": 1.96670401096344,
+            "cross_rms": 0.8920382261276245
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 71.52777777777779,
+              "candidate_presence_pct": 11.805555555555555,
+              "source_macro_acc": 71.05263157894737,
+              "recording_macro_acc": 66.98555822197126
+            },
+            "MB": {
+              "n": 144,
+              "acc": 60.416666666666664,
+              "candidate_presence_pct": 19.444444444444446,
+              "source_macro_acc": 60.76923076923077,
+              "recording_macro_acc": 36.38888888888889
+            },
+            "RV": {
+              "n": 144,
+              "acc": 71.52777777777779,
+              "candidate_presence_pct": 11.805555555555555,
+              "source_macro_acc": 72.37179487179488,
+              "recording_macro_acc": 72.37179487179488
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": -1.0491525677778823e-16,
+            "actual_total_snr_min": -3.857309866213149e-15,
+            "actual_total_snr_max": 1.928654933106574e-15,
+            "anchor_to_noise_db_mean": -1.0491525677778823e-16,
+            "common_gain_mean": 0.03535966221430593,
+            "output_rms_mean": 0.0499999999995518,
+            "output_rms_max_error": 6.453304557396677e-11
+          },
+          "source_macro_acc": 68.58006773101113,
+          "recording_macro_acc": 58.34518108702892
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "added_strength": "equal",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 50.92592592592593,
+          "count_acc": 69.44444444444444,
+          "to_single_pct": 29.398148148148145,
+          "to_double_pct": 69.44444444444444,
+          "to_background_pct": 1.1574074074074074,
+          "candidate_presence_pct": 75.0,
+          "candidate_probability_mean": 0.6997454144355515,
+          "anchor_presence_pct": 74.07407407407408,
+          "edge_margin_mean": 2.2513585090637207,
+          "type_only_edge_mean": 1.6969053745269775,
+          "type_logit_edge_mean": 1.9639467000961304,
+          "count_edge_mean": 0.6745159029960632,
+          "type_only_correct_set_acc": 43.28703703703704,
+          "type_only_to_double_pct": 56.25,
+          "type_only_to_single_pct": 42.592592592592595,
+          "type_only_candidate_presence_pct": 69.44444444444444,
+          "first_block": {
+            "gate_mean": 1.098496913909912,
+            "direct_rms": 1.8438470363616943,
+            "cross_rms": 0.7691468596458435
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 52.083333333333336,
+              "candidate_presence_pct": 75.0,
+              "source_macro_acc": 50.0,
+              "recording_macro_acc": 50.77904432523997
+            },
+            "MB": {
+              "n": 144,
+              "acc": 38.19444444444444,
+              "candidate_presence_pct": 86.11111111111111,
+              "source_macro_acc": 35.85470085470085,
+              "recording_macro_acc": 34.24603174603174
+            },
+            "RV": {
+              "n": 144,
+              "acc": 62.5,
+              "candidate_presence_pct": 63.888888888888886,
+              "source_macro_acc": 61.71814296814296,
+              "recording_macro_acc": 61.71814296814296
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 0.0,
+            "actual_total_snr_min": 0.0,
+            "actual_total_snr_max": 0.0,
+            "anchor_to_noise_db_mean": -3.014465481095115,
+            "common_gain_mean": 0.024989707250758043,
+            "output_rms_mean": 0.04999999999966117,
+            "output_rms_max_error": 7.804236423769595e-11
+          },
+          "source_macro_acc": 46.97259239712071,
+          "recording_macro_acc": 46.9130504157678
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "added_strength": "weak6dB",
+          "n": 432,
+          "unique_anchor_sources": 159,
+          "unique_anchor_recordings": 10,
+          "correct_set_acc": 34.49074074074074,
+          "count_acc": 52.083333333333336,
+          "to_single_pct": 47.22222222222222,
+          "to_double_pct": 52.083333333333336,
+          "to_background_pct": 0.6944444444444444,
+          "candidate_presence_pct": 46.75925925925926,
+          "candidate_probability_mean": 0.4810751974529967,
+          "anchor_presence_pct": 85.41666666666666,
+          "edge_margin_mean": 0.1789194494485855,
+          "type_only_edge_mean": -0.14298391342163086,
+          "type_logit_edge_mean": -0.17085210978984833,
+          "count_edge_mean": 0.36407724022865295,
+          "type_only_correct_set_acc": 30.555555555555557,
+          "type_only_to_double_pct": 44.44444444444444,
+          "type_only_to_single_pct": 54.861111111111114,
+          "type_only_candidate_presence_pct": 43.51851851851852,
+          "first_block": {
+            "gate_mean": 1.1000174283981323,
+            "direct_rms": 1.8698837757110596,
+            "cross_rms": 0.7929398417472839
+          },
+          "per_anchor_class": {
+            "PF": {
+              "n": 144,
+              "acc": 42.36111111111111,
+              "candidate_presence_pct": 54.861111111111114,
+              "source_macro_acc": 39.03508771929825,
+              "recording_macro_acc": 38.84997098312316
+            },
+            "MB": {
+              "n": 144,
+              "acc": 31.25,
+              "candidate_presence_pct": 55.55555555555556,
+              "source_macro_acc": 30.897435897435898,
+              "recording_macro_acc": 31.650132275132275
+            },
+            "RV": {
+              "n": 144,
+              "acc": 29.86111111111111,
+              "candidate_presence_pct": 29.86111111111111,
+              "source_macro_acc": 28.796897546897547,
+              "recording_macro_acc": 28.796897546897547
+            }
+          },
+          "power": {
+            "actual_total_snr_mean": 0.0,
+            "actual_total_snr_min": 0.0,
+            "actual_total_snr_max": 0.0,
+            "anchor_to_noise_db_mean": -0.9765803540584713,
+            "common_gain_mean": 0.03159862588811702,
+            "output_rms_mean": 0.050000000000241795,
+            "output_rms_max_error": 1.2091019158111393e-10
+          },
+          "source_macro_acc": 36.65271311497727,
+          "recording_macro_acc": 35.68471202710334
+        }
+      ],
+      "responses": [
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "strength": "equal",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 210,
+          "noise_false_candidate_pct": 6.944444444444445,
+          "noise_false_double_pct": 5.787037037037037,
+          "source_candidate_gain_pp": 66.66666666666667,
+          "source_margin_gain": 19.171586990356445,
+          "source_positive_margin_delta_pct": 98.8425925925926,
+          "clean_correct_single_retention_pct": 100.0,
+          "clean_correct_double_retention_pct": 100.0,
+          "complete_pair_success_pct": 42.592592592592595,
+          "clean_both_correct_n": 184,
+          "clean_both_correct_pair_retention_pct": 100.0,
+          "noise_single_margin_shift": 0.0,
+          "noise_double_margin_shift": 0.0,
+          "type_logit_source_gain": 19.014827728271484,
+          "count_logit_source_gain": 8.065339088439941,
+          "type_logit_single_noise_shift": 0.0,
+          "count_logit_single_noise_shift": 0.0,
+          "source_macro": {
+            "noise_false_candidate_pct": 4.716981132075472,
+            "noise_false_double_pct": 1.257861635220126,
+            "source_candidate_gain_pp": 66.62372742561422,
+            "source_margin_gain": 19.845254820097917,
+            "complete_pair_success_pct": 41.57417530059039,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 8.387896825396824,
+            "noise_false_double_pct": 2.5,
+            "source_candidate_gain_pp": 63.99502037817256,
+            "source_margin_gain": 19.50451816481519,
+            "complete_pair_success_pct": 38.28753402394707,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "original",
+          "strength": "weak6dB",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 158,
+          "noise_false_candidate_pct": 6.944444444444445,
+          "noise_false_double_pct": 5.787037037037037,
+          "source_candidate_gain_pp": 44.44444444444444,
+          "source_margin_gain": 14.614198684692383,
+          "source_positive_margin_delta_pct": 98.61111111111111,
+          "clean_correct_single_retention_pct": 100.0,
+          "clean_correct_double_retention_pct": 100.0,
+          "complete_pair_success_pct": 31.48148148148148,
+          "clean_both_correct_n": 136,
+          "clean_both_correct_pair_retention_pct": 100.0,
+          "noise_single_margin_shift": 0.0,
+          "noise_double_margin_shift": 0.0,
+          "type_logit_source_gain": 13.903919219970703,
+          "count_logit_source_gain": 6.787295341491699,
+          "type_logit_single_noise_shift": 0.0,
+          "count_logit_single_noise_shift": 0.0,
+          "source_macro": {
+            "noise_false_candidate_pct": 4.716981132075472,
+            "noise_false_double_pct": 1.257861635220126,
+            "source_candidate_gain_pp": 47.928559909691984,
+            "source_margin_gain": 14.911370368123805,
+            "complete_pair_success_pct": 31.335268505079828,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 8.387896825396824,
+            "noise_false_double_pct": 2.5,
+            "source_candidate_gain_pp": 47.18182059486408,
+            "source_margin_gain": 14.664530743423231,
+            "complete_pair_success_pct": 29.739317144208442,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "strength": "equal",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 210,
+          "noise_false_candidate_pct": 9.25925925925926,
+          "noise_false_double_pct": 6.712962962962964,
+          "source_candidate_gain_pp": 62.49999999999999,
+          "source_margin_gain": 12.231852531433105,
+          "source_positive_margin_delta_pct": 97.68518518518519,
+          "clean_correct_single_retention_pct": 94.80874316939891,
+          "clean_correct_double_retention_pct": 84.76190476190476,
+          "complete_pair_success_pct": 39.351851851851855,
+          "clean_both_correct_n": 184,
+          "clean_both_correct_pair_retention_pct": 83.69565217391305,
+          "noise_single_margin_shift": 5.695135593414307,
+          "noise_double_margin_shift": -1.2446006536483765,
+          "type_logit_source_gain": 11.694623947143555,
+          "count_logit_source_gain": 3.901268243789673,
+          "type_logit_single_noise_shift": 6.089512348175049,
+          "count_logit_single_noise_shift": 3.6294736862182617,
+          "source_macro": {
+            "noise_false_candidate_pct": 7.641509433962264,
+            "noise_false_double_pct": 2.2461814914645104,
+            "source_candidate_gain_pp": 61.93703571062061,
+            "source_margin_gain": 12.849396986406553,
+            "complete_pair_success_pct": 35.4499274310595,
+            "clean_correct_single_retention_pct": 93.92857142857143,
+            "clean_correct_double_retention_pct": 80.49241739706636
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.15873015873016,
+            "noise_false_double_pct": 3.1845238095238093,
+            "source_candidate_gain_pp": 58.259422944205554,
+            "source_margin_gain": 12.784543993055564,
+            "complete_pair_success_pct": 33.885614988875865,
+            "clean_correct_single_retention_pct": 84.60998964803312,
+            "clean_correct_double_retention_pct": 80.9014355742297
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "10dB",
+          "strength": "weak6dB",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 158,
+          "noise_false_candidate_pct": 9.25925925925926,
+          "noise_false_double_pct": 6.712962962962964,
+          "source_candidate_gain_pp": 35.416666666666664,
+          "source_margin_gain": 8.143266677856445,
+          "source_positive_margin_delta_pct": 97.68518518518519,
+          "clean_correct_single_retention_pct": 94.80874316939891,
+          "clean_correct_double_retention_pct": 75.31645569620254,
+          "complete_pair_success_pct": 25.925925925925924,
+          "clean_both_correct_n": 136,
+          "clean_both_correct_pair_retention_pct": 71.32352941176471,
+          "noise_single_margin_shift": 5.695135593414307,
+          "noise_double_margin_shift": -0.775796115398407,
+          "type_logit_source_gain": 7.196689128875732,
+          "count_logit_source_gain": 2.984715223312378,
+          "type_logit_single_noise_shift": 6.089512348175049,
+          "count_logit_single_noise_shift": 3.6294736862182617,
+          "source_macro": {
+            "noise_false_candidate_pct": 7.641509433962264,
+            "noise_false_double_pct": 2.2461814914645104,
+            "source_candidate_gain_pp": 39.700551021305735,
+            "source_margin_gain": 8.577973028024038,
+            "complete_pair_success_pct": 27.04855940704997,
+            "clean_correct_single_retention_pct": 93.92857142857143,
+            "clean_correct_double_retention_pct": 79.31584181584182
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.15873015873016,
+            "noise_false_double_pct": 3.1845238095238093,
+            "source_candidate_gain_pp": 38.47839931807323,
+            "source_margin_gain": 8.478335796145917,
+            "complete_pair_success_pct": 25.187681581703313,
+            "clean_correct_single_retention_pct": 84.60998964803312,
+            "clean_correct_double_retention_pct": 78.19588744588745
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "strength": "equal",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 210,
+          "noise_false_candidate_pct": 9.953703703703704,
+          "noise_false_double_pct": 9.49074074074074,
+          "source_candidate_gain_pp": 62.50000000000001,
+          "source_margin_gain": 8.801962852478027,
+          "source_positive_margin_delta_pct": 96.99074074074075,
+          "clean_correct_single_retention_pct": 91.53005464480874,
+          "clean_correct_double_retention_pct": 79.52380952380952,
+          "complete_pair_success_pct": 39.351851851851855,
+          "clean_both_correct_n": 184,
+          "clean_both_correct_pair_retention_pct": 76.08695652173914,
+          "noise_single_margin_shift": 8.844902038574219,
+          "noise_double_margin_shift": -1.524723768234253,
+          "type_logit_source_gain": 8.514481544494629,
+          "count_logit_source_gain": 2.4685513973236084,
+          "type_logit_single_noise_shift": 8.764792442321777,
+          "count_logit_single_noise_shift": 5.102386951446533,
+          "source_macro": {
+            "noise_false_candidate_pct": 8.574423480083857,
+            "noise_false_double_pct": 7.036537885594489,
+            "source_candidate_gain_pp": 64.8044303704681,
+            "source_margin_gain": 9.261715559089708,
+            "complete_pair_success_pct": 37.335740779137,
+            "clean_correct_single_retention_pct": 89.01073105298458,
+            "clean_correct_double_retention_pct": 78.48311546840958
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.818632756132756,
+            "noise_false_double_pct": 8.517586580086581,
+            "source_candidate_gain_pp": 61.025022682631366,
+            "source_margin_gain": 9.174936935530809,
+            "complete_pair_success_pct": 34.52000354717747,
+            "clean_correct_single_retention_pct": 77.90749105966498,
+            "clean_correct_double_retention_pct": 78.73862643347937
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "5dB",
+          "strength": "weak6dB",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 158,
+          "noise_false_candidate_pct": 9.953703703703704,
+          "noise_false_double_pct": 9.49074074074074,
+          "source_candidate_gain_pp": 34.02777777777778,
+          "source_margin_gain": 5.42500114440918,
+          "source_positive_margin_delta_pct": 96.99074074074075,
+          "clean_correct_single_retention_pct": 91.53005464480874,
+          "clean_correct_double_retention_pct": 67.08860759493672,
+          "complete_pair_success_pct": 24.305555555555554,
+          "clean_both_correct_n": 136,
+          "clean_both_correct_pair_retention_pct": 59.55882352941176,
+          "noise_single_margin_shift": 8.844902038574219,
+          "noise_double_margin_shift": -0.34429532289505005,
+          "type_logit_source_gain": 4.8280816078186035,
+          "count_logit_source_gain": 1.8604182004928589,
+          "type_logit_single_noise_shift": 8.764792442321777,
+          "count_logit_single_noise_shift": 5.102386951446533,
+          "source_macro": {
+            "noise_false_candidate_pct": 8.574423480083857,
+            "noise_false_double_pct": 7.036537885594489,
+            "source_candidate_gain_pp": 39.6483704974271,
+            "source_margin_gain": 5.821242188132784,
+            "complete_pair_success_pct": 25.728035067657707,
+            "clean_correct_single_retention_pct": 89.01073105298458,
+            "clean_correct_double_retention_pct": 72.38748488748489
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.818632756132756,
+            "noise_false_double_pct": 8.517586580086581,
+            "source_candidate_gain_pp": 37.9142159169333,
+            "source_margin_gain": 5.738143483747435,
+            "complete_pair_success_pct": 23.83183151389673,
+            "clean_correct_single_retention_pct": 77.90749105966498,
+            "clean_correct_double_retention_pct": 72.57948532948532
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "strength": "equal",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 210,
+          "noise_false_candidate_pct": 14.351851851851851,
+          "noise_false_double_pct": 20.13888888888889,
+          "source_candidate_gain_pp": 59.25925925925927,
+          "source_margin_gain": 5.5286173820495605,
+          "source_positive_margin_delta_pct": 96.29629629629629,
+          "clean_correct_single_retention_pct": 79.78142076502732,
+          "clean_correct_double_retention_pct": 80.47619047619048,
+          "complete_pair_success_pct": 37.26851851851852,
+          "clean_both_correct_n": 184,
+          "clean_both_correct_pair_retention_pct": 66.30434782608695,
+          "noise_single_margin_shift": 11.74964714050293,
+          "noise_double_margin_shift": -1.893323540687561,
+          "type_logit_source_gain": 5.401211738586426,
+          "count_logit_source_gain": 1.3289709091186523,
+          "type_logit_single_noise_shift": 11.210248947143555,
+          "count_logit_single_noise_shift": 6.295807838439941,
+          "source_macro": {
+            "noise_false_candidate_pct": 14.033796392286957,
+            "noise_false_double_pct": 18.61070795033059,
+            "source_candidate_gain_pp": 60.88045078611116,
+            "source_margin_gain": 5.86444216779193,
+            "complete_pair_success_pct": 35.580729542993694,
+            "clean_correct_single_retention_pct": 76.08613217768148,
+            "clean_correct_double_retention_pct": 83.31555023443067
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 18.63034640480293,
+            "noise_false_double_pct": 21.86451682375595,
+            "source_candidate_gain_pp": 56.269255502951154,
+            "source_margin_gain": 5.761593587810562,
+            "complete_pair_success_pct": 31.570095061942894,
+            "clean_correct_single_retention_pct": 63.4375445206967,
+            "clean_correct_double_retention_pct": 82.41300216667862
+          }
+        },
+        {
+          "power_mode": "anchor_fixed",
+          "condition": "0dB",
+          "strength": "weak6dB",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 158,
+          "noise_false_candidate_pct": 14.351851851851851,
+          "noise_false_double_pct": 20.13888888888889,
+          "source_candidate_gain_pp": 31.712962962962965,
+          "source_margin_gain": 3.039468765258789,
+          "source_positive_margin_delta_pct": 94.67592592592592,
+          "clean_correct_single_retention_pct": 79.78142076502732,
+          "clean_correct_double_retention_pct": 63.29113924050633,
+          "complete_pair_success_pct": 21.064814814814813,
+          "clean_both_correct_n": 136,
+          "clean_both_correct_pair_retention_pct": 46.32352941176471,
+          "noise_single_margin_shift": 11.74964714050293,
+          "noise_double_margin_shift": 0.17491690814495087,
+          "type_logit_source_gain": 2.7538344860076904,
+          "count_logit_source_gain": 0.9498854279518127,
+          "type_logit_single_noise_shift": 11.210248947143555,
+          "count_logit_single_noise_shift": 6.295807838439941,
+          "source_macro": {
+            "noise_false_candidate_pct": 14.033796392286957,
+            "noise_false_double_pct": 18.61070795033059,
+            "source_candidate_gain_pp": 37.94849280698337,
+            "source_margin_gain": 3.320886567703583,
+            "complete_pair_success_pct": 23.891889033398467,
+            "clean_correct_single_retention_pct": 76.08613217768148,
+            "clean_correct_double_retention_pct": 69.9095199095199
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 18.63034640480293,
+            "noise_false_double_pct": 21.86451682375595,
+            "source_candidate_gain_pp": 35.01482816700208,
+            "source_margin_gain": 3.2317223665817565,
+            "complete_pair_success_pct": 20.766639761204978,
+            "clean_correct_single_retention_pct": 63.4375445206967,
+            "clean_correct_double_retention_pct": 71.18999518999519
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "strength": "equal",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 210,
+          "noise_false_candidate_pct": 6.944444444444445,
+          "noise_false_double_pct": 5.787037037037037,
+          "source_candidate_gain_pp": 66.66666666666667,
+          "source_margin_gain": 19.171586990356445,
+          "source_positive_margin_delta_pct": 98.8425925925926,
+          "clean_correct_single_retention_pct": 100.0,
+          "clean_correct_double_retention_pct": 100.0,
+          "complete_pair_success_pct": 42.592592592592595,
+          "clean_both_correct_n": 184,
+          "clean_both_correct_pair_retention_pct": 100.0,
+          "noise_single_margin_shift": 0.0,
+          "noise_double_margin_shift": 0.0,
+          "type_logit_source_gain": 19.014827728271484,
+          "count_logit_source_gain": 8.065339088439941,
+          "type_logit_single_noise_shift": 0.0,
+          "count_logit_single_noise_shift": 0.0,
+          "source_macro": {
+            "noise_false_candidate_pct": 4.716981132075472,
+            "noise_false_double_pct": 1.257861635220126,
+            "source_candidate_gain_pp": 66.62372742561422,
+            "source_margin_gain": 19.845254820097917,
+            "complete_pair_success_pct": 41.57417530059039,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 8.387896825396824,
+            "noise_false_double_pct": 2.5,
+            "source_candidate_gain_pp": 63.99502037817256,
+            "source_margin_gain": 19.50451816481519,
+            "complete_pair_success_pct": 38.28753402394707,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "original",
+          "strength": "weak6dB",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 158,
+          "noise_false_candidate_pct": 6.944444444444445,
+          "noise_false_double_pct": 5.787037037037037,
+          "source_candidate_gain_pp": 44.44444444444444,
+          "source_margin_gain": 14.614198684692383,
+          "source_positive_margin_delta_pct": 98.61111111111111,
+          "clean_correct_single_retention_pct": 100.0,
+          "clean_correct_double_retention_pct": 100.0,
+          "complete_pair_success_pct": 31.48148148148148,
+          "clean_both_correct_n": 136,
+          "clean_both_correct_pair_retention_pct": 100.0,
+          "noise_single_margin_shift": 0.0,
+          "noise_double_margin_shift": 0.0,
+          "type_logit_source_gain": 13.903919219970703,
+          "count_logit_source_gain": 6.787295341491699,
+          "type_logit_single_noise_shift": 0.0,
+          "count_logit_single_noise_shift": 0.0,
+          "source_macro": {
+            "noise_false_candidate_pct": 4.716981132075472,
+            "noise_false_double_pct": 1.257861635220126,
+            "source_candidate_gain_pp": 47.928559909691984,
+            "source_margin_gain": 14.911370368123805,
+            "complete_pair_success_pct": 31.335268505079828,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 8.387896825396824,
+            "noise_false_double_pct": 2.5,
+            "source_candidate_gain_pp": 47.18182059486408,
+            "source_margin_gain": 14.664530743423231,
+            "complete_pair_success_pct": 29.739317144208442,
+            "clean_correct_single_retention_pct": 100.0,
+            "clean_correct_double_retention_pct": 100.0
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "strength": "equal",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 210,
+          "noise_false_candidate_pct": 9.25925925925926,
+          "noise_false_double_pct": 6.712962962962964,
+          "source_candidate_gain_pp": 63.42592592592593,
+          "source_margin_gain": 12.06989860534668,
+          "source_positive_margin_delta_pct": 97.68518518518519,
+          "clean_correct_single_retention_pct": 94.80874316939891,
+          "clean_correct_double_retention_pct": 82.85714285714286,
+          "complete_pair_success_pct": 41.66666666666667,
+          "clean_both_correct_n": 184,
+          "clean_both_correct_pair_retention_pct": 83.15217391304348,
+          "noise_single_margin_shift": 5.695135593414307,
+          "noise_double_margin_shift": -1.4065535068511963,
+          "type_logit_source_gain": 11.39566421508789,
+          "count_logit_source_gain": 3.917637586593628,
+          "type_logit_single_noise_shift": 6.089512348175049,
+          "count_logit_single_noise_shift": 3.6294736862182617,
+          "source_macro": {
+            "noise_false_candidate_pct": 7.641509433962264,
+            "noise_false_double_pct": 2.2461814914645104,
+            "source_candidate_gain_pp": 64.84958437788627,
+            "source_margin_gain": 12.736157121898243,
+            "complete_pair_success_pct": 40.165411108807334,
+            "clean_correct_single_retention_pct": 93.92857142857143,
+            "clean_correct_double_retention_pct": 81.73068331275162
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.15873015873016,
+            "noise_false_double_pct": 3.1845238095238093,
+            "source_candidate_gain_pp": 60.25472142591707,
+            "source_margin_gain": 12.631081248935377,
+            "complete_pair_success_pct": 37.500953153127064,
+            "clean_correct_single_retention_pct": 84.60998964803312,
+            "clean_correct_double_retention_pct": 80.77713286169168
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "10dB",
+          "strength": "weak6dB",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 158,
+          "noise_false_candidate_pct": 9.25925925925926,
+          "noise_false_double_pct": 6.712962962962964,
+          "source_candidate_gain_pp": 34.49074074074074,
+          "source_margin_gain": 8.174487113952637,
+          "source_positive_margin_delta_pct": 97.68518518518519,
+          "clean_correct_single_retention_pct": 94.80874316939891,
+          "clean_correct_double_retention_pct": 72.15189873417721,
+          "complete_pair_success_pct": 25.0,
+          "clean_both_correct_n": 136,
+          "clean_both_correct_pair_retention_pct": 67.64705882352942,
+          "noise_single_margin_shift": 5.695135593414307,
+          "noise_double_margin_shift": -0.7445757985115051,
+          "type_logit_source_gain": 7.2106852531433105,
+          "count_logit_source_gain": 3.037719488143921,
+          "type_logit_single_noise_shift": 6.089512348175049,
+          "count_logit_single_noise_shift": 3.6294736862182617,
+          "source_macro": {
+            "noise_false_candidate_pct": 7.641509433962264,
+            "noise_false_double_pct": 2.2461814914645104,
+            "source_candidate_gain_pp": 39.41603469905357,
+            "source_margin_gain": 8.649257457856113,
+            "complete_pair_success_pct": 26.344755873057757,
+            "clean_correct_single_retention_pct": 93.92857142857143,
+            "clean_correct_double_retention_pct": 77.51989001989001
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.15873015873016,
+            "noise_false_double_pct": 3.1845238095238093,
+            "source_candidate_gain_pp": 38.14109773077165,
+            "source_margin_gain": 8.549350541203573,
+            "complete_pair_success_pct": 24.554486274594968,
+            "clean_correct_single_retention_pct": 84.60998964803312,
+            "clean_correct_double_retention_pct": 76.21897546897547
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "strength": "equal",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 210,
+          "noise_false_candidate_pct": 9.953703703703704,
+          "noise_false_double_pct": 9.49074074074074,
+          "source_candidate_gain_pp": 62.73148148148149,
+          "source_margin_gain": 8.623197555541992,
+          "source_positive_margin_delta_pct": 97.91666666666666,
+          "clean_correct_single_retention_pct": 91.53005464480874,
+          "clean_correct_double_retention_pct": 80.47619047619048,
+          "complete_pair_success_pct": 41.898148148148145,
+          "clean_both_correct_n": 184,
+          "clean_both_correct_pair_retention_pct": 76.63043478260869,
+          "noise_single_margin_shift": 8.844902038574219,
+          "noise_double_margin_shift": -1.7034895420074463,
+          "type_logit_source_gain": 8.135059356689453,
+          "count_logit_source_gain": 2.517751932144165,
+          "type_logit_single_noise_shift": 8.764792442321777,
+          "count_logit_single_noise_shift": 5.102386951446533,
+          "source_macro": {
+            "noise_false_candidate_pct": 8.574423480083857,
+            "noise_false_double_pct": 7.036537885594489,
+            "source_candidate_gain_pp": 65.85961732188147,
+            "source_margin_gain": 9.146763564655616,
+            "complete_pair_success_pct": 41.319854150042836,
+            "clean_correct_single_retention_pct": 89.01073105298458,
+            "clean_correct_double_retention_pct": 81.95715741493729
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.818632756132756,
+            "noise_false_double_pct": 8.517586580086581,
+            "source_candidate_gain_pp": 61.45856106453932,
+            "source_margin_gain": 9.045991235805976,
+            "complete_pair_success_pct": 37.3067255811821,
+            "clean_correct_single_retention_pct": 77.90749105966498,
+            "clean_correct_double_retention_pct": 79.87464836361895
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "5dB",
+          "strength": "weak6dB",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 158,
+          "noise_false_candidate_pct": 9.953703703703704,
+          "noise_false_double_pct": 9.49074074074074,
+          "source_candidate_gain_pp": 34.02777777777778,
+          "source_margin_gain": 5.528614044189453,
+          "source_positive_margin_delta_pct": 97.22222222222221,
+          "clean_correct_single_retention_pct": 91.53005464480874,
+          "clean_correct_double_retention_pct": 70.25316455696202,
+          "complete_pair_success_pct": 25.0,
+          "clean_both_correct_n": 136,
+          "clean_both_correct_pair_retention_pct": 63.23529411764706,
+          "noise_single_margin_shift": 8.844902038574219,
+          "noise_double_margin_shift": -0.2406826764345169,
+          "type_logit_source_gain": 4.902392387390137,
+          "count_logit_source_gain": 1.925283670425415,
+          "type_logit_single_noise_shift": 8.764792442321777,
+          "count_logit_single_noise_shift": 5.102386951446533,
+          "source_macro": {
+            "noise_false_candidate_pct": 8.574423480083857,
+            "noise_false_double_pct": 7.036537885594489,
+            "source_candidate_gain_pp": 38.480492254077156,
+            "source_margin_gain": 5.969729324556747,
+            "complete_pair_success_pct": 25.73416101717988,
+            "clean_correct_single_retention_pct": 89.01073105298458,
+            "clean_correct_double_retention_pct": 73.78661128661128
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 12.818632756132756,
+            "noise_false_double_pct": 8.517586580086581,
+            "source_candidate_gain_pp": 37.56239412761152,
+            "source_margin_gain": 5.877500885302569,
+            "complete_pair_success_pct": 23.750109793588056,
+            "clean_correct_single_retention_pct": 77.90749105966498,
+            "clean_correct_double_retention_pct": 74.68602693602693
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "strength": "equal",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 210,
+          "noise_false_candidate_pct": 14.351851851851851,
+          "noise_false_double_pct": 20.13888888888889,
+          "source_candidate_gain_pp": 60.64814814814815,
+          "source_margin_gain": 5.18495512008667,
+          "source_positive_margin_delta_pct": 96.52777777777779,
+          "clean_correct_single_retention_pct": 79.78142076502732,
+          "clean_correct_double_retention_pct": 75.23809523809524,
+          "complete_pair_success_pct": 37.03703703703704,
+          "clean_both_correct_n": 184,
+          "clean_both_correct_pair_retention_pct": 61.41304347826087,
+          "noise_single_margin_shift": 11.74964714050293,
+          "noise_double_margin_shift": -2.236985921859741,
+          "type_logit_source_gain": 4.940146446228027,
+          "count_logit_source_gain": 1.2860344648361206,
+          "type_logit_single_noise_shift": 11.210248947143555,
+          "count_logit_single_noise_shift": 6.295807838439941,
+          "source_macro": {
+            "noise_false_candidate_pct": 14.033796392286957,
+            "noise_false_double_pct": 18.61070795033059,
+            "source_candidate_gain_pp": 61.878079991287535,
+            "source_margin_gain": 5.5299093727045845,
+            "complete_pair_success_pct": 34.220386531707284,
+            "clean_correct_single_retention_pct": 76.08613217768148,
+            "clean_correct_double_retention_pct": 78.15842645301849
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 18.63034640480293,
+            "noise_false_double_pct": 21.86451682375595,
+            "source_candidate_gain_pp": 57.74089497459062,
+            "source_margin_gain": 5.382088014842449,
+            "complete_pair_success_pct": 31.51471083264562,
+            "clean_correct_single_retention_pct": 63.4375445206967,
+            "clean_correct_double_retention_pct": 78.72469265483971
+          }
+        },
+        {
+          "power_mode": "total_snr",
+          "condition": "0dB",
+          "strength": "weak6dB",
+          "n": 432,
+          "single_n": 366,
+          "double_n": 158,
+          "noise_false_candidate_pct": 14.351851851851851,
+          "noise_false_double_pct": 20.13888888888889,
+          "source_candidate_gain_pp": 32.407407407407405,
+          "source_margin_gain": 3.112516164779663,
+          "source_positive_margin_delta_pct": 96.52777777777779,
+          "clean_correct_single_retention_pct": 79.78142076502732,
+          "clean_correct_double_retention_pct": 62.0253164556962,
+          "complete_pair_success_pct": 21.75925925925926,
+          "clean_both_correct_n": 136,
+          "clean_both_correct_pair_retention_pct": 45.588235294117645,
+          "noise_single_margin_shift": 11.74964714050293,
+          "noise_double_margin_shift": 0.247964546084404,
+          "type_logit_source_gain": 2.8053481578826904,
+          "count_logit_source_gain": 0.9755958914756775,
+          "type_logit_single_noise_shift": 11.210248947143555,
+          "count_logit_single_noise_shift": 6.295807838439941,
+          "source_macro": {
+            "noise_false_candidate_pct": 14.033796392286957,
+            "noise_false_double_pct": 18.61070795033059,
+            "source_candidate_gain_pp": 39.12835068495446,
+            "source_margin_gain": 3.40163477599246,
+            "complete_pair_success_pct": 24.285583389356972,
+            "clean_correct_single_retention_pct": 76.08613217768148,
+            "clean_correct_double_retention_pct": 68.25299325299325
+          },
+          "recording_macro": {
+            "noise_false_candidate_pct": 18.63034640480293,
+            "noise_false_double_pct": 21.86451682375595,
+            "source_candidate_gain_pp": 35.87980558089253,
+            "source_margin_gain": 3.3007419317419444,
+            "complete_pair_success_pct": 21.09266789973312,
+            "clean_correct_single_retention_pct": 63.4375445206967,
+            "clean_correct_double_retention_pct": 69.54377104377103
+          }
+        }
+      ]
+    }
+  },
+  "checks": {
+    "official_V1_replayed": true,
+    "training_disabled": true,
+    "source_reconstruction": {
+      "Train": {
+        "checked_directed_pairs": 12,
+        "maximum_waveform_error": 0.0
+      },
+      "Val": {
+        "checked_directed_pairs": 12,
+        "maximum_waveform_error": 0.0
+      }
+    }
+  },
+  "minutes": 5.207743734990557
+}

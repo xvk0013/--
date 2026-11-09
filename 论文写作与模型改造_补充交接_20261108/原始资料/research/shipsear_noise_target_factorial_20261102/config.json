@@ -1,0 +1,32 @@
+{
+  "seed": 13,
+  "source_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13\\V1_stored_single_best.pt",
+  "source_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13",
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "splits": [
+    "Train",
+    "Val"
+  ],
+  "conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB"
+  ],
+  "strengths": {
+    "absent": 0,
+    "equal": 1,
+    "weak6dB": 0.5011872336272722
+  },
+  "power_modes": [
+    "anchor_fixed",
+    "total_snr"
+  ],
+  "noise_seed_tag": 7602,
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "output_rms": 0.05,
+  "training": false,
+  "test_used": false,
+  "first_stage_only": true
+}

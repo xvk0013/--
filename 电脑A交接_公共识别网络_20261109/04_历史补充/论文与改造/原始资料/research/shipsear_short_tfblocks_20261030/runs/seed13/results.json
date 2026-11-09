@@ -1,0 +1,6285 @@
+{
+  "config": {
+    "seed": 13,
+    "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+    "sample_rate": 16000,
+    "duration_seconds": 5,
+    "scattering": {
+      "J": 10,
+      "Q": 8,
+      "max_order": 2
+    },
+    "model": {
+      "n_blocks": 3,
+      "d_block": 256,
+      "k": 32,
+      "dropout": 0.15
+    },
+    "batch_size": 32,
+    "evaluation_batch_size": 64,
+    "representation": {
+      "long_fft": 8192,
+      "long_hop": 1024,
+      "short_fft": 2048,
+      "short_hop": 256,
+      "frequency_range_hz": [
+        0,
+        4000
+      ],
+      "channels": [
+        16,
+        32,
+        64
+      ],
+      "summary_grid": [
+        8,
+        4
+      ],
+      "summary_statistics": [
+        "mean",
+        "std"
+      ],
+      "per_resolution_output": 256,
+      "candidate_neural_output": 512,
+      "frequency_kernel": 5,
+      "time_kernel": 5
+    },
+    "axis_kernel": 7,
+    "initial_center_gain": 3.5841841220855715,
+    "localized_block": 2,
+    "encoder": {
+      "dims": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "depths": [
+        1,
+        1,
+        4,
+        2
+      ],
+      "heads": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "windows": [
+        7,
+        7
+      ],
+      "mlp_ratio": 2.0,
+      "drop_path": 0.0,
+      "scan_backend": "cuda",
+      "band_fusion": "early",
+      "input_channels": 2
+    },
+    "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_frequency_localize_20261029\\runs\\seed13\\L1_local_center_best.pt",
+    "arms": [
+      "T0_short_continue",
+      "T1_l1_tfblocks"
+    ],
+    "adaptation_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_short_contrast_20261030\\runs\\seed13\\S0_short_continue_best.pt",
+    "max_epochs": 40,
+    "min_epochs": 20,
+    "joint_patience": 10,
+    "classifier_lr": 0.0001,
+    "count_readout_lr": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "count_marginal_weight": 0.1,
+    "noise_probabilities": [
+      0.7,
+      0.06,
+      0.06,
+      0.06,
+      0.06,
+      0.06
+    ],
+    "val_protection": {
+      "single_min": 86.32394366197182,
+      "double_min": 67.98148148148148,
+      "background_min": 79.28169014084507,
+      "minus10_double_min": 43.675925925925924
+    },
+    "initialization": "Both cloneS0e15 for inherited parameters. T1 replaces three short blocks by freshly seeded L1-style pre-LN TF-separate/FFN blocks at16/32/64channels. No old-M2weights copied across incompatible shapes. Candidate initial function differs; control exactly replays source.",
+    "training": "Freeze long path, outer512LN and scattering. Both update whole short path and publicTabM. Existing/new middleblocks both3e-4, other short/public1e-4,count3e-4. Sameonline70% original+6%eachnoisy,seed13,orderandpublicdropout. No presenceaux/denoiser/thirdbranch.",
+    "selection": "Source-based Valguards original S/D/BG,-10D and finalset MBrecall Single/Double original/-10 within1pp. Rank eligibility,-10meanSD,-MBfalse,-10ACC,originalACC. Candidate epoch0 is NEW architecture diagnostic, not source fallback; no eligible model means do not adopt. Source retained independently. Seal beforeTest.",
+    "prediction": "Frozen scattering + long/short spectra; candidatechanges three short encoding blocks, same8x4summary and256short/512neural interface; public7set+count, member softmaxthenmean32. No truecount,SNR,sourceorcleanwave input.",
+    "source_val_MB_recall": {
+      "original": {
+        "Single": 48.717948717948715,
+        "Double": 62.5
+      },
+      "-10dB": {
+        "Single": 79.48717948717949,
+        "Double": 76.04166666666666
+      }
+    },
+    "MB_recall_tolerance_pp": 1.0,
+    "encoder_lr": 0.0001,
+    "block_lr": 0.0003,
+    "replacement_kernel": 7,
+    "ffn_ratio": 2.0,
+    "ffn_dropout": 0.0
+  },
+  "epochs": 37,
+  "selections": {
+    "T0_short_continue": {
+      "epoch": 0,
+      "score": [
+        1,
+        41.82153103808034,
+        -171,
+        46.229050279329606,
+        75.5586592178771
+      ]
+    },
+    "T1_l1_tfblocks": {
+      "epoch": 27,
+      "score": [
+        0,
+        52.29851330203442,
+        -84,
+        49.30167597765363,
+        74.16201117318437
+      ]
+    }
+  },
+  "mean_epoch_seconds": 20.20120238099952,
+  "Val": {
+    "T0_short_continue": {
+      "original": {
+        "n": 716,
+        "acc": 75.5586592178771,
+        "single_acc": 87.32394366197182,
+        "double_acc": 68.98148148148148,
+        "noise_acc": 80.28169014084507,
+        "count_acc": 88.96648044692738,
+        "single_to_double": 2,
+        "double_to_single": 62,
+        "single_type_errors": 25,
+        "double_pair_errors": 71,
+        "confusion": [
+          [
+            57,
+            4,
+            0,
+            0,
+            2,
+            8,
+            0
+          ],
+          [
+            0,
+            161,
+            3,
+            2,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            17,
+            19,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            44,
+            1,
+            0,
+            79,
+            17,
+            2
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            131,
+            8
+          ],
+          [
+            0,
+            0,
+            4,
+            8,
+            6,
+            38,
+            88
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            57,
+            4,
+            10
+          ],
+          [
+            0,
+            211,
+            2
+          ],
+          [
+            1,
+            62,
+            369
+          ]
+        ],
+        "double_C0_acc": 67.5925925925926,
+        "double_C1_acc": 71.29629629629629,
+        "double_C2_acc": 69.44444444444444,
+        "per_set_acc": {
+          "E": 80.28169014084507,
+          "PF": 95.83333333333334,
+          "MB": 48.717948717948715,
+          "RV": 100.0,
+          "PF+MB": 54.861111111111114,
+          "PF+RV": 90.97222222222221,
+          "MB+RV": 61.111111111111114
+        },
+        "group_macro_acc": 78.86237176143278,
+        "conditional_single_acc": 88.26291079812206,
+        "conditional_double_acc": 81.25,
+        "member_single_to_double_mean_pct": 1.6725352112676055,
+        "single_all_members_double_pct": 0.0,
+        "member_pair_single_to_double_joint_pct": 0.7184234438891413,
+        "member_double_count_recall_pct": 83.85416666666666,
+        "marginal_count_acc": 89.10614525139665,
+        "balanced_single_double_count_error_pct": 7.761150234741784,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 435,
+              "FP": 75,
+              "FN": 21,
+              "TN": 185,
+              "tpr": 95.39473684210526,
+              "fpr": 28.846153846153847
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 163,
+              "FP": 17,
+              "FN": 5,
+              "TN": 28,
+              "tpr": 97.02380952380952,
+              "fpr": 37.77777777777778
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 272,
+              "FP": 44,
+              "FN": 16,
+              "TN": 100,
+              "tpr": 94.44444444444444,
+              "fpr": 30.555555555555557
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 14,
+              "FN": 0,
+              "TN": 57,
+              "tpr": null,
+              "fpr": 19.718309859154928
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 199,
+              "FP": 14,
+              "FN": 128,
+              "TN": 375,
+              "tpr": 60.85626911314985,
+              "fpr": 3.5989717223650386
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 19,
+              "FP": 4,
+              "FN": 20,
+              "TN": 170,
+              "tpr": 48.717948717948715,
+              "fpr": 2.2988505747126435
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 180,
+              "FP": 8,
+              "FN": 108,
+              "TN": 136,
+              "tpr": 62.5,
+              "fpr": 5.555555555555555
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 2,
+              "FN": 0,
+              "TN": 69,
+              "tpr": null,
+              "fpr": 2.816901408450704
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 283,
+              "FP": 33,
+              "FN": 11,
+              "TN": 389,
+              "tpr": 96.25850340136054,
+              "fpr": 7.819905213270142
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 6,
+              "FN": 0,
+              "TN": 201,
+              "tpr": 100.0,
+              "fpr": 2.898550724637681
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 277,
+              "FP": 19,
+              "FN": 11,
+              "TN": 125,
+              "tpr": 96.18055555555556,
+              "fpr": 13.194444444444445
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 8,
+              "FN": 0,
+              "TN": 63,
+              "tpr": null,
+              "fpr": 11.267605633802816
+            }
+          }
+        }
+      },
+      "10dB": {
+        "n": 716,
+        "acc": 64.80446927374301,
+        "single_acc": 83.09859154929578,
+        "double_acc": 53.24074074074075,
+        "noise_acc": 80.28169014084507,
+        "count_acc": 78.77094972067039,
+        "single_to_double": 19,
+        "double_to_single": 115,
+        "single_type_errors": 15,
+        "double_pair_errors": 85,
+        "confusion": [
+          [
+            57,
+            4,
+            0,
+            0,
+            3,
+            7,
+            0
+          ],
+          [
+            2,
+            149,
+            2,
+            2,
+            6,
+            7,
+            0
+          ],
+          [
+            0,
+            10,
+            24,
+            1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            64,
+            7,
+            0,
+            59,
+            11,
+            2
+          ],
+          [
+            1,
+            7,
+            0,
+            11,
+            2,
+            112,
+            11
+          ],
+          [
+            0,
+            5,
+            5,
+            16,
+            8,
+            51,
+            59
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            57,
+            4,
+            10
+          ],
+          [
+            2,
+            192,
+            19
+          ],
+          [
+            2,
+            115,
+            315
+          ]
+        ],
+        "double_C0_acc": 52.31481481481482,
+        "double_C1_acc": 49.074074074074076,
+        "double_C2_acc": 59.25925925925925,
+        "per_set_acc": {
+          "E": 80.28169014084507,
+          "PF": 88.69047619047619,
+          "MB": 61.53846153846154,
+          "RV": 66.66666666666666,
+          "PF+MB": 40.97222222222222,
+          "PF+RV": 77.77777777777779,
+          "MB+RV": 40.97222222222222
+        },
+        "group_macro_acc": 72.20700747696053,
+        "conditional_single_acc": 89.2018779342723,
+        "conditional_double_acc": 76.1574074074074,
+        "member_single_to_double_mean_pct": 9.60974178403756,
+        "single_all_members_double_pct": 0.0,
+        "member_pair_single_to_double_joint_pct": 5.091435711040436,
+        "member_double_count_recall_pct": 71.96903935185185,
+        "marginal_count_acc": 79.3296089385475,
+        "balanced_single_double_count_error_pct": 18.471244131455396,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 417,
+              "FP": 94,
+              "FN": 39,
+              "TN": 166,
+              "tpr": 91.44736842105263,
+              "fpr": 36.15384615384615
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 162,
+              "FP": 16,
+              "FN": 6,
+              "TN": 29,
+              "tpr": 96.42857142857143,
+              "fpr": 35.55555555555556
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 255,
+              "FP": 64,
+              "FN": 33,
+              "TN": 80,
+              "tpr": 88.54166666666667,
+              "fpr": 44.44444444444444
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 14,
+              "FN": 0,
+              "TN": 57,
+              "tpr": null,
+              "fpr": 19.718309859154928
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 168,
+              "FP": 24,
+              "FN": 159,
+              "TN": 365,
+              "tpr": 51.37614678899082,
+              "fpr": 6.169665809768637
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 28,
+              "FP": 8,
+              "FN": 11,
+              "TN": 166,
+              "tpr": 71.7948717948718,
+              "fpr": 4.597701149425287
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 140,
+              "FP": 13,
+              "FN": 148,
+              "TN": 131,
+              "tpr": 48.611111111111114,
+              "fpr": 9.027777777777779
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 3,
+              "FN": 0,
+              "TN": 68,
+              "tpr": null,
+              "fpr": 4.225352112676056
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 266,
+              "FP": 30,
+              "FN": 28,
+              "TN": 392,
+              "tpr": 90.47619047619048,
+              "fpr": 7.109004739336493
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 10,
+              "FN": 0,
+              "TN": 197,
+              "tpr": 100.0,
+              "fpr": 4.830917874396135
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 260,
+              "FP": 13,
+              "FN": 28,
+              "TN": 131,
+              "tpr": 90.27777777777777,
+              "fpr": 9.027777777777779
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 7,
+              "FN": 0,
+              "TN": 64,
+              "tpr": null,
+              "fpr": 9.859154929577464
+            }
+          }
+        }
+      },
+      "5dB": {
+        "n": 716,
+        "acc": 64.3854748603352,
+        "single_acc": 80.75117370892019,
+        "double_acc": 53.47222222222222,
+        "noise_acc": 81.69014084507043,
+        "count_acc": 78.63128491620111,
+        "single_to_double": 24,
+        "double_to_single": 111,
+        "single_type_errors": 15,
+        "double_pair_errors": 87,
+        "confusion": [
+          [
+            58,
+            2,
+            1,
+            0,
+            3,
+            7,
+            0
+          ],
+          [
+            2,
+            143,
+            1,
+            3,
+            12,
+            7,
+            0
+          ],
+          [
+            0,
+            10,
+            24,
+            1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            58,
+            7,
+            0,
+            67,
+            8,
+            2
+          ],
+          [
+            1,
+            6,
+            0,
+            13,
+            1,
+            110,
+            13
+          ],
+          [
+            0,
+            6,
+            3,
+            18,
+            5,
+            58,
+            54
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            58,
+            3,
+            10
+          ],
+          [
+            2,
+            187,
+            24
+          ],
+          [
+            3,
+            111,
+            318
+          ]
+        ],
+        "double_C0_acc": 50.0,
+        "double_C1_acc": 52.77777777777778,
+        "double_C2_acc": 61.111111111111114,
+        "per_set_acc": {
+          "E": 81.69014084507043,
+          "PF": 85.11904761904762,
+          "MB": 61.53846153846154,
+          "RV": 83.33333333333334,
+          "PF+MB": 46.52777777777778,
+          "PF+RV": 76.38888888888889,
+          "MB+RV": 37.5
+        },
+        "group_macro_acc": 71.97117892540429,
+        "conditional_single_acc": 88.73239436619718,
+        "conditional_double_acc": 73.8425925925926,
+        "member_single_to_double_mean_pct": 12.573356807511738,
+        "single_all_members_double_pct": 0.4694835680751174,
+        "member_pair_single_to_double_joint_pct": 7.331894593366652,
+        "member_double_count_recall_pct": 70.99247685185185,
+        "marginal_count_acc": 78.63128491620111,
+        "balanced_single_double_count_error_pct": 19.29773082942097,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 412,
+              "FP": 96,
+              "FN": 44,
+              "TN": 164,
+              "tpr": 90.35087719298245,
+              "fpr": 36.92307692307692
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 162,
+              "FP": 15,
+              "FN": 6,
+              "TN": 30,
+              "tpr": 96.42857142857143,
+              "fpr": 33.333333333333336
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 250,
+              "FP": 69,
+              "FN": 38,
+              "TN": 75,
+              "tpr": 86.80555555555556,
+              "fpr": 47.916666666666664
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 12,
+              "FN": 0,
+              "TN": 59,
+              "tpr": null,
+              "fpr": 16.901408450704224
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 166,
+              "FP": 31,
+              "FN": 161,
+              "TN": 358,
+              "tpr": 50.764525993883794,
+              "fpr": 7.969151670951157
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 28,
+              "FP": 13,
+              "FN": 11,
+              "TN": 161,
+              "tpr": 71.7948717948718,
+              "fpr": 7.471264367816092
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 138,
+              "FP": 14,
+              "FN": 150,
+              "TN": 130,
+              "tpr": 47.916666666666664,
+              "fpr": 9.722222222222221
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 4,
+              "FN": 0,
+              "TN": 67,
+              "tpr": null,
+              "fpr": 5.633802816901408
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 272,
+              "FP": 28,
+              "FN": 22,
+              "TN": 394,
+              "tpr": 92.51700680272108,
+              "fpr": 6.6350710900473935
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 11,
+              "FN": 0,
+              "TN": 196,
+              "tpr": 100.0,
+              "fpr": 5.314009661835748
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 266,
+              "FP": 10,
+              "FN": 22,
+              "TN": 134,
+              "tpr": 92.36111111111111,
+              "fpr": 6.944444444444445
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 7,
+              "FN": 0,
+              "TN": 64,
+              "tpr": null,
+              "fpr": 9.859154929577464
+            }
+          }
+        }
+      },
+      "0dB": {
+        "n": 716,
+        "acc": 62.150837988826815,
+        "single_acc": 71.36150234741784,
+        "double_acc": 53.93518518518518,
+        "noise_acc": 84.50704225352112,
+        "count_acc": 79.05027932960894,
+        "single_to_double": 36,
+        "double_to_single": 96,
+        "single_type_errors": 21,
+        "double_pair_errors": 100,
+        "confusion": [
+          [
+            60,
+            0,
+            1,
+            0,
+            5,
+            5,
+            0
+          ],
+          [
+            4,
+            124,
+            4,
+            5,
+            19,
+            11,
+            1
+          ],
+          [
+            0,
+            12,
+            23,
+            0,
+            2,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            51,
+            7,
+            0,
+            65,
+            13,
+            6
+          ],
+          [
+            1,
+            6,
+            0,
+            11,
+            1,
+            107,
+            18
+          ],
+          [
+            0,
+            1,
+            1,
+            19,
+            9,
+            53,
+            61
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            60,
+            1,
+            10
+          ],
+          [
+            4,
+            173,
+            36
+          ],
+          [
+            3,
+            96,
+            333
+          ]
+        ],
+        "double_C0_acc": 50.0,
+        "double_C1_acc": 52.77777777777778,
+        "double_C2_acc": 62.96296296296296,
+        "per_set_acc": {
+          "E": 84.50704225352112,
+          "PF": 73.80952380952381,
+          "MB": 58.97435897435898,
+          "RV": 83.33333333333334,
+          "PF+MB": 45.13888888888889,
+          "PF+RV": 74.30555555555556,
+          "MB+RV": 42.36111111111111
+        },
+        "group_macro_acc": 69.93457659537471,
+        "conditional_single_acc": 85.44600938967136,
+        "conditional_double_acc": 71.99074074074075,
+        "member_single_to_double_mean_pct": 19.70363849765258,
+        "single_all_members_double_pct": 2.8169014084507045,
+        "member_pair_single_to_double_joint_pct": 13.075495986672724,
+        "member_double_count_recall_pct": 74.16087962962963,
+        "marginal_count_acc": 78.91061452513966,
+        "balanced_single_double_count_error_pct": 20.84800469483568,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 397,
+              "FP": 89,
+              "FN": 59,
+              "TN": 171,
+              "tpr": 87.06140350877193,
+              "fpr": 34.23076923076923
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 154,
+              "FP": 16,
+              "FN": 14,
+              "TN": 29,
+              "tpr": 91.66666666666667,
+              "fpr": 35.55555555555556
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 243,
+              "FP": 63,
+              "FN": 45,
+              "TN": 81,
+              "tpr": 84.375,
+              "fpr": 43.75
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 10,
+              "FN": 0,
+              "TN": 61,
+              "tpr": null,
+              "fpr": 14.084507042253522
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 175,
+              "FP": 49,
+              "FN": 152,
+              "TN": 340,
+              "tpr": 53.51681957186544,
+              "fpr": 12.596401028277635
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 26,
+              "FP": 24,
+              "FN": 13,
+              "TN": 150,
+              "tpr": 66.66666666666667,
+              "fpr": 13.793103448275861
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 149,
+              "FP": 19,
+              "FN": 139,
+              "TN": 125,
+              "tpr": 51.736111111111114,
+              "fpr": 13.194444444444445
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 6,
+              "FN": 0,
+              "TN": 65,
+              "tpr": null,
+              "fpr": 8.450704225352112
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 275,
+              "FP": 43,
+              "FN": 19,
+              "TN": 379,
+              "tpr": 93.5374149659864,
+              "fpr": 10.189573459715639
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 19,
+              "FN": 0,
+              "TN": 188,
+              "tpr": 100.0,
+              "fpr": 9.178743961352657
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 269,
+              "FP": 19,
+              "FN": 19,
+              "TN": 125,
+              "tpr": 93.40277777777777,
+              "fpr": 13.194444444444445
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 5,
+              "FN": 0,
+              "TN": 66,
+              "tpr": null,
+              "fpr": 7.042253521126761
+            }
+          }
+        }
+      },
+      "-5dB": {
+        "n": 716,
+        "acc": 56.564245810055866,
+        "single_acc": 58.21596244131455,
+        "double_acc": 51.388888888888886,
+        "noise_acc": 83.09859154929578,
+        "count_acc": 74.58100558659217,
+        "single_to_double": 52,
+        "double_to_single": 107,
+        "single_type_errors": 30,
+        "double_pair_errors": 99,
+        "confusion": [
+          [
+            59,
+            0,
+            1,
+            0,
+            3,
+            6,
+            2
+          ],
+          [
+            6,
+            92,
+            6,
+            14,
+            37,
+            11,
+            2
+          ],
+          [
+            1,
+            10,
+            26,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            35,
+            24,
+            2,
+            58,
+            14,
+            9
+          ],
+          [
+            2,
+            4,
+            0,
+            18,
+            5,
+            77,
+            38
+          ],
+          [
+            0,
+            1,
+            5,
+            18,
+            8,
+            25,
+            87
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            59,
+            1,
+            11
+          ],
+          [
+            7,
+            154,
+            52
+          ],
+          [
+            4,
+            107,
+            321
+          ]
+        ],
+        "double_C0_acc": 44.44444444444444,
+        "double_C1_acc": 56.481481481481474,
+        "double_C2_acc": 60.18518518518518,
+        "per_set_acc": {
+          "E": 83.09859154929578,
+          "PF": 54.761904761904766,
+          "MB": 66.66666666666666,
+          "RV": 100.0,
+          "PF+MB": 40.27777777777778,
+          "PF+RV": 53.47222222222222,
+          "MB+RV": 60.416666666666664
+        },
+        "group_macro_acc": 64.23448095983308,
+        "conditional_single_acc": 75.5868544600939,
+        "conditional_double_acc": 70.83333333333334,
+        "member_single_to_double_mean_pct": 27.274061032863848,
+        "single_all_members_double_pct": 4.694835680751173,
+        "member_pair_single_to_double_joint_pct": 18.973383310616388,
+        "member_double_count_recall_pct": 73.95109953703704,
+        "marginal_count_acc": 76.11731843575419,
+        "balanced_single_double_count_error_pct": 26.69698748043818,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 333,
+              "FP": 55,
+              "FN": 123,
+              "TN": 205,
+              "tpr": 73.02631578947368,
+              "fpr": 21.153846153846153
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 140,
+              "FP": 12,
+              "FN": 28,
+              "TN": 33,
+              "tpr": 83.33333333333333,
+              "fpr": 26.666666666666668
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 193,
+              "FP": 34,
+              "FN": 95,
+              "TN": 110,
+              "tpr": 67.01388888888889,
+              "fpr": 23.61111111111111
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 9,
+              "FN": 0,
+              "TN": 62,
+              "tpr": null,
+              "fpr": 12.67605633802817
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 218,
+              "FP": 94,
+              "FN": 109,
+              "TN": 295,
+              "tpr": 66.66666666666667,
+              "fpr": 24.164524421593832
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 27,
+              "FP": 45,
+              "FN": 12,
+              "TN": 129,
+              "tpr": 69.23076923076923,
+              "fpr": 25.862068965517242
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 191,
+              "FP": 43,
+              "FN": 97,
+              "TN": 101,
+              "tpr": 66.31944444444444,
+              "fpr": 29.86111111111111
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 6,
+              "FN": 0,
+              "TN": 65,
+              "tpr": null,
+              "fpr": 8.450704225352112
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 269,
+              "FP": 61,
+              "FN": 25,
+              "TN": 361,
+              "tpr": 91.49659863945578,
+              "fpr": 14.454976303317535
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 28,
+              "FN": 0,
+              "TN": 179,
+              "tpr": 100.0,
+              "fpr": 13.526570048309178
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 263,
+              "FP": 25,
+              "FN": 25,
+              "TN": 119,
+              "tpr": 91.31944444444444,
+              "fpr": 17.36111111111111
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 8,
+              "FN": 0,
+              "TN": 63,
+              "tpr": null,
+              "fpr": 11.267605633802816
+            }
+          }
+        }
+      },
+      "-10dB": {
+        "n": 716,
+        "acc": 46.229050279329606,
+        "single_acc": 38.967136150234744,
+        "double_acc": 44.675925925925924,
+        "noise_acc": 77.46478873239437,
+        "count_acc": 69.97206703910615,
+        "single_to_double": 88,
+        "double_to_single": 87,
+        "single_type_errors": 29,
+        "double_pair_errors": 141,
+        "confusion": [
+          [
+            55,
+            1,
+            2,
+            0,
+            7,
+            2,
+            4
+          ],
+          [
+            10,
+            57,
+            16,
+            8,
+            53,
+            11,
+            13
+          ],
+          [
+            3,
+            4,
+            22,
+            0,
+            5,
+            1,
+            4
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            0,
+            1
+          ],
+          [
+            6,
+            12,
+            37,
+            2,
+            57,
+            14,
+            16
+          ],
+          [
+            1,
+            1,
+            0,
+            10,
+            18,
+            57,
+            57
+          ],
+          [
+            4,
+            1,
+            16,
+            8,
+            14,
+            22,
+            79
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            55,
+            3,
+            13
+          ],
+          [
+            13,
+            112,
+            88
+          ],
+          [
+            11,
+            87,
+            334
+          ]
+        ],
+        "double_C0_acc": 38.88888888888889,
+        "double_C1_acc": 47.22222222222222,
+        "double_C2_acc": 53.70370370370371,
+        "per_set_acc": {
+          "E": 77.46478873239437,
+          "PF": 33.92857142857143,
+          "MB": 56.41025641025641,
+          "RV": 66.66666666666666,
+          "PF+MB": 39.58333333333333,
+          "PF+RV": 39.58333333333333,
+          "MB+RV": 54.861111111111114
+        },
+        "group_macro_acc": 53.70261693618502,
+        "conditional_single_acc": 64.31924882629107,
+        "conditional_double_acc": 61.111111111111114,
+        "member_single_to_double_mean_pct": 40.698356807511736,
+        "single_all_members_double_pct": 8.450704225352112,
+        "member_pair_single_to_double_joint_pct": 30.347001363016812,
+        "member_double_count_recall_pct": 75.96932870370371,
+        "marginal_count_acc": 71.64804469273743,
+        "balanced_single_double_count_error_pct": 35.05151278038602,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 280,
+              "FP": 58,
+              "FN": 176,
+              "TN": 202,
+              "tpr": 61.40350877192982,
+              "fpr": 22.307692307692307
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 121,
+              "FP": 11,
+              "FN": 47,
+              "TN": 34,
+              "tpr": 72.02380952380952,
+              "fpr": 24.444444444444443
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 159,
+              "FP": 37,
+              "FN": 129,
+              "TN": 107,
+              "tpr": 55.208333333333336,
+              "fpr": 25.694444444444443
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 10,
+              "FN": 0,
+              "TN": 61,
+              "tpr": null,
+              "fpr": 14.084507042253522
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 250,
+              "FP": 171,
+              "FN": 77,
+              "TN": 218,
+              "tpr": 76.4525993883792,
+              "fpr": 43.958868894601544
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 31,
+              "FP": 83,
+              "FN": 8,
+              "TN": 91,
+              "tpr": 79.48717948717949,
+              "fpr": 47.701149425287355
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 219,
+              "FP": 75,
+              "FN": 69,
+              "TN": 69,
+              "tpr": 76.04166666666667,
+              "fpr": 52.083333333333336
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 13,
+              "FN": 0,
+              "TN": 58,
+              "tpr": null,
+              "fpr": 18.309859154929576
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 238,
+              "FP": 75,
+              "FN": 56,
+              "TN": 347,
+              "tpr": 80.95238095238095,
+              "fpr": 17.77251184834123
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 5,
+              "FP": 37,
+              "FN": 1,
+              "TN": 170,
+              "tpr": 83.33333333333333,
+              "fpr": 17.8743961352657
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 233,
+              "FP": 32,
+              "FN": 55,
+              "TN": 112,
+              "tpr": 80.90277777777777,
+              "fpr": 22.22222222222222
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 6,
+              "FN": 0,
+              "TN": 65,
+              "tpr": null,
+              "fpr": 8.450704225352112
+            }
+          }
+        }
+      }
+    },
+    "T1_l1_tfblocks": {
+      "original": {
+        "n": 716,
+        "acc": 74.16201117318437,
+        "single_acc": 87.32394366197182,
+        "double_acc": 68.28703703703704,
+        "noise_acc": 70.4225352112676,
+        "count_acc": 87.70949720670392,
+        "single_to_double": 2,
+        "double_to_single": 64,
+        "single_type_errors": 25,
+        "double_pair_errors": 72,
+        "confusion": [
+          [
+            50,
+            11,
+            0,
+            0,
+            1,
+            9,
+            0
+          ],
+          [
+            0,
+            161,
+            3,
+            2,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            18,
+            19,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            47,
+            2,
+            0,
+            73,
+            18,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            1,
+            131,
+            9
+          ],
+          [
+            0,
+            0,
+            4,
+            8,
+            4,
+            37,
+            91
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            50,
+            11,
+            10
+          ],
+          [
+            0,
+            211,
+            2
+          ],
+          [
+            1,
+            64,
+            367
+          ]
+        ],
+        "double_C0_acc": 67.5925925925926,
+        "double_C1_acc": 71.29629629629629,
+        "double_C2_acc": 66.66666666666666,
+        "per_set_acc": {
+          "E": 70.4225352112676,
+          "PF": 95.83333333333334,
+          "MB": 48.717948717948715,
+          "RV": 100.0,
+          "PF+MB": 50.69444444444444,
+          "PF+RV": 90.97222222222221,
+          "MB+RV": 63.19444444444444
+        },
+        "group_macro_acc": 75.34450530342548,
+        "conditional_single_acc": 87.79342723004694,
+        "conditional_double_acc": 81.48148148148148,
+        "member_single_to_double_mean_pct": 1.9072769953051645,
+        "single_all_members_double_pct": 0.0,
+        "member_pair_single_to_double_joint_pct": 0.7723761926397094,
+        "member_double_count_recall_pct": 83.87586805555556,
+        "marginal_count_acc": 87.84916201117319,
+        "balanced_single_double_count_error_pct": 7.992631716223266,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 433,
+              "FP": 80,
+              "FN": 23,
+              "TN": 180,
+              "tpr": 94.95614035087719,
+              "fpr": 30.76923076923077
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 163,
+              "FP": 18,
+              "FN": 5,
+              "TN": 27,
+              "tpr": 97.02380952380952,
+              "fpr": 40.0
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 270,
+              "FP": 41,
+              "FN": 18,
+              "TN": 103,
+              "tpr": 93.75,
+              "fpr": 28.47222222222222
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 21,
+              "FN": 0,
+              "TN": 50,
+              "tpr": null,
+              "fpr": 29.577464788732396
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 196,
+              "FP": 15,
+              "FN": 131,
+              "TN": 374,
+              "tpr": 59.9388379204893,
+              "fpr": 3.8560411311053984
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 19,
+              "FP": 4,
+              "FN": 20,
+              "TN": 170,
+              "tpr": 48.717948717948715,
+              "fpr": 2.2988505747126435
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 177,
+              "FP": 10,
+              "FN": 111,
+              "TN": 134,
+              "tpr": 61.458333333333336,
+              "fpr": 6.944444444444445
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 1,
+              "FN": 0,
+              "TN": 70,
+              "tpr": null,
+              "fpr": 1.408450704225352
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 285,
+              "FP": 35,
+              "FN": 9,
+              "TN": 387,
+              "tpr": 96.93877551020408,
+              "fpr": 8.293838862559241
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 5,
+              "FN": 0,
+              "TN": 202,
+              "tpr": 100.0,
+              "fpr": 2.4154589371980677
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 279,
+              "FP": 21,
+              "FN": 9,
+              "TN": 123,
+              "tpr": 96.875,
+              "fpr": 14.583333333333334
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 9,
+              "FN": 0,
+              "TN": 62,
+              "tpr": null,
+              "fpr": 12.67605633802817
+            }
+          }
+        }
+      },
+      "10dB": {
+        "n": 716,
+        "acc": 64.10614525139665,
+        "single_acc": 85.44600938967136,
+        "double_acc": 52.083333333333336,
+        "noise_acc": 73.23943661971832,
+        "count_acc": 78.35195530726257,
+        "single_to_double": 9,
+        "double_to_single": 123,
+        "single_type_errors": 20,
+        "double_pair_errors": 82,
+        "confusion": [
+          [
+            52,
+            9,
+            0,
+            0,
+            3,
+            7,
+            0
+          ],
+          [
+            2,
+            154,
+            2,
+            3,
+            2,
+            5,
+            0
+          ],
+          [
+            0,
+            14,
+            23,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            71,
+            6,
+            0,
+            54,
+            11,
+            1
+          ],
+          [
+            1,
+            6,
+            0,
+            10,
+            1,
+            116,
+            10
+          ],
+          [
+            0,
+            6,
+            6,
+            18,
+            5,
+            54,
+            55
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            52,
+            9,
+            10
+          ],
+          [
+            2,
+            202,
+            9
+          ],
+          [
+            2,
+            123,
+            307
+          ]
+        ],
+        "double_C0_acc": 49.53703703703704,
+        "double_C1_acc": 48.148148148148145,
+        "double_C2_acc": 61.111111111111114,
+        "per_set_acc": {
+          "E": 73.23943661971832,
+          "PF": 91.66666666666666,
+          "MB": 58.97435897435898,
+          "RV": 83.33333333333334,
+          "PF+MB": 37.5,
+          "PF+RV": 80.55555555555556,
+          "MB+RV": 38.19444444444444
+        },
+        "group_macro_acc": 70.25625978090767,
+        "conditional_single_acc": 88.73239436619718,
+        "conditional_double_acc": 75.92592592592592,
+        "member_single_to_double_mean_pct": 6.734154929577464,
+        "single_all_members_double_pct": 0.4694835680751174,
+        "member_pair_single_to_double_joint_pct": 3.3819854611540205,
+        "member_double_count_recall_pct": 70.48611111111111,
+        "marginal_count_acc": 78.49162011173185,
+        "balanced_single_double_count_error_pct": 17.04975221700574,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 420,
+              "FP": 100,
+              "FN": 36,
+              "TN": 160,
+              "tpr": 92.10526315789474,
+              "fpr": 38.46153846153846
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 161,
+              "FP": 16,
+              "FN": 7,
+              "TN": 29,
+              "tpr": 95.83333333333333,
+              "fpr": 35.55555555555556
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 259,
+              "FP": 65,
+              "FN": 29,
+              "TN": 79,
+              "tpr": 89.93055555555556,
+              "fpr": 45.138888888888886
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 19,
+              "FN": 0,
+              "TN": 52,
+              "tpr": null,
+              "fpr": 26.760563380281692
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 151,
+              "FP": 18,
+              "FN": 176,
+              "TN": 371,
+              "tpr": 46.17737003058104,
+              "fpr": 4.627249357326479
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 24,
+              "FP": 4,
+              "FN": 15,
+              "TN": 170,
+              "tpr": 61.53846153846154,
+              "fpr": 2.2988505747126435
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 127,
+              "FP": 11,
+              "FN": 161,
+              "TN": 133,
+              "tpr": 44.09722222222222,
+              "fpr": 7.638888888888889
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 3,
+              "FN": 0,
+              "TN": 68,
+              "tpr": null,
+              "fpr": 4.225352112676056
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 269,
+              "FP": 28,
+              "FN": 25,
+              "TN": 394,
+              "tpr": 91.49659863945578,
+              "fpr": 6.6350710900473935
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 9,
+              "FN": 0,
+              "TN": 198,
+              "tpr": 100.0,
+              "fpr": 4.3478260869565215
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 263,
+              "FP": 12,
+              "FN": 25,
+              "TN": 132,
+              "tpr": 91.31944444444444,
+              "fpr": 8.333333333333334
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 7,
+              "FN": 0,
+              "TN": 64,
+              "tpr": null,
+              "fpr": 9.859154929577464
+            }
+          }
+        }
+      },
+      "5dB": {
+        "n": 716,
+        "acc": 61.731843575419,
+        "single_acc": 84.97652582159625,
+        "double_acc": 47.91666666666667,
+        "noise_acc": 76.05633802816901,
+        "count_acc": 76.67597765363129,
+        "single_to_double": 10,
+        "double_to_single": 135,
+        "single_type_errors": 20,
+        "double_pair_errors": 87,
+        "confusion": [
+          [
+            54,
+            6,
+            1,
+            0,
+            3,
+            7,
+            0
+          ],
+          [
+            2,
+            153,
+            2,
+            3,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
+            14,
+            23,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            75,
+            6,
+            0,
+            47,
+            13,
+            1
+          ],
+          [
+            1,
+            6,
+            0,
+            14,
+            0,
+            116,
+            7
+          ],
+          [
+            0,
+            6,
+            3,
+            25,
+            4,
+            62,
+            44
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            54,
+            7,
+            10
+          ],
+          [
+            2,
+            201,
+            10
+          ],
+          [
+            3,
+            135,
+            294
+          ]
+        ],
+        "double_C0_acc": 45.370370370370374,
+        "double_C1_acc": 42.592592592592595,
+        "double_C2_acc": 58.333333333333336,
+        "per_set_acc": {
+          "E": 76.05633802816901,
+          "PF": 91.07142857142857,
+          "MB": 58.97435897435898,
+          "RV": 83.33333333333334,
+          "PF+MB": 32.63888888888889,
+          "PF+RV": 80.55555555555556,
+          "MB+RV": 30.555555555555557
+        },
+        "group_macro_acc": 69.6498435054773,
+        "conditional_single_acc": 88.26291079812206,
+        "conditional_double_acc": 73.14814814814815,
+        "member_single_to_double_mean_pct": 7.394366197183098,
+        "single_all_members_double_pct": 0.4694835680751174,
+        "member_pair_single_to_double_joint_pct": 3.642283810389218,
+        "member_double_count_recall_pct": 66.91984953703704,
+        "marginal_count_acc": 77.51396648044692,
+        "balanced_single_double_count_error_pct": 18.789123630672925,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 418,
+              "FP": 104,
+              "FN": 38,
+              "TN": 156,
+              "tpr": 91.66666666666667,
+              "fpr": 40.0
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 161,
+              "FP": 16,
+              "FN": 7,
+              "TN": 29,
+              "tpr": 95.83333333333333,
+              "fpr": 35.55555555555556
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 257,
+              "FP": 72,
+              "FN": 31,
+              "TN": 72,
+              "tpr": 89.23611111111111,
+              "fpr": 50.0
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 16,
+              "FN": 0,
+              "TN": 55,
+              "tpr": null,
+              "fpr": 22.535211267605632
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 129,
+              "FP": 16,
+              "FN": 198,
+              "TN": 373,
+              "tpr": 39.44954128440367,
+              "fpr": 4.113110539845758
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 24,
+              "FP": 5,
+              "FN": 15,
+              "TN": 169,
+              "tpr": 61.53846153846154,
+              "fpr": 2.8735632183908044
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 105,
+              "FP": 7,
+              "FN": 183,
+              "TN": 137,
+              "tpr": 36.458333333333336,
+              "fpr": 4.861111111111111
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 4,
+              "FN": 0,
+              "TN": 67,
+              "tpr": null,
+              "fpr": 5.633802816901408
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 274,
+              "FP": 30,
+              "FN": 20,
+              "TN": 392,
+              "tpr": 93.19727891156462,
+              "fpr": 7.109004739336493
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 9,
+              "FN": 0,
+              "TN": 198,
+              "tpr": 100.0,
+              "fpr": 4.3478260869565215
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 268,
+              "FP": 14,
+              "FN": 20,
+              "TN": 130,
+              "tpr": 93.05555555555556,
+              "fpr": 9.722222222222221
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 7,
+              "FN": 0,
+              "TN": 64,
+              "tpr": null,
+              "fpr": 9.859154929577464
+            }
+          }
+        }
+      },
+      "0dB": {
+        "n": 716,
+        "acc": 60.47486033519554,
+        "single_acc": 80.75117370892019,
+        "double_acc": 47.68518518518518,
+        "noise_acc": 77.46478873239437,
+        "count_acc": 75.83798882681563,
+        "single_to_double": 18,
+        "double_to_single": 134,
+        "single_type_errors": 21,
+        "double_pair_errors": 89,
+        "confusion": [
+          [
+            55,
+            5,
+            1,
+            0,
+            4,
+            6,
+            0
+          ],
+          [
+            2,
+            144,
+            1,
+            5,
+            9,
+            7,
+            0
+          ],
+          [
+            0,
+            15,
+            23,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            66,
+            6,
+            0,
+            52,
+            14,
+            4
+          ],
+          [
+            1,
+            8,
+            0,
+            22,
+            0,
+            106,
+            7
+          ],
+          [
+            0,
+            3,
+            1,
+            28,
+            8,
+            56,
+            48
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            55,
+            6,
+            10
+          ],
+          [
+            2,
+            193,
+            18
+          ],
+          [
+            3,
+            134,
+            295
+          ]
+        ],
+        "double_C0_acc": 41.66666666666667,
+        "double_C1_acc": 46.2962962962963,
+        "double_C2_acc": 61.111111111111114,
+        "per_set_acc": {
+          "E": 77.46478873239437,
+          "PF": 85.71428571428571,
+          "MB": 58.97435897435898,
+          "RV": 83.33333333333334,
+          "PF+MB": 36.11111111111111,
+          "PF+RV": 73.61111111111111,
+          "MB+RV": 33.33333333333333
+        },
+        "group_macro_acc": 68.63371587549992,
+        "conditional_single_acc": 87.79342723004694,
+        "conditional_double_acc": 70.83333333333334,
+        "member_single_to_double_mean_pct": 10.68075117370892,
+        "single_all_members_double_pct": 0.4694835680751174,
+        "member_pair_single_to_double_joint_pct": 5.759692563986068,
+        "member_double_count_recall_pct": 66.10243055555556,
+        "marginal_count_acc": 76.67597765363129,
+        "balanced_single_double_count_error_pct": 20.551317162232657,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 406,
+              "FP": 99,
+              "FN": 50,
+              "TN": 161,
+              "tpr": 89.03508771929825,
+              "fpr": 38.07692307692308
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 160,
+              "FP": 17,
+              "FN": 8,
+              "TN": 28,
+              "tpr": 95.23809523809524,
+              "fpr": 37.77777777777778
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 246,
+              "FP": 67,
+              "FN": 42,
+              "TN": 77,
+              "tpr": 85.41666666666667,
+              "fpr": 46.52777777777778
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 15,
+              "FN": 0,
+              "TN": 56,
+              "tpr": null,
+              "fpr": 21.12676056338028
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 142,
+              "FP": 22,
+              "FN": 185,
+              "TN": 367,
+              "tpr": 43.42507645259939,
+              "fpr": 5.655526992287918
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 23,
+              "FP": 10,
+              "FN": 16,
+              "TN": 164,
+              "tpr": 58.97435897435897,
+              "fpr": 5.747126436781609
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 119,
+              "FP": 7,
+              "FN": 169,
+              "TN": 137,
+              "tpr": 41.31944444444444,
+              "fpr": 4.861111111111111
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 5,
+              "FN": 0,
+              "TN": 66,
+              "tpr": null,
+              "fpr": 7.042253521126761
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 273,
+              "FP": 37,
+              "FN": 21,
+              "TN": 385,
+              "tpr": 92.85714285714286,
+              "fpr": 8.76777251184834
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 13,
+              "FN": 0,
+              "TN": 194,
+              "tpr": 100.0,
+              "fpr": 6.280193236714976
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 267,
+              "FP": 18,
+              "FN": 21,
+              "TN": 126,
+              "tpr": 92.70833333333333,
+              "fpr": 12.5
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 6,
+              "FN": 0,
+              "TN": 65,
+              "tpr": null,
+              "fpr": 8.450704225352112
+            }
+          }
+        }
+      },
+      "-5dB": {
+        "n": 716,
+        "acc": 54.608938547486034,
+        "single_acc": 73.23943661971832,
+        "double_acc": 41.66666666666667,
+        "noise_acc": 77.46478873239437,
+        "count_acc": 70.81005586592178,
+        "single_to_double": 22,
+        "double_to_single": 165,
+        "single_type_errors": 32,
+        "double_pair_errors": 84,
+        "confusion": [
+          [
+            55,
+            5,
+            1,
+            0,
+            3,
+            6,
+            1
+          ],
+          [
+            3,
+            126,
+            4,
+            14,
+            12,
+            8,
+            1
+          ],
+          [
+            0,
+            14,
+            24,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            53,
+            20,
+            4,
+            45,
+            14,
+            6
+          ],
+          [
+            1,
+            11,
+            0,
+            35,
+            3,
+            77,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            39,
+            7,
+            37,
+            58
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            55,
+            6,
+            10
+          ],
+          [
+            3,
+            188,
+            22
+          ],
+          [
+            3,
+            165,
+            264
+          ]
+        ],
+        "double_C0_acc": 30.555555555555557,
+        "double_C1_acc": 41.66666666666667,
+        "double_C2_acc": 63.888888888888886,
+        "per_set_acc": {
+          "E": 77.46478873239437,
+          "PF": 75.0,
+          "MB": 61.53846153846154,
+          "RV": 100.0,
+          "PF+MB": 31.25,
+          "PF+RV": 53.47222222222222,
+          "MB+RV": 40.27777777777778
+        },
+        "group_macro_acc": 64.12363067292645,
+        "conditional_single_acc": 81.2206572769953,
+        "conditional_double_acc": 69.44444444444444,
+        "member_single_to_double_mean_pct": 12.485328638497654,
+        "single_all_members_double_pct": 0.9389671361502347,
+        "member_pair_single_to_double_joint_pct": 7.415190065121914,
+        "member_double_count_recall_pct": 60.091145833333336,
+        "marginal_count_acc": 71.7877094972067,
+        "balanced_single_double_count_error_pct": 25.31298904538341,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 349,
+              "FP": 74,
+              "FN": 107,
+              "TN": 186,
+              "tpr": 76.53508771929825,
+              "fpr": 28.46153846153846
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 146,
+              "FP": 15,
+              "FN": 22,
+              "TN": 30,
+              "tpr": 86.9047619047619,
+              "fpr": 33.333333333333336
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 203,
+              "FP": 45,
+              "FN": 85,
+              "TN": 99,
+              "tpr": 70.48611111111111,
+              "fpr": 31.25
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 14,
+              "FN": 0,
+              "TN": 57,
+              "tpr": null,
+              "fpr": 19.718309859154928
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 162,
+              "FP": 42,
+              "FN": 165,
+              "TN": 347,
+              "tpr": 49.54128440366973,
+              "fpr": 10.796915167095115
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 24,
+              "FP": 17,
+              "FN": 15,
+              "TN": 157,
+              "tpr": 61.53846153846154,
+              "fpr": 9.770114942528735
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 138,
+              "FP": 20,
+              "FN": 150,
+              "TN": 124,
+              "tpr": 47.916666666666664,
+              "fpr": 13.88888888888889
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 5,
+              "FN": 0,
+              "TN": 66,
+              "tpr": null,
+              "fpr": 7.042253521126761
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 269,
+              "FP": 55,
+              "FN": 25,
+              "TN": 367,
+              "tpr": 91.49659863945578,
+              "fpr": 13.033175355450236
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 6,
+              "FP": 24,
+              "FN": 0,
+              "TN": 183,
+              "tpr": 100.0,
+              "fpr": 11.594202898550725
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 263,
+              "FP": 24,
+              "FN": 25,
+              "TN": 120,
+              "tpr": 91.31944444444444,
+              "fpr": 16.666666666666668
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 7,
+              "FN": 0,
+              "TN": 64,
+              "tpr": null,
+              "fpr": 9.859154929577464
+            }
+          }
+        }
+      },
+      "-10dB": {
+        "n": 716,
+        "acc": 49.30167597765363,
+        "single_acc": 64.31924882629107,
+        "double_acc": 40.27777777777778,
+        "noise_acc": 59.154929577464785,
+        "count_acc": 68.85474860335195,
+        "single_to_double": 25,
+        "double_to_single": 163,
+        "single_type_errors": 47,
+        "double_pair_errors": 93,
+        "confusion": [
+          [
+            42,
+            13,
+            2,
+            0,
+            9,
+            3,
+            2
+          ],
+          [
+            3,
+            108,
+            15,
+            18,
+            17,
+            5,
+            2
+          ],
+          [
+            1,
+            12,
+            24,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            5,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            42,
+            34,
+            5,
+            40,
+            11,
+            11
+          ],
+          [
+            1,
+            14,
+            0,
+            26,
+            10,
+            66,
+            27
+          ],
+          [
+            0,
+            5,
+            9,
+            28,
+            12,
+            22,
+            68
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            42,
+            15,
+            14
+          ],
+          [
+            4,
+            184,
+            25
+          ],
+          [
+            2,
+            163,
+            267
+          ]
+        ],
+        "double_C0_acc": 31.01851851851852,
+        "double_C1_acc": 39.81481481481482,
+        "double_C2_acc": 59.25925925925925,
+        "per_set_acc": {
+          "E": 59.154929577464785,
+          "PF": 64.28571428571429,
+          "MB": 61.53846153846154,
+          "RV": 83.33333333333334,
+          "PF+MB": 27.77777777777778,
+          "PF+RV": 45.83333333333333,
+          "MB+RV": 47.22222222222222
+        },
+        "group_macro_acc": 54.583985393844536,
+        "conditional_single_acc": 73.23943661971832,
+        "conditional_double_acc": 67.12962962962963,
+        "member_single_to_double_mean_pct": 16.857394366197184,
+        "single_all_members_double_pct": 2.8169014084507045,
+        "member_pair_single_to_double_joint_pct": 10.036157807057396,
+        "member_double_count_recall_pct": 60.04774305555556,
+        "marginal_count_acc": 69.41340782122904,
+        "balanced_single_double_count_error_pct": 25.90473395931142,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 716,
+              "positive_n": 456,
+              "negative_n": 260,
+              "TP": 313,
+              "FP": 78,
+              "FN": 143,
+              "TN": 182,
+              "tpr": 68.64035087719299,
+              "fpr": 30.0
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 168,
+              "negative_n": 45,
+              "TP": 130,
+              "FP": 14,
+              "FN": 38,
+              "TN": 31,
+              "tpr": 77.38095238095238,
+              "fpr": 31.11111111111111
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 183,
+              "FP": 39,
+              "FN": 105,
+              "TN": 105,
+              "tpr": 63.541666666666664,
+              "fpr": 27.083333333333332
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 25,
+              "FN": 0,
+              "TN": 46,
+              "tpr": null,
+              "fpr": 35.2112676056338
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 716,
+              "positive_n": 327,
+              "negative_n": 389,
+              "TP": 199,
+              "FP": 84,
+              "FN": 128,
+              "TN": 305,
+              "tpr": 60.85626911314985,
+              "fpr": 21.59383033419023
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 39,
+              "negative_n": 174,
+              "TP": 25,
+              "FP": 34,
+              "FN": 14,
+              "TN": 140,
+              "tpr": 64.1025641025641,
+              "fpr": 19.54022988505747
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 174,
+              "FP": 37,
+              "FN": 114,
+              "TN": 107,
+              "tpr": 60.416666666666664,
+              "fpr": 25.694444444444443
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 13,
+              "FN": 0,
+              "TN": 58,
+              "tpr": null,
+              "fpr": 18.309859154929576
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 716,
+              "positive_n": 294,
+              "negative_n": 422,
+              "TP": 242,
+              "FP": 58,
+              "FN": 52,
+              "TN": 364,
+              "tpr": 82.31292517006803,
+              "fpr": 13.744075829383887
+            },
+            "Single": {
+              "n": 213,
+              "positive_n": 6,
+              "negative_n": 207,
+              "TP": 5,
+              "FP": 26,
+              "FN": 1,
+              "TN": 181,
+              "tpr": 83.33333333333333,
+              "fpr": 12.560386473429952
+            },
+            "Double": {
+              "n": 432,
+              "positive_n": 288,
+              "negative_n": 144,
+              "TP": 237,
+              "FP": 27,
+              "FN": 51,
+              "TN": 117,
+              "tpr": 82.29166666666667,
+              "fpr": 18.75
+            },
+            "background": {
+              "n": 71,
+              "positive_n": 0,
+              "negative_n": 71,
+              "TP": 0,
+              "FP": 5,
+              "FN": 0,
+              "TN": 66,
+              "tpr": null,
+              "fpr": 7.042253521126761
+            }
+          }
+        }
+      }
+    }
+  },
+  "Test": {
+    "T0_short_continue": {
+      "original": {
+        "n": 877,
+        "acc": 85.97491448118586,
+        "single_acc": 87.78625954198473,
+        "double_acc": 84.0909090909091,
+        "noise_acc": 91.95402298850574,
+        "count_acc": 94.98289623717217,
+        "single_to_double": 16,
+        "double_to_single": 21,
+        "single_type_errors": 16,
+        "double_pair_errors": 63,
+        "confusion": [
+          [
+            80,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            5,
+            2,
+            9,
+            3,
+            0
+          ],
+          [
+            0,
+            9,
+            9,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            71,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            13,
+            2,
+            0,
+            154,
+            6,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            4,
+            139,
+            28
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            3,
+            21,
+            151
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            80,
+            7,
+            0
+          ],
+          [
+            0,
+            246,
+            16
+          ],
+          [
+            0,
+            21,
+            507
+          ]
+        ],
+        "double_C0_acc": 80.68181818181817,
+        "double_C1_acc": 85.60606060606061,
+        "double_C2_acc": 89.39393939393939,
+        "per_set_acc": {
+          "E": 91.95402298850574,
+          "PF": 88.75739644970415,
+          "MB": 47.368421052631575,
+          "RV": 95.94594594594594,
+          "PF+MB": 87.5,
+          "PF+RV": 78.97727272727273,
+          "MB+RV": 85.79545454545455
+        },
+        "group_macro_acc": 87.94373054046652,
+        "conditional_single_acc": 93.12977099236642,
+        "conditional_double_acc": 87.68939393939394,
+        "member_single_to_double_mean_pct": 7.037213740458014,
+        "single_all_members_double_pct": 0.38167938931297707,
+        "member_pair_single_to_double_joint_pct": 4.444718049741443,
+        "member_double_count_recall_pct": 95.24739583333334,
+        "marginal_count_acc": 94.75484606613455,
+        "balanced_single_double_count_error_pct": 5.04207147814018,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 479,
+              "FP": 43,
+              "FN": 42,
+              "TN": 313,
+              "tpr": 91.93857965451056,
+              "fpr": 12.07865168539326
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 162,
+              "FP": 12,
+              "FN": 7,
+              "TN": 81,
+              "tpr": 95.85798816568047,
+              "fpr": 12.903225806451612
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 317,
+              "FP": 24,
+              "FN": 35,
+              "TN": 152,
+              "tpr": 90.05681818181819,
+              "fpr": 13.636363636363637
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 7,
+              "FN": 0,
+              "TN": 80,
+              "tpr": null,
+              "fpr": 8.045977011494253
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 322,
+              "FP": 47,
+              "FN": 49,
+              "TN": 459,
+              "tpr": 86.79245283018868,
+              "fpr": 9.288537549407115
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 10,
+              "FP": 15,
+              "FN": 9,
+              "TN": 228,
+              "tpr": 52.63157894736842,
+              "fpr": 6.172839506172839
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 312,
+              "FP": 32,
+              "FN": 40,
+              "TN": 144,
+              "tpr": 88.63636363636364,
+              "fpr": 18.181818181818183
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 417,
+              "FP": 12,
+              "FN": 9,
+              "TN": 439,
+              "tpr": 97.88732394366197,
+              "fpr": 2.6607538802660753
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 74,
+              "FP": 5,
+              "FN": 0,
+              "TN": 183,
+              "tpr": 100.0,
+              "fpr": 2.6595744680851063
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 343,
+              "FP": 7,
+              "FN": 9,
+              "TN": 169,
+              "tpr": 97.44318181818181,
+              "fpr": 3.977272727272727
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "10dB": {
+        "n": 877,
+        "acc": 76.6248574686431,
+        "single_acc": 75.57251908396947,
+        "double_acc": 73.67424242424242,
+        "noise_acc": 97.70114942528735,
+        "count_acc": 88.93956670467503,
+        "single_to_double": 48,
+        "double_to_single": 47,
+        "single_type_errors": 16,
+        "double_pair_errors": 92,
+        "confusion": [
+          [
+            85,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            123,
+            11,
+            0,
+            25,
+            7,
+            3
+          ],
+          [
+            0,
+            4,
+            12,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            63,
+            0,
+            5,
+            5
+          ],
+          [
+            0,
+            26,
+            7,
+            0,
+            134,
+            6,
+            3
+          ],
+          [
+            0,
+            5,
+            0,
+            7,
+            8,
+            123,
+            33
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            7,
+            35,
+            132
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            85,
+            2,
+            0
+          ],
+          [
+            0,
+            214,
+            48
+          ],
+          [
+            0,
+            47,
+            481
+          ]
+        ],
+        "double_C0_acc": 69.6969696969697,
+        "double_C1_acc": 78.78787878787878,
+        "double_C2_acc": 76.51515151515152,
+        "per_set_acc": {
+          "E": 97.70114942528735,
+          "PF": 72.7810650887574,
+          "MB": 63.1578947368421,
+          "RV": 85.13513513513513,
+          "PF+MB": 76.13636363636364,
+          "PF+RV": 69.88636363636364,
+          "MB+RV": 75.0
+        },
+        "group_macro_acc": 82.31597031116641,
+        "conditional_single_acc": 89.69465648854961,
+        "conditional_double_acc": 81.62878787878788,
+        "member_single_to_double_mean_pct": 21.421755725190838,
+        "single_all_members_double_pct": 5.343511450381679,
+        "member_pair_single_to_double_joint_pct": 14.835477714848558,
+        "member_double_count_recall_pct": 90.74337121212122,
+        "marginal_count_acc": 88.82554161915621,
+        "balanced_single_double_count_error_pct": 13.611062919269026,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 457,
+              "FP": 57,
+              "FN": 64,
+              "TN": 299,
+              "tpr": 87.71593090211132,
+              "fpr": 16.01123595505618
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 155,
+              "FP": 13,
+              "FN": 14,
+              "TN": 80,
+              "tpr": 91.71597633136095,
+              "fpr": 13.978494623655914
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 302,
+              "FP": 42,
+              "FN": 50,
+              "TN": 134,
+              "tpr": 85.79545454545455,
+              "fpr": 23.863636363636363
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 2,
+              "FN": 0,
+              "TN": 85,
+              "tpr": null,
+              "fpr": 2.2988505747126435
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 299,
+              "FP": 85,
+              "FN": 72,
+              "TN": 421,
+              "tpr": 80.59299191374663,
+              "fpr": 16.798418972332016
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 15,
+              "FP": 44,
+              "FN": 4,
+              "TN": 199,
+              "tpr": 78.94736842105263,
+              "fpr": 18.106995884773664
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 284,
+              "FP": 41,
+              "FN": 68,
+              "TN": 135,
+              "tpr": 80.68181818181819,
+              "fpr": 23.295454545454547
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 404,
+              "FP": 19,
+              "FN": 22,
+              "TN": 432,
+              "tpr": 94.83568075117371,
+              "fpr": 4.212860310421286
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 73,
+              "FP": 10,
+              "FN": 1,
+              "TN": 178,
+              "tpr": 98.64864864864865,
+              "fpr": 5.319148936170213
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 331,
+              "FP": 9,
+              "FN": 21,
+              "TN": 167,
+              "tpr": 94.0340909090909,
+              "fpr": 5.113636363636363
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "5dB": {
+        "n": 877,
+        "acc": 73.20410490307869,
+        "single_acc": 70.61068702290076,
+        "double_acc": 70.26515151515152,
+        "noise_acc": 98.85057471264368,
+        "count_acc": 86.88711516533637,
+        "single_to_double": 60,
+        "double_to_single": 53,
+        "single_type_errors": 16,
+        "double_pair_errors": 104,
+        "confusion": [
+          [
+            86,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            110,
+            10,
+            1,
+            34,
+            9,
+            4
+          ],
+          [
+            0,
+            4,
+            11,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            64,
+            0,
+            6,
+            3
+          ],
+          [
+            0,
+            29,
+            8,
+            0,
+            128,
+            7,
+            4
+          ],
+          [
+            0,
+            4,
+            0,
+            9,
+            6,
+            127,
+            30
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            5,
+            52,
+            116
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            86,
+            1,
+            0
+          ],
+          [
+            1,
+            201,
+            60
+          ],
+          [
+            0,
+            53,
+            475
+          ]
+        ],
+        "double_C0_acc": 67.42424242424242,
+        "double_C1_acc": 73.48484848484848,
+        "double_C2_acc": 72.72727272727273,
+        "per_set_acc": {
+          "E": 98.85057471264368,
+          "PF": 65.08875739644971,
+          "MB": 57.89473684210527,
+          "RV": 86.48648648648648,
+          "PF+MB": 72.72727272727273,
+          "PF+RV": 72.1590909090909,
+          "MB+RV": 65.9090909090909
+        },
+        "group_macro_acc": 79.90880441689865,
+        "conditional_single_acc": 87.78625954198473,
+        "conditional_double_acc": 79.35606060606061,
+        "member_single_to_double_mean_pct": 25.155057251908396,
+        "single_all_members_double_pct": 4.198473282442748,
+        "member_pair_single_to_double_joint_pct": 17.818117458754003,
+        "member_double_count_recall_pct": 88.76657196969697,
+        "marginal_count_acc": 86.77309007981756,
+        "balanced_single_double_count_error_pct": 16.660160767985193,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 454,
+              "FP": 73,
+              "FN": 67,
+              "TN": 283,
+              "tpr": 87.1401151631478,
+              "fpr": 20.50561797752809
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 153,
+              "FP": 15,
+              "FN": 16,
+              "TN": 78,
+              "tpr": 90.53254437869822,
+              "fpr": 16.129032258064516
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 301,
+              "FP": 57,
+              "FN": 51,
+              "TN": 119,
+              "tpr": 85.51136363636364,
+              "fpr": 32.38636363636363
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 1,
+              "FN": 0,
+              "TN": 86,
+              "tpr": null,
+              "fpr": 1.1494252873563218
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 276,
+              "FP": 87,
+              "FN": 95,
+              "TN": 419,
+              "tpr": 74.39353099730458,
+              "fpr": 17.193675889328063
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 15,
+              "FP": 51,
+              "FN": 4,
+              "TN": 192,
+              "tpr": 78.94736842105263,
+              "fpr": 20.987654320987655
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 261,
+              "FP": 36,
+              "FN": 91,
+              "TN": 140,
+              "tpr": 74.14772727272727,
+              "fpr": 20.454545454545453
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 410,
+              "FP": 25,
+              "FN": 16,
+              "TN": 426,
+              "tpr": 96.24413145539906,
+              "fpr": 5.5432372505543235
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 73,
+              "FP": 14,
+              "FN": 1,
+              "TN": 174,
+              "tpr": 98.64864864864865,
+              "fpr": 7.446808510638298
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 337,
+              "FP": 11,
+              "FN": 15,
+              "TN": 165,
+              "tpr": 95.73863636363636,
+              "fpr": 6.25
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "0dB": {
+        "n": 877,
+        "acc": 68.18700114025086,
+        "single_acc": 63.74045801526718,
+        "double_acc": 65.15151515151516,
+        "noise_acc": 100.0,
+        "count_acc": 83.92246294184721,
+        "single_to_double": 78,
+        "double_to_single": 62,
+        "single_type_errors": 16,
+        "double_pair_errors": 122,
+        "confusion": [
+          [
+            87,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            93,
+            12,
+            2,
+            42,
+            12,
+            7
+          ],
+          [
+            0,
+            1,
+            13,
+            0,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            61,
+            0,
+            7,
+            5
+          ],
+          [
+            0,
+            30,
+            9,
+            0,
+            122,
+            8,
+            7
+          ],
+          [
+            0,
+            4,
+            0,
+            6,
+            8,
+            120,
+            38
+          ],
+          [
+            0,
+            0,
+            0,
+            13,
+            4,
+            57,
+            102
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            87,
+            0,
+            0
+          ],
+          [
+            1,
+            183,
+            78
+          ],
+          [
+            0,
+            62,
+            466
+          ]
+        ],
+        "double_C0_acc": 59.46969696969697,
+        "double_C1_acc": 66.66666666666666,
+        "double_C2_acc": 75.0,
+        "per_set_acc": {
+          "E": 100.0,
+          "PF": 55.02958579881657,
+          "MB": 68.42105263157895,
+          "RV": 82.43243243243244,
+          "PF+MB": 69.31818181818183,
+          "PF+RV": 68.18181818181817,
+          "MB+RV": 57.95454545454546
+        },
+        "group_macro_acc": 76.29732438892745,
+        "conditional_single_acc": 85.1145038167939,
+        "conditional_double_acc": 74.81060606060606,
+        "member_single_to_double_mean_pct": 31.309637404580155,
+        "single_all_members_double_pct": 6.488549618320611,
+        "member_pair_single_to_double_joint_pct": 22.863826643683822,
+        "member_double_count_recall_pct": 86.75426136363636,
+        "marginal_count_acc": 84.49258836944128,
+        "balanced_single_double_count_error_pct": 20.947547999074718,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 439,
+              "FP": 75,
+              "FN": 82,
+              "TN": 281,
+              "tpr": 84.26103646833013,
+              "fpr": 21.06741573033708
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 147,
+              "FP": 14,
+              "FN": 22,
+              "TN": 79,
+              "tpr": 86.98224852071006,
+              "fpr": 15.053763440860216
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 292,
+              "FP": 61,
+              "FN": 60,
+              "TN": 115,
+              "tpr": 82.95454545454545,
+              "fpr": 34.65909090909091
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 262,
+              "FP": 112,
+              "FN": 109,
+              "TN": 394,
+              "tpr": 70.61994609164421,
+              "fpr": 22.134387351778656
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 18,
+              "FP": 66,
+              "FN": 1,
+              "TN": 177,
+              "tpr": 94.73684210526316,
+              "fpr": 27.160493827160494
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 244,
+              "FP": 46,
+              "FN": 108,
+              "TN": 130,
+              "tpr": 69.31818181818181,
+              "fpr": 26.136363636363637
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 409,
+              "FP": 36,
+              "FN": 17,
+              "TN": 415,
+              "tpr": 96.0093896713615,
+              "fpr": 7.982261640798226
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 73,
+              "FP": 21,
+              "FN": 1,
+              "TN": 167,
+              "tpr": 98.64864864864865,
+              "fpr": 11.170212765957446
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 336,
+              "FP": 15,
+              "FN": 16,
+              "TN": 161,
+              "tpr": 95.45454545454545,
+              "fpr": 8.522727272727273
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "-5dB": {
+        "n": 877,
+        "acc": 62.941847206385404,
+        "single_acc": 57.63358778625955,
+        "double_acc": 59.46969696969697,
+        "noise_acc": 100.0,
+        "count_acc": 80.84378563283923,
+        "single_to_double": 87,
+        "double_to_single": 78,
+        "single_type_errors": 23,
+        "double_pair_errors": 134,
+        "confusion": [
+          [
+            87,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            86,
+            17,
+            3,
+            45,
+            11,
+            6
+          ],
+          [
+            0,
+            2,
+            13,
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            52,
+            0,
+            7,
+            14
+          ],
+          [
+            2,
+            32,
+            12,
+            1,
+            109,
+            6,
+            14
+          ],
+          [
+            0,
+            7,
+            0,
+            9,
+            9,
+            99,
+            52
+          ],
+          [
+            0,
+            1,
+            0,
+            16,
+            10,
+            43,
+            106
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            87,
+            0,
+            0
+          ],
+          [
+            1,
+            174,
+            87
+          ],
+          [
+            2,
+            78,
+            448
+          ]
+        ],
+        "double_C0_acc": 53.78787878787878,
+        "double_C1_acc": 62.121212121212125,
+        "double_C2_acc": 68.18181818181817,
+        "per_set_acc": {
+          "E": 100.0,
+          "PF": 50.887573964497044,
+          "MB": 68.42105263157895,
+          "RV": 70.27027027027027,
+          "PF+MB": 61.93181818181818,
+          "PF+RV": 56.25,
+          "MB+RV": 60.22727272727273
+        },
+        "group_macro_acc": 72.36776158531883,
+        "conditional_single_acc": 80.53435114503816,
+        "conditional_double_acc": 71.21212121212122,
+        "member_single_to_double_mean_pct": 36.16412213740458,
+        "single_all_members_double_pct": 7.633587786259542,
+        "member_pair_single_to_double_joint_pct": 26.335108347697613,
+        "member_double_count_recall_pct": 82.88352272727273,
+        "marginal_count_acc": 81.29988597491447,
+        "balanced_single_double_count_error_pct": 24.369650705528567,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 404,
+              "FP": 67,
+              "FN": 117,
+              "TN": 289,
+              "tpr": 77.54318618042227,
+              "fpr": 18.820224719101123
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 142,
+              "FP": 13,
+              "FN": 27,
+              "TN": 80,
+              "tpr": 84.02366863905326,
+              "fpr": 13.978494623655914
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 262,
+              "FP": 54,
+              "FN": 90,
+              "TN": 122,
+              "tpr": 74.43181818181819,
+              "fpr": 30.681818181818183
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 268,
+              "FP": 143,
+              "FN": 103,
+              "TN": 363,
+              "tpr": 72.23719676549865,
+              "fpr": 28.26086956521739
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 17,
+              "FP": 82,
+              "FN": 2,
+              "TN": 161,
+              "tpr": 89.47368421052632,
+              "fpr": 33.74485596707819
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 251,
+              "FP": 61,
+              "FN": 101,
+              "TN": 115,
+              "tpr": 71.30681818181819,
+              "fpr": 34.65909090909091
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 398,
+              "FP": 42,
+              "FN": 28,
+              "TN": 409,
+              "tpr": 93.42723004694835,
+              "fpr": 9.312638580931264
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 73,
+              "FP": 21,
+              "FN": 1,
+              "TN": 167,
+              "tpr": 98.64864864864865,
+              "fpr": 11.170212765957446
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 325,
+              "FP": 21,
+              "FN": 27,
+              "TN": 155,
+              "tpr": 92.32954545454545,
+              "fpr": 11.931818181818182
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "-10dB": {
+        "n": 877,
+        "acc": 50.969213226909915,
+        "single_acc": 39.69465648854962,
+        "double_acc": 48.484848484848484,
+        "noise_acc": 100.0,
+        "count_acc": 73.09007981755985,
+        "single_to_double": 125,
+        "double_to_single": 70,
+        "single_type_errors": 23,
+        "double_pair_errors": 171,
+        "confusion": [
+          [
+            87,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            61,
+            20,
+            1,
+            58,
+            10,
+            12
+          ],
+          [
+            3,
+            1,
+            11,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            32,
+            1,
+            11,
+            29
+          ],
+          [
+            17,
+            29,
+            21,
+            1,
+            88,
+            3,
+            17
+          ],
+          [
+            5,
+            8,
+            1,
+            2,
+            20,
+            66,
+            74
+          ],
+          [
+            9,
+            3,
+            3,
+            2,
+            23,
+            34,
+            102
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            87,
+            0,
+            0
+          ],
+          [
+            10,
+            127,
+            125
+          ],
+          [
+            31,
+            70,
+            427
+          ]
+        ],
+        "double_C0_acc": 44.31818181818182,
+        "double_C1_acc": 50.0,
+        "double_C2_acc": 55.3030303030303,
+        "per_set_acc": {
+          "E": 100.0,
+          "PF": 36.09467455621302,
+          "MB": 57.89473684210527,
+          "RV": 43.24324324324324,
+          "PF+MB": 50.0,
+          "PF+RV": 37.5,
+          "MB+RV": 57.95454545454546
+        },
+        "group_macro_acc": 62.72650165779937,
+        "conditional_single_acc": 70.99236641221374,
+        "conditional_double_acc": 62.5,
+        "member_single_to_double_mean_pct": 48.652194656488554,
+        "single_all_members_double_pct": 14.122137404580155,
+        "member_pair_single_to_double_joint_pct": 38.23719527210047,
+        "member_double_count_recall_pct": 78.37357954545455,
+        "marginal_count_acc": 73.77423033067275,
+        "balanced_single_double_count_error_pct": 35.327752718019894,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 343,
+              "FP": 78,
+              "FN": 178,
+              "TN": 278,
+              "tpr": 65.83493282149712,
+              "fpr": 21.910112359550563
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 129,
+              "FP": 18,
+              "FN": 40,
+              "TN": 75,
+              "tpr": 76.33136094674556,
+              "fpr": 19.35483870967742
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 214,
+              "FP": 60,
+              "FN": 138,
+              "TN": 116,
+              "tpr": 60.79545454545455,
+              "fpr": 34.09090909090909
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 269,
+              "FP": 215,
+              "FN": 102,
+              "TN": 291,
+              "tpr": 72.50673854447439,
+              "fpr": 42.4901185770751
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 15,
+              "FP": 120,
+              "FN": 4,
+              "TN": 123,
+              "tpr": 78.94736842105263,
+              "fpr": 49.382716049382715
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 254,
+              "FP": 95,
+              "FN": 98,
+              "TN": 81,
+              "tpr": 72.1590909090909,
+              "fpr": 53.97727272727273
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 352,
+              "FP": 44,
+              "FN": 74,
+              "TN": 407,
+              "tpr": 82.62910798122066,
+              "fpr": 9.75609756097561
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 72,
+              "FP": 23,
+              "FN": 2,
+              "TN": 165,
+              "tpr": 97.29729729729729,
+              "fpr": 12.23404255319149
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 280,
+              "FP": 21,
+              "FN": 72,
+              "TN": 155,
+              "tpr": 79.54545454545455,
+              "fpr": 11.931818181818182
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      }
+    },
+    "T1_l1_tfblocks": {
+      "original": {
+        "n": 877,
+        "acc": 85.63283922462942,
+        "single_acc": 88.16793893129771,
+        "double_acc": 83.33333333333334,
+        "noise_acc": 91.95402298850574,
+        "count_acc": 94.18472063854047,
+        "single_to_double": 15,
+        "double_to_single": 29,
+        "single_type_errors": 16,
+        "double_pair_errors": 59,
+        "confusion": [
+          [
+            80,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            152,
+            5,
+            2,
+            7,
+            3,
+            0
+          ],
+          [
+            0,
+            9,
+            9,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            70,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            17,
+            2,
+            0,
+            150,
+            6,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            4,
+            2,
+            140,
+            28
+          ],
+          [
+            0,
+            0,
+            1,
+            3,
+            2,
+            20,
+            150
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            80,
+            7,
+            0
+          ],
+          [
+            0,
+            247,
+            15
+          ],
+          [
+            0,
+            29,
+            499
+          ]
+        ],
+        "double_C0_acc": 78.4090909090909,
+        "double_C1_acc": 88.63636363636364,
+        "double_C2_acc": 87.87878787878788,
+        "per_set_acc": {
+          "E": 91.95402298850574,
+          "PF": 89.94082840236686,
+          "MB": 47.368421052631575,
+          "RV": 94.5945945945946,
+          "PF+MB": 85.22727272727273,
+          "PF+RV": 79.54545454545455,
+          "MB+RV": 85.22727272727273
+        },
+        "group_macro_acc": 87.8184317510456,
+        "conditional_single_acc": 92.74809160305344,
+        "conditional_double_acc": 88.06818181818183,
+        "member_single_to_double_mean_pct": 6.822519083969465,
+        "single_all_members_double_pct": 0.7633587786259541,
+        "member_pair_single_to_double_joint_pct": 4.2300233932528934,
+        "member_double_count_recall_pct": 94.27675189393939,
+        "marginal_count_acc": 94.18472063854047,
+        "balanced_single_double_count_error_pct": 5.608807541059449,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 479,
+              "FP": 42,
+              "FN": 42,
+              "TN": 314,
+              "tpr": 91.93857965451056,
+              "fpr": 11.797752808988765
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 162,
+              "FP": 13,
+              "FN": 7,
+              "TN": 80,
+              "tpr": 95.85798816568047,
+              "fpr": 13.978494623655914
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 317,
+              "FP": 22,
+              "FN": 35,
+              "TN": 154,
+              "tpr": 90.05681818181819,
+              "fpr": 12.5
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 7,
+              "FN": 0,
+              "TN": 80,
+              "tpr": null,
+              "fpr": 8.045977011494253
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 316,
+              "FP": 43,
+              "FN": 55,
+              "TN": 463,
+              "tpr": 85.17520215633424,
+              "fpr": 8.49802371541502
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 10,
+              "FP": 13,
+              "FN": 9,
+              "TN": 230,
+              "tpr": 52.63157894736842,
+              "fpr": 5.349794238683128
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 306,
+              "FP": 30,
+              "FN": 46,
+              "TN": 146,
+              "tpr": 86.93181818181819,
+              "fpr": 17.045454545454547
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 419,
+              "FP": 12,
+              "FN": 7,
+              "TN": 439,
+              "tpr": 98.35680751173709,
+              "fpr": 2.6607538802660753
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 74,
+              "FP": 5,
+              "FN": 0,
+              "TN": 183,
+              "tpr": 100.0,
+              "fpr": 2.6595744680851063
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 345,
+              "FP": 7,
+              "FN": 7,
+              "TN": 169,
+              "tpr": 98.01136363636364,
+              "fpr": 3.977272727272727
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "10dB": {
+        "n": 877,
+        "acc": 77.53705815279362,
+        "single_acc": 79.00763358778626,
+        "double_acc": 73.67424242424242,
+        "noise_acc": 96.55172413793103,
+        "count_acc": 89.05359179019385,
+        "single_to_double": 39,
+        "double_to_single": 54,
+        "single_type_errors": 16,
+        "double_pair_errors": 85,
+        "confusion": [
+          [
+            84,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            130,
+            8,
+            1,
+            18,
+            11,
+            1
+          ],
+          [
+            0,
+            6,
+            11,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            66,
+            0,
+            5,
+            2
+          ],
+          [
+            0,
+            33,
+            7,
+            0,
+            127,
+            7,
+            2
+          ],
+          [
+            0,
+            5,
+            0,
+            6,
+            7,
+            135,
+            23
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            5,
+            41,
+            127
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            84,
+            3,
+            0
+          ],
+          [
+            0,
+            223,
+            39
+          ],
+          [
+            0,
+            54,
+            474
+          ]
+        ],
+        "double_C0_acc": 68.93939393939394,
+        "double_C1_acc": 77.27272727272727,
+        "double_C2_acc": 79.54545454545455,
+        "per_set_acc": {
+          "E": 96.55172413793103,
+          "PF": 76.92307692307693,
+          "MB": 57.89473684210527,
+          "RV": 89.1891891891892,
+          "PF+MB": 72.1590909090909,
+          "PF+RV": 76.70454545454545,
+          "MB+RV": 72.1590909090909
+        },
+        "group_macro_acc": 83.07786671665325,
+        "conditional_single_acc": 90.45801526717557,
+        "conditional_double_acc": 82.76515151515152,
+        "member_single_to_double_mean_pct": 16.99666030534351,
+        "single_all_members_double_pct": 3.435114503816794,
+        "member_pair_single_to_double_joint_pct": 12.146023147008126,
+        "member_double_count_recall_pct": 88.89086174242425,
+        "marginal_count_acc": 89.05359179019385,
+        "balanced_single_double_count_error_pct": 12.556384455239417,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 473,
+              "FP": 63,
+              "FN": 48,
+              "TN": 293,
+              "tpr": 90.7869481765835,
+              "fpr": 17.696629213483146
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 159,
+              "FP": 14,
+              "FN": 10,
+              "TN": 79,
+              "tpr": 94.0828402366864,
+              "fpr": 15.053763440860216
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 314,
+              "FP": 46,
+              "FN": 38,
+              "TN": 130,
+              "tpr": 89.20454545454545,
+              "fpr": 26.136363636363637
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 3,
+              "FN": 0,
+              "TN": 84,
+              "tpr": null,
+              "fpr": 3.4482758620689653
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 282,
+              "FP": 59,
+              "FN": 89,
+              "TN": 447,
+              "tpr": 76.01078167115902,
+              "fpr": 11.660079051383399
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 13,
+              "FP": 29,
+              "FN": 6,
+              "TN": 214,
+              "tpr": 68.42105263157895,
+              "fpr": 11.934156378600823
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 269,
+              "FP": 30,
+              "FN": 83,
+              "TN": 146,
+              "tpr": 76.42045454545455,
+              "fpr": 17.045454545454547
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 407,
+              "FP": 22,
+              "FN": 19,
+              "TN": 429,
+              "tpr": 95.53990610328638,
+              "fpr": 4.878048780487805
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 73,
+              "FP": 13,
+              "FN": 1,
+              "TN": 175,
+              "tpr": 98.64864864864865,
+              "fpr": 6.914893617021277
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 334,
+              "FP": 9,
+              "FN": 18,
+              "TN": 167,
+              "tpr": 94.88636363636364,
+              "fpr": 5.113636363636363
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "5dB": {
+        "n": 877,
+        "acc": 74.34435575826683,
+        "single_acc": 76.7175572519084,
+        "double_acc": 69.31818181818183,
+        "noise_acc": 97.70114942528735,
+        "count_acc": 87.68529076396807,
+        "single_to_double": 43,
+        "double_to_single": 63,
+        "single_type_errors": 18,
+        "double_pair_errors": 99,
+        "confusion": [
+          [
+            85,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            124,
+            10,
+            1,
+            20,
+            12,
+            2
+          ],
+          [
+            0,
+            6,
+            11,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            66,
+            0,
+            5,
+            2
+          ],
+          [
+            0,
+            36,
+            9,
+            0,
+            119,
+            8,
+            4
+          ],
+          [
+            0,
+            5,
+            0,
+            7,
+            6,
+            136,
+            22
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            4,
+            55,
+            111
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            85,
+            2,
+            0
+          ],
+          [
+            0,
+            219,
+            43
+          ],
+          [
+            0,
+            63,
+            465
+          ]
+        ],
+        "double_C0_acc": 64.39393939393939,
+        "double_C1_acc": 71.96969696969697,
+        "double_C2_acc": 76.51515151515152,
+        "per_set_acc": {
+          "E": 97.70114942528735,
+          "PF": 73.37278106508876,
+          "MB": 57.89473684210527,
+          "RV": 89.1891891891892,
+          "PF+MB": 67.61363636363636,
+          "PF+RV": 77.27272727272727,
+          "MB+RV": 63.06818181818182
+        },
+        "group_macro_acc": 81.2456294984592,
+        "conditional_single_acc": 88.16793893129771,
+        "conditional_double_acc": 79.35606060606061,
+        "member_single_to_double_mean_pct": 18.177480916030532,
+        "single_all_members_double_pct": 3.435114503816794,
+        "member_pair_single_to_double_joint_pct": 12.889374538291062,
+        "member_double_count_recall_pct": 85.87239583333334,
+        "marginal_count_acc": 87.79931584948689,
+        "balanced_single_double_count_error_pct": 14.172015961138099,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 466,
+              "FP": 75,
+              "FN": 55,
+              "TN": 281,
+              "tpr": 89.44337811900192,
+              "fpr": 21.06741573033708
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 156,
+              "FP": 14,
+              "FN": 13,
+              "TN": 79,
+              "tpr": 92.3076923076923,
+              "fpr": 15.053763440860216
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 310,
+              "FP": 59,
+              "FN": 42,
+              "TN": 117,
+              "tpr": 88.06818181818181,
+              "fpr": 33.52272727272727
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 2,
+              "FN": 0,
+              "TN": 85,
+              "tpr": null,
+              "fpr": 2.2988505747126435
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 260,
+              "FP": 62,
+              "FN": 111,
+              "TN": 444,
+              "tpr": 70.08086253369272,
+              "fpr": 12.25296442687747
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 13,
+              "FP": 34,
+              "FN": 6,
+              "TN": 209,
+              "tpr": 68.42105263157895,
+              "fpr": 13.991769547325102
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 247,
+              "FP": 28,
+              "FN": 105,
+              "TN": 148,
+              "tpr": 70.17045454545455,
+              "fpr": 15.909090909090908
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 410,
+              "FP": 27,
+              "FN": 16,
+              "TN": 424,
+              "tpr": 96.24413145539906,
+              "fpr": 5.986696230598669
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 73,
+              "FP": 15,
+              "FN": 1,
+              "TN": 173,
+              "tpr": 98.64864864864865,
+              "fpr": 7.9787234042553195
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 337,
+              "FP": 12,
+              "FN": 15,
+              "TN": 164,
+              "tpr": 95.73863636363636,
+              "fpr": 6.818181818181818
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "0dB": {
+        "n": 877,
+        "acc": 68.5290763968073,
+        "single_acc": 74.42748091603053,
+        "double_acc": 60.416666666666664,
+        "noise_acc": 100.0,
+        "count_acc": 84.03648802736602,
+        "single_to_double": 46,
+        "double_to_single": 93,
+        "single_type_errors": 20,
+        "double_pair_errors": 116,
+        "confusion": [
+          [
+            87,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            118,
+            13,
+            2,
+            18,
+            13,
+            4
+          ],
+          [
+            0,
+            4,
+            12,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            65,
+            0,
+            6,
+            2
+          ],
+          [
+            0,
+            45,
+            11,
+            0,
+            104,
+            8,
+            8
+          ],
+          [
+            0,
+            5,
+            0,
+            10,
+            7,
+            128,
+            26
+          ],
+          [
+            0,
+            0,
+            0,
+            22,
+            7,
+            60,
+            87
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            87,
+            0,
+            0
+          ],
+          [
+            1,
+            215,
+            46
+          ],
+          [
+            0,
+            93,
+            435
+          ]
+        ],
+        "double_C0_acc": 54.54545454545454,
+        "double_C1_acc": 61.36363636363637,
+        "double_C2_acc": 71.21212121212122,
+        "per_set_acc": {
+          "E": 100.0,
+          "PF": 69.8224852071006,
+          "MB": 63.1578947368421,
+          "RV": 87.83783783783784,
+          "PF+MB": 59.09090909090909,
+          "PF+RV": 72.72727272727273,
+          "MB+RV": 49.43181818181818
+        },
+        "group_macro_acc": 78.28138252756573,
+        "conditional_single_acc": 86.64122137404581,
+        "conditional_double_acc": 74.81060606060606,
+        "member_single_to_double_mean_pct": 19.322519083969468,
+        "single_all_members_double_pct": 3.816793893129771,
+        "member_pair_single_to_double_joint_pct": 12.74085816301404,
+        "member_double_count_recall_pct": 80.72324810606061,
+        "marginal_count_acc": 85.40478905359178,
+        "balanced_single_double_count_error_pct": 17.776283830673144,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 446,
+              "FP": 81,
+              "FN": 75,
+              "TN": 275,
+              "tpr": 85.6046065259117,
+              "fpr": 22.752808988764045
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 149,
+              "FP": 14,
+              "FN": 20,
+              "TN": 79,
+              "tpr": 88.16568047337279,
+              "fpr": 15.053763440860216
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 297,
+              "FP": 67,
+              "FN": 55,
+              "TN": 109,
+              "tpr": 84.375,
+              "fpr": 38.06818181818182
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 232,
+              "FP": 70,
+              "FN": 139,
+              "TN": 436,
+              "tpr": 62.53369272237197,
+              "fpr": 13.83399209486166
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 15,
+              "FP": 37,
+              "FN": 4,
+              "TN": 206,
+              "tpr": 78.94736842105263,
+              "fpr": 15.22633744855967
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 217,
+              "FP": 33,
+              "FN": 135,
+              "TN": 143,
+              "tpr": 61.64772727272727,
+              "fpr": 18.75
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 406,
+              "FP": 35,
+              "FN": 20,
+              "TN": 416,
+              "tpr": 95.30516431924883,
+              "fpr": 7.760532150776053
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 73,
+              "FP": 19,
+              "FN": 1,
+              "TN": 169,
+              "tpr": 98.64864864864865,
+              "fpr": 10.106382978723405
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 333,
+              "FP": 16,
+              "FN": 19,
+              "TN": 160,
+              "tpr": 94.60227272727273,
+              "fpr": 9.090909090909092
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "-5dB": {
+        "n": 877,
+        "acc": 61.345496009122,
+        "single_acc": 74.80916030534351,
+        "double_acc": 48.29545454545455,
+        "noise_acc": 100.0,
+        "count_acc": 78.67730900798176,
+        "single_to_double": 38,
+        "double_to_single": 148,
+        "single_type_errors": 28,
+        "double_pair_errors": 124,
+        "confusion": [
+          [
+            87,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            119,
+            15,
+            8,
+            17,
+            9,
+            1
+          ],
+          [
+            0,
+            4,
+            12,
+            0,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            65,
+            0,
+            4,
+            4
+          ],
+          [
+            1,
+            54,
+            16,
+            2,
+            84,
+            9,
+            10
+          ],
+          [
+            0,
+            13,
+            0,
+            26,
+            7,
+            95,
+            35
+          ],
+          [
+            0,
+            3,
+            0,
+            34,
+            9,
+            54,
+            76
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            87,
+            0,
+            0
+          ],
+          [
+            0,
+            224,
+            38
+          ],
+          [
+            1,
+            148,
+            379
+          ]
+        ],
+        "double_C0_acc": 40.15151515151515,
+        "double_C1_acc": 53.03030303030303,
+        "double_C2_acc": 59.84848484848485,
+        "per_set_acc": {
+          "E": 100.0,
+          "PF": 70.41420118343196,
+          "MB": 63.1578947368421,
+          "RV": 87.83783783783784,
+          "PF+MB": 47.72727272727273,
+          "PF+RV": 53.97727272727273,
+          "MB+RV": 43.18181818181818
+        },
+        "group_macro_acc": 74.36820495026602,
+        "conditional_single_acc": 85.1145038167939,
+        "conditional_double_acc": 69.6969696969697,
+        "member_single_to_double_mean_pct": 17.640744274809162,
+        "single_all_members_double_pct": 1.1450381679389312,
+        "member_pair_single_to_double_joint_pct": 10.58929450874169,
+        "member_double_count_recall_pct": 70.27698863636364,
+        "marginal_count_acc": 79.47548460661345,
+        "balanced_single_double_count_error_pct": 21.361756881795053,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 407,
+              "FP": 77,
+              "FN": 114,
+              "TN": 279,
+              "tpr": 78.1190019193858,
+              "fpr": 21.629213483146067
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 145,
+              "FP": 11,
+              "FN": 24,
+              "TN": 82,
+              "tpr": 85.79881656804734,
+              "fpr": 11.827956989247312
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 262,
+              "FP": 66,
+              "FN": 90,
+              "TN": 110,
+              "tpr": 74.43181818181819,
+              "fpr": 37.5
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 210,
+              "FP": 79,
+              "FN": 161,
+              "TN": 427,
+              "tpr": 56.60377358490566,
+              "fpr": 15.612648221343873
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 15,
+              "FP": 37,
+              "FN": 4,
+              "TN": 206,
+              "tpr": 78.94736842105263,
+              "fpr": 15.22633744855967
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 195,
+              "FP": 42,
+              "FN": 157,
+              "TN": 134,
+              "tpr": 55.39772727272727,
+              "fpr": 23.863636363636363
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 393,
+              "FP": 40,
+              "FN": 33,
+              "TN": 411,
+              "tpr": 92.25352112676056,
+              "fpr": 8.869179600886918
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 73,
+              "FP": 19,
+              "FN": 1,
+              "TN": 169,
+              "tpr": 98.64864864864865,
+              "fpr": 10.106382978723405
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 320,
+              "FP": 21,
+              "FN": 32,
+              "TN": 155,
+              "tpr": 90.9090909090909,
+              "fpr": 11.931818181818182
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      },
+      "-10dB": {
+        "n": 877,
+        "acc": 53.13568985176739,
+        "single_acc": 63.74045801526718,
+        "double_acc": 40.340909090909086,
+        "noise_acc": 98.85057471264368,
+        "count_acc": 72.29190421892817,
+        "single_to_double": 58,
+        "double_to_single": 175,
+        "single_type_errors": 35,
+        "double_pair_errors": 133,
+        "confusion": [
+          [
+            86,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            101,
+            24,
+            4,
+            27,
+            8,
+            5
+          ],
+          [
+            2,
+            5,
+            9,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            57,
+            0,
+            6,
+            9
+          ],
+          [
+            3,
+            67,
+            25,
+            2,
+            65,
+            7,
+            7
+          ],
+          [
+            1,
+            17,
+            1,
+            28,
+            16,
+            67,
+            46
+          ],
+          [
+            3,
+            13,
+            2,
+            20,
+            20,
+            37,
+            81
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            86,
+            1,
+            0
+          ],
+          [
+            2,
+            202,
+            58
+          ],
+          [
+            7,
+            175,
+            346
+          ]
+        ],
+        "double_C0_acc": 30.303030303030305,
+        "double_C1_acc": 49.24242424242424,
+        "double_C2_acc": 51.515151515151516,
+        "per_set_acc": {
+          "E": 98.85057471264368,
+          "PF": 59.76331360946746,
+          "MB": 47.368421052631575,
+          "RV": 77.02702702702703,
+          "PF+MB": 36.93181818181818,
+          "PF+RV": 38.06818181818182,
+          "MB+RV": 46.02272727272727
+        },
+        "group_macro_acc": 67.64398060627332,
+        "conditional_single_acc": 77.86259541984732,
+        "conditional_double_acc": 64.77272727272727,
+        "member_single_to_double_mean_pct": 23.401717557251906,
+        "single_all_members_double_pct": 1.9083969465648856,
+        "member_pair_single_to_double_joint_pct": 14.543062053681357,
+        "member_double_count_recall_pct": 66.55421401515152,
+        "marginal_count_acc": 75.37058152793614,
+        "balanced_single_double_count_error_pct": 28.685230164237797,
+        "presence": {
+          "PF": {
+            "overall": {
+              "n": 877,
+              "positive_n": 521,
+              "negative_n": 356,
+              "TP": 375,
+              "FP": 87,
+              "FN": 146,
+              "TN": 269,
+              "tpr": 71.97696737044146,
+              "fpr": 24.43820224719101
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 169,
+              "negative_n": 93,
+              "TP": 136,
+              "FP": 16,
+              "FN": 33,
+              "TN": 77,
+              "tpr": 80.4733727810651,
+              "fpr": 17.204301075268816
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 239,
+              "FP": 70,
+              "FN": 113,
+              "TN": 106,
+              "tpr": 67.89772727272727,
+              "fpr": 39.77272727272727
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 1,
+              "FN": 0,
+              "TN": 86,
+              "tpr": null,
+              "fpr": 1.1494252873563218
+            }
+          },
+          "MB": {
+            "overall": {
+              "n": 877,
+              "positive_n": 371,
+              "negative_n": 506,
+              "TP": 212,
+              "FP": 128,
+              "FN": 159,
+              "TN": 378,
+              "tpr": 57.142857142857146,
+              "fpr": 25.296442687747035
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 19,
+              "negative_n": 243,
+              "TP": 12,
+              "FP": 65,
+              "FN": 7,
+              "TN": 178,
+              "tpr": 63.1578947368421,
+              "fpr": 26.74897119341564
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 200,
+              "FP": 63,
+              "FN": 152,
+              "TN": 113,
+              "tpr": 56.81818181818182,
+              "fpr": 35.79545454545455
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          },
+          "RV": {
+            "overall": {
+              "n": 877,
+              "positive_n": 426,
+              "negative_n": 451,
+              "TP": 351,
+              "FP": 33,
+              "FN": 75,
+              "TN": 418,
+              "tpr": 82.3943661971831,
+              "fpr": 7.317073170731708
+            },
+            "Single": {
+              "n": 262,
+              "positive_n": 74,
+              "negative_n": 188,
+              "TP": 72,
+              "FP": 17,
+              "FN": 2,
+              "TN": 171,
+              "tpr": 97.29729729729729,
+              "fpr": 9.042553191489361
+            },
+            "Double": {
+              "n": 528,
+              "positive_n": 352,
+              "negative_n": 176,
+              "TP": 279,
+              "FP": 16,
+              "FN": 73,
+              "TN": 160,
+              "tpr": 79.26136363636364,
+              "fpr": 9.090909090909092
+            },
+            "background": {
+              "n": 87,
+              "positive_n": 0,
+              "negative_n": 87,
+              "TP": 0,
+              "FP": 0,
+              "FN": 0,
+              "TN": 87,
+              "tpr": null,
+              "fpr": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "minutes": 13.548324803325038
+}

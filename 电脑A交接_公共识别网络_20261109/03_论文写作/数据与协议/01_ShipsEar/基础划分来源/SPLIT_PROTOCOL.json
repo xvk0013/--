@@ -1,0 +1,10 @@
+{
+  "method": "User-authorized conditional fallback: original83.09allocation;51Test-to-Train,58Val-to-Train;52/78alreadyTrain; every other target/background recording unchanged; no compensating swaps.",
+  "decision_basis": "User-selected development fallback after preceding background-supervision experiment.",
+  "source_policy": "All48target recordings/all1339cores in bothSingle andDouble within their recording split. Background allocation identical to83.09.",
+  "type_ratio": "Double/Single/Noise approximately60/30/10;C0/C1/C2=50/25/25.",
+  "train_val_test_ratio": "Derived from the constrained allocation,not rebalanced.",
+  "test_changed": true,
+  "test_reason": "51removed fromTest; within-split pairs and type quotas recomputed.",
+  "parent_allocation_sha256": "3279bf83c17b489533ee2f1a5228ab3152b0747beb7eed0ed16da827f6174435"
+}

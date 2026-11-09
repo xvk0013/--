@@ -1,0 +1,79 @@
+﻿id,split,class_name,original_vessel_type,correct,total,accuracy,errors,wrong_destinations,selection,documented_evidence,assessment,official_source
+59,train,C,Passenger ferry,49,50,0.98,1,A:1,train_only_errors,客船较快驶向港口，海面有风浪。,仅180–185秒一片误判A，A/C预测接近；局部判别边界混淆，未确定物理原因。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+18,train,D,Ro-Ro,135,136,0.9926470588235294,1,B:1,train_only_errors,进港；官方有岸边岩石噪声及H2饱和备注，无明显船只干扰。,仅615–620秒一片误判B，不能认定整条低质；不能把H2备注直接当作发布音频削波证据。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+60,train,C,Passenger ferry,69,69,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+47,train,A,Mussel boat,62,62,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+68,train,B,Sailboat,59,59,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+67,train,C,Passenger ferry,51,51,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+58,train,D,Ro-Ro,47,47,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+32,train,C,Passenger ferry,43,43,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+13,train,C,Passenger ferry,41,41,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+63,train,C,Passenger ferry,39,39,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+78,train,D,Ro-Ro,37,37,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+55,train,C,Passenger ferry,35,35,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+76,train,A,Fishing boat,35,35,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+49,train,A,Mussel boat,33,33,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+16,train,D,Ocean liner,32,32,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+28,train,A,Trawler,32,32,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+53,train,C,Passenger ferry,32,32,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+65,train,C,Passenger ferry,32,32,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+10,train,C,Passenger ferry,30,30,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+74,train,A,Fishing boat,29,29,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+15,train,A,Tugboat,28,28,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+25,train,D,Ocean liner,28,28,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+61,train,C,Passenger ferry,28,28,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+71,train,D,Ocean liner,27,27,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+64,train,C,Passenger ferry,26,26,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+12,train,C,Passenger ferry,24,24,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+34,train,C,Passenger ferry,24,24,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+52,train,B,Motorboat,24,24,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+51,train,B,Motorboat,20,20,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+35,train,C,Passenger ferry,19,19,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+79,train,B,Motorboat,19,19,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+29,train,B,Pilot boat,18,18,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+45,train,B,Motorboat,18,18,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+77,train,B,Motorboat,18,18,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+17,train,C,Passenger ferry,15,15,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+39,train,B,Motorboat,14,14,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+54,train,C,Passenger ferry,13,13,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+50,train,B,Motorboat,12,12,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+7,train,C,Passenger ferry,12,12,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+80,train,A,Dredger,12,12,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+95,train,A,Dredger,12,12,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=4&totalRows_leerMedidas=90
+96,train,A,Dredger,12,12,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=4&totalRows_leerMedidas=90
+22,train,D,Ocean liner,10,10,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+41,train,C,Passenger ferry,10,10,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+24,train,D,Ocean liner,8,8,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+33,train,B,Motorboat,7,7,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+26,train,B,Motorboat,4,4,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+46,train,A,Mussel boat,2,2,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+37,val,B,Sailboat,1,8,0.125,7,C:7,low_accuracy,开动发动机离港；官方评价目标信号好，港口噪声较大；7片错为C。,优先怀疑帆船工况及背景泛化不足：Train帆船细类只有68一条；不能称无发动机特征。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+27,val,B,Motorboat,1,6,0.16666666666666666,5,A:1; C:3; D:1,low_accuracy,快艇启动，官方评价信号好；有Rio Caxil及港口背景；错误C3/A1/D1。,启动过程及场景差异导致跨录音混淆是待验证假设，现有证据不支持目标弱或无特征。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+57,val,B,Sailboat,1,3,0.3333333333333333,2,C:2,low_accuracy,帆船使用发动机，备注称位于远处；错误2片均为C。,距离相关的目标相对弱化与帆船训练覆盖少值得检查；不是官方明确low signal。仅3片。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+11,val,C,Passenger ferry,11,16,0.6875,5,B:1; D:4,low_accuracy,客船Minho Uno进港靠泊，含港口背景；错误D4/B1。,更像特定进港事件中的类别混淆；同船Train12离港及65另次进港均全对，未锁定声学原因。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+66,val,A,Mussel boat,22,31,0.7096774193548387,9,C:3; D:6,low_accuracy,中段有使用发动机的帆船干扰；错误D6/C3，没有错为干扰所属B类。,声源混杂确定，但不能把9个错误都解释成识别了干扰船；还存在跨类别判别问题。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+40,val,C,Passenger ferry,6,8,0.75,2,D:2,low_accuracy,多艘客船同时进出，港口噪声较大；错误2片均为D。,混合工况及背景可能改变谱形；其他船同属C，不能直接归为跨类别标签污染。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+6,val,C,Passenger ferry,47,60,0.7833333333333333,13,A:11; D:2,low_accuracy,客船Mar de Cangas进港靠泊，有港口背景；错误A11/D2。,进港过程与背景的跨录音差异是候选解释；无官方弱目标/强跨类干扰证据，原因未锁定。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+43,val,C,Passenger ferry,8,10,0.8,2,D:2,low_accuracy,多艘客船同时进出，港口噪声较大；错误2片均为D。,与40相似，可能是多船及工况谱形变化；同类多船本身不足以证明标签错误。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+20,val,D,Ro-Ro,5,6,0.8333333333333334,1,C:1,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+69,val,D,Ocean liner,68,80,0.85,12,A:12,high_error_count_supplement,邮轮驶离海湾约15节；无弱目标/强干扰备注；12个错误均为A。,这条新邮轮/航行事件的跨录音混淆值得优先检查；不是仅凭错误数就判为污染录音。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+36,val,C,Passenger ferry,18,20,0.9,2,B:2,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+14,val,C,Passenger ferry,11,12,0.9166666666666666,1,D:1,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+72,val,B,Motorboat,23,24,0.9583333333333334,1,A:1,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+75,val,A,Fishing boat,10,10,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+94,val,A,Dredger,10,10,1.0,0,,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=4&totalRows_leerMedidas=90
+93,test,A,Dredger,0,6,0.0,6,B:4; C:2,low_accuracy,挖泥船采集活动；H3，与同场次94/95/96的H2不同；无无动力或干扰说明。,优先检查通道/采集条件及片段工况差异；Train80也用H3，故不能断言仅由H3导致。历史Mamba4/6也反驳必然不可识别。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=4&totalRows_leerMedidas=90
+23,test,D,Ocean liner,0,1,0.0,1,B:1,low_accuracy,官方描述为靠泊结束后的背景声；唯一片段错为B。,任务范围/标签代表性问题最突出：不能保证该片主要包含邮轮动力声；不等于证明所有辅机关闭。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+56,test,B,Sailboat,1,9,0.1111111111111111,8,A:5; C:3,low_accuracy,无发动机通过，背景噪声较大；错误A5/C3。,与有动力目标任务的工况不匹配，是较直接的解释；不等于证明完全没有船舶声。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+31,test,A,Tugboat,4,12,0.3333333333333333,8,C:6; D:2,low_accuracy,拖船离泊时发动机启停，官方评价信号中等至好；错误C6/D2。,优先怀疑细类训练覆盖与工况泛化：Train拖船仅15的通过事件；不是没有目标信号。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+9,test,C,Passenger ferry,7,12,0.5833333333333334,5,A:5,low_accuracy,客船Mar de Onza等待上客；5个错误均为A。,停靠等待与航行工况差异值得检查；不能推断发动机关闭。同船训练录音多条全对。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+8,test,C,Passenger ferry,12,18,0.6666666666666666,6,A:6,low_accuracy,客船Mar de Onza进港靠泊；6个错误均为A。,与同船等待段9呈一致A类混淆，指向这次靠泊事件/背景特征；这是线索，未证明原因。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+70,test,B,Motorboat,16,22,0.7272727272727273,6,C:6,low_accuracy,约6米游艇通过，H2；没有弱信号或干扰备注；6个错误均为C。,当前只能确认B/C类别混淆；船体/推进系统差异值得检查，不能当作已知无特征样本。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+42,test,C,Passenger ferry,8,11,0.7272727272727273,3,B:1; D:2,low_accuracy,客船完成倒车操纵后离港，港口噪声较大；错误D2/B1。,倒车到离港的工况变化及背景可能影响分类，但官方没有目标缺失证据。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+48,test,A,Mussel boat,12,16,0.75,4,C:4,low_accuracy,贻贝船录音中有远处客船；4个错误全部为客船C。,干扰船类别与错误方向吻合，混合声源是有针对性的原因假设；尚无逐片干扰时刻验证。,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+38,test,C,Passenger ferry,18,21,0.8571428571428571,3,B:3,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+21,test,B,Motorboat,7,8,0.875,1,C:1,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90
+30,test,B,Pilot boat,7,8,0.875,1,A:1,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90
+62,test,C,Passenger ferry,57,62,0.9193548387096774,5,A:1; B:4,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90
+73,test,A,Fishing boat,26,27,0.9629629629629629,1,C:1,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90
+19,test,D,Ro-Ro,72,74,0.972972972972973,2,B:1; C:1,not_selected,,,https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90

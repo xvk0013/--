@@ -1,0 +1,50 @@
+{
+  "checkpoint_epoch": 39,
+  "all_six_Val_metrics_exact": true,
+  "all_saved_arrays_exact": true,
+  "checks": {
+    "original": {
+      "ids": true,
+      "labels": true,
+      "contexts": true,
+      "predictions": true,
+      "probabilities": true
+    },
+    "10dB": {
+      "ids": true,
+      "labels": true,
+      "contexts": true,
+      "predictions": true,
+      "probabilities": true
+    },
+    "5dB": {
+      "ids": true,
+      "labels": true,
+      "contexts": true,
+      "predictions": true,
+      "probabilities": true
+    },
+    "0dB": {
+      "ids": true,
+      "labels": true,
+      "contexts": true,
+      "predictions": true,
+      "probabilities": true
+    },
+    "-5dB": {
+      "ids": true,
+      "labels": true,
+      "contexts": true,
+      "predictions": true,
+      "probabilities": true
+    },
+    "-10dB": {
+      "ids": true,
+      "labels": true,
+      "contexts": true,
+      "predictions": true,
+      "probabilities": true
+    }
+  },
+  "description": "Replay after skipping the discarded legacy 128 ms short STFT; no trained parameters changed."
+}

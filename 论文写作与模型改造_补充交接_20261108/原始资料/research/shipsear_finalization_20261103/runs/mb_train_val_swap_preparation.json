@@ -1,0 +1,15 @@
+{
+  "runtime": {
+    "device": "NVIDIA GeForce RTX 5090",
+    "torch": "2.9.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.1.2",
+    "python": "C:\\Users\\Admin\\anaconda3\\envs\\zpfenv1\\python.exe"
+  },
+  "prepared_at": "2026-11-04T15:14:08+08:00",
+  "train_rows": 2877,
+  "val_rows": 719,
+  "normalization_split": "Train",
+  "train_cache_seconds": 19.773784200660884,
+  "val_cache_seconds": 29.270796400494874
+}

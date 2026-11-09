@@ -1,0 +1,65 @@
+{
+  "verified_at": "2026-11-04T00:08:27+08:00",
+  "train_rows": 2880,
+  "same_initial_parameters": true,
+  "runs": {
+    "SE-TF-G-13": {
+      "loss": {
+        "loss": 2.0089831352233887,
+        "set_loss": 1.9185612201690674,
+        "count_loss": 0.9042196273803711
+      },
+      "first_batch_seconds": 1.2790823001414537,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ],
+        [
+          32,
+          1,
+          128,
+          40
+        ]
+      ],
+      "condition_counts": {
+        "original": 13,
+        "10dB": 2,
+        "5dB": 5,
+        "0dB": 4,
+        "-5dB": 3,
+        "-10dB": 5
+      },
+      "restored_update_exact": true
+    },
+    "SE-TF-A-13": {
+      "loss": {
+        "loss": 2.0084822177886963,
+        "set_loss": 1.9180608987808228,
+        "count_loss": 0.9042128920555115
+      },
+      "first_batch_seconds": 0.15673539973795414,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ],
+        [
+          32,
+          1,
+          128,
+          40
+        ]
+      ],
+      "condition_counts": {
+        "original": 13,
+        "10dB": 2,
+        "5dB": 5,
+        "0dB": 4,
+        "-5dB": 3,
+        "-10dB": 5
+      },
+      "restored_update_exact": true
+    }
+  }
+}

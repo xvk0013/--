@@ -1,0 +1,44 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "source_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13\\V1_stored_single_best.pt",
+  "source_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13",
+  "paired_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_noise_target_factorial_20261102\\runs\\seed13",
+  "conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB"
+  ],
+  "strengths": [
+    "absent",
+    "equal",
+    "weak6dB"
+  ],
+  "power_mode": "total_snr",
+  "feature_batch_size": 32,
+  "evaluation_source_batch_size": 64,
+  "probe_batch_size": 256,
+  "probe_evaluation_batch_size": 1024,
+  "max_epochs": 40,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5,
+  "hidden_width": 64,
+  "noise_seed_tag": 7602,
+  "background_noise_tag": 7612,
+  "fresh_noise_tag": 7622,
+  "label_mass": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "selection": "SameVal0.5raw7classmacro+.5mean10/5/0 sevenclassmacro; actual1..40epochs, noTest. Doubleequal/weak share eachlabel budget equally.",
+  "probe_normalization": "Fit all Train diagnostic views only, per-coordinate; std<1e-6 uses scale1. Never fit Val. Original V1 normalization unchanged.",
+  "training_scope": "fresh diagnostic readouts only; source V1 and acoustic features frozen",
+  "test_used": false
+}

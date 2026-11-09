@@ -1,0 +1,55 @@
+# ShipsEar 91 号录音核查
+
+## 官方标注与本地文件
+
+ShipsEar 发布方的目录将 91 号命名为 **Natural ambient noise sample 7**，类型为 **Natural ambient noise**。它是 Cortegada 平台的一条随机环境噪声采样，采集位置写作 Intecmar 气象站，日期为 2013 年 9 月 25 日。目录的 `00:00:00` 按发布方说明表示没有准确时刻。目录时长为 `0:34`，水听器 1，增益 64 倍，水听器距海底 4.5 米，通道深度 7.5 米。92 号同一目录的名称为 **Natural ambient noise sample 8**，站点、日期及水听器设置相同。[ShipsEar 官方目录第 5 页](https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=4&totalRows_leerMedidas=90) · [官方字段说明](https://underwaternoise.atlanttic.uvigo.es/) · [目录存档](../shipsear_all_recording_metadata_audit_20261004/sources/official_page_4.html#L33)
+
+本地源文件 `91__E__7H_N.wav` 的 WAV 头为单声道、16 位 PCM、52,734 Hz、1,834,363 帧，实际时长约 34.785 秒。官方论文将背景录音归为 E 类。当前数据清单中的 `Val_000706` 至 `Val_000715` 均标为 E／noise／0 个目标，每段 5 秒，16 kHz 下的起点为 0、3、6、9、12、16.5、19.5、22.5、25.5、28.5 秒。片段有重叠。[本地源 WAV](D:/LSJ/Data/shipsEar_AUDIOS/91__E__7H_N.wav) · [当前切片清单](../shipsear_mb_train_val_20261104/data/DATA_INDEX.csv) · [ShipsEar 原论文，第 3 节](https://zenodo.org/records/14570052/files/fulltext.pdf?download=1)
+
+原论文的倒谱特征加 GMM 实验按整条音频文件留一验证，表 1 的 12 条背景录音全部纳入实验，表 3 的 E 类 12/12 判对。按官方目录和论文的录音数推断，91 号应包含在这组汇总中。论文给的是整录音级类别汇总，当前实验的结果粒度为五秒切片。[ShipsEar 原论文，表 1、表 3 和第 3.3 节](https://zenodo.org/records/14570052/files/fulltext.pdf?download=1)
+
+## 划分记录
+
+| 数据或实验 | 91 号归属 | 片段数 | 依据 |
+| --- | --- | ---: | --- |
+| 10 月 8 日早期打包版 | Test | 16 | [Test 清单](../shipsear_release_build_20261008/ShipsEar_Multitarget_v1/datasets/shipsear_3type_603010_context502525_v1/data/Test/manifest.csv) |
+| 原 Q0 正式划分 | Val | 10 | [Q0 配置](runs/SE-Q0-13/config_resolved.json) |
+| 11 月 4 日背景交换候选，以及追加 65／53、65／63 的两个候选 | Train | 10 | [交换配置与说明](../shipsear_val_background_20261104/README.md) |
+| 现用 MB 交换划分，包括 ShortLocal 和 ShortLocal-GN | Val | 10 | [MB 划分说明](../shipsear_mb_train_val_20261104/README.md) |
+
+背景交换按整份录音进行，91 号由 Val 移到 Train，92 号的 28 条切片由 Train 移到 Val。现用划分从原 Q0 出发调整 MB 录音，所以背景采用原 Q0 的分配。核对了原 Q0、背景交换和现用 MB 三套数据，91 号对应的十条原始波形逐值一致。波形与 16 kHz 源文件对应区间按索引增益缩放一致，最大绝对舍入差小于 3×10⁻⁸。[仅背景交换训练报告](Q0仅背景录音交换完整训练报告.md)
+
+## 留出 91 号时的历史预测
+
+每格为正确识别为 E 的切片数，分母均为 10。正式运行按各自数据索引核对预测的样本编号、真实标签和 91 号源录音归属。
+
+| 模型或对照 | 数据划分 | 原始 | 10 dB | 5 dB | 0 dB | −5 dB | −10 dB |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Q0 | 原 Q0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 仅交换 MB 的 Q0 | 现用 MB | 0 | 0 | 0 | 0 | 0 | 1 |
+| ShortLocal、ShortLocal-GN | 现用 MB | 0 | 0 | 0 | 0 | 0 | 0 |
+| ShuffleFAC 早期实现 | 原 Q0 | 9 | 8 | 7 | 1 | 0 | 0 |
+| ShuffleFAC-32 作者结构适配版 | 原 Q0 | 4 | 4 | 3 | 0 | 0 | 0 |
+| Sun–Wang CNN 正式对照 | 原 Q0 | 5 | 8 | 8 | 8 | 6 | 2 |
+| FCResNet5、TResNet-LA | 原 Q0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sun–Wang Full | 现用 MB | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sun–Wang Avg17 | 现用 MB | 9 | 9 | 8 | 8 | 0 | 0 |
+
+10 月 18 日的早期联合模型逐录音归档也有 Val 原始档 **8/10** 的记录。这属于当时的模型与评价协议。ShuffleFAC-32 作者结构适配版和早期 ShuffleFAC 是两次独立运行。[早期联合模型逐录音表](../shipsear_recording_audit_20261018/results/全部集合逐录音性能_20261018.csv) · [外部正式对照说明](../external_baselines_20261026/正式对比运行说明.md) · [ShuffleFAC-32 原始档逐条预测](../external_baselines_20261026/formal_runs/ShuffleFACAuthor/Val_original.npz) · [Sun–Wang 正式对照 0 dB 逐条预测](../external_baselines_20261026/formal_runs/SunWang/Val_0dB.npz)
+
+现用划分的 Full 与 Avg17 都用种子 13 从头训练，Avg17 在 CNN 输入前沿 log-Mel 时间轴做 17 帧局部平均，覆盖约 150 ms。该对照在原始到 0 dB 提高了 91 号的识别，但 Avg17 的整体背景表现较弱，−10 dB 的 Test 背景为 39.08%，Full 为 98.85%。91 号的改善属于特定录音上的结果。[时频局部平均对照报告](../external_baselines_20261026/sunwang_temporal_average/实验报告.md) · [Avg17 原始档逐条预测](../external_baselines_20261026/sunwang_temporal_average/runs/SE-SW-MB-avg17-13/Val_original.npz)
+
+## 波形与模型输出
+
+ShortLocal 和 GN 在原始档对十条均输出双目标，都是 PF+MB 四条、PF+RV 六条。ShortLocal 分配给背景的分数最高为 3.87%，另外两条 Val 背景录音的合计正确数为 61/61。整份 91 号的持续误报在额外加噪前已经存在。[ShortLocal 原始预测](runs/SE-Q0-ShortLocal-13/Val_original.npz) · [GN 原始预测](runs/SE-Q0-ShortLocal-GN-13/Val_original.npz) · [ShortLocal 逐录音结果](runs/SE-Q0-ShortLocal-13/Val_original_recordings.json)
+
+在 RMS 统一为 0.05 的 16 kHz 原始切片上用 4096 点 Welch 功率谱估计，91 号十条的 100–300 Hz 能量占比为 27.47%–38.36%，中位数为 32.02%。现用 Train 的七份背景录音，其各自中位数为 2.91%–18.10%。同系列的 92 号，该频带中位数为 4.80%，100 Hz 以下则为 58.17%。91 号各切片峰值频率约在 180–289 Hz。这是同一站点背景的录音级频谱差异。频带占比是描述性统计，具体哪项特征驱动了双目标分数仍未定位。[计算所用数据索引](../shipsear_mb_train_val_20261104/data/DATA_INDEX.csv)
+
+本次用两个已有 Q0 封存权重做推理回放。为对齐噪声，两套权重都读取原 Q0 Val 中同一批 91 号切片，并使用原 Val 的数组位置、评价噪声种子 13 和六档加噪规则。原 Q0 的逐条预测与封存输出一致。
+
+| Q0 权重 | 训练是否见过 91 号 | 原始 | 10 dB | 5 dB | 0 dB | −5 dB | −10 dB |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 原 Q0，第 39 轮 | 留出 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 背景交换 Q0，第 31 轮 | Train 的十条原始切片 | 10 | 10 | 10 | 7 | 3 | 1 |
+
+背景交换权重可以识别训练覆盖的 91 号，表中第二行属于训练内回放。Avg17 在留出条件下也能判对，说明当前的全错与模型如何利用该录音的频谱及时序特征有关。结合官方标注、原始波形核对和两类对照，现有证据更符合特定背景录音的泛化缺口。[原 Q0 封存](runs/SE-Q0-13/selection_sealed.json) · [背景交换 Q0 封存](runs/SE-Q0-BackgroundSwap-13/selection_sealed.json)

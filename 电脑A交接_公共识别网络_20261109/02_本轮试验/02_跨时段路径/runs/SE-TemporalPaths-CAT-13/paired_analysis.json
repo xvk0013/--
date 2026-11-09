@@ -1,0 +1,1882 @@
+{
+  "selected_epochs": {
+    "GN-CAT": 28,
+    "GN": 29,
+    "independent": 19,
+    "transition": 19
+  },
+  "comparison_sets": [
+    {
+      "before": "GN-CAT",
+      "after": "independent"
+    },
+    {
+      "before": "GN-CAT",
+      "after": "transition"
+    },
+    {
+      "before": "independent",
+      "after": "transition"
+    }
+  ],
+  "hard_gates": {
+    "GN-CAT": {
+      "original_acc_gt_85": true,
+      "original_single_gt_85": true,
+      "original_double_gt_80": true,
+      "original_background_gt_95": true,
+      "10dB_acc_gt_80": true,
+      "5dB_acc_gt_80": true
+    },
+    "GN": {
+      "original_acc_gt_85": true,
+      "original_single_gt_85": true,
+      "original_double_gt_80": true,
+      "original_background_gt_95": true,
+      "10dB_acc_gt_80": true,
+      "5dB_acc_gt_80": true
+    },
+    "transition": {
+      "original_acc_gt_85": true,
+      "original_single_gt_85": true,
+      "original_double_gt_80": true,
+      "original_background_gt_95": true,
+      "10dB_acc_gt_80": true,
+      "5dB_acc_gt_80": true
+    },
+    "independent": {
+      "original_acc_gt_85": true,
+      "original_single_gt_85": true,
+      "original_double_gt_80": true,
+      "original_background_gt_95": true,
+      "10dB_acc_gt_80": true,
+      "5dB_acc_gt_80": true
+    }
+  },
+  "Test": {
+    "original": {
+      "all": {
+        "n": 877,
+        "correct": {
+          "GN-CAT": 754,
+          "GN": 747,
+          "independent": 762,
+          "transition": 760
+        },
+        "acc": {
+          "GN-CAT": 85.97491448118586,
+          "GN": 85.17673888255416,
+          "independent": 86.88711516533637,
+          "transition": 86.65906499429875
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 25,
+            "corrected": 14,
+            "regressed": 6
+          },
+          "GN-CAT -> transition": {
+            "changed": 28,
+            "corrected": 14,
+            "regressed": 8
+          },
+          "independent -> transition": {
+            "changed": 3,
+            "corrected": 0,
+            "regressed": 2
+          }
+        }
+      },
+      "Single": {
+        "n": 262,
+        "correct": {
+          "GN-CAT": 238,
+          "GN": 234,
+          "independent": 240,
+          "transition": 240
+        },
+        "acc": {
+          "GN-CAT": 90.83969465648855,
+          "GN": 89.31297709923665,
+          "independent": 91.6030534351145,
+          "transition": 91.6030534351145
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 8,
+            "corrected": 4,
+            "regressed": 2
+          },
+          "GN-CAT -> transition": {
+            "changed": 8,
+            "corrected": 4,
+            "regressed": 2
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "Double": {
+        "n": 528,
+        "correct": {
+          "GN-CAT": 429,
+          "GN": 426,
+          "independent": 435,
+          "transition": 433
+        },
+        "acc": {
+          "GN-CAT": 81.25,
+          "GN": 80.68181818181817,
+          "independent": 82.38636363636364,
+          "transition": 82.00757575757575
+        },
+        "pair_errors": {
+          "GN-CAT": 54,
+          "GN": 61,
+          "independent": 55,
+          "transition": 57
+        },
+        "to_single": {
+          "GN-CAT": 45,
+          "GN": 41,
+          "independent": 38,
+          "transition": 38
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 471,
+          "GN": 465,
+          "independent": 470,
+          "transition": 468
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 17,
+            "corrected": 10,
+            "regressed": 4
+          },
+          "GN-CAT -> transition": {
+            "changed": 20,
+            "corrected": 10,
+            "regressed": 6
+          },
+          "independent -> transition": {
+            "changed": 3,
+            "corrected": 0,
+            "regressed": 2
+          }
+        }
+      },
+      "Background": {
+        "n": 87,
+        "correct": {
+          "GN-CAT": 87,
+          "GN": 87,
+          "independent": 87,
+          "transition": 87
+        },
+        "acc": {
+          "GN-CAT": 100.0,
+          "GN": 100.0,
+          "independent": 100.0,
+          "transition": 100.0
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "GN-CAT -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C0": {
+        "n": 264,
+        "correct": {
+          "GN-CAT": 200,
+          "GN": 198,
+          "independent": 207,
+          "transition": 205
+        },
+        "pair_errors": {
+          "GN-CAT": 25,
+          "GN": 29,
+          "independent": 25,
+          "transition": 27
+        },
+        "to_single": {
+          "GN-CAT": 39,
+          "GN": 37,
+          "independent": 32,
+          "transition": 32
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 236,
+          "GN": 233,
+          "independent": 236,
+          "transition": 234
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 14,
+            "corrected": 9,
+            "regressed": 2
+          },
+          "GN-CAT -> transition": {
+            "changed": 17,
+            "corrected": 9,
+            "regressed": 4
+          },
+          "independent -> transition": {
+            "changed": 3,
+            "corrected": 0,
+            "regressed": 2
+          }
+        }
+      },
+      "C1": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 110,
+          "GN": 110,
+          "independent": 108,
+          "transition": 108
+        },
+        "pair_errors": {
+          "GN-CAT": 16,
+          "GN": 18,
+          "independent": 18,
+          "transition": 18
+        },
+        "to_single": {
+          "GN-CAT": 6,
+          "GN": 4,
+          "independent": 6,
+          "transition": 6
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 116,
+          "GN": 114,
+          "independent": 114,
+          "transition": 114
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 2,
+            "corrected": 0,
+            "regressed": 2
+          },
+          "GN-CAT -> transition": {
+            "changed": 2,
+            "corrected": 0,
+            "regressed": 2
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C2": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 119,
+          "GN": 118,
+          "independent": 120,
+          "transition": 120
+        },
+        "pair_errors": {
+          "GN-CAT": 13,
+          "GN": 14,
+          "independent": 12,
+          "transition": 12
+        },
+        "to_single": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 119,
+          "GN": 118,
+          "independent": 120,
+          "transition": 120
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 1,
+            "corrected": 1,
+            "regressed": 0
+          },
+          "GN-CAT -> transition": {
+            "changed": 1,
+            "corrected": 1,
+            "regressed": 0
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      }
+    },
+    "10dB": {
+      "all": {
+        "n": 877,
+        "correct": {
+          "GN-CAT": 727,
+          "GN": 735,
+          "independent": 735,
+          "transition": 734
+        },
+        "acc": {
+          "GN-CAT": 82.89623717217788,
+          "GN": 83.80843785632838,
+          "independent": 83.80843785632838,
+          "transition": 83.69441277080958
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 48,
+            "corrected": 22,
+            "regressed": 14
+          },
+          "GN-CAT -> transition": {
+            "changed": 47,
+            "corrected": 21,
+            "regressed": 14
+          },
+          "independent -> transition": {
+            "changed": 3,
+            "corrected": 1,
+            "regressed": 2
+          }
+        }
+      },
+      "Single": {
+        "n": 262,
+        "correct": {
+          "GN-CAT": 225,
+          "GN": 225,
+          "independent": 227,
+          "transition": 228
+        },
+        "acc": {
+          "GN-CAT": 85.87786259541986,
+          "GN": 85.87786259541986,
+          "independent": 86.64122137404581,
+          "transition": 87.02290076335878
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 12,
+            "corrected": 7,
+            "regressed": 5
+          },
+          "GN-CAT -> transition": {
+            "changed": 13,
+            "corrected": 8,
+            "regressed": 5
+          },
+          "independent -> transition": {
+            "changed": 1,
+            "corrected": 1,
+            "regressed": 0
+          }
+        }
+      },
+      "Double": {
+        "n": 528,
+        "correct": {
+          "GN-CAT": 415,
+          "GN": 423,
+          "independent": 421,
+          "transition": 419
+        },
+        "acc": {
+          "GN-CAT": 78.59848484848484,
+          "GN": 80.11363636363636,
+          "independent": 79.73484848484848,
+          "transition": 79.35606060606061
+        },
+        "pair_errors": {
+          "GN-CAT": 66,
+          "GN": 64,
+          "independent": 69,
+          "transition": 71
+        },
+        "to_single": {
+          "GN-CAT": 47,
+          "GN": 41,
+          "independent": 38,
+          "transition": 38
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 456,
+          "GN": 458,
+          "independent": 455,
+          "transition": 453
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 36,
+            "corrected": 15,
+            "regressed": 9
+          },
+          "GN-CAT -> transition": {
+            "changed": 34,
+            "corrected": 13,
+            "regressed": 9
+          },
+          "independent -> transition": {
+            "changed": 2,
+            "corrected": 0,
+            "regressed": 2
+          }
+        }
+      },
+      "Background": {
+        "n": 87,
+        "correct": {
+          "GN-CAT": 87,
+          "GN": 87,
+          "independent": 87,
+          "transition": 87
+        },
+        "acc": {
+          "GN-CAT": 100.0,
+          "GN": 100.0,
+          "independent": 100.0,
+          "transition": 100.0
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "GN-CAT -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C0": {
+        "n": 264,
+        "correct": {
+          "GN-CAT": 188,
+          "GN": 192,
+          "independent": 190,
+          "transition": 189
+        },
+        "pair_errors": {
+          "GN-CAT": 36,
+          "GN": 35,
+          "independent": 40,
+          "transition": 41
+        },
+        "to_single": {
+          "GN-CAT": 40,
+          "GN": 37,
+          "independent": 34,
+          "transition": 34
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 222,
+          "GN": 223,
+          "independent": 220,
+          "transition": 219
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 28,
+            "corrected": 10,
+            "regressed": 8
+          },
+          "GN-CAT -> transition": {
+            "changed": 27,
+            "corrected": 9,
+            "regressed": 8
+          },
+          "independent -> transition": {
+            "changed": 1,
+            "corrected": 0,
+            "regressed": 1
+          }
+        }
+      },
+      "C1": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 109,
+          "GN": 112,
+          "independent": 112,
+          "transition": 111
+        },
+        "pair_errors": {
+          "GN-CAT": 17,
+          "GN": 16,
+          "independent": 16,
+          "transition": 17
+        },
+        "to_single": {
+          "GN-CAT": 6,
+          "GN": 4,
+          "independent": 4,
+          "transition": 4
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 115,
+          "GN": 116,
+          "independent": 116,
+          "transition": 115
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 6,
+            "corrected": 4,
+            "regressed": 1
+          },
+          "GN-CAT -> transition": {
+            "changed": 5,
+            "corrected": 3,
+            "regressed": 1
+          },
+          "independent -> transition": {
+            "changed": 1,
+            "corrected": 0,
+            "regressed": 1
+          }
+        }
+      },
+      "C2": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 118,
+          "GN": 119,
+          "independent": 119,
+          "transition": 119
+        },
+        "pair_errors": {
+          "GN-CAT": 13,
+          "GN": 13,
+          "independent": 13,
+          "transition": 13
+        },
+        "to_single": {
+          "GN-CAT": 1,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 119,
+          "GN": 119,
+          "independent": 119,
+          "transition": 119
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 2,
+            "corrected": 1,
+            "regressed": 0
+          },
+          "GN-CAT -> transition": {
+            "changed": 2,
+            "corrected": 1,
+            "regressed": 0
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      }
+    },
+    "5dB": {
+      "all": {
+        "n": 877,
+        "correct": {
+          "GN-CAT": 703,
+          "GN": 721,
+          "independent": 712,
+          "transition": 714
+        },
+        "acc": {
+          "GN-CAT": 80.15963511972633,
+          "GN": 82.212086659065,
+          "independent": 81.18586088939567,
+          "transition": 81.41391106043329
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 64,
+            "corrected": 28,
+            "regressed": 19
+          },
+          "GN-CAT -> transition": {
+            "changed": 62,
+            "corrected": 28,
+            "regressed": 17
+          },
+          "independent -> transition": {
+            "changed": 3,
+            "corrected": 2,
+            "regressed": 0
+          }
+        }
+      },
+      "Single": {
+        "n": 262,
+        "correct": {
+          "GN-CAT": 223,
+          "GN": 221,
+          "independent": 222,
+          "transition": 223
+        },
+        "acc": {
+          "GN-CAT": 85.1145038167939,
+          "GN": 84.35114503816794,
+          "independent": 84.7328244274809,
+          "transition": 85.1145038167939
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 15,
+            "corrected": 6,
+            "regressed": 7
+          },
+          "GN-CAT -> transition": {
+            "changed": 14,
+            "corrected": 6,
+            "regressed": 6
+          },
+          "independent -> transition": {
+            "changed": 1,
+            "corrected": 1,
+            "regressed": 0
+          }
+        }
+      },
+      "Double": {
+        "n": 528,
+        "correct": {
+          "GN-CAT": 393,
+          "GN": 413,
+          "independent": 403,
+          "transition": 404
+        },
+        "acc": {
+          "GN-CAT": 74.43181818181817,
+          "GN": 78.21969696969697,
+          "independent": 76.32575757575758,
+          "transition": 76.51515151515152
+        },
+        "pair_errors": {
+          "GN-CAT": 73,
+          "GN": 70,
+          "independent": 80,
+          "transition": 78
+        },
+        "to_single": {
+          "GN-CAT": 62,
+          "GN": 45,
+          "independent": 45,
+          "transition": 46
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 444,
+          "GN": 449,
+          "independent": 443,
+          "transition": 444
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 49,
+            "corrected": 22,
+            "regressed": 12
+          },
+          "GN-CAT -> transition": {
+            "changed": 48,
+            "corrected": 22,
+            "regressed": 11
+          },
+          "independent -> transition": {
+            "changed": 2,
+            "corrected": 1,
+            "regressed": 0
+          }
+        }
+      },
+      "Background": {
+        "n": 87,
+        "correct": {
+          "GN-CAT": 87,
+          "GN": 87,
+          "independent": 87,
+          "transition": 87
+        },
+        "acc": {
+          "GN-CAT": 100.0,
+          "GN": 100.0,
+          "independent": 100.0,
+          "transition": 100.0
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "GN-CAT -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C0": {
+        "n": 264,
+        "correct": {
+          "GN-CAT": 171,
+          "GN": 187,
+          "independent": 182,
+          "transition": 183
+        },
+        "pair_errors": {
+          "GN-CAT": 40,
+          "GN": 36,
+          "independent": 44,
+          "transition": 42
+        },
+        "to_single": {
+          "GN-CAT": 53,
+          "GN": 41,
+          "independent": 38,
+          "transition": 39
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 213,
+          "GN": 219,
+          "independent": 215,
+          "transition": 216
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 33,
+            "corrected": 15,
+            "regressed": 4
+          },
+          "GN-CAT -> transition": {
+            "changed": 32,
+            "corrected": 15,
+            "regressed": 3
+          },
+          "independent -> transition": {
+            "changed": 2,
+            "corrected": 1,
+            "regressed": 0
+          }
+        }
+      },
+      "C1": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 108,
+          "GN": 113,
+          "independent": 108,
+          "transition": 108
+        },
+        "pair_errors": {
+          "GN-CAT": 16,
+          "GN": 15,
+          "independent": 17,
+          "transition": 17
+        },
+        "to_single": {
+          "GN-CAT": 8,
+          "GN": 4,
+          "independent": 7,
+          "transition": 7
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 116,
+          "GN": 117,
+          "independent": 115,
+          "transition": 115
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 11,
+            "corrected": 5,
+            "regressed": 5
+          },
+          "GN-CAT -> transition": {
+            "changed": 11,
+            "corrected": 5,
+            "regressed": 5
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C2": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 114,
+          "GN": 113,
+          "independent": 113,
+          "transition": 113
+        },
+        "pair_errors": {
+          "GN-CAT": 17,
+          "GN": 19,
+          "independent": 19,
+          "transition": 19
+        },
+        "to_single": {
+          "GN-CAT": 1,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 115,
+          "GN": 113,
+          "independent": 113,
+          "transition": 113
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 5,
+            "corrected": 2,
+            "regressed": 3
+          },
+          "GN-CAT -> transition": {
+            "changed": 5,
+            "corrected": 2,
+            "regressed": 3
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      }
+    },
+    "0dB": {
+      "all": {
+        "n": 877,
+        "correct": {
+          "GN-CAT": 661,
+          "GN": 673,
+          "independent": 671,
+          "transition": 671
+        },
+        "acc": {
+          "GN-CAT": 75.37058152793614,
+          "GN": 76.73888255416192,
+          "independent": 76.51083238312428,
+          "transition": 76.51083238312428
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 96,
+            "corrected": 40,
+            "regressed": 30
+          },
+          "GN-CAT -> transition": {
+            "changed": 93,
+            "corrected": 39,
+            "regressed": 29
+          },
+          "independent -> transition": {
+            "changed": 5,
+            "corrected": 2,
+            "regressed": 2
+          }
+        }
+      },
+      "Single": {
+        "n": 262,
+        "correct": {
+          "GN-CAT": 216,
+          "GN": 211,
+          "independent": 210,
+          "transition": 211
+        },
+        "acc": {
+          "GN-CAT": 82.44274809160305,
+          "GN": 80.53435114503816,
+          "independent": 80.1526717557252,
+          "transition": 80.53435114503816
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 27,
+            "corrected": 6,
+            "regressed": 12
+          },
+          "GN-CAT -> transition": {
+            "changed": 25,
+            "corrected": 6,
+            "regressed": 11
+          },
+          "independent -> transition": {
+            "changed": 2,
+            "corrected": 1,
+            "regressed": 0
+          }
+        }
+      },
+      "Double": {
+        "n": 528,
+        "correct": {
+          "GN-CAT": 358,
+          "GN": 375,
+          "independent": 374,
+          "transition": 373
+        },
+        "acc": {
+          "GN-CAT": 67.8030303030303,
+          "GN": 71.02272727272727,
+          "independent": 70.83333333333334,
+          "transition": 70.64393939393939
+        },
+        "pair_errors": {
+          "GN-CAT": 85,
+          "GN": 87,
+          "independent": 95,
+          "transition": 95
+        },
+        "to_single": {
+          "GN-CAT": 85,
+          "GN": 66,
+          "independent": 59,
+          "transition": 60
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 425,
+          "GN": 425,
+          "independent": 421,
+          "transition": 422
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 69,
+            "corrected": 34,
+            "regressed": 18
+          },
+          "GN-CAT -> transition": {
+            "changed": 68,
+            "corrected": 33,
+            "regressed": 18
+          },
+          "independent -> transition": {
+            "changed": 3,
+            "corrected": 1,
+            "regressed": 2
+          }
+        }
+      },
+      "Background": {
+        "n": 87,
+        "correct": {
+          "GN-CAT": 87,
+          "GN": 87,
+          "independent": 87,
+          "transition": 87
+        },
+        "acc": {
+          "GN-CAT": 100.0,
+          "GN": 100.0,
+          "independent": 100.0,
+          "transition": 100.0
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "GN-CAT -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C0": {
+        "n": 264,
+        "correct": {
+          "GN-CAT": 151,
+          "GN": 160,
+          "independent": 165,
+          "transition": 164
+        },
+        "pair_errors": {
+          "GN-CAT": 40,
+          "GN": 45,
+          "independent": 49,
+          "transition": 49
+        },
+        "to_single": {
+          "GN-CAT": 73,
+          "GN": 59,
+          "independent": 50,
+          "transition": 51
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 207,
+          "GN": 203,
+          "independent": 204,
+          "transition": 205
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 48,
+            "corrected": 23,
+            "regressed": 9
+          },
+          "GN-CAT -> transition": {
+            "changed": 47,
+            "corrected": 22,
+            "regressed": 9
+          },
+          "independent -> transition": {
+            "changed": 3,
+            "corrected": 1,
+            "regressed": 2
+          }
+        }
+      },
+      "C1": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 98,
+          "GN": 106,
+          "independent": 102,
+          "transition": 102
+        },
+        "pair_errors": {
+          "GN-CAT": 23,
+          "GN": 19,
+          "independent": 21,
+          "transition": 21
+        },
+        "to_single": {
+          "GN-CAT": 11,
+          "GN": 7,
+          "independent": 9,
+          "transition": 9
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 108,
+          "GN": 113,
+          "independent": 110,
+          "transition": 110
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 15,
+            "corrected": 9,
+            "regressed": 5
+          },
+          "GN-CAT -> transition": {
+            "changed": 15,
+            "corrected": 9,
+            "regressed": 5
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C2": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 109,
+          "GN": 109,
+          "independent": 107,
+          "transition": 107
+        },
+        "pair_errors": {
+          "GN-CAT": 22,
+          "GN": 23,
+          "independent": 25,
+          "transition": 25
+        },
+        "to_single": {
+          "GN-CAT": 1,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 110,
+          "GN": 109,
+          "independent": 107,
+          "transition": 107
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 6,
+            "corrected": 2,
+            "regressed": 4
+          },
+          "GN-CAT -> transition": {
+            "changed": 6,
+            "corrected": 2,
+            "regressed": 4
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      }
+    },
+    "-5dB": {
+      "all": {
+        "n": 877,
+        "correct": {
+          "GN-CAT": 587,
+          "GN": 597,
+          "independent": 628,
+          "transition": 620
+        },
+        "acc": {
+          "GN-CAT": 66.9327251995439,
+          "GN": 68.07297605473204,
+          "independent": 71.60775370581528,
+          "transition": 70.69555302166476
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 144,
+            "corrected": 74,
+            "regressed": 33
+          },
+          "GN-CAT -> transition": {
+            "changed": 135,
+            "corrected": 66,
+            "regressed": 33
+          },
+          "independent -> transition": {
+            "changed": 11,
+            "corrected": 1,
+            "regressed": 9
+          }
+        }
+      },
+      "Single": {
+        "n": 262,
+        "correct": {
+          "GN-CAT": 193,
+          "GN": 194,
+          "independent": 190,
+          "transition": 191
+        },
+        "acc": {
+          "GN-CAT": 73.66412213740458,
+          "GN": 74.04580152671755,
+          "independent": 72.51908396946564,
+          "transition": 72.90076335877863
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 39,
+            "corrected": 13,
+            "regressed": 16
+          },
+          "GN-CAT -> transition": {
+            "changed": 37,
+            "corrected": 13,
+            "regressed": 15
+          },
+          "independent -> transition": {
+            "changed": 2,
+            "corrected": 1,
+            "regressed": 0
+          }
+        }
+      },
+      "Double": {
+        "n": 528,
+        "correct": {
+          "GN-CAT": 307,
+          "GN": 316,
+          "independent": 351,
+          "transition": 342
+        },
+        "acc": {
+          "GN-CAT": 58.14393939393939,
+          "GN": 59.84848484848485,
+          "independent": 66.47727272727273,
+          "transition": 64.77272727272727
+        },
+        "pair_errors": {
+          "GN-CAT": 100,
+          "GN": 108,
+          "independent": 116,
+          "transition": 117
+        },
+        "to_single": {
+          "GN-CAT": 121,
+          "GN": 103,
+          "independent": 61,
+          "transition": 69
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 1,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 391,
+          "GN": 387,
+          "independent": 401,
+          "transition": 399
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 105,
+            "corrected": 61,
+            "regressed": 17
+          },
+          "GN-CAT -> transition": {
+            "changed": 98,
+            "corrected": 53,
+            "regressed": 18
+          },
+          "independent -> transition": {
+            "changed": 9,
+            "corrected": 0,
+            "regressed": 9
+          }
+        }
+      },
+      "Background": {
+        "n": 87,
+        "correct": {
+          "GN-CAT": 87,
+          "GN": 87,
+          "independent": 87,
+          "transition": 87
+        },
+        "acc": {
+          "GN-CAT": 100.0,
+          "GN": 100.0,
+          "independent": 100.0,
+          "transition": 100.0
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "GN-CAT -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C0": {
+        "n": 264,
+        "correct": {
+          "GN-CAT": 118,
+          "GN": 120,
+          "independent": 155,
+          "transition": 149
+        },
+        "pair_errors": {
+          "GN-CAT": 43,
+          "GN": 53,
+          "independent": 59,
+          "transition": 59
+        },
+        "to_single": {
+          "GN-CAT": 103,
+          "GN": 90,
+          "independent": 50,
+          "transition": 56
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 1,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 189,
+          "GN": 179,
+          "independent": 195,
+          "transition": 194
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 69,
+            "corrected": 42,
+            "regressed": 5
+          },
+          "GN-CAT -> transition": {
+            "changed": 63,
+            "corrected": 36,
+            "regressed": 5
+          },
+          "independent -> transition": {
+            "changed": 6,
+            "corrected": 0,
+            "regressed": 6
+          }
+        }
+      },
+      "C1": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 86,
+          "GN": 92,
+          "independent": 96,
+          "transition": 94
+        },
+        "pair_errors": {
+          "GN-CAT": 28,
+          "GN": 27,
+          "independent": 26,
+          "transition": 26
+        },
+        "to_single": {
+          "GN-CAT": 18,
+          "GN": 13,
+          "independent": 10,
+          "transition": 12
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 99,
+          "GN": 104,
+          "independent": 105,
+          "transition": 105
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 21,
+            "corrected": 14,
+            "regressed": 4
+          },
+          "GN-CAT -> transition": {
+            "changed": 21,
+            "corrected": 13,
+            "regressed": 5
+          },
+          "independent -> transition": {
+            "changed": 2,
+            "corrected": 0,
+            "regressed": 2
+          }
+        }
+      },
+      "C2": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 103,
+          "GN": 104,
+          "independent": 100,
+          "transition": 99
+        },
+        "pair_errors": {
+          "GN-CAT": 29,
+          "GN": 28,
+          "independent": 31,
+          "transition": 32
+        },
+        "to_single": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 1,
+          "transition": 1
+        },
+        "to_background": {
+          "GN-CAT": 0,
+          "GN": 0,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 103,
+          "GN": 104,
+          "independent": 101,
+          "transition": 100
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 15,
+            "corrected": 5,
+            "regressed": 8
+          },
+          "GN-CAT -> transition": {
+            "changed": 14,
+            "corrected": 4,
+            "regressed": 8
+          },
+          "independent -> transition": {
+            "changed": 1,
+            "corrected": 0,
+            "regressed": 1
+          }
+        }
+      }
+    },
+    "-10dB": {
+      "all": {
+        "n": 877,
+        "correct": {
+          "GN-CAT": 486,
+          "GN": 503,
+          "independent": 490,
+          "transition": 495
+        },
+        "acc": {
+          "GN-CAT": 55.416191562143666,
+          "GN": 57.35461801596351,
+          "independent": 55.872291904218926,
+          "transition": 56.442417331813
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 228,
+            "corrected": 75,
+            "regressed": 71
+          },
+          "GN-CAT -> transition": {
+            "changed": 211,
+            "corrected": 72,
+            "regressed": 63
+          },
+          "independent -> transition": {
+            "changed": 20,
+            "corrected": 9,
+            "regressed": 4
+          }
+        }
+      },
+      "Single": {
+        "n": 262,
+        "correct": {
+          "GN-CAT": 160,
+          "GN": 172,
+          "independent": 133,
+          "transition": 139
+        },
+        "acc": {
+          "GN-CAT": 61.06870229007634,
+          "GN": 65.64885496183206,
+          "independent": 50.76335877862596,
+          "transition": 53.05343511450382
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 85,
+            "corrected": 18,
+            "regressed": 45
+          },
+          "GN-CAT -> transition": {
+            "changed": 78,
+            "corrected": 18,
+            "regressed": 39
+          },
+          "independent -> transition": {
+            "changed": 8,
+            "corrected": 6,
+            "regressed": 0
+          }
+        }
+      },
+      "Double": {
+        "n": 528,
+        "correct": {
+          "GN-CAT": 239,
+          "GN": 244,
+          "independent": 270,
+          "transition": 269
+        },
+        "acc": {
+          "GN-CAT": 45.265151515151516,
+          "GN": 46.21212121212121,
+          "independent": 51.13636363636363,
+          "transition": 50.9469696969697
+        },
+        "pair_errors": {
+          "GN-CAT": 125,
+          "GN": 119,
+          "independent": 172,
+          "transition": 167
+        },
+        "to_single": {
+          "GN-CAT": 153,
+          "GN": 155,
+          "independent": 80,
+          "transition": 86
+        },
+        "to_background": {
+          "GN-CAT": 11,
+          "GN": 10,
+          "independent": 6,
+          "transition": 6
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 351,
+          "GN": 356,
+          "independent": 338,
+          "transition": 340
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 143,
+            "corrected": 57,
+            "regressed": 26
+          },
+          "GN-CAT -> transition": {
+            "changed": 133,
+            "corrected": 54,
+            "regressed": 24
+          },
+          "independent -> transition": {
+            "changed": 12,
+            "corrected": 3,
+            "regressed": 4
+          }
+        }
+      },
+      "Background": {
+        "n": 87,
+        "correct": {
+          "GN-CAT": 87,
+          "GN": 87,
+          "independent": 87,
+          "transition": 87
+        },
+        "acc": {
+          "GN-CAT": 100.0,
+          "GN": 100.0,
+          "independent": 100.0,
+          "transition": 100.0
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "GN-CAT -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          },
+          "independent -> transition": {
+            "changed": 0,
+            "corrected": 0,
+            "regressed": 0
+          }
+        }
+      },
+      "C0": {
+        "n": 264,
+        "correct": {
+          "GN-CAT": 92,
+          "GN": 90,
+          "independent": 118,
+          "transition": 116
+        },
+        "pair_errors": {
+          "GN-CAT": 51,
+          "GN": 46,
+          "independent": 85,
+          "transition": 82
+        },
+        "to_single": {
+          "GN-CAT": 114,
+          "GN": 122,
+          "independent": 58,
+          "transition": 63
+        },
+        "to_background": {
+          "GN-CAT": 7,
+          "GN": 6,
+          "independent": 3,
+          "transition": 3
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 171,
+          "GN": 175,
+          "independent": 167,
+          "transition": 168
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 89,
+            "corrected": 34,
+            "regressed": 8
+          },
+          "GN-CAT -> transition": {
+            "changed": 83,
+            "corrected": 32,
+            "regressed": 8
+          },
+          "independent -> transition": {
+            "changed": 8,
+            "corrected": 1,
+            "regressed": 3
+          }
+        }
+      },
+      "C1": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 64,
+          "GN": 68,
+          "independent": 71,
+          "transition": 71
+        },
+        "pair_errors": {
+          "GN-CAT": 34,
+          "GN": 35,
+          "independent": 43,
+          "transition": 42
+        },
+        "to_single": {
+          "GN-CAT": 31,
+          "GN": 26,
+          "independent": 15,
+          "transition": 16
+        },
+        "to_background": {
+          "GN-CAT": 3,
+          "GN": 3,
+          "independent": 3,
+          "transition": 3
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 92,
+          "GN": 88,
+          "independent": 86,
+          "transition": 86
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 36,
+            "corrected": 17,
+            "regressed": 10
+          },
+          "GN-CAT -> transition": {
+            "changed": 33,
+            "corrected": 16,
+            "regressed": 9
+          },
+          "independent -> transition": {
+            "changed": 3,
+            "corrected": 1,
+            "regressed": 1
+          }
+        }
+      },
+      "C2": {
+        "n": 132,
+        "correct": {
+          "GN-CAT": 83,
+          "GN": 86,
+          "independent": 81,
+          "transition": 82
+        },
+        "pair_errors": {
+          "GN-CAT": 40,
+          "GN": 38,
+          "independent": 44,
+          "transition": 43
+        },
+        "to_single": {
+          "GN-CAT": 8,
+          "GN": 7,
+          "independent": 7,
+          "transition": 7
+        },
+        "to_background": {
+          "GN-CAT": 1,
+          "GN": 1,
+          "independent": 0,
+          "transition": 0
+        },
+        "pair_correct_if_true_count": {
+          "GN-CAT": 88,
+          "GN": 93,
+          "independent": 85,
+          "transition": 86
+        },
+        "paired": {
+          "GN-CAT -> independent": {
+            "changed": 18,
+            "corrected": 6,
+            "regressed": 8
+          },
+          "GN-CAT -> transition": {
+            "changed": 17,
+            "corrected": 6,
+            "regressed": 7
+          },
+          "independent -> transition": {
+            "changed": 1,
+            "corrected": 1,
+            "regressed": 0
+          }
+        }
+      }
+    }
+  }
+}

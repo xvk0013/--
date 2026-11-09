@@ -1,0 +1,75 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "arms": [
+    "R0_continue",
+    "R1_factorized"
+  ],
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "encoder": {
+    "dims": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "depths": [
+      1,
+      1,
+      4,
+      2
+    ],
+    "heads": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "windows": [
+      7,
+      7
+    ],
+    "mlp_ratio": 2.0,
+    "drop_path": 0.0,
+    "scan_backend": "cuda",
+    "band_fusion": "early",
+    "input_channels": 2
+  },
+  "interaction_rank": 64,
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "max_epochs": 20,
+  "min_epochs": 20,
+  "joint_patience": 20,
+  "classifier_lr": 0.0003,
+  "encoder_lr": 0.0001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "noise_probabilities": [
+    0.3,
+    0.1,
+    0.1,
+    0.1,
+    0.2,
+    0.2
+  ],
+  "initialization": "Both arms inherit E2 epoch18 encoder, interaction, gate, hidden blocks and count-readout weights. R0 preserves all outputs; R1 copies six conditional-type rows from the old seven-set head and reuses the old cardinality residual as a direct count predictor. Common parameters match; initial predictions need not match because count-head semantics change. No optimizer state inherited.",
+  "training": "Common20-epoch full encoder and public TabM adaptation. Both count readouts lr.001, other TabM lr.0003, encoder lr.0001. Seed13, data, wave/noise, dropout, weights, seven-set CE plus.1 marginal-count CE unchanged. Epoch0 eligible.",
+  "selection": "0.5 original Val mean(Single,Double,background) + 0.5 mean of that score over five noisy conditions; tie original overall ACC. One trained checkpoint per arm; Test only after selection is sealed.",
+  "prediction": "R0 coupled seven-set logits plus count residual. R1 predicts q(0/1/2), s(PF/MB/RV|1), d(three pairs|2), then p(E)=q0, p(single)=q1*s, p(pair)=q2*d. Per-member joint probabilities averaged; seven-set argmax, no hard routing or true count input.",
+  "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_tabm_evidence_20261028\\runs\\seed13\\E2_adaptive_best.pt",
+  "count_readout_lr": 0.001
+}

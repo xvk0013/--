@@ -1,0 +1,22 @@
+{
+  "selection": {
+    "epoch": 16,
+    "global_epoch": 67,
+    "score": [
+      0,
+      56.49441340782123,
+      49.76525821596245,
+      70.53072625698324
+    ]
+  },
+  "Val_checks": {
+    "single_gain": false,
+    "acc_gain": false,
+    "source_protection": false,
+    "Single_direction_improves": true,
+    "Single_margin_improves": false,
+    "Single_net_repair_positive": false
+  },
+  "passed": false,
+  "Test_permitted": false
+}

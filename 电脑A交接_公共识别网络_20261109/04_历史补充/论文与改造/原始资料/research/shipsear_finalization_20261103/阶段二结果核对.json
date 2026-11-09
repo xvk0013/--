@@ -1,0 +1,161 @@
+{
+  "verified_at": "2026-11-03T15:38:38+08:00",
+  "status": "passed",
+  "both_Val_sealed_before_Test": true,
+  "shared_evaluation_sample_order": true,
+  "checks": {
+    "SE-F-13": {
+      "epochs_trained": 41,
+      "selected_epoch": 39,
+      "stop_reason": "patience",
+      "last_significant_refresh": 31,
+      "Val_rank": [
+        63.60469918275082,
+        63.244878957169455,
+        57.021604938271615,
+        72.48603351955308
+      ],
+      "evaluation_noise_seed": 13,
+      "prediction_files_verified": 12,
+      "selected_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\runs\\SE-F-13\\best.pt"
+    },
+    "SE-F-42": {
+      "epochs_trained": 40,
+      "selected_epoch": 26,
+      "stop_reason": "patience",
+      "last_significant_refresh": 26,
+      "Val_rank": [
+        63.825312989045386,
+        62.47672253258845,
+        53.47222222222222,
+        71.7877094972067
+      ],
+      "evaluation_noise_seed": 13,
+      "prediction_files_verified": 12,
+      "selected_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\runs\\SE-F-42\\best.pt"
+    }
+  },
+  "Test_summary": {
+    "original": {
+      "mean": {
+        "single_acc": 92.36641221374046,
+        "double_acc": 80.49242424242425,
+        "noise_acc": 100.0,
+        "acc": 85.97491448118586
+      },
+      "sample_sd": {
+        "single_acc": 2.1591046753787784,
+        "double_acc": 1.3392173886108834,
+        "noise_acc": 0.0,
+        "acc": 0.1612558223914551
+      },
+      "delta_vs_P50_pp": {
+        "single_acc": 0.0,
+        "double_acc": -1.893939393939391,
+        "noise_acc": 0.0,
+        "acc": -1.1402508551881425
+      }
+    },
+    "10dB": {
+      "mean": {
+        "single_acc": 83.01526717557252,
+        "double_acc": 76.60984848484848,
+        "noise_acc": 100.0,
+        "acc": 80.84378563283923
+      },
+      "sample_sd": {
+        "single_acc": 0.2698880844223473,
+        "double_acc": 0.9374521720276113,
+        "noise_acc": 0.0,
+        "acc": 0.48376746717437535
+      },
+      "delta_vs_P50_pp": {
+        "single_acc": -0.1908396946564892,
+        "double_acc": -3.693181818181813,
+        "noise_acc": 0.0,
+        "acc": -2.280501710376285
+      }
+    },
+    "5dB": {
+      "mean": {
+        "single_acc": 78.62595419847328,
+        "double_acc": 74.52651515151516,
+        "noise_acc": 100.0,
+        "acc": 78.27822120866591
+      },
+      "sample_sd": {
+        "single_acc": 0.5397761688446946,
+        "double_acc": 0.6696086943054467,
+        "noise_acc": 0.0,
+        "acc": 0.24188373358718768
+      },
+      "delta_vs_P50_pp": {
+        "single_acc": 1.5267175572519136,
+        "double_acc": -4.450757575757578,
+        "noise_acc": 0.0,
+        "acc": -2.2234891676168758
+      }
+    },
+    "0dB": {
+      "mean": {
+        "single_acc": 67.93893129770993,
+        "double_acc": 68.37121212121212,
+        "noise_acc": 100.0,
+        "acc": 71.37970353477765
+      },
+      "sample_sd": {
+        "single_acc": 1.0795523376893892,
+        "double_acc": 1.3392173886108933,
+        "noise_acc": 0.0,
+        "acc": 1.1287907567402158
+      },
+      "delta_vs_P50_pp": {
+        "single_acc": -1.9083969465648778,
+        "double_acc": -2.462121212121218,
+        "noise_acc": 0.0,
+        "acc": -2.052451539338648
+      }
+    },
+    "-5dB": {
+      "mean": {
+        "single_acc": 51.33587786259542,
+        "double_acc": 60.51136363636364,
+        "noise_acc": 100.0,
+        "acc": 61.68757126567846
+      },
+      "sample_sd": {
+        "single_acc": 1.3494404221117366,
+        "double_acc": 2.008826082916325,
+        "noise_acc": 0.0,
+        "acc": 1.6125582239145861
+      },
+      "delta_vs_P50_pp": {
+        "single_acc": -4.3893129770992445,
+        "double_acc": 2.7462121212121247,
+        "noise_acc": 0.0,
+        "acc": 0.34207525655645554
+      }
+    },
+    "-10dB": {
+      "mean": {
+        "single_acc": 40.0763358778626,
+        "double_acc": 42.8030303030303,
+        "noise_acc": 100.0,
+        "acc": 47.662485746864306
+      },
+      "sample_sd": {
+        "single_acc": 8.636418701515083,
+        "double_acc": 10.713739108887083,
+        "noise_acc": 0.0,
+        "acc": 3.8701397373950077
+      },
+      "delta_vs_P50_pp": {
+        "single_acc": -8.015267175572518,
+        "double_acc": 6.249999999999993,
+        "noise_acc": 0.0,
+        "acc": 1.3683010262257653
+      }
+    }
+  },
+  "runtime_minutes": 23.733333333333334
+}

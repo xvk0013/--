@@ -1,0 +1,95 @@
+{
+  "version": "deepship_multitarget_0db_energy80_v1",
+  "raw_root": "D:\\LSJ\\Data\\DeepShip",
+  "output_directory": "D:\\LSJ\\Data\\DeepShip_Multitarget_0dB_Energy80_v1",
+  "smoke_output_directory": "D:\\LSJ\\Data\\DeepShip_Multitarget_0dB_Energy80_v1_smoke",
+  "classes": [
+    "Cargo",
+    "Passengership",
+    "Tanker",
+    "Tug"
+  ],
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "channel": 0,
+  "seed": 42,
+  "output_rms": 0.05,
+  "sources": {
+    "index_file": "D:\\LSJ\\Code\\UART\\deepship\\sources\\prescreen_energy80\\SOURCE_INDEX.csv",
+    "recordings_file": "D:\\LSJ\\Code\\UART\\deepship\\sources\\prescreen_energy80\\RECORDINGS.csv"
+  },
+  "selection": {
+    "per_class": {
+      "Train": 900,
+      "Val": 150,
+      "Test": 150
+    },
+    "max_per_recording": 20,
+    "preserve_existing_selected": true
+  },
+  "bellhop": {
+    "enabled": true,
+    "channel_file": "D:\\LSJ\\Code\\UART\\deepship\\physical\\CHANNELS_99.mat",
+    "channel_count": 39,
+    "fir_variant": "E99",
+    "source_core_rms": 1.0
+  },
+  "mixture": {
+    "double_per_single": 2.0,
+    "background_per_single": 0.3333333333333333,
+    "sir_db": 0.0,
+    "context_ratio": {
+      "C0": 0.5,
+      "C1": 0.25,
+      "C2": 0.25
+    },
+    "context_seconds": [
+      0.8,
+      1.2
+    ],
+    "fade_seconds": [
+      0.2,
+      0.3
+    ],
+    "epsilon": 0.1
+  },
+  "background": {
+    "model": "wenz_three_component",
+    "wind_speed_m_s": [
+      0.0,
+      10.0
+    ],
+    "shipping_factor": [
+      0.0,
+      1.0
+    ],
+    "turbulence_min_hz": 10.0
+  },
+  "single_augmentation": {
+    "enabled": true,
+    "flat": 0.5,
+    "edge": 0.25,
+    "middle": 0.25
+  },
+  "export_wavs": false,
+  "runtime": {
+    "smoke_sources_per_class_split": 4,
+    "mix_batch_size": 64,
+    "progress_every_recordings": 10,
+    "progress_every_mixtures": 1000
+  },
+  "generation_mode": "full",
+  "set_names": [
+    "E",
+    "Cargo",
+    "Passengership",
+    "Tanker",
+    "Tug",
+    "Cargo+Passengership",
+    "Cargo+Tanker",
+    "Cargo+Tug",
+    "Passengership+Tanker",
+    "Passengership+Tug",
+    "Tanker+Tug"
+  ]
+}

@@ -1,0 +1,1400 @@
+{
+  "config": {
+    "data_root": "D:/LSJ/Data/DeepShip_Multitarget_0dB_Energy80_SeenShip_v1",
+    "sample_rate": 16000,
+    "duration_seconds": 5,
+    "batch_size": 48,
+    "evaluation_batch_size": 64,
+    "protocol_id": "deepship-q0-formal-v1",
+    "dataset_version": "deepship_multitarget_0db_energy80_seen_ship_ptt_v1",
+    "split_sizes": {
+      "Train": 7500,
+      "Val": 1250,
+      "Test": 1250
+    },
+    "index_file": "DATA_INDEX.csv",
+    "set_names": [
+      "E",
+      "Passengership",
+      "Tanker",
+      "Tug",
+      "Passengership+Tanker",
+      "Passengership+Tug",
+      "Tanker+Tug"
+    ],
+    "count_map": [
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    "class_loss_budgets": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "seed": 13,
+    "evaluation_noise_seed": 13,
+    "evaluation_conditions": [
+      "original",
+      "10dB",
+      "5dB",
+      "0dB",
+      "-5dB",
+      "-10dB"
+    ],
+    "noise_probabilities": [
+      0.5,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "waveform_view": "stored",
+    "noise": {
+      "type": "AWGN",
+      "target_power_reference": "mean_square_stored_waveform",
+      "background_rms_reference": 0.05,
+      "noisy_output_rms": 0.05
+    },
+    "initialization": "model_constructor",
+    "optimizer": "Adam",
+    "classifier_lr": 0.001,
+    "weight_decay": 0.0,
+    "gradient_clip": 5.0,
+    "min_epochs": 40,
+    "max_epochs": 200,
+    "validation_every_epochs": 1,
+    "patience_epochs": 10,
+    "early_stop_min_delta_pp": 0.2,
+    "validation_rank": [
+      "six_condition_single_double_balance",
+      "six_condition_acc_mean",
+      "min_six_condition_single_double_means",
+      "original_acc"
+    ],
+    "exact_tie": "earlier_epoch",
+    "first_eligible_epoch": 1,
+    "class_names": [
+      "Passengership",
+      "Tanker",
+      "Tug"
+    ],
+    "single_envelope_augmentation": false,
+    "source_dataset_version": "deepship_multitarget_0db_energy80_seen_ship_v1",
+    "experiment_id": "DS-EXT-SFAC32-PTT-13",
+    "architecture": "ShuffleFAC-32",
+    "model_source": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\external_baselines_20261026\\05_ShuffleFACAuthor\\model.py",
+    "protocol_config": "D:\\LSJ\\Code\\UART\\deepship\\01_模型\\Q0_DeepShip\\config_ptt_seen_ship.json",
+    "smoke": false,
+    "weighted_set_loss": false,
+    "loss": "set cross entropy",
+    "decoding": "argmax over 7 legal target sets",
+    "runtime": {
+      "device": "NVIDIA GeForce RTX 5090",
+      "torch": "2.9.0+cu128",
+      "cuda": "12.8",
+      "numpy": "2.1.2",
+      "python": "C:\\Users\\Admin\\anaconda3\\envs\\zpfenv1\\python.exe"
+    },
+    "front_end": "author ShuffleFAC log-Mel at 16 kHz; Hamming FFT/window 4096, hop 2048; centered 128-band HTK magnitude Mel, 0–8000 Hz, clip to [−50, 80] dB"
+  },
+  "selection": {
+    "experiment_id": "DS-EXT-SFAC32-PTT-13",
+    "epoch": 35,
+    "score": [
+      59.10648148148148,
+      64.75999999999999,
+      51.69444444444445,
+      68.4
+    ],
+    "sealed_at": "2026-11-06T14:58:36+08:00",
+    "epochs_trained": 45,
+    "stop_reason": "patience",
+    "parameters": 143594,
+    "Val": {
+      "original": {
+        "n": 1250,
+        "acc": 68.4,
+        "single_acc": 75.1111111111111,
+        "double_acc": 52.83333333333333,
+        "noise_acc": 100.0,
+        "count_acc": 94.96,
+        "single_to_double": 2,
+        "double_to_single": 61,
+        "single_type_errors": 110,
+        "double_pair_errors": 222,
+        "confusion": [
+          [
+            200,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            87,
+            50,
+            13,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            140,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            14,
+            23,
+            111,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            3,
+            17,
+            1,
+            117,
+            12,
+            50
+          ],
+          [
+            0,
+            7,
+            11,
+            2,
+            34,
+            82,
+            64
+          ],
+          [
+            0,
+            2,
+            18,
+            0,
+            44,
+            18,
+            118
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            448,
+            2
+          ],
+          [
+            0,
+            61,
+            539
+          ]
+        ],
+        "per_set_acc": {
+          "E": 100.0,
+          "Passengership": 57.99999999999999,
+          "Tanker": 93.33333333333333,
+          "Tug": 74.0,
+          "Passengership+Tanker": 58.5,
+          "Passengership+Tug": 41.0,
+          "Tanker+Tug": 59.0
+        },
+        "double_C0_acc": 48.0,
+        "double_C1_acc": 55.333333333333336,
+        "double_C2_acc": 60.0
+      },
+      "10dB": {
+        "n": 1250,
+        "acc": 71.04,
+        "single_acc": 76.88888888888889,
+        "double_acc": 56.99999999999999,
+        "noise_acc": 100.0,
+        "count_acc": 95.12,
+        "single_to_double": 2,
+        "double_to_single": 59,
+        "single_type_errors": 102,
+        "double_pair_errors": 199,
+        "confusion": [
+          [
+            200,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            90,
+            39,
+            21,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            134,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            9,
+            18,
+            122,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            20,
+            1,
+            115,
+            12,
+            49
+          ],
+          [
+            0,
+            4,
+            6,
+            7,
+            29,
+            100,
+            54
+          ],
+          [
+            0,
+            1,
+            16,
+            1,
+            38,
+            17,
+            127
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            448,
+            2
+          ],
+          [
+            0,
+            59,
+            541
+          ]
+        ],
+        "per_set_acc": {
+          "E": 100.0,
+          "Passengership": 60.0,
+          "Tanker": 89.33333333333333,
+          "Tug": 81.33333333333333,
+          "Passengership+Tanker": 57.49999999999999,
+          "Passengership+Tug": 50.0,
+          "Tanker+Tug": 63.5
+        },
+        "double_C0_acc": 52.33333333333333,
+        "double_C1_acc": 59.333333333333336,
+        "double_C2_acc": 64.0
+      },
+      "5dB": {
+        "n": 1250,
+        "acc": 70.32000000000001,
+        "single_acc": 75.55555555555556,
+        "double_acc": 56.49999999999999,
+        "noise_acc": 100.0,
+        "count_acc": 94.56,
+        "single_to_double": 9,
+        "double_to_single": 59,
+        "single_type_errors": 101,
+        "double_pair_errors": 202,
+        "confusion": [
+          [
+            200,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            81,
+            33,
+            31,
+            3,
+            0,
+            2
+          ],
+          [
+            0,
+            9,
+            134,
+            4,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            7,
+            17,
+            125,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            18,
+            1,
+            112,
+            9,
+            58
+          ],
+          [
+            0,
+            4,
+            6,
+            8,
+            29,
+            93,
+            60
+          ],
+          [
+            0,
+            1,
+            17,
+            2,
+            34,
+            12,
+            134
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            441,
+            9
+          ],
+          [
+            0,
+            59,
+            541
+          ]
+        ],
+        "per_set_acc": {
+          "E": 100.0,
+          "Passengership": 54.0,
+          "Tanker": 89.33333333333333,
+          "Tug": 83.33333333333334,
+          "Passengership+Tanker": 56.00000000000001,
+          "Passengership+Tug": 46.5,
+          "Tanker+Tug": 67.0
+        },
+        "double_C0_acc": 51.66666666666667,
+        "double_C1_acc": 59.333333333333336,
+        "double_C2_acc": 63.33333333333333
+      },
+      "0dB": {
+        "n": 1250,
+        "acc": 67.52,
+        "single_acc": 71.77777777777777,
+        "double_acc": 53.5,
+        "noise_acc": 100.0,
+        "count_acc": 92.24,
+        "single_to_double": 27,
+        "double_to_single": 70,
+        "single_type_errors": 100,
+        "double_pair_errors": 209,
+        "confusion": [
+          [
+            200,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            67,
+            34,
+            35,
+            7,
+            2,
+            5
+          ],
+          [
+            0,
+            4,
+            137,
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            7,
+            20,
+            119,
+            1,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            22,
+            1,
+            116,
+            6,
+            55
+          ],
+          [
+            0,
+            7,
+            7,
+            7,
+            38,
+            81,
+            60
+          ],
+          [
+            0,
+            0,
+            25,
+            1,
+            44,
+            6,
+            124
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            423,
+            27
+          ],
+          [
+            0,
+            70,
+            530
+          ]
+        ],
+        "per_set_acc": {
+          "E": 100.0,
+          "Passengership": 44.666666666666664,
+          "Tanker": 91.33333333333333,
+          "Tug": 79.33333333333333,
+          "Passengership+Tanker": 57.99999999999999,
+          "Passengership+Tug": 40.5,
+          "Tanker+Tug": 62.0
+        },
+        "double_C0_acc": 48.0,
+        "double_C1_acc": 56.00000000000001,
+        "double_C2_acc": 62.0
+      },
+      "-5dB": {
+        "n": 1250,
+        "acc": 61.760000000000005,
+        "single_acc": 61.55555555555555,
+        "double_acc": 49.166666666666664,
+        "noise_acc": 100.0,
+        "count_acc": 89.92,
+        "single_to_double": 52,
+        "double_to_single": 68,
+        "single_type_errors": 119,
+        "double_pair_errors": 233,
+        "confusion": [
+          [
+            200,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            49,
+            46,
+            31,
+            14,
+            2,
+            8
+          ],
+          [
+            2,
+            4,
+            120,
+            1,
+            19,
+            0,
+            4
+          ],
+          [
+            0,
+            14,
+            23,
+            108,
+            1,
+            1,
+            3
+          ],
+          [
+            3,
+            0,
+            19,
+            2,
+            136,
+            4,
+            36
+          ],
+          [
+            0,
+            6,
+            10,
+            5,
+            61,
+            66,
+            52
+          ],
+          [
+            1,
+            0,
+            25,
+            1,
+            75,
+            5,
+            93
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            2,
+            396,
+            52
+          ],
+          [
+            4,
+            68,
+            528
+          ]
+        ],
+        "per_set_acc": {
+          "E": 100.0,
+          "Passengership": 32.666666666666664,
+          "Tanker": 80.0,
+          "Tug": 72.0,
+          "Passengership+Tanker": 68.0,
+          "Passengership+Tug": 33.0,
+          "Tanker+Tug": 46.5
+        },
+        "double_C0_acc": 44.333333333333336,
+        "double_C1_acc": 50.66666666666667,
+        "double_C2_acc": 57.333333333333336
+      },
+      "-10dB": {
+        "n": 1250,
+        "acc": 49.519999999999996,
+        "single_acc": 38.22222222222222,
+        "double_acc": 41.16666666666667,
+        "noise_acc": 100.0,
+        "count_acc": 78.08,
+        "single_to_double": 157,
+        "double_to_single": 43,
+        "single_type_errors": 95,
+        "double_pair_errors": 262,
+        "confusion": [
+          [
+            200,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            12,
+            21,
+            40,
+            16,
+            43,
+            5,
+            13
+          ],
+          [
+            9,
+            0,
+            83,
+            2,
+            44,
+            1,
+            11
+          ],
+          [
+            5,
+            8,
+            29,
+            68,
+            5,
+            16,
+            19
+          ],
+          [
+            14,
+            0,
+            17,
+            1,
+            147,
+            0,
+            21
+          ],
+          [
+            22,
+            1,
+            8,
+            3,
+            78,
+            38,
+            50
+          ],
+          [
+            12,
+            0,
+            11,
+            2,
+            110,
+            3,
+            62
+          ]
+        ],
+        "final_count_confusion": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            26,
+            267,
+            157
+          ],
+          [
+            48,
+            43,
+            509
+          ]
+        ],
+        "per_set_acc": {
+          "E": 100.0,
+          "Passengership": 14.000000000000002,
+          "Tanker": 55.333333333333336,
+          "Tug": 45.33333333333333,
+          "Passengership+Tanker": 73.5,
+          "Passengership+Tug": 19.0,
+          "Tanker+Tug": 31.0
+        },
+        "double_C0_acc": 35.66666666666667,
+        "double_C1_acc": 47.333333333333336,
+        "double_C2_acc": 46.0
+      }
+    }
+  },
+  "Test": {
+    "original": {
+      "n": 1250,
+      "acc": 71.2,
+      "single_acc": 78.66666666666666,
+      "double_acc": 56.00000000000001,
+      "noise_acc": 100.0,
+      "count_acc": 95.04,
+      "single_to_double": 0,
+      "double_to_single": 62,
+      "single_type_errors": 96,
+      "double_pair_errors": 202,
+      "confusion": [
+        [
+          200,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          102,
+          39,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          146,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          13,
+          106,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          24,
+          1,
+          129,
+          2,
+          43
+        ],
+        [
+          0,
+          6,
+          4,
+          8,
+          35,
+          101,
+          46
+        ],
+        [
+          0,
+          4,
+          13,
+          1,
+          69,
+          7,
+          106
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          200,
+          0,
+          0
+        ],
+        [
+          0,
+          450,
+          0
+        ],
+        [
+          0,
+          62,
+          538
+        ]
+      ],
+      "per_set_acc": {
+        "E": 100.0,
+        "Passengership": 68.0,
+        "Tanker": 97.33333333333334,
+        "Tug": 70.66666666666667,
+        "Passengership+Tanker": 64.5,
+        "Passengership+Tug": 50.5,
+        "Tanker+Tug": 53.0
+      },
+      "double_C0_acc": 52.666666666666664,
+      "double_C1_acc": 52.666666666666664,
+      "double_C2_acc": 66.0
+    },
+    "10dB": {
+      "n": 1250,
+      "acc": 73.11999999999999,
+      "single_acc": 81.33333333333333,
+      "double_acc": 57.99999999999999,
+      "noise_acc": 100.0,
+      "count_acc": 94.08,
+      "single_to_double": 2,
+      "double_to_single": 72,
+      "single_type_errors": 82,
+      "double_pair_errors": 180,
+      "confusion": [
+        [
+          200,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          110,
+          25,
+          14,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          142,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          30,
+          6,
+          114,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          29,
+          1,
+          121,
+          2,
+          46
+        ],
+        [
+          0,
+          8,
+          4,
+          8,
+          28,
+          119,
+          33
+        ],
+        [
+          0,
+          3,
+          16,
+          2,
+          57,
+          14,
+          108
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          200,
+          0,
+          0
+        ],
+        [
+          0,
+          448,
+          2
+        ],
+        [
+          0,
+          72,
+          528
+        ]
+      ],
+      "per_set_acc": {
+        "E": 100.0,
+        "Passengership": 73.33333333333333,
+        "Tanker": 94.66666666666667,
+        "Tug": 76.0,
+        "Passengership+Tanker": 60.5,
+        "Passengership+Tug": 59.5,
+        "Tanker+Tug": 54.0
+      },
+      "double_C0_acc": 54.666666666666664,
+      "double_C1_acc": 54.0,
+      "double_C2_acc": 68.66666666666667
+    },
+    "5dB": {
+      "n": 1250,
+      "acc": 72.16,
+      "single_acc": 79.77777777777779,
+      "double_acc": 57.166666666666664,
+      "noise_acc": 100.0,
+      "count_acc": 94.0,
+      "single_to_double": 8,
+      "double_to_single": 67,
+      "single_type_errors": 83,
+      "double_pair_errors": 190,
+      "confusion": [
+        [
+          200,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          99,
+          26,
+          19,
+          2,
+          0,
+          4
+        ],
+        [
+          0,
+          4,
+          143,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          26,
+          7,
+          117,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          23,
+          0,
+          124,
+          4,
+          46
+        ],
+        [
+          0,
+          10,
+          4,
+          7,
+          28,
+          109,
+          42
+        ],
+        [
+          0,
+          2,
+          16,
+          2,
+          56,
+          14,
+          110
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          200,
+          0,
+          0
+        ],
+        [
+          0,
+          442,
+          8
+        ],
+        [
+          0,
+          67,
+          533
+        ]
+      ],
+      "per_set_acc": {
+        "E": 100.0,
+        "Passengership": 66.0,
+        "Tanker": 95.33333333333334,
+        "Tug": 78.0,
+        "Passengership+Tanker": 62.0,
+        "Passengership+Tug": 54.50000000000001,
+        "Tanker+Tug": 55.00000000000001
+      },
+      "double_C0_acc": 53.666666666666664,
+      "double_C1_acc": 56.00000000000001,
+      "double_C2_acc": 65.33333333333333
+    },
+    "0dB": {
+      "n": 1250,
+      "acc": 67.36,
+      "single_acc": 73.11111111111111,
+      "double_acc": 52.166666666666664,
+      "noise_acc": 100.0,
+      "count_acc": 92.56,
+      "single_to_double": 24,
+      "double_to_single": 69,
+      "single_type_errors": 97,
+      "double_pair_errors": 218,
+      "confusion": [
+        [
+          200,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          84,
+          29,
+          24,
+          7,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          132,
+          3,
+          7,
+          0,
+          4
+        ],
+        [
+          0,
+          24,
+          13,
+          113,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          23,
+          0,
+          132,
+          3,
+          39
+        ],
+        [
+          0,
+          10,
+          3,
+          8,
+          45,
+          78,
+          56
+        ],
+        [
+          0,
+          0,
+          20,
+          2,
+          64,
+          11,
+          103
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          200,
+          0,
+          0
+        ],
+        [
+          0,
+          426,
+          24
+        ],
+        [
+          0,
+          69,
+          531
+        ]
+      ],
+      "per_set_acc": {
+        "E": 100.0,
+        "Passengership": 56.00000000000001,
+        "Tanker": 88.0,
+        "Tug": 75.33333333333333,
+        "Passengership+Tanker": 66.0,
+        "Passengership+Tug": 39.0,
+        "Tanker+Tug": 51.5
+      },
+      "double_C0_acc": 46.33333333333333,
+      "double_C1_acc": 55.333333333333336,
+      "double_C2_acc": 60.66666666666667
+    },
+    "-5dB": {
+      "n": 1250,
+      "acc": 58.64,
+      "single_acc": 59.111111111111114,
+      "double_acc": 44.5,
+      "noise_acc": 100.0,
+      "count_acc": 89.03999999999999,
+      "single_to_double": 66,
+      "double_to_single": 71,
+      "single_type_errors": 118,
+      "double_pair_errors": 262,
+      "confusion": [
+        [
+          200,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          59,
+          35,
+          25,
+          24,
+          1,
+          6
+        ],
+        [
+          0,
+          4,
+          114,
+          2,
+          25,
+          0,
+          5
+        ],
+        [
+          0,
+          35,
+          17,
+          93,
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          28,
+          0,
+          140,
+          2,
+          30
+        ],
+        [
+          0,
+          6,
+          4,
+          9,
+          71,
+          55,
+          55
+        ],
+        [
+          0,
+          2,
+          20,
+          2,
+          97,
+          7,
+          72
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          200,
+          0,
+          0
+        ],
+        [
+          0,
+          384,
+          66
+        ],
+        [
+          0,
+          71,
+          529
+        ]
+      ],
+      "per_set_acc": {
+        "E": 100.0,
+        "Passengership": 39.33333333333333,
+        "Tanker": 76.0,
+        "Tug": 62.0,
+        "Passengership+Tanker": 70.0,
+        "Passengership+Tug": 27.500000000000004,
+        "Tanker+Tug": 36.0
+      },
+      "double_C0_acc": 38.0,
+      "double_C1_acc": 52.0,
+      "double_C2_acc": 50.0
+    },
+    "-10dB": {
+      "n": 1250,
+      "acc": 48.480000000000004,
+      "single_acc": 34.66666666666667,
+      "double_acc": 41.66666666666667,
+      "noise_acc": 100.0,
+      "count_acc": 79.2,
+      "single_to_double": 194,
+      "double_to_single": 37,
+      "single_type_errors": 86,
+      "double_pair_errors": 298,
+      "confusion": [
+        [
+          200,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          19,
+          30,
+          12,
+          56,
+          7,
+          22
+        ],
+        [
+          6,
+          0,
+          80,
+          2,
+          53,
+          0,
+          9
+        ],
+        [
+          4,
+          22,
+          20,
+          57,
+          16,
+          19,
+          12
+        ],
+        [
+          3,
+          0,
+          17,
+          0,
+          158,
+          1,
+          21
+        ],
+        [
+          5,
+          3,
+          1,
+          3,
+          95,
+          35,
+          58
+        ],
+        [
+          7,
+          0,
+          12,
+          1,
+          119,
+          4,
+          57
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          200,
+          0,
+          0
+        ],
+        [
+          14,
+          242,
+          194
+        ],
+        [
+          15,
+          37,
+          548
+        ]
+      ],
+      "per_set_acc": {
+        "E": 100.0,
+        "Passengership": 12.666666666666668,
+        "Tanker": 53.333333333333336,
+        "Tug": 38.0,
+        "Passengership+Tanker": 79.0,
+        "Passengership+Tug": 17.5,
+        "Tanker+Tug": 28.499999999999996
+      },
+      "double_C0_acc": 38.333333333333336,
+      "double_C1_acc": 44.0,
+      "double_C2_acc": 46.0
+    }
+  }
+}

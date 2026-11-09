@@ -1,0 +1,7 @@
+﻿优先级,类别,实验ID,方法,状态,依赖
+基线,完整模型,DS-Q0-PTT-SeenShip-13,Q0,已完成可复用,冻结PTT运行
+1,外部对比,DS-EXT-SFAC32-PTT-13,ShuffleFAC-32作者结构适配,已完成 Val封存第35轮,四船型ShuffleFAC-32入口
+1,外部对比,DS-EXT-TRLA-PTT-13,TResNet-LA,已完成 Val封存第73轮,04_TResNetLA
+2,模块消融,DS-ABL-CAT-PTT-13,双路拼接加标准TabM,待实现与完整训练,PTT Q0构造
+3,机制分析,DS-ANL-ERR-PTT-13,数量与逐组合误判统计,Q0已整理待配对,Q0与配对组封存预测
+补充,机制对照,DS-ABL-ADD-PTT-13,等参数加法,备选待完整训练,ShipsEar加法实现与PTT Q0构造

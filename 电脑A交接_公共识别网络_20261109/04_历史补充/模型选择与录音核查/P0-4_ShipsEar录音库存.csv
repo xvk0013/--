@@ -1,0 +1,91 @@
+﻿recording_number,recording_id,archived_official_type,project_type,new_mb_index_use,new_mb_split,new_mb_associated_rows,historical_prediction_use,historical_split,historical_scored_core_count
+6,ShipsEar_6,Passengers,PF,已用,Train,188,有记录,val,60
+7,ShipsEar_7,Passengers,PF,已用,Val,36,有记录,train,12
+8,ShipsEar_8,Passengers,PF,已用,Train,62,有记录,test,18
+9,ShipsEar_9,Passengers,PF,已用,Train,44,有记录,test,12
+10,ShipsEar_10,Passengers,PF,已用,Val,84,有记录,train,30
+11,ShipsEar_11,Passengers,PF,已用,Train,56,有记录,val,16
+12,ShipsEar_12,Passengers,PF,已用,Test,75,有记录,train,24
+13,ShipsEar_13,Passengers,PF,已用,Val,107,有记录,train,41
+14,ShipsEar_14,Passengers,PF,已用,Train,43,有记录,val,12
+15,ShipsEar_15,Tugboat,其他船型,未纳入,不适用,0,有记录,train,28
+16,ShipsEar_16,Ocean liner,其他船型,未纳入,不适用,0,有记录,train,32
+17,ShipsEar_17,Passengers,PF,已用,Val,45,有记录,train,15
+18,ShipsEar_18,RORO,RV,已用,Train,834,有记录,train,136
+19,ShipsEar_19,RORO,RV,已用,Test,426,有记录,test,74
+20,ShipsEar_20,RORO,RV,已用,Val,294,有记录,val,6
+21,ShipsEar_21,Motorboat,MB,已用,Train,110,有记录,test,8
+22,ShipsEar_22,Ocean liner,其他船型,未纳入,不适用,0,有记录,train,10
+23,ShipsEar_23,Ocean liner,其他船型,未纳入,不适用,0,有记录,test,1
+24,ShipsEar_24,Ocean liner,其他船型,未纳入,不适用,0,有记录,train,8
+25,ShipsEar_25,Ocean liner,其他船型,未纳入,不适用,0,有记录,train,28
+26,ShipsEar_26,Motorboat,MB,已用,Train,40,有记录,train,4
+27,ShipsEar_27,Motorboat,MB,已用,Val,60,有记录,val,6
+28,ShipsEar_28,Trawler,其他船型,未纳入,不适用,0,有记录,train,32
+29,ShipsEar_29,Pilot ship,其他船型,未纳入,不适用,0,有记录,train,18
+30,ShipsEar_30,Pilot ship,其他船型,未纳入,不适用,0,有记录,test,8
+31,ShipsEar_31,Tugboat,其他船型,未纳入,不适用,0,有记录,test,12
+32,ShipsEar_32,Passengers,PF,已用,Train,137,有记录,train,43
+33,ShipsEar_33,Motorboat,MB,已用,Train,60,有记录,train,7
+34,ShipsEar_34,Passengers,PF,已用,Test,74,有记录,train,24
+35,ShipsEar_35,Passengers,PF,已用,Train,65,有记录,train,19
+36,ShipsEar_36,Passengers,PF,已用,Val,60,有记录,val,20
+37,ShipsEar_37,Sailboat,其他船型,未纳入,不适用,0,有记录,val,8
+38,ShipsEar_38,Passengers,PF,已用,Train,71,有记录,test,21
+39,ShipsEar_39,Motorboat,MB,已用,Train,132,有记录,train,14
+40,ShipsEar_40,Passengers,PF,已用,Train,32,有记录,val,8
+41,ShipsEar_41,Passengers,PF,已用,Train,38,有记录,train,10
+42,ShipsEar_42,Passengers,PF,已用,Train,41,有记录,test,11
+43,ShipsEar_43,Passengers,PF,已用,Train,37,有记录,val,10
+45,ShipsEar_45,Motorboat,MB,已用,Train,167,有记录,train,18
+46,ShipsEar_46,Mussel boat,其他船型,未纳入,不适用,0,有记录,train,2
+47,ShipsEar_47,Mussel boat,其他船型,未纳入,不适用,0,有记录,train,62
+48,ShipsEar_48,Mussel boat,其他船型,未纳入,不适用,0,有记录,test,16
+49,ShipsEar_49,Mussel boat,其他船型,未纳入,不适用,0,有记录,train,33
+50,ShipsEar_50,Motorboat,MB,已用,Val,73,有记录,train,12
+51,ShipsEar_51,Motorboat,MB,已用,Train,185,有记录,train,20
+52,ShipsEar_52,Motorboat,MB,已用,Train,222,有记录,train,24
+53,ShipsEar_53,Passengers,PF,已用,Train,103,有记录,train,32
+54,ShipsEar_54,Passengers,PF,已用,Train,47,有记录,train,13
+55,ShipsEar_55,Passengers,PF,已用,Test,107,有记录,train,35
+56,ShipsEar_56,Sailboat,其他船型,未纳入,不适用,0,有记录,test,9
+57,ShipsEar_57,Sailboat,其他船型,未纳入,不适用,0,有记录,val,3
+58,ShipsEar_58,RORO,RV,已用,Train,299,有记录,train,47
+59,ShipsEar_59,Passengers,PF,已用,Val,124,有记录,train,50
+60,ShipsEar_60,Passengers,PF,已用,Train,215,有记录,train,69
+61,ShipsEar_61,Passengers,PF,已用,Test,86,有记录,train,28
+62,ShipsEar_62,Passengers,PF,已用,Train,193,有记录,test,62
+63,ShipsEar_63,Passengers,PF,已用,Train,125,有记录,train,39
+64,ShipsEar_64,Passengers,PF,已用,Test,80,有记录,train,26
+65,ShipsEar_65,Passengers,PF,已用,Test,99,有记录,train,32
+66,ShipsEar_66,Mussel boat,其他船型,未纳入,不适用,0,有记录,val,31
+67,ShipsEar_67,Passengers,PF,已用,Train,161,有记录,train,51
+68,ShipsEar_68,Sailboat,其他船型,未纳入,不适用,0,有记录,train,59
+69,ShipsEar_69,Ocean liner,其他船型,未纳入,不适用,0,有记录,val,80
+70,ShipsEar_70,Motorboat,MB,已用,Train,203,有记录,test,22
+71,ShipsEar_71,Ocean liner,其他船型,未纳入,不适用,0,有记录,train,27
+72,ShipsEar_72,Motorboat,MB,已用,Val,197,有记录,val,24
+73,ShipsEar_73,Fishboat,其他船型,未纳入,不适用,0,有记录,test,27
+74,ShipsEar_74,fishboat,其他船型,未纳入,不适用,0,有记录,train,29
+75,ShipsEar_75,Fishboat,其他船型,未纳入,不适用,0,有记录,val,10
+76,ShipsEar_76,Fishboat,其他船型,未纳入,不适用,0,有记录,train,35
+77,ShipsEar_77,Motorboat,MB,已用,Train,168,有记录,train,18
+78,ShipsEar_78,RORO,RV,已用,Train,239,有记录,train,37
+79,ShipsEar_79,Motorboat,MB,已用,Test,371,有记录,train,19
+80,ShipsEar_80,Dredger,其他船型,未纳入,不适用,0,有记录,train,12
+81,ShipsEar_81,Natural ambient noise,E,已用,Train,51,无记录,无记录,无记录
+82,ShipsEar_82,Natural ambient noise,E,已用,Train,50,无记录,无记录,无记录
+83,ShipsEar_83,Natural ambient noise,E,已用,Val,36,无记录,无记录,无记录
+84,ShipsEar_84,Natural ambient noise,E,已用,Test,47,无记录,无记录,无记录
+85,ShipsEar_85,Natural ambient noise,E,已用,Val,25,无记录,无记录,无记录
+86,ShipsEar_86,Natural ambient noise,E,已用,Test,40,无记录,无记录,无记录
+87,ShipsEar_87,Natural ambient noise,E,已用,Train,41,无记录,无记录,无记录
+88,ShipsEar_88,Natural ambient noise,E,已用,Train,40,无记录,无记录,无记录
+89,ShipsEar_89,Natural ambient noise,E,已用,Train,40,无记录,无记录,无记录
+90,ShipsEar_90,Natural ambient noise,E,已用,Train,38,无记录,无记录,无记录
+91,ShipsEar_91,Natural ambient noise,E,已用,Val,10,无记录,无记录,无记录
+92,ShipsEar_92,Natural ambient noise,E,已用,Train,28,无记录,无记录,无记录
+93,ShipsEar_93,Dredger,其他船型,未纳入,不适用,0,有记录,test,6
+94,ShipsEar_94,Dredger,其他船型,未纳入,不适用,0,有记录,val,10
+95,ShipsEar_95,Dredger,其他船型,未纳入,不适用,0,有记录,train,12
+96,ShipsEar_96,Dredger,其他船型,未纳入,不适用,0,有记录,train,12

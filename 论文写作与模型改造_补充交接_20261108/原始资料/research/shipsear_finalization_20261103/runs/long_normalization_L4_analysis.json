@@ -1,0 +1,1035 @@
+{
+  "diagnostic_gate": {
+    "background_gain_min_pp": 5.0,
+    "single_mean_loss_max_pp": 1.0,
+    "double_mean_loss_max_pp": 1.0,
+    "background_gain_pp": -1.408450704225345,
+    "single_change_pp": -0.925925925925938,
+    "double_change_pp": -0.1543209876543159,
+    "passed": false,
+    "selected_full_training_method": "record"
+  },
+  "validation_rank": {
+    "ShortLocal": [
+      66.51234567901236,
+      64.14000927213723,
+      53.39506172839506,
+      75.93880389429764
+    ],
+    "L3": [
+      67.03317901234568,
+      65.25266573945295,
+      56.288580246913575,
+      73.85257301808068
+    ],
+    "L4": [
+      65.54783950617283,
+      61.72925359295318,
+      54.861111111111114,
+      71.21001390820584
+    ]
+  },
+  "highest_validation_rank": "L3",
+  "paired_common_original": {
+    "Val": {
+      "ship": {
+        "n": 418,
+        "conditions": {
+          "original": {
+            "ShortLocal": {
+              "correct": 418,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 418,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 418,
+              "retention": 100.0
+            }
+          },
+          "10dB": {
+            "ShortLocal": {
+              "correct": 396,
+              "retention": 94.73684210526315
+            },
+            "L3": {
+              "correct": 395,
+              "retention": 94.49760765550239
+            },
+            "L4": {
+              "correct": 393,
+              "retention": 94.01913875598086
+            }
+          },
+          "5dB": {
+            "ShortLocal": {
+              "correct": 376,
+              "retention": 89.95215311004785
+            },
+            "L3": {
+              "correct": 383,
+              "retention": 91.6267942583732
+            },
+            "L4": {
+              "correct": 378,
+              "retention": 90.43062200956938
+            }
+          },
+          "0dB": {
+            "ShortLocal": {
+              "correct": 348,
+              "retention": 83.25358851674642
+            },
+            "L3": {
+              "correct": 359,
+              "retention": 85.88516746411483
+            },
+            "L4": {
+              "correct": 359,
+              "retention": 85.88516746411483
+            }
+          },
+          "-5dB": {
+            "ShortLocal": {
+              "correct": 310,
+              "retention": 74.16267942583733
+            },
+            "L3": {
+              "correct": 331,
+              "retention": 79.18660287081339
+            },
+            "L4": {
+              "correct": 326,
+              "retention": 77.99043062200957
+            }
+          },
+          "-10dB": {
+            "ShortLocal": {
+              "correct": 233,
+              "retention": 55.74162679425837
+            },
+            "L3": {
+              "correct": 258,
+              "retention": 61.72248803827751
+            },
+            "L4": {
+              "correct": 236,
+              "retention": 56.45933014354066
+            }
+          }
+        }
+      },
+      "single": {
+        "n": 182,
+        "conditions": {
+          "original": {
+            "ShortLocal": {
+              "correct": 182,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 182,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 182,
+              "retention": 100.0
+            }
+          },
+          "10dB": {
+            "ShortLocal": {
+              "correct": 178,
+              "retention": 97.8021978021978
+            },
+            "L3": {
+              "correct": 172,
+              "retention": 94.5054945054945
+            },
+            "L4": {
+              "correct": 175,
+              "retention": 96.15384615384616
+            }
+          },
+          "5dB": {
+            "ShortLocal": {
+              "correct": 175,
+              "retention": 96.15384615384616
+            },
+            "L3": {
+              "correct": 174,
+              "retention": 95.6043956043956
+            },
+            "L4": {
+              "correct": 172,
+              "retention": 94.5054945054945
+            }
+          },
+          "0dB": {
+            "ShortLocal": {
+              "correct": 168,
+              "retention": 92.3076923076923
+            },
+            "L3": {
+              "correct": 171,
+              "retention": 93.95604395604396
+            },
+            "L4": {
+              "correct": 165,
+              "retention": 90.65934065934066
+            }
+          },
+          "-5dB": {
+            "ShortLocal": {
+              "correct": 153,
+              "retention": 84.06593406593407
+            },
+            "L3": {
+              "correct": 154,
+              "retention": 84.61538461538461
+            },
+            "L4": {
+              "correct": 149,
+              "retention": 81.86813186813187
+            }
+          },
+          "-10dB": {
+            "ShortLocal": {
+              "correct": 119,
+              "retention": 65.38461538461539
+            },
+            "L3": {
+              "correct": 103,
+              "retention": 56.59340659340659
+            },
+            "L4": {
+              "correct": 101,
+              "retention": 55.494505494505496
+            }
+          }
+        }
+      },
+      "double": {
+        "n": 236,
+        "conditions": {
+          "original": {
+            "ShortLocal": {
+              "correct": 236,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 236,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 236,
+              "retention": 100.0
+            }
+          },
+          "10dB": {
+            "ShortLocal": {
+              "correct": 218,
+              "retention": 92.37288135593221
+            },
+            "L3": {
+              "correct": 223,
+              "retention": 94.49152542372882
+            },
+            "L4": {
+              "correct": 218,
+              "retention": 92.37288135593221
+            }
+          },
+          "5dB": {
+            "ShortLocal": {
+              "correct": 201,
+              "retention": 85.16949152542372
+            },
+            "L3": {
+              "correct": 209,
+              "retention": 88.5593220338983
+            },
+            "L4": {
+              "correct": 206,
+              "retention": 87.28813559322035
+            }
+          },
+          "0dB": {
+            "ShortLocal": {
+              "correct": 180,
+              "retention": 76.27118644067797
+            },
+            "L3": {
+              "correct": 188,
+              "retention": 79.66101694915254
+            },
+            "L4": {
+              "correct": 194,
+              "retention": 82.20338983050848
+            }
+          },
+          "-5dB": {
+            "ShortLocal": {
+              "correct": 157,
+              "retention": 66.52542372881356
+            },
+            "L3": {
+              "correct": 177,
+              "retention": 75.0
+            },
+            "L4": {
+              "correct": 177,
+              "retention": 75.0
+            }
+          },
+          "-10dB": {
+            "ShortLocal": {
+              "correct": 114,
+              "retention": 48.30508474576271
+            },
+            "L3": {
+              "correct": 155,
+              "retention": 65.67796610169492
+            },
+            "L4": {
+              "correct": 135,
+              "retention": 57.20338983050848
+            }
+          }
+        }
+      },
+      "background": {
+        "n": 51,
+        "conditions": {
+          "original": {
+            "ShortLocal": {
+              "correct": 51,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 51,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 51,
+              "retention": 100.0
+            }
+          },
+          "10dB": {
+            "ShortLocal": {
+              "correct": 51,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 51,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 45,
+              "retention": 88.23529411764706
+            }
+          },
+          "5dB": {
+            "ShortLocal": {
+              "correct": 51,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 48,
+              "retention": 94.11764705882352
+            },
+            "L4": {
+              "correct": 43,
+              "retention": 84.31372549019608
+            }
+          },
+          "0dB": {
+            "ShortLocal": {
+              "correct": 50,
+              "retention": 98.0392156862745
+            },
+            "L3": {
+              "correct": 50,
+              "retention": 98.0392156862745
+            },
+            "L4": {
+              "correct": 43,
+              "retention": 84.31372549019608
+            }
+          },
+          "-5dB": {
+            "ShortLocal": {
+              "correct": 50,
+              "retention": 98.0392156862745
+            },
+            "L3": {
+              "correct": 51,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 42,
+              "retention": 82.35294117647058
+            }
+          },
+          "-10dB": {
+            "ShortLocal": {
+              "correct": 47,
+              "retention": 92.15686274509804
+            },
+            "L3": {
+              "correct": 50,
+              "retention": 98.0392156862745
+            },
+            "L4": {
+              "correct": 22,
+              "retention": 43.13725490196079
+            }
+          }
+        }
+      }
+    },
+    "Test": {
+      "ship": {
+        "n": 599,
+        "conditions": {
+          "original": {
+            "ShortLocal": {
+              "correct": 599,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 599,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 599,
+              "retention": 100.0
+            }
+          },
+          "10dB": {
+            "ShortLocal": {
+              "correct": 579,
+              "retention": 96.661101836394
+            },
+            "L3": {
+              "correct": 578,
+              "retention": 96.4941569282137
+            },
+            "L4": {
+              "correct": 585,
+              "retention": 97.66277128547578
+            }
+          },
+          "5dB": {
+            "ShortLocal": {
+              "correct": 558,
+              "retention": 93.15525876460768
+            },
+            "L3": {
+              "correct": 568,
+              "retention": 94.82470784641069
+            },
+            "L4": {
+              "correct": 572,
+              "retention": 95.49248747913188
+            }
+          },
+          "0dB": {
+            "ShortLocal": {
+              "correct": 518,
+              "retention": 86.47746243739566
+            },
+            "L3": {
+              "correct": 547,
+              "retention": 91.31886477462437
+            },
+            "L4": {
+              "correct": 536,
+              "retention": 89.48247078464107
+            }
+          },
+          "-5dB": {
+            "ShortLocal": {
+              "correct": 475,
+              "retention": 79.29883138564274
+            },
+            "L3": {
+              "correct": 492,
+              "retention": 82.13689482470785
+            },
+            "L4": {
+              "correct": 467,
+              "retention": 77.96327212020033
+            }
+          },
+          "-10dB": {
+            "ShortLocal": {
+              "correct": 375,
+              "retention": 62.604340567612695
+            },
+            "L3": {
+              "correct": 385,
+              "retention": 64.27378964941569
+            },
+            "L4": {
+              "correct": 353,
+              "retention": 58.931552587646074
+            }
+          }
+        }
+      },
+      "single": {
+        "n": 220,
+        "conditions": {
+          "original": {
+            "ShortLocal": {
+              "correct": 220,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 220,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 220,
+              "retention": 100.0
+            }
+          },
+          "10dB": {
+            "ShortLocal": {
+              "correct": 211,
+              "retention": 95.9090909090909
+            },
+            "L3": {
+              "correct": 209,
+              "retention": 95.0
+            },
+            "L4": {
+              "correct": 215,
+              "retention": 97.72727272727273
+            }
+          },
+          "5dB": {
+            "ShortLocal": {
+              "correct": 210,
+              "retention": 95.45454545454545
+            },
+            "L3": {
+              "correct": 210,
+              "retention": 95.45454545454545
+            },
+            "L4": {
+              "correct": 211,
+              "retention": 95.9090909090909
+            }
+          },
+          "0dB": {
+            "ShortLocal": {
+              "correct": 201,
+              "retention": 91.36363636363637
+            },
+            "L3": {
+              "correct": 207,
+              "retention": 94.0909090909091
+            },
+            "L4": {
+              "correct": 197,
+              "retention": 89.54545454545455
+            }
+          },
+          "-5dB": {
+            "ShortLocal": {
+              "correct": 191,
+              "retention": 86.81818181818181
+            },
+            "L3": {
+              "correct": 187,
+              "retention": 85.0
+            },
+            "L4": {
+              "correct": 167,
+              "retention": 75.9090909090909
+            }
+          },
+          "-10dB": {
+            "ShortLocal": {
+              "correct": 160,
+              "retention": 72.72727272727273
+            },
+            "L3": {
+              "correct": 126,
+              "retention": 57.27272727272727
+            },
+            "L4": {
+              "correct": 128,
+              "retention": 58.18181818181818
+            }
+          }
+        }
+      },
+      "double": {
+        "n": 379,
+        "conditions": {
+          "original": {
+            "ShortLocal": {
+              "correct": 379,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 379,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 379,
+              "retention": 100.0
+            }
+          },
+          "10dB": {
+            "ShortLocal": {
+              "correct": 368,
+              "retention": 97.0976253298153
+            },
+            "L3": {
+              "correct": 369,
+              "retention": 97.36147757255937
+            },
+            "L4": {
+              "correct": 370,
+              "retention": 97.62532981530343
+            }
+          },
+          "5dB": {
+            "ShortLocal": {
+              "correct": 348,
+              "retention": 91.82058047493403
+            },
+            "L3": {
+              "correct": 358,
+              "retention": 94.45910290237467
+            },
+            "L4": {
+              "correct": 361,
+              "retention": 95.25065963060686
+            }
+          },
+          "0dB": {
+            "ShortLocal": {
+              "correct": 317,
+              "retention": 83.64116094986808
+            },
+            "L3": {
+              "correct": 340,
+              "retention": 89.70976253298153
+            },
+            "L4": {
+              "correct": 339,
+              "retention": 89.44591029023746
+            }
+          },
+          "-5dB": {
+            "ShortLocal": {
+              "correct": 284,
+              "retention": 74.93403693931398
+            },
+            "L3": {
+              "correct": 305,
+              "retention": 80.47493403693932
+            },
+            "L4": {
+              "correct": 300,
+              "retention": 79.15567282321899
+            }
+          },
+          "-10dB": {
+            "ShortLocal": {
+              "correct": 215,
+              "retention": 56.72823218997362
+            },
+            "L3": {
+              "correct": 259,
+              "retention": 68.33773087071239
+            },
+            "L4": {
+              "correct": 225,
+              "retention": 59.36675461741425
+            }
+          }
+        }
+      },
+      "background": {
+        "n": 83,
+        "conditions": {
+          "original": {
+            "ShortLocal": {
+              "correct": 83,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 83,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 83,
+              "retention": 100.0
+            }
+          },
+          "10dB": {
+            "ShortLocal": {
+              "correct": 83,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 66,
+              "retention": 79.51807228915662
+            },
+            "L4": {
+              "correct": 82,
+              "retention": 98.79518072289156
+            }
+          },
+          "5dB": {
+            "ShortLocal": {
+              "correct": 83,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 46,
+              "retention": 55.42168674698795
+            },
+            "L4": {
+              "correct": 79,
+              "retention": 95.18072289156626
+            }
+          },
+          "0dB": {
+            "ShortLocal": {
+              "correct": 82,
+              "retention": 98.79518072289156
+            },
+            "L3": {
+              "correct": 48,
+              "retention": 57.831325301204814
+            },
+            "L4": {
+              "correct": 74,
+              "retention": 89.1566265060241
+            }
+          },
+          "-5dB": {
+            "ShortLocal": {
+              "correct": 83,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 83,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 82,
+              "retention": 98.79518072289156
+            }
+          },
+          "-10dB": {
+            "ShortLocal": {
+              "correct": 83,
+              "retention": 100.0
+            },
+            "L3": {
+              "correct": 83,
+              "retention": 100.0
+            },
+            "L4": {
+              "correct": 81,
+              "retention": 97.59036144578313
+            }
+          }
+        }
+      }
+    }
+  },
+  "end_to_end_latency": {
+    "ShortLocal": {
+      "batch_size": 32,
+      "warmup_batches": 3,
+      "measured_batches": 10,
+      "median_batch_ms": 128.8543501868844,
+      "median_sample_ms": 4.026698443340138
+    },
+    "L3": {
+      "batch_size": 32,
+      "warmup_batches": 3,
+      "measured_batches": 10,
+      "median_batch_ms": 94.89464992657304,
+      "median_sample_ms": 2.9654578102054074
+    },
+    "L4": {
+      "batch_size": 32,
+      "warmup_batches": 3,
+      "measured_batches": 10,
+      "median_batch_ms": 108.03130036219954,
+      "median_sample_ms": 3.375978136318736
+    }
+  },
+  "foreground_diagnostic": {
+    "ShortLocal": {
+      "original": {
+        "n": 790,
+        "correct": 655,
+        "acc": 82.9113924050633,
+        "background_confusion": [
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "10dB": {
+        "n": 790,
+        "correct": 652,
+        "acc": 82.53164556962025,
+        "background_confusion": [
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5dB": {
+        "n": 790,
+        "correct": 627,
+        "acc": 79.36708860759494,
+        "background_confusion": [
+          86,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "0dB": {
+        "n": 790,
+        "correct": 584,
+        "acc": 73.92405063291139,
+        "background_confusion": [
+          84,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "-5dB": {
+        "n": 790,
+        "correct": 536,
+        "acc": 67.84810126582279,
+        "background_confusion": [
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "-10dB": {
+        "n": 790,
+        "correct": 432,
+        "acc": 54.68354430379747,
+        "background_confusion": [
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "L3": {
+      "original": {
+        "n": 790,
+        "correct": 667,
+        "acc": 84.43037974683544,
+        "background_confusion": [
+          83,
+          3,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "10dB": {
+        "n": 790,
+        "correct": 646,
+        "acc": 81.77215189873418,
+        "background_confusion": [
+          66,
+          20,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "5dB": {
+        "n": 790,
+        "correct": 631,
+        "acc": 79.87341772151899,
+        "background_confusion": [
+          46,
+          40,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "0dB": {
+        "n": 790,
+        "correct": 605,
+        "acc": 76.58227848101266,
+        "background_confusion": [
+          48,
+          39,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "-5dB": {
+        "n": 790,
+        "correct": 558,
+        "acc": 70.63291139240506,
+        "background_confusion": [
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "-10dB": {
+        "n": 790,
+        "correct": 442,
+        "acc": 55.949367088607595,
+        "background_confusion": [
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "L4": {
+      "original": {
+        "n": 790,
+        "correct": 655,
+        "acc": 82.9113924050633,
+        "background_confusion": [
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "10dB": {
+        "n": 790,
+        "correct": 635,
+        "acc": 80.37974683544304,
+        "background_confusion": [
+          85,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5dB": {
+        "n": 790,
+        "correct": 627,
+        "acc": 79.36708860759494,
+        "background_confusion": [
+          80,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "0dB": {
+        "n": 790,
+        "correct": 594,
+        "acc": 75.18987341772151,
+        "background_confusion": [
+          75,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "-5dB": {
+        "n": 790,
+        "correct": 529,
+        "acc": 66.9620253164557,
+        "background_confusion": [
+          84,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "-10dB": {
+        "n": 790,
+        "correct": 407,
+        "acc": 51.51898734177215,
+        "background_confusion": [
+          85,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "training_noise_counts_matched": true
+}

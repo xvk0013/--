@@ -1,0 +1,34 @@
+{
+  "verified_at": "2026-11-04T13:54:38+08:00",
+  "train_rows": 2855,
+  "same_initial_weights_and_logits": true,
+  "runs": {
+    "SE-Q0-RecordingSwap63-13": {
+      "loss": {
+        "loss": 2.100031852722168,
+        "set_loss": 1.995035171508789,
+        "count_loss": 1.04996657371521
+      },
+      "first_batch_seconds": 1.5830961000174284,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ],
+        [
+          32,
+          3200
+        ]
+      ],
+      "condition_counts": {
+        "original": 14,
+        "10dB": 4,
+        "5dB": 5,
+        "0dB": 3,
+        "-5dB": 2,
+        "-10dB": 4
+      },
+      "restored_update_exact": true
+    }
+  }
+}

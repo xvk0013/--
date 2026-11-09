@@ -1,0 +1,12 @@
+{
+  "seed": 13,
+  "changed_modules": [
+    "short_local.local.1",
+    "short_local.local.4",
+    "short_local.stem.1"
+  ],
+  "groups": 4,
+  "all_trainable_parameters_start_identically": true,
+  "output_normalization": "BatchNorm1d(1600, affine=False)",
+  "parameters": 2721537
+}

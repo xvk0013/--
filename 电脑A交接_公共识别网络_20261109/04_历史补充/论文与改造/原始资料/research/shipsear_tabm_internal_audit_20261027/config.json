@@ -1,0 +1,75 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "arms": [
+    "C0_G2_continue",
+    "C1_late_count_readout",
+    "C2_early_count_readout"
+  ],
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "encoder": {
+    "dims": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "depths": [
+      1,
+      1,
+      4,
+      2
+    ],
+    "heads": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "windows": [
+      7,
+      7
+    ],
+    "mlp_ratio": 2.0,
+    "drop_path": 0.0,
+    "scan_backend": "cuda",
+    "band_fusion": "early",
+    "input_channels": 2
+  },
+  "interaction_rank": 64,
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "max_epochs": 20,
+  "min_epochs": 20,
+  "joint_patience": 20,
+  "classifier_lr": 0.0003,
+  "encoder_lr": 0.0001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "noise_probabilities": [
+    0.3,
+    0.1,
+    0.1,
+    0.1,
+    0.2,
+    0.2
+  ],
+  "initialization": "All arms continue the identical selected N2 epoch22 task checkpoint. Both new cardinality residual readouts are zero initialized. Optimizer states are freshly initialized identically. This is a local adaptation comparison, not an independent from-scratch result.",
+  "training": "Common 20-epoch full encoder and TabM adaptation, same Train waveforms, losses, noise probabilities, dropout and seed13. Epoch0 is eligible for Val selection. No architecture, features, data split or evaluation noise changes.",
+  "selection": "0.5 original Val mean(Single,Double,background) + 0.5 mean of that score over five noisy conditions; tie original overall ACC. One trained checkpoint per arm; Test only after selection is sealed.",
+  "prediction": "Per-member seven-set logits plus a learned group-constant residual for cardinality0/1/2; mean member softmax and argmax. C0 has no residual; C1 reads the final hidden block; C2 reads the first hidden block. No true count is used at inference.",
+  "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_tabm_neural_scratch_20261027\\runs\\seed13\\N2_member_interaction_best.pt"
+}

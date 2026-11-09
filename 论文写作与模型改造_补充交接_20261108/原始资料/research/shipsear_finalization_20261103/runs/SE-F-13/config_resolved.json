@@ -1,0 +1,140 @@
+{
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "spectral_scattering": {
+    "J": 2,
+    "L": 4,
+    "max_order": 2,
+    "summary_grid": [
+      8,
+      4
+    ],
+    "include_zeroth_order": true,
+    "subbatch": 8
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "representation": {
+    "long_fft": 8192,
+    "long_hop": 1024,
+    "short_fft": 2048,
+    "short_hop": 256,
+    "frequency_range_hz": [
+      0,
+      4000
+    ]
+  },
+  "protocol_id": "multitarget-formal-v1",
+  "first_run_id": "SE-F-13",
+  "dataset_version": "shipsear_pf_mb_rv_0db",
+  "split_sizes": {
+    "Train": 2880,
+    "Val": 716,
+    "Test": 877
+  },
+  "index_file": "DATA_INDEX.csv",
+  "set_names": [
+    "E",
+    "PF",
+    "MB",
+    "RV",
+    "PF+MB",
+    "PF+RV",
+    "MB+RV"
+  ],
+  "count_map": [
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2
+  ],
+  "class_loss_budgets": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "seed": 13,
+  "training_seeds": [
+    13,
+    42
+  ],
+  "evaluation_noise_seed": 13,
+  "evaluation_conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB",
+    "-5dB",
+    "-10dB"
+  ],
+  "noise_probabilities": [
+    0.5,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "waveform_view": "stored",
+  "noise": {
+    "type": "AWGN",
+    "target_power_reference": "mean_square_stored_waveform",
+    "background_rms_reference": 0.05,
+    "noisy_output_rms": 0.05
+  },
+  "initialization": "model_constructor",
+  "normalization": {
+    "split": "Train",
+    "condition": "original",
+    "std_floor": 1e-06
+  },
+  "optimizer": "AdamW",
+  "classifier_lr": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "min_epochs": 40,
+  "max_epochs": 80,
+  "validation_every_epochs": 1,
+  "patience_epochs": 10,
+  "early_stop_min_delta_pp": 0.2,
+  "validation_rank": [
+    "six_condition_single_double_balance",
+    "six_condition_acc_mean",
+    "min_six_condition_single_double_means",
+    "original_acc"
+  ],
+  "exact_tie": "earlier_epoch",
+  "first_eligible_epoch": 1,
+  "reference_only": {
+    "P50": "../shipsear_final_noise_distribution_20261102/runs/seed13/P50_noise50_best.pt",
+    "V1": "../shipsear_final_noise_distribution_20261102/weights/V1_reference.pt"
+  },
+  "experiment_id": "SE-F-13",
+  "runtime": {
+    "device": "NVIDIA GeForce RTX 5090",
+    "torch": "2.9.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.1.2",
+    "python": "C:\\Users\\Admin\\anaconda3\\envs\\zpfenv1\\python.exe"
+  }
+}

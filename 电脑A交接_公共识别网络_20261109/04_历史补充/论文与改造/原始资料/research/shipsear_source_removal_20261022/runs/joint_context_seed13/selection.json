@@ -1,0 +1,588 @@
+{
+  "ordinary": {
+    "best_trained_epoch": 1,
+    "best_trained_val": {
+      "n": 716,
+      "acc": 76.39664804469274,
+      "single_acc": 79.34272300469483,
+      "double_acc": 71.06481481481481,
+      "noise_acc": 100.0,
+      "count_acc": 89.94413407821229,
+      "single_to_double": 14,
+      "double_to_single": 58,
+      "single_type_errors": 30,
+      "double_pair_errors": 67,
+      "confusion": [
+        [
+          71,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          149,
+          4,
+          3,
+          4,
+          8,
+          0
+        ],
+        [
+          0,
+          18,
+          14,
+          5,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          36,
+          2,
+          2,
+          84,
+          15,
+          5
+        ],
+        [
+          0,
+          1,
+          0,
+          6,
+          2,
+          127,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          7,
+          30,
+          96
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          71,
+          0,
+          0
+        ],
+        [
+          0,
+          199,
+          14
+        ],
+        [
+          0,
+          58,
+          374
+        ]
+      ],
+      "double_C0_acc": 69.9074074074074,
+      "double_C1_acc": 66.66666666666666,
+      "double_C2_acc": 77.77777777777779,
+      "per_set_acc": {
+        "E": 100.0,
+        "PF": 88.69047619047619,
+        "MB": 35.8974358974359,
+        "RV": 100.0,
+        "PF+MB": 58.333333333333336,
+        "PF+RV": 88.19444444444444,
+        "MB+RV": 66.66666666666666
+      },
+      "conditional_single_acc": 84.03755868544602,
+      "conditional_double_acc": 82.87037037037037,
+      "conditional_single_per_class": {
+        "PF": 94.64285714285714,
+        "MB": 35.8974358974359,
+        "RV": 100.0
+      }
+    },
+    "qualified_epoch": null,
+    "qualified_val": null,
+    "initial_epoch_eligible": false,
+    "initial_val": {
+      "n": 716,
+      "acc": 76.95530726256983,
+      "single_acc": 80.28169014084507,
+      "double_acc": 71.52777777777779,
+      "noise_acc": 100.0,
+      "count_acc": 90.36312849162012,
+      "single_to_double": 13,
+      "double_to_single": 56,
+      "single_type_errors": 29,
+      "double_pair_errors": 67,
+      "confusion": [
+        [
+          71,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          4,
+          3,
+          4,
+          7,
+          0
+        ],
+        [
+          0,
+          17,
+          15,
+          5,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          35,
+          2,
+          2,
+          85,
+          15,
+          5
+        ],
+        [
+          0,
+          1,
+          0,
+          6,
+          2,
+          127,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          7,
+          30,
+          97
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          71,
+          0,
+          0
+        ],
+        [
+          0,
+          200,
+          13
+        ],
+        [
+          0,
+          56,
+          376
+        ]
+      ],
+      "double_C0_acc": 69.9074074074074,
+      "double_C1_acc": 68.51851851851852,
+      "double_C2_acc": 77.77777777777779,
+      "per_set_acc": {
+        "E": 100.0,
+        "PF": 89.28571428571429,
+        "MB": 38.46153846153847,
+        "RV": 100.0,
+        "PF+MB": 59.02777777777778,
+        "PF+RV": 88.19444444444444,
+        "MB+RV": 67.36111111111111
+      },
+      "conditional_single_acc": 84.03755868544602,
+      "conditional_double_acc": 82.87037037037037,
+      "conditional_single_per_class": {
+        "PF": 94.04761904761905,
+        "MB": 38.46153846153847,
+        "RV": 100.0
+      }
+    },
+    "inherited_head": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_source_removal_20261022\\runs\\removal_protected_seed13\\ordinary\\best_trained.pt",
+    "inherited_head_epoch": 1,
+    "updates": 720,
+    "trainable_context_parameters": 1139008,
+    "seconds": 32.77113450039178
+  },
+  "source_removal": {
+    "best_trained_epoch": 1,
+    "best_trained_val": {
+      "n": 716,
+      "acc": 77.23463687150837,
+      "single_acc": 80.28169014084507,
+      "double_acc": 72.22222222222221,
+      "noise_acc": 98.59154929577466,
+      "count_acc": 90.36312849162012,
+      "single_to_double": 14,
+      "double_to_single": 54,
+      "single_type_errors": 28,
+      "double_pair_errors": 66,
+      "confusion": [
+        [
+          70,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          4,
+          2,
+          4,
+          8,
+          0
+        ],
+        [
+          0,
+          17,
+          15,
+          5,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          2,
+          1,
+          89,
+          15,
+          5
+        ],
+        [
+          0,
+          1,
+          0,
+          6,
+          2,
+          127,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          12,
+          7,
+          29,
+          96
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          70,
+          0,
+          1
+        ],
+        [
+          0,
+          199,
+          14
+        ],
+        [
+          0,
+          54,
+          378
+        ]
+      ],
+      "double_C0_acc": 70.83333333333334,
+      "double_C1_acc": 68.51851851851852,
+      "double_C2_acc": 78.70370370370371,
+      "per_set_acc": {
+        "E": 98.59154929577466,
+        "PF": 89.28571428571429,
+        "MB": 38.46153846153847,
+        "RV": 100.0,
+        "PF+MB": 61.80555555555556,
+        "PF+RV": 88.19444444444444,
+        "MB+RV": 66.66666666666666
+      },
+      "conditional_single_acc": 84.97652582159625,
+      "conditional_double_acc": 82.87037037037037,
+      "conditional_single_per_class": {
+        "PF": 95.23809523809523,
+        "MB": 38.46153846153847,
+        "RV": 100.0
+      }
+    },
+    "qualified_epoch": 1,
+    "qualified_val": {
+      "n": 716,
+      "acc": 77.23463687150837,
+      "single_acc": 80.28169014084507,
+      "double_acc": 72.22222222222221,
+      "noise_acc": 98.59154929577466,
+      "count_acc": 90.36312849162012,
+      "single_to_double": 14,
+      "double_to_single": 54,
+      "single_type_errors": 28,
+      "double_pair_errors": 66,
+      "confusion": [
+        [
+          70,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          4,
+          2,
+          4,
+          8,
+          0
+        ],
+        [
+          0,
+          17,
+          15,
+          5,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          2,
+          1,
+          89,
+          15,
+          5
+        ],
+        [
+          0,
+          1,
+          0,
+          6,
+          2,
+          127,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          12,
+          7,
+          29,
+          96
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          70,
+          0,
+          1
+        ],
+        [
+          0,
+          199,
+          14
+        ],
+        [
+          0,
+          54,
+          378
+        ]
+      ],
+      "double_C0_acc": 70.83333333333334,
+      "double_C1_acc": 68.51851851851852,
+      "double_C2_acc": 78.70370370370371,
+      "per_set_acc": {
+        "E": 98.59154929577466,
+        "PF": 89.28571428571429,
+        "MB": 38.46153846153847,
+        "RV": 100.0,
+        "PF+MB": 61.80555555555556,
+        "PF+RV": 88.19444444444444,
+        "MB+RV": 66.66666666666666
+      },
+      "conditional_single_acc": 84.97652582159625,
+      "conditional_double_acc": 82.87037037037037,
+      "conditional_single_per_class": {
+        "PF": 95.23809523809523,
+        "MB": 38.46153846153847,
+        "RV": 100.0
+      }
+    },
+    "initial_epoch_eligible": false,
+    "initial_val": {
+      "n": 716,
+      "acc": 76.95530726256983,
+      "single_acc": 80.28169014084507,
+      "double_acc": 71.52777777777779,
+      "noise_acc": 100.0,
+      "count_acc": 90.22346368715084,
+      "single_to_double": 13,
+      "double_to_single": 57,
+      "single_type_errors": 29,
+      "double_pair_errors": 66,
+      "confusion": [
+        [
+          71,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          5,
+          2,
+          3,
+          8,
+          0
+        ],
+        [
+          0,
+          17,
+          15,
+          5,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          34,
+          2,
+          2,
+          86,
+          15,
+          5
+        ],
+        [
+          0,
+          1,
+          0,
+          6,
+          2,
+          127,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          12,
+          7,
+          29,
+          96
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          71,
+          0,
+          0
+        ],
+        [
+          0,
+          200,
+          13
+        ],
+        [
+          0,
+          57,
+          375
+        ]
+      ],
+      "double_C0_acc": 69.9074074074074,
+      "double_C1_acc": 67.5925925925926,
+      "double_C2_acc": 78.70370370370371,
+      "per_set_acc": {
+        "E": 100.0,
+        "PF": 89.28571428571429,
+        "MB": 38.46153846153847,
+        "RV": 100.0,
+        "PF+MB": 59.72222222222222,
+        "PF+RV": 88.19444444444444,
+        "MB+RV": 66.66666666666666
+      },
+      "conditional_single_acc": 84.03755868544602,
+      "conditional_double_acc": 82.87037037037037,
+      "conditional_single_per_class": {
+        "PF": 94.04761904761905,
+        "MB": 38.46153846153847,
+        "RV": 100.0
+      }
+    },
+    "inherited_head": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_source_removal_20261022\\runs\\removal_protected_seed13\\source_removal\\best_trained.pt",
+    "inherited_head_epoch": 26,
+    "updates": 720,
+    "trainable_context_parameters": 1139008,
+    "seconds": 37.21746189985424
+  }
+}

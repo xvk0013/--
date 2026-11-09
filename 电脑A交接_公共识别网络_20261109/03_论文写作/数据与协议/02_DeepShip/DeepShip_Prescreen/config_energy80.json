@@ -1,0 +1,119 @@
+{
+  "version": "deepship_energy80_v1",
+  "raw_root": "D:/LSJ/Data/DeepShip",
+  "output_root": "outputs/energy80_v1",
+  "classes": [
+    "Cargo",
+    "Passengership",
+    "Tanker",
+    "Tug"
+  ],
+  "target_sample_rate": 16000,
+  "window_seconds": 5,
+  "channel": 0,
+  "metadata": {
+    "require_match": false,
+    "group_matched_event": true,
+    "duration_tolerance_seconds": 2.0,
+    "mapping_file": "folder_ship_mapping.json",
+    "exclude_recordings": [],
+    "allowed_ais_codes": {
+      "Cargo": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "Passengership": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "Tanker": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "Tug": [
+        31,
+        32,
+        52
+      ]
+    }
+  },
+  "split": {
+    "seed": 42,
+    "fractions": {
+      "Train": 0.7,
+      "Val": 0.15,
+      "Test": 0.15
+    },
+    "partition_file": "outputs/strict_v1/full/RECORDINGS.csv"
+  },
+  "screening": {
+    "analysis_band_hz": [
+      20,
+      4000
+    ],
+    "filter_order": 4,
+    "energy_keep_fraction": 0.8,
+    "zero_run_ms": 50,
+    "min_rms": 1E-10,
+    "persistence_subwindow_seconds": 1,
+    "persistence_required": 4,
+    "activity_reference_percentile": 90,
+    "activity_margin_db": 6,
+    "transient_window_ms": 100,
+    "max_transient_energy_fraction": 0.2,
+    "max_pcm_saturation_fraction": 0.001,
+    "spectrum": {
+      "enabled": true,
+      "n_fft": 2048,
+      "hop": 512,
+      "tonal_excess_db": 6,
+      "local_median_bins": 11,
+      "tonal_persistence": 0.6,
+      "min_persistent_lines": 2,
+      "frequency_tolerance_bins": 1,
+      "min_broadband_stability": 0.8,
+      "max_broadband_flatness": 0.6
+    }
+  },
+  "selection": {
+    "max_per_recording": 20,
+    "max_per_class": 1000
+  },
+  "runtime": {
+    "workers": 1,
+    "heartbeat_seconds": 5,
+    "recording_timeout_seconds": 90,
+    "pilot_recordings_per_class": 4,
+    "compute_spectrum_for_all": false,
+    "progress_every": 1
+  },
+  "preview": {
+    "enabled": false,
+    "max_per_class": 2,
+    "include_rejected": true
+  }
+}

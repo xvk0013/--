@@ -1,0 +1,85 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "arms": [
+    "G0_scalar",
+    "G1_cross_channel",
+    "G2_source_channel"
+  ],
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "encoder": {
+    "dims": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "depths": [
+      1,
+      1,
+      4,
+      2
+    ],
+    "heads": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "windows": [
+      7,
+      7
+    ],
+    "mlp_ratio": 2.0,
+    "drop_path": 0.0,
+    "scan_backend": "cuda",
+    "band_fusion": "early",
+    "input_channels": 2
+  },
+  "interaction_rank": 64,
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "max_epochs": 60,
+  "min_epochs": 20,
+  "joint_patience": 15,
+  "classifier_lr": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "noise_probabilities": [
+    0.3,
+    0.1,
+    0.1,
+    0.1,
+    0.2,
+    0.2
+  ],
+  "count_readout_lr": 0.001,
+  "frozen_encoder_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_frequency_localize_20261029\\runs\\seed13\\L1_local_center_best.pt",
+  "scatter_dim": 3730,
+  "neural_dim": 320,
+  "initialization": "All three public networks inherit the identical L1 checkpoint. New channel residual logits initialize at zero; source gates start at1, cross gates at the inherited scalar. Encoder/DEMON/normalization remain frozen. No external weights.",
+  "training": "Only public TabM including first-layer projections, gates, hidden blocks, set and count heads trains. Same cached L1 wave views, batches, dropout draws, weights, seed13 and optimizer budget across arms. Maximum60 epochs, minimum20, shared patience15.",
+  "training_views": "One original Train view with existing Single envelopes; two independent AWGN draws for each 10,5,0,-5,-10dB. Weak-SNR Single uses the stored unenveloped waveform. Each epoch samples the original six-condition probability distribution and one of the two cached noise variants, identically across arms. No noisy waveform dataset is saved. This finite shared diagnostic bank differs from R0 online epoch-specific noise draws.",
+  "selection": "Exclude epoch0. Rank trained checkpoints by [all original Val S/D no more than1pp below L1, background no more than one extra error and -10ACC>=55; original mean(S,D,ACC); originalACC; -10ACC]. Seal each arm selection before Test.",
+  "prediction": "Seven-set logits plus a learned count residual. Mean32 member softmax, full seven-set argmax; no true quantity, source, ship label or SNR input.",
+  "interpretation": "Controlled warm-start test of cross-channel versus source-channel selection on fixed L1 representations. Finite training-view bank matches across arms; it is not a new replay of historic online-noise encoder training.",
+  "val_protection": {
+    "single_min": 85.8544600938967,
+    "double_min": 66.82407407407408,
+    "background_min": 84.50704225352112,
+    "minus10_acc_min": 55.0
+  }
+}

@@ -1,0 +1,79 @@
+# ShipsEar 消融实验汇总
+
+整理日期 2026-11-08。完整模型为 `SE-Q0-ShortLocal-GN-13`，以第 29 轮 Val 封存权重为参照。本目录按用途集中索引报告，链接直接指向原报告、运行配置和逐样本结果。 [完整模型架构](../shortlocal_gn_ablation_structure.png) · [当前实验方案](../ShortLocal-GN消融与内部对比方案.md) · [实验登记](../实验登记表.csv)
+
+## 1. 正式消融主表
+
+五组使用同一 ShipsEar 录音级划分，Train／Val／Test 为 2,877／719／877，均以种子 13 从构造初值训练 40 轮。训练抽样为原始 50%，10／5／0／−5／−10 dB 各 10%。各组先按同一套六档 Val 规则封存，再评估六档 Test。
+
+| 模型 | 对照定义 | Val 封存轮 | 可训练参数 | 运行记录 |
+| --- | --- | ---: | ---: | --- |
+| 完整 GN | 两路输入与门控乘积残差 | 29 | 2,721,537 | [配置](../runs/SE-Q0-ShortLocal-GN-13/config_resolved.json) · [封存](../runs/SE-Q0-ShortLocal-GN-13/selection_sealed.json) · [结果](../runs/SE-Q0-ShortLocal-GN-13/results.json) |
+| 去 1D | 完整 GN 在标准化后屏蔽波形路 | 28 | 2,721,537 | [配置](../runs/SE-ABL-ShortLocal-GN-Mask-1D-13/config_resolved.json) · [封存](../runs/SE-ABL-ShortLocal-GN-Mask-1D-13/selection_sealed.json) · [结果](../runs/SE-ABL-ShortLocal-GN-Mask-1D-13/results.json) |
+| 去 2D | 完整 GN 在标准化后屏蔽时频路 | 29 | 2,721,537 | [配置](../runs/SE-ABL-ShortLocal-GN-Mask-2D-13/config_resolved.json) · [封存](../runs/SE-ABL-ShortLocal-GN-Mask-2D-13/selection_sealed.json) · [结果](../runs/SE-ABL-ShortLocal-GN-Mask-2D-13/results.json) |
+| 双路 CAT | 保留两路输入，去掉整条门控乘积残差 | 28 | 2,258,464 | [配置](../runs/SE-ABL-ShortLocal-GN-CAT-13/config_resolved.json) · [封存](../runs/SE-ABL-ShortLocal-GN-CAT-13/selection_sealed.json) · [结果](../runs/SE-ABL-ShortLocal-GN-CAT-13/results.json) |
+| GN-ADD | 保留双路投影和门控，用等参数缩放加法替换乘积 | 29 | 2,721,537 | [配置](../runs/SE-ABL-ShortLocal-GN-ADD-13/config_resolved.json) · [封存](../runs/SE-ABL-ShortLocal-GN-ADD-13/selection_sealed.json) · [结果](../runs/SE-ABL-ShortLocal-GN-ADD-13/results.json) |
+
+以下为 Test 综合 ACC。六档与加噪档均值均对相应条件等权平均。各档 Single、Double、背景以及全部 Val 成绩见正式报告。 [完整成绩表](../ShortLocal-GN正式消融报告.md)
+
+| 模型 | 原始 | 10 dB | 5 dB | 0 dB | −5 dB | −10 dB | 六档均值 | 加噪档均值 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 完整 GN | 85.18% | 83.81% | 82.21% | 76.74% | 68.07% | 57.35% | 75.56% | 73.64% |
+| 去 1D | 83.58% | 80.84% | 78.11% | 73.77% | 65.79% | 53.02% | 72.52% | 70.31% |
+| 去 2D | 81.98% | 79.59% | 76.62% | 70.92% | 62.37% | 48.35% | 69.97% | 67.57% |
+| 双路 CAT | 85.97% | 82.90% | 80.16% | 75.37% | 66.93% | 55.42% | 74.46% | 72.16% |
+| GN-ADD | 84.95% | 83.24% | 80.39% | 75.94% | 67.73% | 55.87% | 74.69% | 72.63% |
+
+- **双分支的总作用。** 去 1D 和去 2D 后，六档均值分别下降 3.04 和 5.59 个百分点。屏蔽一路会同时使该路参与的乘积残差归零。−10 dB 去 1D 后 Single 从 65.65% 降到 57.63%，去 2D 后 Double 从 46.21% 降到 34.66%。 [分支消融报告](../ShortLocal-GN完整模型分支消融报告.md) · [配对统计](../runs/short_local_GN_Mask_paired_analysis.json)
+- **整条交互残差的作用。** 完整 GN 的五个加噪档均高于 CAT，平均高 1.48 个百分点。CAT 的原始档高 0.80 个百分点。 [直接拼接消融报告](../ShortLocal-GN直接拼接消融报告.md) · [配对统计](../runs/SE-ABL-ShortLocal-GN-CAT-13/paired_analysis.json)
+- **乘积算子的作用。** 在同参数量与初值下，完整 GN 相对加法在五个加噪档平均高 1.00 个百分点。−10 dB 净多判对 14 条 Double，Double→Single 从 181 降到 155。 [等参数对照](../ShortLocal-GN正式消融报告.md#等参数乘积与加法对照) · [配对统计](../runs/SE-ABL-ShortLocal-GN-ADD-13/paired_analysis.json)
+
+## 2. 辅助对照与已完成的模块比较
+
+| 对照 | 可回答的问题 | 报告 |
+| --- | --- | --- |
+| 标准 TabM 下 GN-CAT、GN-1D、GN-2D | 普通拼接下加入另一路特征的增量。单路组按保留输入维数重建首层 | [汇总](../ShortLocal-GN单路消融汇总.md) · [1D](../ShortLocal-GN-1D单路消融报告.md) · [2D](../ShortLocal-GN-2D单路消融报告.md) |
+| Q0 双散射与 ShortLocal | 固定短窗谱散射和 log-Mel 局部 CNN 两种完整短窗路径的取舍。−10 dB 综合为 46.52% 与 59.18%，原始为 87.91% 与 84.61%。同时涉及窗长、表示、编码和汇聚后归一化 | [短窗路径报告](../Q0短窗局部编码完整训练报告.md) · [ShortLocal 配对报告](../runs/SE-Q0-ShortLocal-13/实验报告.md) |
+| ShortLocal 与 ShortLocal-GN | 短窗卷积内三处 BatchNorm2d 与 GroupNorm 的单因素对照。GN 的原始综合从 84.61% 到 85.18%，六档综合均值从 76.09% 到 75.56% | [归一化报告](../短窗GroupNorm完整训练报告.md) |
+| ShortLocal 长窗 L1、L2 | L1 删除长窗并缩小公共输入，L2 改变长窗汇聚网格。参照为短窗使用 BN 的 ShortLocal | [L1/L2 汇总](../Q0长短窗互补L1_L2完整训练报告.md) · [L1](../Q0长短窗互补L1完整训练报告.md) · [L2](../Q0长短窗互补L2完整训练报告.md) |
+| ShortLocal 长窗 L3、L4 | L3 使用可学习长窗频率编码，L4 调整 L3 的归一化 | [L3 完整对照](../长窗频率局部编码L3完整训练报告.md) · [L3 原表](../Q0长短窗互补L3完整训练报告.md) · [L4 完整对照](../长窗归一化诊断与L4完整训练报告.md) · [L4 原表](../长窗样本内归一化L4完整训练报告.md) |
+| 同段双线性替换 | 比较整个首层残差的替换。原始 Test 综合 86.66%，加噪档均值 72.36%，未通过既定采用线 | [替换试验报告](../ShortLocal-GN同段双线性完整训练报告.md) |
+
+## 3. 历史结构对照索引
+
+| 系列 | 报告 |
+| --- | --- |
+| F／B／C 首块和 F／I0／Q0 判别接口 | [首块直通重训](../首块直通从头训练报告.md) · [判别接口对照](../公共判别接口完整训练报告.md) |
+| 旧划分 Q0 的算子与读出 | [A0 等参数加法](../Q0等参数加性交互完整训练报告.md) · [乘积幂归一化](../Q0乘积幂归一化完整训练报告.md) · [共享船型读出](../Q0共享船型读出完整训练报告.md) |
+| 频带、时间和局部取证 | [频带时序](../频带时序完整训练报告.md) · [长窗固定时序](../长窗固定时序完整复验报告.md) · [双路时间配合](../双分支时序配合完整训练报告.md) · [局部船型证据](../Q0局部船型证据迁移报告.md) |
+| 早期成员选择与训练链 | [成员选择重训消融](../../shipsear_compact_ensemble_20261023/成员选择重训消融报告.md) · [T1 至今训练审计](../T1至今训练审计与复验优先级.md) |
+
+论文主表采用第 1 节的同划分、同完整参照结果。第 2 节可供内部模块讨论，第 3 节按原模型和数据协议查阅。旧 ShipsEar 论文目录登记的是以 Q0 为参照的原计划，DeepShip PTT 的对照按自身登记表管理。 [旧 Q0 消融计划](D:/LSJ/Code/UART/shipsear/07_论文实验/02_模块消融/README.md) · [DeepShip PTT 消融登记](D:/LSJ/Code/UART/deepship/07_论文实验/02_模块消融/README.md)
+
+## 4. 投稿前证据核查
+
+**外部对照的比较口径。** 核对了完整 GN 与四个外部模型的解析配置和逐样本预测。各组使用同一新 MB 数据、训练加噪比例及评价噪声种子，Val 和 Test 各六档的编号、标签与交汇条件一致。TResNet-LA 与 Sun–Wang 原任务均为多目标，ShuffleFAC 和 RCMoE 属于适配的水声识别骨干。原论文设置、适配后的七集合读出、模型各自的优化设置和 Val 选择过程需要分别披露。TResNet-LA 的非目标干扰研究与这里的附加高斯噪声采用不同条件。 [新 MB 外部对照与配置](D:/LSJ/Code/UART/shipsear/07_论文实验/01_外部模型对比/README.md) · [TResNet-LA 原论文](https://www.sciencedirect.com/science/article/pii/S0957417425027393) · [Sun–Wang 原论文](https://pubmed.ncbi.nlm.nih.gov/35364907/)
+
+| 同划分 Test | 六档综合均值 | −10 dB 综合 | −10 dB Single | −10 dB Double | −10 dB 背景 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 完整 GN | 75.56% | 57.35% | 65.65% | 46.21% | 100.00% |
+| TResNet-LA | 66.88% | 49.83% | 23.28% | 65.34% | 35.63% |
+| Sun–Wang CNN | 60.87% | 51.65% | 64.12% | 37.69% | 98.85% |
+| ShuffleFAC-32 | 70.22% | 49.14% | 50.00% | 40.34% | 100.00% |
+| RCMoE | 54.33% | 31.24% | 40.84% | 20.64% | 66.67% |
+
+−10 dB 的 TResNet-LA 比完整 GN 多判对 101 条 Double，同时把 199 条 Single 判成 Double，完整 GN 为 55 条。外部比较同时呈现完整集合命中和双向数量错判。旧外部汇总中的自研参照是 Q0，本节采用当前完整 GN 的封存结果。 [外部模型六档结果](D:/LSJ/Code/UART/shipsear/07_论文实验/01_外部模型对比/新MB六档对比汇总.md) · [TResNet-LA 本地适配报告](D:/LSJ/Code/UART/shipsear/07_论文实验/01_外部模型对比/TResNet-LA_新MB实验报告.md)
+
+**录音隔离与敏感性。** 根据 `DATA_INDEX.csv` 的两个源录音字段，Train、Val、Test 分别涉及 37、13、10 份录音，录音 ID 两两无交集。MB 的 Train／Val 交换由原验证结果引导，Test 的 877 条波形未变。此划分和 Test 成绩已参与模型开发，应按固定录音级开发基准报告。 [划分与交换记录](../../shipsear_mb_train_val_20261104/README.md) · [数据索引](../../shipsear_mb_train_val_20261104/data/DATA_INDEX.csv) · [评估协议](../正式实验协议.md)
+
+逐一排除某份 Test 录音及其参与的所有样本后，用原封存预测复算五个加噪档平均 ACC 差。GN 对 GN-ADD 的差值范围为 +0.50 至 +3.52 个百分点。GN 对 CAT 的差值范围为 −1.11 至 +2.44 个百分点，排除 79 号录音关联的 371 条样本时差值反转。该分析用于描述对源录音构成的敏感性。 [正式结果与配对记录](../ShortLocal-GN正式消融报告.md)
+
+**方法归属。** 项目使用 TabM 0.0.3 的原有主干及成员集成。首层门控乘积残差来自项目早期 T1／V1 架构，在 ShortLocal-GN 中与一维波形散射、长窗二维散射、短窗 log-Mel CNN 配合。七集合直接读出与数量边际辅助损失属于任务适配。逐元素低秩双线性融合及乘积残差都有公开先例。当前可主张的是特定水声任务上的首层融合适配及其受控比较。论文应标明 TabM、散射实现和相关融合方法的来源，发布代码时按适用许可证保留归属。 [本地依赖来源](../../shipsear_final_noise_distribution_20261102/vendor/README.md) · [当前首层实现](../../shipsear_final_noise_distribution_20261102/model.py) · [TabM](https://proceedings.iclr.cc/paper_files/paper/2025/hash/c1ba41c694834aeef91ae161711d4939-Abstract-Conference.html) · [低秩双线性融合](https://openreview.net/pdf?id=r1rhWnZkg) · [多模态乘积残差](https://proceedings.neurips.cc/paper/2016/hash/9b04d152845ec0a378394003c96da594-Abstract.html) · [出版伦理](https://www.elsevier.com/about/policies-and-standards/publishing-ethics)
+
+## 5. 下一阶段的优先顺序
+
+1. 冻结当前 ShortLocal-GN 的方法定义和原论文、代码的归属。验证在低信噪比下能否减少漏判第二目标、提高双船完整组合命中，同时控制 Single→Double 与背景误报。
+2. 先复核 TResNet-LA 和 Sun–Wang 的原实现与本地适配。以原论文、作者代码和预定 Val 预算作为复现依据，逐档呈现综合、Single、Double、背景及配对错判。ShuffleFAC-32 同时提供轻量参考。
+3. 预登记一套未参与当前模型选择的源录音级确认评测，优先复验完整 GN、GN-ADD 和经复核的任务匹配强基线。按录音组织不确定性分析，另行记录训练种子效应。确认结果决定论文能否把首层适配作为核心方法贡献。
+
+短窗路径、短窗归一化和乘积／加法复用现有对照。**GN-GLOBAL** 改列条件项，论文若单独主张动态门控有增益，再保持双路和乘积不变，用全局可学习标量替换门控网络。

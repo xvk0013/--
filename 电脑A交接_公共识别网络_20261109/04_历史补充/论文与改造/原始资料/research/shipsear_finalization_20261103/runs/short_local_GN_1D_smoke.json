@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-11-07T18:58:55+08:00",
+  "train_rows": 2877,
+  "waveform_only_classifier_updated": true,
+  "runs": {
+    "SE-ABL-ShortLocal-GN-1D-13": {
+      "loss": {
+        "loss": 1.9201797246932983,
+        "set_loss": 1.8270174264907837,
+        "count_loss": 0.9316231608390808
+      },
+      "first_batch_seconds": 0.7698186002671719,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ]
+      ],
+      "condition_counts": {
+        "original": 13,
+        "10dB": 4,
+        "5dB": 5,
+        "0dB": 6,
+        "-5dB": 1,
+        "-10dB": 3
+      },
+      "restored_update_exact": true
+    }
+  }
+}

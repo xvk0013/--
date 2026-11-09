@@ -1,0 +1,16 @@
+{
+  "reference": "SE-Q0-ShortLocal-GN-13",
+  "data_root": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_mb_train_val_20261104\\data",
+  "seed": 13,
+  "component_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB",
+  "levels_db": [
+    5,
+    0
+  ],
+  "rank": 4,
+  "attenuation": 0.5,
+  "weak_relative_db": -6,
+  "anchor_sweep_db": 3,
+  "reference_rms": 0.05,
+  "gate": "At 5 dB anchor-to-noise, the anchor-specific projection must capture a higher fraction of anchor-level variation than weak-class swaps in each view, and its mean selectivity across views must exceed the shared rank-matched projection. The 0 dB panel is descriptive."
+}

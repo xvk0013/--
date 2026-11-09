@@ -1,0 +1,93 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "representation": {
+    "long_fft": 8192,
+    "long_hop": 1024,
+    "short_fft": 2048,
+    "short_hop": 256,
+    "frequency_range_hz": [
+      0,
+      4000
+    ],
+    "channels": [
+      16,
+      32,
+      64
+    ],
+    "summary_grid": [
+      8,
+      4
+    ],
+    "summary_statistics": [
+      "mean",
+      "std"
+    ],
+    "per_resolution_output": 256,
+    "candidate_neural_output": 512,
+    "frequency_kernel": 5,
+    "time_kernel": 5
+  },
+  "spectral_scattering": {
+    "J": 2,
+    "L": 4,
+    "max_order": 2,
+    "summary_grid": [
+      8,
+      4
+    ],
+    "include_zeroth_order": true,
+    "subbatch": 8,
+    "input": "Current T1 native long/short logpower float16->float32, no resizing, fixed coefficients, all paths mean/std spatial grid"
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "compact_model_file": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\model.py",
+  "adaptation_checkpoint": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\weights\\current.pt",
+  "arms": [
+    "A_continue",
+    "B_late_residual",
+    "C_early_skip"
+  ],
+  "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13\\V1_stored_single_best.pt",
+  "source_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13",
+  "source_arm": "V1_stored_single",
+  "source_epoch": 51,
+  "max_epochs": 20,
+  "classifier_lr": 3e-05,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "noise_probabilities": [
+    0.5,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "development_tolerance_pp": 1.0,
+  "original_single_tolerance_pp": 5.0,
+  "original_acc_tolerance_pp": 1.5,
+  "development_single_gain_pp": 2.0,
+  "training": "Three arms start from identical retained V1 global51. Fixed 1D/2D scattering and exact source Train normalization. Complete public TabM adapts20epochs at3e-5. B/C add identical shared per-member bias-free256->64->256 GELU projections; last weightzero, added32768 parameters, trained3e-4. B reads last block; C reads first block and adds aligned residual to last block. Original seven-set plus count readouts retained. Formal stored waveforms only, no Single envelope, no paired-source or clean-reference supervision. Same AWGN/order/dropout seed13 and original class budgets/objective.",
+  "selection": "For every arm independently, actual epochs1..20, epoch0reference only. Rank by all source guards satisfied; mean5/0Single; mean5/0 retention on FIXED sourceV1 raw-correct Single cohort; mean5/0ACC; rawACC. Source guards rawSingle within5pp,rawACC within1.5pp, rawDouble/background/10ACC and each5/0Double within1pp. Candidate is predeclaredC, not selected fromTest. Seal all Val choices/gates before six-condition Test of all finalists.",
+  "new_projection_lr": 0.0003,
+  "skip_rank": 64,
+  "development_retention_gain_pp": 2.0,
+  "adoption": "C must improve mean5/0Single by>=2pp against BOTH A/B, improve fixed-cohort Single retention>=2pp againstA and not lower it againstB, keep each5/0Double within1pp and mean5/0ACC within1pp againstBOTH, and pass original V1 protection. Scores below these rules remain reported as development results, not a validated mechanism.",
+  "inference": "Observed waveform only. No original reference, source component, true count or SNR is an input. Extract32, classify64, member softmax float32CUDA then CPU NumPy member mean. Do not claim the prior81.25 reference-dependent intervention as model accuracy."
+}

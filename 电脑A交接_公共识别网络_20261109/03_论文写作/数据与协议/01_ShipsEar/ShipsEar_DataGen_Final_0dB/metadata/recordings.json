@@ -1,0 +1,422 @@
+[
+  {
+    "recording_id": "ShipsEar_6",
+    "split": "Train",
+    "raw_relative_path": "6__10_07_13_marDeCangas_Entra.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_7",
+    "split": "Val",
+    "raw_relative_path": "7__10_07_13_marDeCangas_Espera.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_8",
+    "split": "Train",
+    "raw_relative_path": "8__10_07_13_marDeOnza_Entra.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_9",
+    "split": "Train",
+    "raw_relative_path": "9__10_07_13_marDeOnza_Espera.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_10",
+    "split": "Val",
+    "raw_relative_path": "10__10_07_13_marDeOnza_Sale.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_11",
+    "split": "Train",
+    "raw_relative_path": "11__10_07_13_minhoUno_Entra.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_12",
+    "split": "Test",
+    "raw_relative_path": "12__10_07_13_minhoUno_Sale.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_13",
+    "split": "Val",
+    "raw_relative_path": "13__10_07_13_piraCies_Entra.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_14",
+    "split": "Train",
+    "raw_relative_path": "14__10_07_13_piraCies_Espera.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_17",
+    "split": "Val",
+    "raw_relative_path": "17__10_07_13_visionSub_Entra.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_18",
+    "split": "Train",
+    "raw_relative_path": "18__18_07_13_AutoPrideEntra.wav",
+    "class_name": "RV",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_19",
+    "split": "Test",
+    "raw_relative_path": "19__18_07_13_AutoprideMarchaAtras.wav",
+    "class_name": "RV",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_20",
+    "split": "Val",
+    "raw_relative_path": "20__18_07_13_AutopridePrepManiobra.wav",
+    "class_name": "RV",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_21",
+    "split": "Val",
+    "raw_relative_path": "21__18_07_13_lanchaMotora.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_26",
+    "split": "Train",
+    "raw_relative_path": "26__19_07_13_Lancha.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_27",
+    "split": "Train",
+    "raw_relative_path": "27__19_07_13_Lancha2.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_32",
+    "split": "Train",
+    "raw_relative_path": "32__19_07_13_Arroios_llega.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_33",
+    "split": "Val",
+    "raw_relative_path": "33__19_07_13_lanchaDuda_Sale.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_34",
+    "split": "Test",
+    "raw_relative_path": "34__19_07_13_MarDeOnza_Llega.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_35",
+    "split": "Train",
+    "raw_relative_path": "35__19_07_13_MarDeOnza_sale.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_36",
+    "split": "Val",
+    "raw_relative_path": "36__19_07_13_MiñoUno_Sale.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_38",
+    "split": "Train",
+    "raw_relative_path": "38__19_07_13_Arroios_Sale_2entran.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_39",
+    "split": "Train",
+    "raw_relative_path": "39__19_07_13_lanchaMotora_Entra.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_40",
+    "split": "Train",
+    "raw_relative_path": "40__19_07_13_MarDeCangas_Llega_Interf.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_41",
+    "split": "Train",
+    "raw_relative_path": "41__19_07_13_MiñoUno_Entra.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_42",
+    "split": "Train",
+    "raw_relative_path": "42__19_07_13_PirataCies_Sale.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_43",
+    "split": "Train",
+    "raw_relative_path": "43__19_07_13_PirataDeCies_Llega_Interf.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_45",
+    "split": "Train",
+    "raw_relative_path": "45__19_07_13_yate_Sale.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_50",
+    "split": "Train",
+    "raw_relative_path": "50__23_07_13_H3_lancha1.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_51",
+    "split": "Train",
+    "raw_relative_path": "51__23_07_13_H3_lancha2_interf.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_52",
+    "split": "Train",
+    "raw_relative_path": "52__23_07_13_H3_lancha3_interf.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_53",
+    "split": "Train",
+    "raw_relative_path": "53__23_07_13_H3_PirataSalvora_Llega1.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_54",
+    "split": "Train",
+    "raw_relative_path": "54__23_07_13_H3_PirataSalvora_SALE1.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_55",
+    "split": "Test",
+    "raw_relative_path": "55__23_07_13_H3_PirataSalvora_SALE2.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_58",
+    "split": "Train",
+    "raw_relative_path": "58__23_07_13_H2_EimskipReefer_Pesquerito1.wav",
+    "class_name": "RV",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_59",
+    "split": "Val",
+    "raw_relative_path": "59__23_07_13_H2_MarDeMouro.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_60",
+    "split": "Train",
+    "raw_relative_path": "60__23_07_13_H3_MarDeCangas_LLEGA.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_61",
+    "split": "Test",
+    "raw_relative_path": "61__23_07_13_H3_MarDeCangas_SALE-2.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_62",
+    "split": "Train",
+    "raw_relative_path": "62__23_07_13_H3_MarDeCangas_SALE.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_63",
+    "split": "Train",
+    "raw_relative_path": "63__23_07_13_H3_MarDeOnza_LLEGA.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_64",
+    "split": "Test",
+    "raw_relative_path": "64__23_07_13_H3_MarDeOnza_SALE.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_65",
+    "split": "Test",
+    "raw_relative_path": "65__23_07_13_H3_MinhoUno_LLEGA.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_67",
+    "split": "Train",
+    "raw_relative_path": "67__23_07_13_H3_PirataCiesSale.wav",
+    "class_name": "PF",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_70",
+    "split": "Train",
+    "raw_relative_path": "70__23_07_13_H2_yatePeq.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_72",
+    "split": "Val",
+    "raw_relative_path": "72__23_07_13_H3_lancha2.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_77",
+    "split": "Train",
+    "raw_relative_path": "77__23_07_13_H3_Planeadora.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_78",
+    "split": "Train",
+    "raw_relative_path": "78__23_07_13_H3_vikingChance.wav",
+    "class_name": "RV",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_79",
+    "split": "Test",
+    "raw_relative_path": "79__23_07_13_H3_zodiac.wav",
+    "class_name": "MB",
+    "background_path": ""
+  },
+  {
+    "recording_id": "ShipsEar_81",
+    "split": "Train",
+    "raw_relative_path": "81__25_09_13_H3_corriente.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_81.wav"
+  },
+  {
+    "recording_id": "ShipsEar_82",
+    "split": "Train",
+    "raw_relative_path": "82__27_09_13_H3_lluvia.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_82.wav"
+  },
+  {
+    "recording_id": "ShipsEar_83",
+    "split": "Val",
+    "raw_relative_path": "83__27_09_13_H3_oleaje.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_83.wav"
+  },
+  {
+    "recording_id": "ShipsEar_84",
+    "split": "Test",
+    "raw_relative_path": "84__27_09_13_H3_viento.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_84.wav"
+  },
+  {
+    "recording_id": "ShipsEar_85",
+    "split": "Val",
+    "raw_relative_path": "85__E__1L.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_85.wav"
+  },
+  {
+    "recording_id": "ShipsEar_86",
+    "split": "Test",
+    "raw_relative_path": "86__E__2M.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_86.wav"
+  },
+  {
+    "recording_id": "ShipsEar_87",
+    "split": "Train",
+    "raw_relative_path": "87__E__3H.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_87.wav"
+  },
+  {
+    "recording_id": "ShipsEar_88",
+    "split": "Train",
+    "raw_relative_path": "88__E__4L.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_88.wav"
+  },
+  {
+    "recording_id": "ShipsEar_89",
+    "split": "Train",
+    "raw_relative_path": "89__E__5M.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_89.wav"
+  },
+  {
+    "recording_id": "ShipsEar_90",
+    "split": "Train",
+    "raw_relative_path": "90__E__6H.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_90.wav"
+  },
+  {
+    "recording_id": "ShipsEar_91",
+    "split": "Val",
+    "raw_relative_path": "91__E__7H_N.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_91.wav"
+  },
+  {
+    "recording_id": "ShipsEar_92",
+    "split": "Train",
+    "raw_relative_path": "92__E__8H_N.wav",
+    "class_name": "E",
+    "background_path": "background/ShipsEar_92.wav"
+  }
+]

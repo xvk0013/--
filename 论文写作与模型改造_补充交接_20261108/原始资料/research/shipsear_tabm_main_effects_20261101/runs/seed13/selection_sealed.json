@@ -1,0 +1,44 @@
+{
+  "selections": {
+    "T1_mixed_residual": {
+      "epoch": 16,
+      "global_epoch": 67,
+      "score": [
+        1,
+        66.34078212290503,
+        77.69953051643192,
+        71.08938547486034
+      ]
+    },
+    "T2_separate_effects": {
+      "epoch": 12,
+      "global_epoch": 63,
+      "score": [
+        1,
+        66.8296089385475,
+        76.7605633802817,
+        72.20670391061452
+      ]
+    }
+  },
+  "gate": {
+    "T1_mixed_residual": {
+      "single_gain": false,
+      "acc_gain": false,
+      "double_protection": false,
+      "V1_protection": true
+    },
+    "T2_separate_effects": {
+      "single_gain": false,
+      "acc_gain": false,
+      "double_protection": true,
+      "V1_protection": true
+    }
+  },
+  "Val_ranking": [
+    "T2_separate_effects",
+    "T1_mixed_residual"
+  ],
+  "chosen_by_Val": null,
+  "Test_permitted": []
+}

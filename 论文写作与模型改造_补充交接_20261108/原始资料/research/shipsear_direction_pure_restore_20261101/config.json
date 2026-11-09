@@ -1,0 +1,16 @@
+{
+  "seed": 13,
+  "arms": ["P1_restore_only"],
+  "max_epochs": 20,
+  "adapter_lr": 0.0003,
+  "shape_weight": 1.0,
+  "fixed_train_noise_tag": 303,
+  "train_probe_every": 5,
+  "noise_probabilities": [0.5, 0.1, 0.1, 0.1, 0.1, 0.1],
+  "frozen_control_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_direction_isolation_20261101\\runs\\seed13",
+  "frozen_control_arm": "F1_frozen",
+  "training": "Full Train pure restoration, not minibatch continuation. Load the same V1global51 public task checkpoint and fresh S2 adapter initialization; keep TabM frozen. ONLY paired centered-direction cosine loss updates the adapter. No recognition or quantity-loss gradient, no classifier forward in a training step. Same row class budgets, online AWGN schedule/seed/order, two fixed views, normalization, adapter optimizer and20epoch budget as completed F1.",
+  "reference": "Same Train mixture before additional AWGN, preserving native background and all Double sources. Reference only supplies the restoration target. No clean/count/SNR input during inference.",
+  "selection": "Unchanged Val protection and epoch score: source protection first, then mean5/0ACC,mean5/0Single,rawACC; actual epochs1..20. Labels are used for existing class budgets and validation/evaluation, not a recognition training loss.",
+  "test_policy": "Only if task and mechanism Val gates pass, evaluate six observed-input Test conditions with one sealed checkpoint. No automatic joint adaptation or architecture changes."
+}

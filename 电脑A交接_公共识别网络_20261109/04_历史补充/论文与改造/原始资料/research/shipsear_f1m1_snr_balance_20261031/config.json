@@ -1,0 +1,119 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "representation": {
+    "long_fft": 8192,
+    "long_hop": 1024,
+    "short_fft": 2048,
+    "short_hop": 256,
+    "frequency_range_hz": [
+      0,
+      4000
+    ],
+    "channels": [
+      16,
+      32,
+      64
+    ],
+    "summary_grid": [
+      8,
+      4
+    ],
+    "summary_statistics": [
+      "mean",
+      "std"
+    ],
+    "per_resolution_output": 256,
+    "candidate_neural_output": 512,
+    "frequency_kernel": 5,
+    "time_kernel": 5
+  },
+  "replacement_kernel": 7,
+  "ffn_ratio": 2.0,
+  "ffn_dropout": 0.0,
+  "arms": [
+    "C0_legacy",
+    "C1_balanced"
+  ],
+  "compact_model_file": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\model.py",
+  "adaptation_checkpoint": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\weights\\current.pt",
+  "baseline_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_fixed_spectral_factorial_20261031\\runs\\seed13",
+  "baseline_arm": "F1M1",
+  "max_epochs": 20,
+  "min_epochs": 20,
+  "joint_patience": null,
+  "classifier_lr": 3e-05,
+  "count_readout_lr": 3e-05,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "noise_probabilities": null,
+  "selection_conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB"
+  ],
+  "spectral_scattering": {
+    "J": 2,
+    "L": 4,
+    "max_order": 2,
+    "summary_grid": [
+      8,
+      4
+    ],
+    "include_zeroth_order": true,
+    "subbatch": 8,
+    "input": "Current T1 native long/short logpower float16->float32, no resizing, fixed coefficients, all paths mean/std spatial grid"
+  },
+  "selection": "Same source Val guards: original S/D/BG within1pp,5/0 Double within1pp,10ACC within1pp. Eligible first; then mean5/0ACC,mean5/0Single,originalACC. Select actual continuation epochs1..20; epoch0 reference only. If no eligible trained epoch, report actual best and do not adopt. Negative SNR monitored but not ranked; Test only after selection sealed.",
+  "training": "Both strictly inherit F1M1 epoch33 including original Train normalization; same fresh AdamW 3e-5; 20 continuation epochs, paired order/dropout/AWGN directions. Only SNR probabilities differ. Keep existing Single envelope rules, data, class weights, CE+0.1 count marginal. No new front end, loss or classifier mechanism.",
+  "initialization": "Same trained F1M1 epoch33 in both groups, all public parameters continue training; fresh identical optimizer states. Existing trained history is part of this adaptation experiment, not from-scratch architecture comparison.",
+  "development_gain_pp": 1.0,
+  "development_tolerance_pp": 1.0,
+  "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_fixed_spectral_factorial_20261031\\runs\\seed13\\F1M1_best.pt",
+  "source_epoch": 33,
+  "noise_probabilities_by_arm": {
+    "C0_legacy": [
+      0.5,
+      0.25,
+      0.1,
+      0.15,
+      0,
+      0
+    ],
+    "C1_balanced": [
+      0.5,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ]
+  },
+  "monitor_conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB",
+    "-5dB",
+    "-10dB"
+  ],
+  "normalization": "Keep exact source F1 normalization; no refit on noisy or evaluation data.",
+  "new_protocol": "Two-level distribution shared across all labels: original probability0.5; conditional on augmentation sample five SNR levels uniformly. Probabilities, not exact per-epoch quotas."
+}

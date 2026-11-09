@@ -1,0 +1,33 @@
+{
+  "counting_unit": "(parent_core_id,view)",
+  "status": "unavailable_missing_shipsear_plan",
+  "baselines": [
+    {
+      "name": "Full+M",
+      "history_min_s": 17.240875,
+      "history_median_s": 21.532875,
+      "history_max_s": 50.757875,
+      "view_count": [],
+      "full_real_context_count": [],
+      "full_real_context_fraction": []
+    },
+    {
+      "name": "Full+M-D",
+      "history_min_s": 16.984875,
+      "history_median_s": 19.484875,
+      "history_max_s": 34.373875,
+      "view_count": [],
+      "full_real_context_count": [],
+      "full_real_context_fraction": []
+    },
+    {
+      "name": "E99+M99-D99",
+      "history_min_s": 0.003875,
+      "history_median_s": 2.092125,
+      "history_max_s": 2.5766875,
+      "view_count": [],
+      "full_real_context_count": [],
+      "full_real_context_fraction": []
+    }
+  ]
+}

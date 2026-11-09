@@ -1,0 +1,32 @@
+{
+  "features_match_cat": {
+    "original": true,
+    "10dB": true,
+    "5dB": true,
+    "0dB": true,
+    "-5dB": true,
+    "-10dB": true
+  },
+  "arms": {
+    "1d": {
+      "input_width": 3730,
+      "fixed_width": 3730,
+      "parameters": 1328416,
+      "shape": [
+        8,
+        32,
+        7
+      ]
+    },
+    "2d": {
+      "input_width": 3200,
+      "fixed_width": 1600,
+      "parameters": 1184224,
+      "shape": [
+        8,
+        32,
+        7
+      ]
+    }
+  }
+}

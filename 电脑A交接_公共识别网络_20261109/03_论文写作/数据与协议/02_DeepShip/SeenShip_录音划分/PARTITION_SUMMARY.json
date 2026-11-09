@@ -1,0 +1,76 @@
+{
+  "Cargo": {
+    "groups": {
+      "Train": 76,
+      "Test": 16,
+      "Val": 17
+    },
+    "moved": {
+      "Train->Test": 11,
+      "Val->Train": 10,
+      "Test->Train": 11,
+      "Train->Val": 10
+    },
+    "name_counts": {
+      "Train": 61,
+      "Val": 5,
+      "Test": 7
+    },
+    "unmatched_eval": 0
+  },
+  "Passengership": {
+    "groups": {
+      "Train": 134,
+      "Val": 29,
+      "Test": 28
+    },
+    "moved": {
+      "Test->Train": 4,
+      "Val->Train": 7,
+      "Train->Test": 4,
+      "Train->Val": 7
+    },
+    "name_counts": {
+      "Train": 41,
+      "Val": 15,
+      "Test": 11
+    },
+    "unmatched_eval": 0
+  },
+  "Tanker": {
+    "groups": {
+      "Train": 168,
+      "Val": 36,
+      "Test": 36
+    },
+    "moved": {
+      "Test->Train": 15,
+      "Val->Train": 14,
+      "Train->Val": 14,
+      "Train->Test": 15
+    },
+    "name_counts": {
+      "Train": 124,
+      "Val": 19,
+      "Test": 20
+    },
+    "unmatched_eval": 0
+  },
+  "Tug": {
+    "groups": {
+      "Train": 48,
+      "Test": 10,
+      "Val": 11
+    },
+    "moved": {
+      "Val->Train": 3,
+      "Train->Val": 3
+    },
+    "name_counts": {
+      "Train": 15,
+      "Val": 5,
+      "Test": 6
+    },
+    "unmatched_eval": 0
+  }
+}

@@ -1,0 +1,883 @@
+﻿experiment_id,model,split,condition,true_set,predicted_set,n
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,E,E,200
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,E,Passengership,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,E,Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,E,Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,E,Passengership+Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,E,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,E,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership,Passengership,129
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership,Tanker,9
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership,Tug,10
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership,Passengership+Tanker,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker,Passengership,9
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker,Tanker,136
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker,Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker,Passengership+Tanker,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker,Tanker+Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tug,Passengership,15
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tug,Tanker,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tug,Tug,127
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tug,Passengership+Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tug,Passengership+Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tug,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tanker,Passengership,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tanker,Tanker,12
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tanker,Tug,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tanker,Passengership+Tanker,149
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tanker,Passengership+Tug,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tanker,Tanker+Tug,31
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tug,Passengership,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tug,Tanker,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tug,Tug,5
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tug,Passengership+Tanker,19
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tug,Passengership+Tug,145
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Passengership+Tug,Tanker+Tug,26
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker+Tug,Passengership,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker+Tug,Tanker,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker+Tug,Tug,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker+Tug,Passengership+Tanker,46
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker+Tug,Passengership+Tug,16
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,original,Tanker+Tug,Tanker+Tug,129
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,E,E,200
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,E,Passengership,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,E,Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,E,Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,E,Passengership+Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,E,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,E,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership,Passengership,125
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership,Tanker,10
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership,Tug,9
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership,Passengership+Tanker,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership,Passengership+Tug,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker,Passengership,8
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker,Tanker,134
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker,Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker,Passengership+Tanker,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker,Tanker+Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tug,Passengership,22
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tug,Tanker,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tug,Tug,120
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tug,Passengership+Tanker,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tug,Passengership+Tug,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tug,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tanker,Passengership,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tanker,Tanker,18
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tanker,Tug,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tanker,Passengership+Tanker,147
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tanker,Passengership+Tug,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tanker,Tanker+Tug,25
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tug,Passengership,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tug,Tanker,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tug,Tug,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tug,Passengership+Tanker,27
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tug,Passengership+Tug,141
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Passengership+Tug,Tanker+Tug,24
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker+Tug,Passengership,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker+Tug,Tanker,10
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker+Tug,Tug,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker+Tug,Passengership+Tanker,59
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker+Tug,Passengership+Tug,17
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,10dB,Tanker+Tug,Tanker+Tug,111
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,E,E,200
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,E,Passengership,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,E,Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,E,Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,E,Passengership+Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,E,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,E,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership,Passengership,107
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership,Tanker,16
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership,Tug,14
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership,Passengership+Tanker,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership,Passengership+Tug,7
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership,Tanker+Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker,Passengership,8
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker,Tanker,134
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker,Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker,Passengership+Tanker,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker,Passengership+Tug,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker,Tanker+Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tug,Passengership,24
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tug,Tanker,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tug,Tug,119
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tug,Passengership+Tanker,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tug,Passengership+Tug,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tug,Tanker+Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tanker,Passengership,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tanker,Tanker,24
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tanker,Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tanker,Passengership+Tanker,139
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tanker,Passengership+Tug,8
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tanker,Tanker+Tug,26
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tug,Passengership,5
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tug,Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tug,Tug,7
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tug,Passengership+Tanker,27
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tug,Passengership+Tug,138
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Passengership+Tug,Tanker+Tug,23
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker+Tug,Passengership,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker+Tug,Tanker,18
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker+Tug,Tug,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker+Tug,Passengership+Tanker,65
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker+Tug,Passengership+Tug,24
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,5dB,Tanker+Tug,Tanker+Tug,92
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,E,E,200
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,E,Passengership,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,E,Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,E,Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,E,Passengership+Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,E,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,E,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership,Passengership,91
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership,Tanker,18
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership,Tug,21
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership,Passengership+Tanker,7
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership,Passengership+Tug,11
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership,Tanker+Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker,Passengership,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker,Tanker,126
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker,Tug,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker,Passengership+Tanker,9
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker,Passengership+Tug,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker,Tanker+Tug,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tug,Passengership,25
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tug,Tanker,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tug,Tug,106
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tug,Passengership+Tanker,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tug,Passengership+Tug,16
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tug,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tanker,Passengership,5
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tanker,Tanker,33
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tanker,Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tanker,Passengership+Tanker,116
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tanker,Passengership+Tug,15
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tanker,Tanker+Tug,31
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tug,Passengership,5
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tug,Tanker,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tug,Tug,10
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tug,Passengership+Tanker,20
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tug,Passengership+Tug,147
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Passengership+Tug,Tanker+Tug,16
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker+Tug,Passengership,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker+Tug,Tanker,25
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker+Tug,Tug,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker+Tug,Passengership+Tanker,73
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker+Tug,Passengership+Tug,34
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,0dB,Tanker+Tug,Tanker+Tug,64
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,E,E,200
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,E,Passengership,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,E,Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,E,Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,E,Passengership+Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,E,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,E,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership,Passengership,57
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership,Tanker,23
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership,Tug,27
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership,Passengership+Tanker,12
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership,Passengership+Tug,25
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership,Tanker+Tug,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker,E,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker,Passengership,9
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker,Tanker,116
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker,Tug,5
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker,Passengership+Tanker,11
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker,Passengership+Tug,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker,Tanker+Tug,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tug,Passengership,22
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tug,Tanker,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tug,Tug,104
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tug,Passengership+Tanker,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tug,Passengership+Tug,20
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tug,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tanker,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tanker,Passengership,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tanker,Tanker,36
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tanker,Tug,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tanker,Passengership+Tanker,109
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tanker,Passengership+Tug,21
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tanker,Tanker+Tug,32
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tug,Passengership,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tug,Tanker,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tug,Tug,18
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tug,Passengership+Tanker,22
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tug,Passengership+Tug,123
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Passengership+Tug,Tanker+Tug,28
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker+Tug,Passengership,5
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker+Tug,Tanker,26
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker+Tug,Tug,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker+Tug,Passengership+Tanker,71
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker+Tug,Passengership+Tug,41
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-5dB,Tanker+Tug,Tanker+Tug,54
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,E,E,198
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,E,Passengership,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,E,Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,E,Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,E,Passengership+Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,E,Passengership+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,E,Tanker+Tug,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership,Passengership,48
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership,Tanker,23
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership,Tug,45
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership,Passengership+Tanker,11
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership,Passengership+Tug,17
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership,Tanker+Tug,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker,E,3
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker,Passengership,11
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker,Tanker,109
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker,Tug,9
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker,Passengership+Tanker,9
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker,Passengership+Tug,5
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker,Tanker+Tug,4
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tug,Passengership,17
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tug,Tanker,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tug,Tug,113
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tug,Passengership+Tanker,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tug,Passengership+Tug,17
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tug,Tanker+Tug,2
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tanker,E,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tanker,Passengership,6
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tanker,Tanker,51
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tanker,Tug,8
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tanker,Passengership+Tanker,55
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tanker,Passengership+Tug,27
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tanker,Tanker+Tug,52
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tug,E,0
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tug,Passengership,20
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tug,Tanker,12
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tug,Tug,36
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tug,Passengership+Tanker,12
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tug,Passengership+Tug,96
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Passengership+Tug,Tanker+Tug,24
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker+Tug,E,1
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker+Tug,Passengership,9
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker+Tug,Tanker,35
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker+Tug,Tug,14
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker+Tug,Passengership+Tanker,47
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker+Tug,Passengership+Tug,42
+DS-Q0-PTT-SeenShip-13,PTT Q0,Test,-10dB,Tanker+Tug,Tanker+Tug,52
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,E,E,200
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,E,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,E,Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,E,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,E,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,E,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,E,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership,Passengership,102
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership,Tanker,39
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership,Tug,9
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker,Passengership,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker,Tanker,146
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker,Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tug,Passengership,31
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tug,Tanker,13
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tug,Tug,106
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tug,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tug,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tug,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tanker,Passengership,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tanker,Tanker,24
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tanker,Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tanker,Passengership+Tanker,129
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tanker,Passengership+Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tanker,Tanker+Tug,43
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tug,Passengership,6
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tug,Tanker,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tug,Tug,8
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tug,Passengership+Tanker,35
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tug,Passengership+Tug,101
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Passengership+Tug,Tanker+Tug,46
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker+Tug,Passengership,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker+Tug,Tanker,13
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker+Tug,Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker+Tug,Passengership+Tanker,69
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker+Tug,Passengership+Tug,7
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,original,Tanker+Tug,Tanker+Tug,106
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,E,E,200
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,E,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,E,Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,E,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,E,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,E,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,E,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership,Passengership,110
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership,Tanker,25
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership,Tug,14
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership,Passengership+Tanker,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker,Passengership,6
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker,Tanker,142
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker,Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker,Tanker+Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tug,Passengership,30
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tug,Tanker,6
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tug,Tug,114
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tug,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tug,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tug,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tanker,Passengership,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tanker,Tanker,29
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tanker,Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tanker,Passengership+Tanker,121
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tanker,Passengership+Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tanker,Tanker+Tug,46
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tug,Passengership,8
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tug,Tanker,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tug,Tug,8
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tug,Passengership+Tanker,28
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tug,Passengership+Tug,119
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Passengership+Tug,Tanker+Tug,33
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker+Tug,Passengership,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker+Tug,Tanker,16
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker+Tug,Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker+Tug,Passengership+Tanker,57
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker+Tug,Passengership+Tug,14
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,10dB,Tanker+Tug,Tanker+Tug,108
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,E,E,200
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,E,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,E,Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,E,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,E,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,E,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,E,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership,Passengership,99
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership,Tanker,26
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership,Tug,19
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership,Passengership+Tanker,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership,Tanker+Tug,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker,Passengership,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker,Tanker,143
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker,Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker,Passengership+Tanker,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker,Tanker+Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tug,Passengership,26
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tug,Tanker,7
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tug,Tug,117
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tug,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tug,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tug,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tanker,Passengership,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tanker,Tanker,23
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tanker,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tanker,Passengership+Tanker,124
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tanker,Passengership+Tug,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tanker,Tanker+Tug,46
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tug,Passengership,10
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tug,Tanker,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tug,Tug,7
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tug,Passengership+Tanker,28
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tug,Passengership+Tug,109
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Passengership+Tug,Tanker+Tug,42
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker+Tug,Passengership,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker+Tug,Tanker,16
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker+Tug,Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker+Tug,Passengership+Tanker,56
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker+Tug,Passengership+Tug,14
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,5dB,Tanker+Tug,Tanker+Tug,110
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,E,E,200
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,E,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,E,Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,E,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,E,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,E,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,E,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership,Passengership,84
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership,Tanker,29
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership,Tug,24
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership,Passengership+Tanker,7
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership,Passengership+Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership,Tanker+Tug,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker,Passengership,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker,Tanker,132
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker,Tug,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker,Passengership+Tanker,7
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker,Tanker+Tug,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tug,Passengership,24
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tug,Tanker,13
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tug,Tug,113
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tug,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tug,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tug,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tanker,Passengership,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tanker,Tanker,23
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tanker,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tanker,Passengership+Tanker,132
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tanker,Passengership+Tug,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tanker,Tanker+Tug,39
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tug,Passengership,10
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tug,Tanker,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tug,Tug,8
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tug,Passengership+Tanker,45
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tug,Passengership+Tug,78
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Passengership+Tug,Tanker+Tug,56
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker+Tug,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker+Tug,Tanker,20
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker+Tug,Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker+Tug,Passengership+Tanker,64
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker+Tug,Passengership+Tug,11
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,0dB,Tanker+Tug,Tanker+Tug,103
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,E,E,200
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,E,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,E,Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,E,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,E,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,E,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,E,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership,Passengership,59
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership,Tanker,35
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership,Tug,25
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership,Passengership+Tanker,24
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership,Passengership+Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership,Tanker+Tug,6
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker,Passengership,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker,Tanker,114
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker,Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker,Passengership+Tanker,25
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker,Tanker+Tug,5
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tug,Passengership,35
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tug,Tanker,17
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tug,Tug,93
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tug,Passengership+Tanker,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tug,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tug,Tanker+Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tanker,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tanker,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tanker,Tanker,28
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tanker,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tanker,Passengership+Tanker,140
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tanker,Passengership+Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tanker,Tanker+Tug,30
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tug,Passengership,6
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tug,Tanker,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tug,Tug,9
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tug,Passengership+Tanker,71
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tug,Passengership+Tug,55
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Passengership+Tug,Tanker+Tug,55
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker+Tug,E,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker+Tug,Passengership,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker+Tug,Tanker,20
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker+Tug,Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker+Tug,Passengership+Tanker,97
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker+Tug,Passengership+Tug,7
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-5dB,Tanker+Tug,Tanker+Tug,72
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,E,E,200
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,E,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,E,Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,E,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,E,Passengership+Tanker,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,E,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,E,Tanker+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership,E,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership,Passengership,19
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership,Tanker,30
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership,Tug,12
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership,Passengership+Tanker,56
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership,Passengership+Tug,7
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership,Tanker+Tug,22
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker,E,6
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker,Tanker,80
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker,Tug,2
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker,Passengership+Tanker,53
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker,Passengership+Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker,Tanker+Tug,9
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tug,E,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tug,Passengership,22
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tug,Tanker,20
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tug,Tug,57
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tug,Passengership+Tanker,16
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tug,Passengership+Tug,19
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tug,Tanker+Tug,12
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tanker,E,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tanker,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tanker,Tanker,17
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tanker,Tug,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tanker,Passengership+Tanker,158
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tanker,Passengership+Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tanker,Tanker+Tug,21
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tug,E,5
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tug,Passengership,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tug,Tanker,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tug,Tug,3
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tug,Passengership+Tanker,95
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tug,Passengership+Tug,35
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Passengership+Tug,Tanker+Tug,58
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker+Tug,E,7
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker+Tug,Passengership,0
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker+Tug,Tanker,12
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker+Tug,Tug,1
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker+Tug,Passengership+Tanker,119
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker+Tug,Passengership+Tug,4
+DS-EXT-SFAC32-PTT-13,ShuffleFAC-32,Test,-10dB,Tanker+Tug,Tanker+Tug,57
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,E,E,200
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,E,Passengership,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,E,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,E,Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,E,Passengership+Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,E,Passengership+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,E,Tanker+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership,Passengership,63
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership,Tanker,24
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership,Tug,29
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership,Passengership+Tanker,5
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership,Passengership+Tug,23
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership,Tanker+Tug,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker,Passengership,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker,Tanker,123
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker,Tug,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker,Passengership+Tanker,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker,Passengership+Tug,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker,Tanker+Tug,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tug,Passengership,14
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tug,Tanker,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tug,Tug,114
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tug,Passengership+Tanker,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tug,Passengership+Tug,15
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tug,Tanker+Tug,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tanker,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tanker,Passengership,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tanker,Tanker,33
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tanker,Tug,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tanker,Passengership+Tanker,95
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tanker,Passengership+Tug,18
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tanker,Tanker+Tug,51
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tug,Passengership,5
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tug,Tanker,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tug,Tug,12
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tug,Passengership+Tanker,15
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tug,Passengership+Tug,130
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Passengership+Tug,Tanker+Tug,37
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker+Tug,Passengership,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker+Tug,Tanker,10
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker+Tug,Tug,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker+Tug,Passengership+Tanker,36
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker+Tug,Passengership+Tug,27
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,original,Tanker+Tug,Tanker+Tug,120
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,E,E,200
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,E,Passengership,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,E,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,E,Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,E,Passengership+Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,E,Passengership+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,E,Tanker+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership,Passengership,61
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership,Tanker,22
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership,Tug,32
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership,Passengership+Tanker,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership,Passengership+Tug,22
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership,Tanker+Tug,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker,E,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker,Passengership,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker,Tanker,121
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker,Tug,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker,Passengership+Tanker,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker,Passengership+Tug,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker,Tanker+Tug,5
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tug,Passengership,12
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tug,Tanker,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tug,Tug,115
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tug,Passengership+Tanker,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tug,Passengership+Tug,17
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tug,Tanker+Tug,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tanker,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tanker,Passengership,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tanker,Tanker,36
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tanker,Tug,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tanker,Passengership+Tanker,91
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tanker,Passengership+Tug,19
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tanker,Tanker+Tug,51
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tug,Passengership,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tug,Tanker,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tug,Tug,9
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tug,Passengership+Tanker,17
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tug,Passengership+Tug,132
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Passengership+Tug,Tanker+Tug,37
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker+Tug,Passengership,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker+Tug,Tanker,10
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker+Tug,Tug,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker+Tug,Passengership+Tanker,35
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker+Tug,Passengership+Tug,27
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,10dB,Tanker+Tug,Tanker+Tug,121
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,E,E,200
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,E,Passengership,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,E,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,E,Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,E,Passengership+Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,E,Passengership+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,E,Tanker+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership,E,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership,Passengership,64
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership,Tanker,22
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership,Tug,30
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership,Passengership+Tanker,8
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership,Passengership+Tug,17
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership,Tanker+Tug,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker,E,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker,Passengership,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker,Tanker,121
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker,Tug,8
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker,Passengership+Tanker,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker,Passengership+Tug,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker,Tanker+Tug,5
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tug,Passengership,12
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tug,Tanker,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tug,Tug,114
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tug,Passengership+Tanker,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tug,Passengership+Tug,17
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tug,Tanker+Tug,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tanker,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tanker,Passengership,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tanker,Tanker,35
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tanker,Tug,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tanker,Passengership+Tanker,92
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tanker,Passengership+Tug,16
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tanker,Tanker+Tug,54
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tug,Passengership,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tug,Tanker,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tug,Tug,9
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tug,Passengership+Tanker,20
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tug,Passengership+Tug,126
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Passengership+Tug,Tanker+Tug,38
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker+Tug,Passengership,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker+Tug,Tanker,12
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker+Tug,Tug,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker+Tug,Passengership+Tanker,36
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker+Tug,Passengership+Tug,25
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,5dB,Tanker+Tug,Tanker+Tug,121
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,E,E,200
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,E,Passengership,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,E,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,E,Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,E,Passengership+Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,E,Passengership+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,E,Tanker+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership,Passengership,59
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership,Tanker,25
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership,Tug,26
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership,Passengership+Tanker,10
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership,Passengership+Tug,23
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership,Tanker+Tug,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker,Passengership,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker,Tanker,119
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker,Tug,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker,Passengership+Tanker,10
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker,Passengership+Tug,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker,Tanker+Tug,5
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tug,E,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tug,Passengership,14
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tug,Tanker,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tug,Tug,103
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tug,Passengership+Tanker,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tug,Passengership+Tug,23
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tug,Tanker+Tug,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tanker,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tanker,Passengership,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tanker,Tanker,36
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tanker,Tug,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tanker,Passengership+Tanker,96
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tanker,Passengership+Tug,14
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tanker,Tanker+Tug,50
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tug,Passengership,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tug,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tug,Tug,9
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tug,Passengership+Tanker,33
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tug,Passengership+Tug,116
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Passengership+Tug,Tanker+Tug,35
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker+Tug,Passengership,5
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker+Tug,Tanker,14
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker+Tug,Tug,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker+Tug,Passengership+Tanker,54
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker+Tug,Passengership+Tug,21
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,0dB,Tanker+Tug,Tanker+Tug,105
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,E,E,200
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,E,Passengership,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,E,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,E,Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,E,Passengership+Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,E,Passengership+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,E,Tanker+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership,Passengership,57
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership,Tanker,23
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership,Tug,25
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership,Passengership+Tanker,10
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership,Passengership+Tug,25
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership,Tanker+Tug,10
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker,E,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker,Passengership,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker,Tanker,115
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker,Tug,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker,Passengership+Tanker,13
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker,Passengership+Tug,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker,Tanker+Tug,6
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tug,E,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tug,Passengership,13
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tug,Tanker,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tug,Tug,92
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tug,Passengership+Tanker,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tug,Passengership+Tug,32
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tug,Tanker+Tug,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tanker,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tanker,Passengership,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tanker,Tanker,40
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tanker,Tug,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tanker,Passengership+Tanker,105
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tanker,Passengership+Tug,18
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tanker,Tanker+Tug,33
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tug,Passengership,11
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tug,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tug,Tug,10
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tug,Passengership+Tanker,36
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tug,Passengership+Tug,105
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Passengership+Tug,Tanker+Tug,38
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker+Tug,Passengership,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker+Tug,Tanker,14
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker+Tug,Tug,5
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker+Tug,Passengership+Tanker,68
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker+Tug,Passengership+Tug,25
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-5dB,Tanker+Tug,Tanker+Tug,81
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,E,E,200
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,E,Passengership,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,E,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,E,Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,E,Passengership+Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,E,Passengership+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,E,Tanker+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership,E,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership,Passengership,36
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership,Tanker,21
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership,Tug,27
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership,Passengership+Tanker,11
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership,Passengership+Tug,49
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership,Tanker+Tug,5
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker,E,1
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker,Passengership,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker,Tanker,76
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker,Tug,16
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker,Passengership+Tanker,29
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker,Passengership+Tug,10
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker,Tanker+Tug,11
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tug,Passengership,7
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tug,Tanker,2
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tug,Tug,86
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tug,Passengership+Tanker,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tug,Passengership+Tug,52
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tug,Tanker+Tug,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tanker,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tanker,Passengership,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tanker,Tanker,29
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tanker,Tug,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tanker,Passengership+Tanker,87
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tanker,Passengership+Tug,44
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tanker,Tanker+Tug,33
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tug,Passengership,4
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tug,Tanker,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tug,Tug,22
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tug,Passengership+Tanker,19
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tug,Passengership+Tug,135
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Passengership+Tug,Tanker+Tug,20
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker+Tug,E,0
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker+Tug,Passengership,3
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker+Tug,Tanker,11
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker+Tug,Tug,14
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker+Tug,Passengership+Tanker,55
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker+Tug,Passengership+Tug,60
+DS-EXT-TRLA-PTT-13,TResNet-LA,Test,-10dB,Tanker+Tug,Tanker+Tug,57

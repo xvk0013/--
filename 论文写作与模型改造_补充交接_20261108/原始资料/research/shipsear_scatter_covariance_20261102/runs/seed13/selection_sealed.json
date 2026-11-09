@@ -1,0 +1,47 @@
+{
+  "selections": {
+    "C_diag": {
+      "epoch": 11,
+      "global_epoch": 62,
+      "score": [
+        1,
+        77.93427230046947,
+        83.50515463917526,
+        65.57262569832402,
+        71.36871508379889
+      ]
+    },
+    "C_cov": {
+      "epoch": 14,
+      "global_epoch": 65,
+      "score": [
+        1,
+        78.40375586854461,
+        84.02061855670104,
+        65.64245810055866,
+        71.22905027932961
+      ]
+    }
+  },
+  "checks": {
+    "original_single": true,
+    "original_acc": true,
+    "original_double": true,
+    "original_background": true,
+    "ten_acc": true,
+    "focus_acc": true,
+    "5dB_double": true,
+    "5dB_background": true,
+    "0dB_double": true,
+    "0dB_background": true,
+    "single_gain_vs_diag": false,
+    "retention_gain_vs_diag": false,
+    "acc_cost_vs_diag": true,
+    "single_gain_vs_plain": false,
+    "acc_cost_vs_plain": true,
+    "5dB_single_not_lower": false,
+    "0dB_single_not_lower": true
+  },
+  "task_passed": false,
+  "Test_policy": "Two selected checkpoints, all six Test conditions, no reselection."
+}

@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-11-07T21:27:57+08:00",
+  "train_rows": 2877,
+  "short_local_weights_updated": true,
+  "runs": {
+    "SE-Q0-ShortLocal-GN-Bilinear-13": {
+      "loss": {
+        "loss": 1.920695424079895,
+        "set_loss": 1.8273515701293945,
+        "count_loss": 0.9334384202957153
+      },
+      "first_batch_seconds": 1.6681308997794986,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ],
+        [
+          32,
+          1600
+        ],
+        [
+          32,
+          1,
+          128,
+          663
+        ]
+      ],
+      "condition_counts": {
+        "original": 13,
+        "10dB": 4,
+        "5dB": 5,
+        "0dB": 6,
+        "-5dB": 1,
+        "-10dB": 3
+      },
+      "restored_update_exact": true,
+      "cat_initial_state_and_logits_exact": true,
+      "bilinear_projection_updated": true
+    }
+  }
+}

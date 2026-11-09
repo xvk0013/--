@@ -1,0 +1,2793 @@
+{
+  "config": {
+    "data_root": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_mb_train_val_20261104\\data",
+    "sample_rate": 16000,
+    "duration_seconds": 5,
+    "scattering": {
+      "J": 10,
+      "Q": 8,
+      "max_order": 2
+    },
+    "spectral_scattering": {
+      "J": 2,
+      "L": 4,
+      "max_order": 2,
+      "summary_grid": [
+        8,
+        4
+      ],
+      "include_zeroth_order": true,
+      "subbatch": 8
+    },
+    "model": {
+      "n_blocks": 3,
+      "d_block": 256,
+      "k": 32,
+      "dropout": 0.15
+    },
+    "batch_size": 32,
+    "evaluation_batch_size": 64,
+    "representation": {
+      "long_fft": 8192,
+      "long_hop": 1024,
+      "short_fft": 2048,
+      "short_hop": 256,
+      "frequency_range_hz": [
+        0,
+        4000
+      ]
+    },
+    "protocol_id": "multitarget-formal-v1",
+    "first_run_id": "SE-F-13",
+    "dataset_version": "shipsear_mb21_33_train_27_50_val_20261104",
+    "split_sizes": {
+      "Train": 2877,
+      "Val": 719,
+      "Test": 877
+    },
+    "index_file": "DATA_INDEX.csv",
+    "set_names": [
+      "E",
+      "PF",
+      "MB",
+      "RV",
+      "PF+MB",
+      "PF+RV",
+      "MB+RV"
+    ],
+    "count_map": [
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    "class_loss_budgets": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "seed": 13,
+    "training_seeds": [
+      13,
+      42
+    ],
+    "evaluation_noise_seed": 13,
+    "evaluation_conditions": [
+      "original",
+      "10dB",
+      "5dB",
+      "0dB",
+      "-5dB",
+      "-10dB"
+    ],
+    "noise_probabilities": [
+      0.5,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "waveform_view": "stored",
+    "noise": {
+      "type": "AWGN",
+      "target_power_reference": "mean_square_stored_waveform",
+      "background_rms_reference": 0.05,
+      "noisy_output_rms": 0.05
+    },
+    "initialization": "frozen_gn_cat_with_zero_output_state_scorer",
+    "normalization": {
+      "split": "Train",
+      "condition": "original",
+      "std_floor": 1e-06
+    },
+    "optimizer": "AdamW",
+    "classifier_lr": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "count_marginal_weight": 0.1,
+    "min_epochs": 40,
+    "max_epochs": 80,
+    "validation_every_epochs": 1,
+    "patience_epochs": 10,
+    "early_stop_min_delta_pp": 0.2,
+    "validation_rank": [
+      "six_condition_single_double_balance",
+      "six_condition_acc_mean",
+      "min_six_condition_single_double_means",
+      "original_acc"
+    ],
+    "exact_tie": "earlier_epoch",
+    "first_eligible_epoch": 1,
+    "reference_only": {
+      "GN-CAT": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\runs\\SE-ABL-ShortLocal-GN-CAT-13"
+    },
+    "experiment_id": "SE-TemporalPaths-CAT-13",
+    "runtime": {
+      "device": "NVIDIA GeForce RTX 5090",
+      "torch": "2.9.0+cu128",
+      "cuda": "12.8",
+      "numpy": "2.1.2",
+      "python": "C:\\Users\\Admin\\anaconda3\\envs\\zpfenv1\\python.exe"
+    },
+    "decision_arm": "Q0",
+    "recording_swap": "mb_train_val",
+    "short_local": {
+      "window_length": 480,
+      "hop_length": 120,
+      "n_fft": 1024,
+      "mel_bins": 128,
+      "width": 16
+    },
+    "short_normalization": "record",
+    "short_local_fusion": "concat",
+    "reference_id": "SE-ABL-ShortLocal-GN-CAT-13",
+    "temporal_paths": {
+      "width": 128,
+      "epochs": 20,
+      "change_cost": {
+        "transition": 0.6931471805599453,
+        "independent": 0.0
+      }
+    }
+  },
+  "arms": {
+    "transition": {
+      "selection": {
+        "arm": "transition",
+        "epoch": 19,
+        "score": [
+          65.87577160493827,
+          63.861845155308295,
+          54.66820987654321,
+          71.07093184979138
+        ],
+        "epochs_trained": 20,
+        "sealed_at": "2026-11-09T15:50:01+08:00",
+        "Val": {
+          "original": {
+            "n": 719,
+            "acc": 71.07093184979138,
+            "single_acc": 87.03703703703704,
+            "double_acc": 61.111111111111114,
+            "noise_acc": 83.09859154929578,
+            "count_acc": 87.76077885952712,
+            "single_to_double": 7,
+            "double_to_single": 69,
+            "single_to_background": 0,
+            "double_to_background": 0,
+            "single_type_errors": 21,
+            "double_pair_errors": 99,
+            "confusion": [
+              [
+                59,
+                2,
+                0,
+                0,
+                0,
+                10,
+                0
+              ],
+              [
+                0,
+                162,
+                2,
+                2,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                14,
+                21,
+                3,
+                2,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                30,
+                3,
+                2,
+                71,
+                25,
+                13
+              ],
+              [
+                0,
+                2,
+                0,
+                16,
+                3,
+                106,
+                17
+              ],
+              [
+                0,
+                0,
+                0,
+                16,
+                4,
+                37,
+                87
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                59,
+                2,
+                10
+              ],
+              [
+                0,
+                209,
+                7
+              ],
+              [
+                0,
+                69,
+                363
+              ]
+            ],
+            "double_C0_acc": 55.092592592592595,
+            "double_C1_acc": 62.96296296296296,
+            "double_C2_acc": 71.29629629629629,
+            "per_set_acc": {
+              "E": 83.09859154929578,
+              "PF": 96.42857142857143,
+              "MB": 50.0,
+              "RV": 83.33333333333334,
+              "PF+MB": 49.30555555555556,
+              "PF+RV": 73.61111111111111,
+              "MB+RV": 60.416666666666664
+            }
+          },
+          "10dB": {
+            "n": 719,
+            "acc": 66.48122392211405,
+            "single_acc": 85.64814814814815,
+            "double_acc": 54.39814814814815,
+            "noise_acc": 81.69014084507043,
+            "count_acc": 82.75382475660639,
+            "single_to_double": 15,
+            "double_to_single": 96,
+            "single_to_background": 0,
+            "double_to_background": 0,
+            "single_type_errors": 16,
+            "double_pair_errors": 101,
+            "confusion": [
+              [
+                58,
+                3,
+                0,
+                0,
+                3,
+                7,
+                0
+              ],
+              [
+                0,
+                157,
+                2,
+                1,
+                7,
+                1,
+                0
+              ],
+              [
+                0,
+                9,
+                23,
+                4,
+                1,
+                0,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                36,
+                6,
+                5,
+                57,
+                23,
+                17
+              ],
+              [
+                0,
+                6,
+                0,
+                19,
+                1,
+                105,
+                13
+              ],
+              [
+                0,
+                0,
+                0,
+                24,
+                4,
+                43,
+                73
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                58,
+                3,
+                10
+              ],
+              [
+                0,
+                201,
+                15
+              ],
+              [
+                0,
+                96,
+                336
+              ]
+            ],
+            "double_C0_acc": 45.370370370370374,
+            "double_C1_acc": 64.81481481481481,
+            "double_C2_acc": 62.03703703703704,
+            "per_set_acc": {
+              "E": 81.69014084507043,
+              "PF": 93.45238095238095,
+              "MB": 54.761904761904766,
+              "RV": 83.33333333333334,
+              "PF+MB": 39.58333333333333,
+              "PF+RV": 72.91666666666666,
+              "MB+RV": 50.69444444444444
+            }
+          },
+          "5dB": {
+            "n": 719,
+            "acc": 64.95132127955495,
+            "single_acc": 81.48148148148148,
+            "double_acc": 53.93518518518518,
+            "noise_acc": 81.69014084507043,
+            "count_acc": 80.94575799721837,
+            "single_to_double": 20,
+            "double_to_single": 103,
+            "single_to_background": 1,
+            "double_to_background": 0,
+            "single_type_errors": 19,
+            "double_pair_errors": 96,
+            "confusion": [
+              [
+                58,
+                3,
+                0,
+                0,
+                3,
+                6,
+                1
+              ],
+              [
+                1,
+                150,
+                1,
+                3,
+                10,
+                2,
+                1
+              ],
+              [
+                0,
+                10,
+                21,
+                5,
+                1,
+                0,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                37,
+                5,
+                5,
+                58,
+                21,
+                18
+              ],
+              [
+                0,
+                5,
+                0,
+                21,
+                2,
+                103,
+                13
+              ],
+              [
+                0,
+                1,
+                0,
+                29,
+                3,
+                39,
+                72
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                58,
+                3,
+                10
+              ],
+              [
+                1,
+                195,
+                20
+              ],
+              [
+                0,
+                103,
+                329
+              ]
+            ],
+            "double_C0_acc": 43.51851851851852,
+            "double_C1_acc": 66.66666666666666,
+            "double_C2_acc": 62.03703703703704,
+            "per_set_acc": {
+              "E": 81.69014084507043,
+              "PF": 89.28571428571429,
+              "MB": 50.0,
+              "RV": 83.33333333333334,
+              "PF+MB": 40.27777777777778,
+              "PF+RV": 71.52777777777779,
+              "MB+RV": 50.0
+            }
+          },
+          "0dB": {
+            "n": 719,
+            "acc": 63.97774687065368,
+            "single_acc": 76.38888888888889,
+            "double_acc": 54.861111111111114,
+            "noise_acc": 81.69014084507043,
+            "count_acc": 80.66759388038943,
+            "single_to_double": 26,
+            "double_to_single": 98,
+            "single_to_background": 2,
+            "double_to_background": 0,
+            "single_type_errors": 23,
+            "double_pair_errors": 97,
+            "confusion": [
+              [
+                58,
+                3,
+                0,
+                0,
+                4,
+                5,
+                1
+              ],
+              [
+                2,
+                140,
+                1,
+                5,
+                12,
+                5,
+                3
+              ],
+              [
+                0,
+                11,
+                20,
+                6,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                35,
+                6,
+                5,
+                58,
+                20,
+                20
+              ],
+              [
+                0,
+                1,
+                0,
+                22,
+                2,
+                103,
+                16
+              ],
+              [
+                0,
+                0,
+                1,
+                28,
+                3,
+                36,
+                76
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                58,
+                3,
+                10
+              ],
+              [
+                2,
+                188,
+                26
+              ],
+              [
+                0,
+                98,
+                334
+              ]
+            ],
+            "double_C0_acc": 43.51851851851852,
+            "double_C1_acc": 69.44444444444444,
+            "double_C2_acc": 62.96296296296296,
+            "per_set_acc": {
+              "E": 81.69014084507043,
+              "PF": 83.33333333333334,
+              "MB": 47.61904761904761,
+              "RV": 83.33333333333334,
+              "PF+MB": 40.27777777777778,
+              "PF+RV": 71.52777777777779,
+              "MB+RV": 52.77777777777778
+            }
+          },
+          "-5dB": {
+            "n": 719,
+            "acc": 61.19610570236439,
+            "single_acc": 71.75925925925925,
+            "double_acc": 52.31481481481482,
+            "noise_acc": 83.09859154929578,
+            "count_acc": 77.88595271210013,
+            "single_to_double": 35,
+            "double_to_single": 108,
+            "single_to_background": 3,
+            "double_to_background": 1,
+            "single_type_errors": 23,
+            "double_pair_errors": 97,
+            "confusion": [
+              [
+                59,
+                2,
+                0,
+                0,
+                4,
+                6,
+                0
+              ],
+              [
+                3,
+                130,
+                2,
+                3,
+                17,
+                10,
+                3
+              ],
+              [
+                0,
+                11,
+                20,
+                7,
+                0,
+                2,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                33,
+                12,
+                9,
+                56,
+                20,
+                14
+              ],
+              [
+                1,
+                3,
+                0,
+                26,
+                5,
+                94,
+                15
+              ],
+              [
+                0,
+                0,
+                3,
+                22,
+                4,
+                39,
+                76
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                59,
+                2,
+                10
+              ],
+              [
+                3,
+                178,
+                35
+              ],
+              [
+                1,
+                108,
+                323
+              ]
+            ],
+            "double_C0_acc": 40.74074074074074,
+            "double_C1_acc": 63.888888888888886,
+            "double_C2_acc": 63.888888888888886,
+            "per_set_acc": {
+              "E": 83.09859154929578,
+              "PF": 77.38095238095238,
+              "MB": 47.61904761904761,
+              "RV": 83.33333333333334,
+              "PF+MB": 38.88888888888889,
+              "PF+RV": 65.27777777777779,
+              "MB+RV": 52.77777777777778
+            }
+          },
+          "-10dB": {
+            "n": 719,
+            "acc": 55.493741307371344,
+            "single_acc": 60.18518518518518,
+            "double_acc": 51.388888888888886,
+            "noise_acc": 66.19718309859155,
+            "count_acc": 77.05146036161335,
+            "single_to_double": 58,
+            "double_to_single": 73,
+            "single_to_background": 6,
+            "double_to_background": 4,
+            "single_type_errors": 22,
+            "double_pair_errors": 133,
+            "confusion": [
+              [
+                47,
+                12,
+                0,
+                0,
+                7,
+                5,
+                0
+              ],
+              [
+                4,
+                106,
+                10,
+                2,
+                28,
+                14,
+                4
+              ],
+              [
+                2,
+                8,
+                20,
+                2,
+                2,
+                3,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                28,
+                17,
+                2,
+                59,
+                25,
+                12
+              ],
+              [
+                1,
+                8,
+                0,
+                3,
+                11,
+                98,
+                23
+              ],
+              [
+                2,
+                4,
+                4,
+                7,
+                16,
+                46,
+                65
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                47,
+                12,
+                12
+              ],
+              [
+                6,
+                152,
+                58
+              ],
+              [
+                4,
+                73,
+                355
+              ]
+            ],
+            "double_C0_acc": 44.44444444444444,
+            "double_C1_acc": 62.96296296296296,
+            "double_C2_acc": 53.70370370370371,
+            "per_set_acc": {
+              "E": 66.19718309859155,
+              "PF": 63.095238095238095,
+              "MB": 47.61904761904761,
+              "RV": 66.66666666666666,
+              "PF+MB": 40.97222222222222,
+              "PF+RV": 68.05555555555556,
+              "MB+RV": 45.13888888888889
+            }
+          }
+        },
+        "parameters": 248839
+      },
+      "Test": {
+        "original": {
+          "n": 877,
+          "acc": 86.65906499429875,
+          "single_acc": 91.6030534351145,
+          "double_acc": 82.00757575757575,
+          "noise_acc": 100.0,
+          "count_acc": 94.18472063854047,
+          "single_to_double": 13,
+          "double_to_single": 38,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 9,
+          "double_pair_errors": 57,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              154,
+              1,
+              4,
+              8,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              13,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              73,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              23,
+              6,
+              0,
+              141,
+              4,
+              2
+            ],
+            [
+              0,
+              2,
+              0,
+              4,
+              5,
+              141,
+              24
+            ],
+            [
+              0,
+              1,
+              0,
+              2,
+              7,
+              15,
+              151
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              249,
+              13
+            ],
+            [
+              0,
+              38,
+              490
+            ]
+          ],
+          "double_C0_acc": 77.65151515151516,
+          "double_C1_acc": 81.81818181818183,
+          "double_C2_acc": 90.9090909090909,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 91.12426035502959,
+            "MB": 68.42105263157895,
+            "RV": 98.64864864864865,
+            "PF+MB": 80.11363636363636,
+            "PF+RV": 80.11363636363636,
+            "MB+RV": 85.79545454545455
+          }
+        },
+        "10dB": {
+          "n": 877,
+          "acc": 83.69441277080958,
+          "single_acc": 87.02290076335878,
+          "double_acc": 79.35606060606061,
+          "noise_acc": 100.0,
+          "count_acc": 92.8164196123147,
+          "single_to_double": 25,
+          "double_to_single": 38,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 9,
+          "double_pair_errors": 71,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              146,
+              1,
+              5,
+              13,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              15,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              67,
+              0,
+              5,
+              1
+            ],
+            [
+              0,
+              22,
+              5,
+              0,
+              141,
+              4,
+              4
+            ],
+            [
+              0,
+              2,
+              0,
+              9,
+              6,
+              141,
+              18
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              31,
+              137
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              237,
+              25
+            ],
+            [
+              0,
+              38,
+              490
+            ]
+          ],
+          "double_C0_acc": 71.5909090909091,
+          "double_C1_acc": 84.0909090909091,
+          "double_C2_acc": 90.15151515151516,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 86.3905325443787,
+            "MB": 78.94736842105263,
+            "RV": 90.54054054054053,
+            "PF+MB": 80.11363636363636,
+            "PF+RV": 80.11363636363636,
+            "MB+RV": 77.8409090909091
+          }
+        },
+        "5dB": {
+          "n": 877,
+          "acc": 81.41391106043329,
+          "single_acc": 85.1145038167939,
+          "double_acc": 76.51515151515152,
+          "noise_acc": 100.0,
+          "count_acc": 91.56214367160776,
+          "single_to_double": 28,
+          "double_to_single": 46,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 11,
+          "double_pair_errors": 78,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              139,
+              2,
+              5,
+              16,
+              6,
+              1
+            ],
+            [
+              0,
+              3,
+              14,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              70,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              22,
+              7,
+              0,
+              138,
+              5,
+              4
+            ],
+            [
+              0,
+              3,
+              0,
+              11,
+              3,
+              137,
+              22
+            ],
+            [
+              0,
+              0,
+              0,
+              3,
+              7,
+              37,
+              129
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              234,
+              28
+            ],
+            [
+              0,
+              46,
+              482
+            ]
+          ],
+          "double_C0_acc": 69.31818181818183,
+          "double_C1_acc": 81.81818181818183,
+          "double_C2_acc": 85.60606060606061,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 82.24852071005917,
+            "MB": 73.68421052631578,
+            "RV": 94.5945945945946,
+            "PF+MB": 78.4090909090909,
+            "PF+RV": 77.8409090909091,
+            "MB+RV": 73.29545454545455
+          }
+        },
+        "0dB": {
+          "n": 877,
+          "acc": 76.51083238312428,
+          "single_acc": 80.53435114503816,
+          "double_acc": 70.64393939393939,
+          "noise_acc": 100.0,
+          "count_acc": 89.50969213226911,
+          "single_to_double": 32,
+          "double_to_single": 60,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 19,
+          "double_pair_errors": 95,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              130,
+              5,
+              9,
+              18,
+              7,
+              0
+            ],
+            [
+              0,
+              4,
+              12,
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              69,
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              24,
+              10,
+              0,
+              129,
+              6,
+              7
+            ],
+            [
+              0,
+              4,
+              0,
+              13,
+              4,
+              130,
+              25
+            ],
+            [
+              0,
+              0,
+              0,
+              9,
+              7,
+              46,
+              114
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              230,
+              32
+            ],
+            [
+              0,
+              60,
+              468
+            ]
+          ],
+          "double_C0_acc": 62.121212121212125,
+          "double_C1_acc": 77.27272727272727,
+          "double_C2_acc": 81.06060606060606,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 76.92307692307693,
+            "MB": 63.1578947368421,
+            "RV": 93.24324324324324,
+            "PF+MB": 73.29545454545455,
+            "PF+RV": 73.86363636363636,
+            "MB+RV": 64.77272727272727
+          }
+        },
+        "-5dB": {
+          "n": 877,
+          "acc": 70.69555302166476,
+          "single_acc": 72.90076335877863,
+          "double_acc": 64.77272727272727,
+          "noise_acc": 100.0,
+          "count_acc": 86.20296465222349,
+          "single_to_double": 52,
+          "double_to_single": 69,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 19,
+          "double_pair_errors": 117,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              113,
+              9,
+              5,
+              27,
+              12,
+              3
+            ],
+            [
+              0,
+              4,
+              12,
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              66,
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              26,
+              15,
+              1,
+              119,
+              9,
+              6
+            ],
+            [
+              0,
+              1,
+              0,
+              17,
+              8,
+              131,
+              19
+            ],
+            [
+              0,
+              0,
+              0,
+              9,
+              8,
+              67,
+              92
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              210,
+              52
+            ],
+            [
+              0,
+              69,
+              459
+            ]
+          ],
+          "double_C0_acc": 56.439393939393945,
+          "double_C1_acc": 71.21212121212122,
+          "double_C2_acc": 75.0,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 66.86390532544378,
+            "MB": 63.1578947368421,
+            "RV": 89.1891891891892,
+            "PF+MB": 67.61363636363636,
+            "PF+RV": 74.43181818181817,
+            "MB+RV": 52.27272727272727
+          }
+        },
+        "-10dB": {
+          "n": 877,
+          "acc": 56.442417331813,
+          "single_acc": 53.05343511450382,
+          "double_acc": 50.9469696969697,
+          "noise_acc": 100.0,
+          "count_acc": 77.08095781071836,
+          "single_to_double": 106,
+          "double_to_single": 86,
+          "single_to_background": 3,
+          "double_to_background": 6,
+          "single_type_errors": 14,
+          "double_pair_errors": 167,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              95,
+              7,
+              0,
+              43,
+              17,
+              5
+            ],
+            [
+              1,
+              5,
+              7,
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              37,
+              0,
+              25,
+              10
+            ],
+            [
+              3,
+              43,
+              13,
+              0,
+              101,
+              12,
+              4
+            ],
+            [
+              1,
+              10,
+              0,
+              5,
+              20,
+              115,
+              25
+            ],
+            [
+              2,
+              5,
+              2,
+              8,
+              24,
+              82,
+              53
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              3,
+              153,
+              106
+            ],
+            [
+              6,
+              86,
+              436
+            ]
+          ],
+          "double_C0_acc": 43.93939393939394,
+          "double_C1_acc": 53.78787878787878,
+          "double_C2_acc": 62.121212121212125,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 56.213017751479285,
+            "MB": 36.84210526315789,
+            "RV": 50.0,
+            "PF+MB": 57.38636363636363,
+            "PF+RV": 65.3409090909091,
+            "MB+RV": 30.113636363636363
+          }
+        }
+      }
+    },
+    "independent": {
+      "selection": {
+        "arm": "independent",
+        "epoch": 19,
+        "score": [
+          66.06867283950618,
+          64.09364858599908,
+          55.13117283950618,
+          71.07093184979138
+        ],
+        "epochs_trained": 20,
+        "sealed_at": "2026-11-09T15:50:01+08:00",
+        "Val": {
+          "original": {
+            "n": 719,
+            "acc": 71.07093184979138,
+            "single_acc": 87.03703703703704,
+            "double_acc": 61.111111111111114,
+            "noise_acc": 83.09859154929578,
+            "count_acc": 87.76077885952712,
+            "single_to_double": 7,
+            "double_to_single": 69,
+            "single_to_background": 0,
+            "double_to_background": 0,
+            "single_type_errors": 21,
+            "double_pair_errors": 99,
+            "confusion": [
+              [
+                59,
+                2,
+                0,
+                0,
+                1,
+                9,
+                0
+              ],
+              [
+                0,
+                162,
+                2,
+                2,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                14,
+                21,
+                3,
+                2,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                30,
+                3,
+                2,
+                71,
+                25,
+                13
+              ],
+              [
+                0,
+                2,
+                0,
+                16,
+                4,
+                105,
+                17
+              ],
+              [
+                0,
+                0,
+                0,
+                16,
+                4,
+                36,
+                88
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                59,
+                2,
+                10
+              ],
+              [
+                0,
+                209,
+                7
+              ],
+              [
+                0,
+                69,
+                363
+              ]
+            ],
+            "double_C0_acc": 55.55555555555556,
+            "double_C1_acc": 62.96296296296296,
+            "double_C2_acc": 70.37037037037037,
+            "per_set_acc": {
+              "E": 83.09859154929578,
+              "PF": 96.42857142857143,
+              "MB": 50.0,
+              "RV": 83.33333333333334,
+              "PF+MB": 49.30555555555556,
+              "PF+RV": 72.91666666666666,
+              "MB+RV": 61.111111111111114
+            }
+          },
+          "10dB": {
+            "n": 719,
+            "acc": 66.20305980528511,
+            "single_acc": 85.64814814814815,
+            "double_acc": 53.93518518518518,
+            "noise_acc": 81.69014084507043,
+            "count_acc": 82.75382475660639,
+            "single_to_double": 15,
+            "double_to_single": 96,
+            "single_to_background": 0,
+            "double_to_background": 0,
+            "single_type_errors": 16,
+            "double_pair_errors": 103,
+            "confusion": [
+              [
+                58,
+                3,
+                0,
+                0,
+                3,
+                7,
+                0
+              ],
+              [
+                0,
+                157,
+                2,
+                1,
+                7,
+                1,
+                0
+              ],
+              [
+                0,
+                9,
+                23,
+                4,
+                1,
+                0,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                36,
+                6,
+                5,
+                57,
+                24,
+                16
+              ],
+              [
+                0,
+                6,
+                0,
+                19,
+                2,
+                103,
+                14
+              ],
+              [
+                0,
+                0,
+                0,
+                24,
+                4,
+                43,
+                73
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                58,
+                3,
+                10
+              ],
+              [
+                0,
+                201,
+                15
+              ],
+              [
+                0,
+                96,
+                336
+              ]
+            ],
+            "double_C0_acc": 44.907407407407405,
+            "double_C1_acc": 64.81481481481481,
+            "double_C2_acc": 61.111111111111114,
+            "per_set_acc": {
+              "E": 81.69014084507043,
+              "PF": 93.45238095238095,
+              "MB": 54.761904761904766,
+              "RV": 83.33333333333334,
+              "PF+MB": 39.58333333333333,
+              "PF+RV": 71.52777777777779,
+              "MB+RV": 50.69444444444444
+            }
+          },
+          "5dB": {
+            "n": 719,
+            "acc": 65.5076495132128,
+            "single_acc": 82.4074074074074,
+            "double_acc": 54.39814814814815,
+            "noise_acc": 81.69014084507043,
+            "count_acc": 81.36300417246176,
+            "single_to_double": 19,
+            "double_to_single": 101,
+            "single_to_background": 1,
+            "double_to_background": 0,
+            "single_type_errors": 18,
+            "double_pair_errors": 96,
+            "confusion": [
+              [
+                58,
+                3,
+                0,
+                0,
+                3,
+                6,
+                1
+              ],
+              [
+                1,
+                152,
+                1,
+                2,
+                10,
+                1,
+                1
+              ],
+              [
+                0,
+                10,
+                21,
+                5,
+                1,
+                0,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                37,
+                4,
+                5,
+                59,
+                21,
+                18
+              ],
+              [
+                0,
+                4,
+                0,
+                21,
+                2,
+                104,
+                13
+              ],
+              [
+                0,
+                1,
+                0,
+                29,
+                3,
+                39,
+                72
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                58,
+                3,
+                10
+              ],
+              [
+                1,
+                196,
+                19
+              ],
+              [
+                0,
+                101,
+                331
+              ]
+            ],
+            "double_C0_acc": 44.44444444444444,
+            "double_C1_acc": 66.66666666666666,
+            "double_C2_acc": 62.03703703703704,
+            "per_set_acc": {
+              "E": 81.69014084507043,
+              "PF": 90.47619047619048,
+              "MB": 50.0,
+              "RV": 83.33333333333334,
+              "PF+MB": 40.97222222222222,
+              "PF+RV": 72.22222222222221,
+              "MB+RV": 50.0
+            }
+          },
+          "0dB": {
+            "n": 719,
+            "acc": 64.53407510431154,
+            "single_acc": 76.38888888888889,
+            "double_acc": 55.78703703703704,
+            "noise_acc": 81.69014084507043,
+            "count_acc": 81.08484005563282,
+            "single_to_double": 27,
+            "double_to_single": 94,
+            "single_to_background": 2,
+            "double_to_background": 0,
+            "single_type_errors": 22,
+            "double_pair_errors": 97,
+            "confusion": [
+              [
+                58,
+                3,
+                0,
+                0,
+                4,
+                5,
+                1
+              ],
+              [
+                2,
+                140,
+                1,
+                4,
+                12,
+                5,
+                4
+              ],
+              [
+                0,
+                11,
+                20,
+                6,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                35,
+                3,
+                5,
+                61,
+                20,
+                20
+              ],
+              [
+                0,
+                1,
+                0,
+                22,
+                2,
+                103,
+                16
+              ],
+              [
+                0,
+                0,
+                1,
+                27,
+                3,
+                36,
+                77
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                58,
+                3,
+                10
+              ],
+              [
+                2,
+                187,
+                27
+              ],
+              [
+                0,
+                94,
+                338
+              ]
+            ],
+            "double_C0_acc": 45.370370370370374,
+            "double_C1_acc": 69.44444444444444,
+            "double_C2_acc": 62.96296296296296,
+            "per_set_acc": {
+              "E": 81.69014084507043,
+              "PF": 83.33333333333334,
+              "MB": 47.61904761904761,
+              "RV": 83.33333333333334,
+              "PF+MB": 42.36111111111111,
+              "PF+RV": 71.52777777777779,
+              "MB+RV": 53.47222222222222
+            }
+          },
+          "-5dB": {
+            "n": 719,
+            "acc": 61.335187760778865,
+            "single_acc": 71.29629629629629,
+            "double_acc": 52.77777777777778,
+            "noise_acc": 83.09859154929578,
+            "count_acc": 78.30319888734353,
+            "single_to_double": 36,
+            "double_to_single": 104,
+            "single_to_background": 3,
+            "double_to_background": 1,
+            "single_type_errors": 23,
+            "double_pair_errors": 99,
+            "confusion": [
+              [
+                59,
+                2,
+                0,
+                0,
+                4,
+                6,
+                0
+              ],
+              [
+                3,
+                129,
+                2,
+                3,
+                18,
+                10,
+                3
+              ],
+              [
+                0,
+                11,
+                20,
+                7,
+                0,
+                2,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                32,
+                11,
+                9,
+                58,
+                20,
+                14
+              ],
+              [
+                1,
+                3,
+                0,
+                25,
+                5,
+                94,
+                16
+              ],
+              [
+                0,
+                0,
+                3,
+                21,
+                4,
+                40,
+                76
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                59,
+                2,
+                10
+              ],
+              [
+                3,
+                177,
+                36
+              ],
+              [
+                1,
+                104,
+                327
+              ]
+            ],
+            "double_C0_acc": 41.66666666666667,
+            "double_C1_acc": 63.888888888888886,
+            "double_C2_acc": 63.888888888888886,
+            "per_set_acc": {
+              "E": 83.09859154929578,
+              "PF": 76.78571428571429,
+              "MB": 47.61904761904761,
+              "RV": 83.33333333333334,
+              "PF+MB": 40.27777777777778,
+              "PF+RV": 65.27777777777779,
+              "MB+RV": 52.77777777777778
+            }
+          },
+          "-10dB": {
+            "n": 719,
+            "acc": 55.910987482614736,
+            "single_acc": 59.25925925925925,
+            "double_acc": 52.77777777777778,
+            "noise_acc": 64.7887323943662,
+            "count_acc": 77.32962447844228,
+            "single_to_double": 64,
+            "double_to_single": 64,
+            "single_to_background": 6,
+            "double_to_background": 4,
+            "single_type_errors": 18,
+            "double_pair_errors": 136,
+            "confusion": [
+              [
+                46,
+                13,
+                0,
+                0,
+                7,
+                5,
+                0
+              ],
+              [
+                4,
+                105,
+                8,
+                2,
+                32,
+                13,
+                4
+              ],
+              [
+                2,
+                7,
+                20,
+                1,
+                3,
+                3,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                1,
+                28,
+                11,
+                1,
+                65,
+                25,
+                13
+              ],
+              [
+                1,
+                8,
+                0,
+                2,
+                12,
+                99,
+                22
+              ],
+              [
+                2,
+                4,
+                4,
+                6,
+                17,
+                47,
+                64
+              ]
+            ],
+            "final_count_confusion": [
+              [
+                46,
+                13,
+                12
+              ],
+              [
+                6,
+                146,
+                64
+              ],
+              [
+                4,
+                64,
+                364
+              ]
+            ],
+            "double_C0_acc": 46.2962962962963,
+            "double_C1_acc": 62.03703703703704,
+            "double_C2_acc": 56.481481481481474,
+            "per_set_acc": {
+              "E": 64.7887323943662,
+              "PF": 62.5,
+              "MB": 47.61904761904761,
+              "RV": 50.0,
+              "PF+MB": 45.13888888888889,
+              "PF+RV": 68.75,
+              "MB+RV": 44.44444444444444
+            }
+          }
+        },
+        "parameters": 248839
+      },
+      "Test": {
+        "original": {
+          "n": 877,
+          "acc": 86.88711516533637,
+          "single_acc": 91.6030534351145,
+          "double_acc": 82.38636363636364,
+          "noise_acc": 100.0,
+          "count_acc": 94.18472063854047,
+          "single_to_double": 13,
+          "double_to_single": 38,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 9,
+          "double_pair_errors": 55,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              154,
+              1,
+              4,
+              8,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              13,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              73,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              22,
+              7,
+              0,
+              141,
+              4,
+              2
+            ],
+            [
+              0,
+              2,
+              0,
+              4,
+              5,
+              141,
+              24
+            ],
+            [
+              0,
+              1,
+              0,
+              2,
+              6,
+              14,
+              153
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              249,
+              13
+            ],
+            [
+              0,
+              38,
+              490
+            ]
+          ],
+          "double_C0_acc": 78.4090909090909,
+          "double_C1_acc": 81.81818181818183,
+          "double_C2_acc": 90.9090909090909,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 91.12426035502959,
+            "MB": 68.42105263157895,
+            "RV": 98.64864864864865,
+            "PF+MB": 80.11363636363636,
+            "PF+RV": 80.11363636363636,
+            "MB+RV": 86.93181818181817
+          }
+        },
+        "10dB": {
+          "n": 877,
+          "acc": 83.80843785632838,
+          "single_acc": 86.64122137404581,
+          "double_acc": 79.73484848484848,
+          "noise_acc": 100.0,
+          "count_acc": 92.7023945267959,
+          "single_to_double": 26,
+          "double_to_single": 38,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 9,
+          "double_pair_errors": 69,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              145,
+              1,
+              5,
+              14,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              15,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              67,
+              0,
+              5,
+              1
+            ],
+            [
+              0,
+              22,
+              5,
+              0,
+              141,
+              4,
+              4
+            ],
+            [
+              0,
+              2,
+              0,
+              9,
+              6,
+              141,
+              18
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              29,
+              139
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              236,
+              26
+            ],
+            [
+              0,
+              38,
+              490
+            ]
+          ],
+          "double_C0_acc": 71.96969696969697,
+          "double_C1_acc": 84.84848484848484,
+          "double_C2_acc": 90.15151515151516,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 85.79881656804734,
+            "MB": 78.94736842105263,
+            "RV": 90.54054054054053,
+            "PF+MB": 80.11363636363636,
+            "PF+RV": 80.11363636363636,
+            "MB+RV": 78.97727272727273
+          }
+        },
+        "5dB": {
+          "n": 877,
+          "acc": 81.18586088939567,
+          "single_acc": 84.7328244274809,
+          "double_acc": 76.32575757575758,
+          "noise_acc": 100.0,
+          "count_acc": 91.67616875712656,
+          "single_to_double": 28,
+          "double_to_single": 45,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 12,
+          "double_pair_errors": 80,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              138,
+              2,
+              6,
+              16,
+              6,
+              1
+            ],
+            [
+              0,
+              3,
+              14,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              70,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              22,
+              7,
+              0,
+              138,
+              5,
+              4
+            ],
+            [
+              0,
+              3,
+              0,
+              10,
+              3,
+              136,
+              24
+            ],
+            [
+              0,
+              0,
+              0,
+              3,
+              7,
+              37,
+              129
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              234,
+              28
+            ],
+            [
+              0,
+              45,
+              483
+            ]
+          ],
+          "double_C0_acc": 68.93939393939394,
+          "double_C1_acc": 81.81818181818183,
+          "double_C2_acc": 85.60606060606061,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 81.65680473372781,
+            "MB": 73.68421052631578,
+            "RV": 94.5945945945946,
+            "PF+MB": 78.4090909090909,
+            "PF+RV": 77.27272727272727,
+            "MB+RV": 73.29545454545455
+          }
+        },
+        "0dB": {
+          "n": 877,
+          "acc": 76.51083238312428,
+          "single_acc": 80.1526717557252,
+          "double_acc": 70.83333333333334,
+          "noise_acc": 100.0,
+          "count_acc": 89.39566704675028,
+          "single_to_double": 34,
+          "double_to_single": 59,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 18,
+          "double_pair_errors": 95,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              130,
+              4,
+              9,
+              19,
+              7,
+              0
+            ],
+            [
+              0,
+              4,
+              12,
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              68,
+              0,
+              4,
+              1
+            ],
+            [
+              0,
+              23,
+              10,
+              0,
+              130,
+              6,
+              7
+            ],
+            [
+              0,
+              4,
+              0,
+              13,
+              4,
+              129,
+              26
+            ],
+            [
+              0,
+              0,
+              0,
+              9,
+              7,
+              45,
+              115
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              228,
+              34
+            ],
+            [
+              0,
+              59,
+              469
+            ]
+          ],
+          "double_C0_acc": 62.5,
+          "double_C1_acc": 77.27272727272727,
+          "double_C2_acc": 81.06060606060606,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 76.92307692307693,
+            "MB": 63.1578947368421,
+            "RV": 91.8918918918919,
+            "PF+MB": 73.86363636363636,
+            "PF+RV": 73.29545454545455,
+            "MB+RV": 65.3409090909091
+          }
+        },
+        "-5dB": {
+          "n": 877,
+          "acc": 71.60775370581528,
+          "single_acc": 72.51908396946564,
+          "double_acc": 66.47727272727273,
+          "noise_acc": 100.0,
+          "count_acc": 87.00114025085519,
+          "single_to_double": 53,
+          "double_to_single": 61,
+          "single_to_background": 0,
+          "double_to_background": 0,
+          "single_type_errors": 19,
+          "double_pair_errors": 116,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              112,
+              9,
+              5,
+              28,
+              12,
+              3
+            ],
+            [
+              0,
+              4,
+              12,
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              66,
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              25,
+              13,
+              1,
+              123,
+              8,
+              6
+            ],
+            [
+              0,
+              1,
+              0,
+              13,
+              8,
+              135,
+              19
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              8,
+              67,
+              93
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              0,
+              209,
+              53
+            ],
+            [
+              0,
+              61,
+              467
+            ]
+          ],
+          "double_C0_acc": 58.71212121212122,
+          "double_C1_acc": 72.72727272727273,
+          "double_C2_acc": 75.75757575757575,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 66.27218934911244,
+            "MB": 63.1578947368421,
+            "RV": 89.1891891891892,
+            "PF+MB": 69.88636363636364,
+            "PF+RV": 76.70454545454545,
+            "MB+RV": 52.84090909090909
+          }
+        },
+        "-10dB": {
+          "n": 877,
+          "acc": 55.872291904218926,
+          "single_acc": 50.76335877862596,
+          "double_acc": 51.13636363636363,
+          "noise_acc": 100.0,
+          "count_acc": 77.19498289623718,
+          "single_to_double": 111,
+          "double_to_single": 80,
+          "single_to_background": 3,
+          "double_to_background": 6,
+          "single_type_errors": 15,
+          "double_pair_errors": 172,
+          "confusion": [
+            [
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              95,
+              7,
+              0,
+              44,
+              16,
+              5
+            ],
+            [
+              1,
+              5,
+              6,
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              32,
+              0,
+              30,
+              9
+            ],
+            [
+              3,
+              45,
+              10,
+              0,
+              103,
+              12,
+              3
+            ],
+            [
+              1,
+              10,
+              0,
+              3,
+              20,
+              116,
+              26
+            ],
+            [
+              2,
+              5,
+              2,
+              5,
+              25,
+              86,
+              51
+            ]
+          ],
+          "final_count_confusion": [
+            [
+              87,
+              0,
+              0
+            ],
+            [
+              3,
+              148,
+              111
+            ],
+            [
+              6,
+              80,
+              442
+            ]
+          ],
+          "double_C0_acc": 44.696969696969695,
+          "double_C1_acc": 53.78787878787878,
+          "double_C2_acc": 61.36363636363637,
+          "per_set_acc": {
+            "E": 100.0,
+            "PF": 56.213017751479285,
+            "MB": 31.57894736842105,
+            "RV": 43.24324324324324,
+            "PF+MB": 58.52272727272727,
+            "PF+RV": 65.9090909090909,
+            "MB+RV": 28.97727272727273
+          }
+        }
+      }
+    }
+  }
+}

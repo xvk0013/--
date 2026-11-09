@@ -1,0 +1,98 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "representation": {
+    "long_fft": 8192,
+    "long_hop": 1024,
+    "short_fft": 2048,
+    "short_hop": 256,
+    "frequency_range_hz": [
+      0,
+      4000
+    ],
+    "channels": [
+      16,
+      32,
+      64
+    ],
+    "summary_grid": [
+      8,
+      4
+    ],
+    "summary_statistics": [
+      "mean",
+      "std"
+    ],
+    "per_resolution_output": 256,
+    "candidate_neural_output": 512,
+    "frequency_kernel": 5,
+    "time_kernel": 5
+  },
+  "replacement_kernel": 7,
+  "ffn_ratio": 2.0,
+  "ffn_dropout": 0.0,
+  "arms": [
+    "F0M0",
+    "F0M1",
+    "F1M0",
+    "F1M1"
+  ],
+  "compact_model_file": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\model.py",
+  "adaptation_checkpoint": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\weights\\current.pt",
+  "baseline_results_directory": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\训练来源与复现\\research\\shipsear_short_tfblocks_20261030\\runs\\seed13",
+  "baseline_arm": "T1_l1_tfblocks",
+  "max_epochs": 60,
+  "min_epochs": 20,
+  "joint_patience": 10,
+  "classifier_lr": 0.0003,
+  "count_readout_lr": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "noise_probabilities": [
+    0.5,
+    0.25,
+    0.1,
+    0.15,
+    0.0,
+    0.0
+  ],
+  "selection_conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB"
+  ],
+  "spectral_scattering": {
+    "J": 2,
+    "L": 4,
+    "max_order": 2,
+    "summary_grid": [
+      8,
+      4
+    ],
+    "include_zeroth_order": true,
+    "subbatch": 8,
+    "input": "Current T1 native long/short logpower float16->float32, no resizing, fixed coefficients, all paths mean/std spatial grid"
+  },
+  "selection": "0.5*original Val group_macro +0.5*mean(10dB,0dB Val group_macro); tie mean10/0ACC then originalACC; actual trained checkpoints only, epoch0 reference not fallback",
+  "training": "Four fresh public networks, semantically common weights identical; source T1 feature encoder frozen and eval F0, fixed spectral2D F1. Same waveforms/epoch noise/order/dropout, original50/10dB25/5dB10/0dB15. Raw Single no envelope; noisy Single retains existing envelope. No weakSNR training/select; no newauxheads.",
+  "initialization": "No pretrained public classifier weights. Source checkpoint used ONLY for frozen feature extraction and kept T1 reference. M0 retains coupled7set/count readout and same loss, removes cross interaction and gater only.",
+  "development_gain_pp": 1.0,
+  "development_tolerance_pp": 1.0
+}

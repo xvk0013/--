@@ -1,0 +1,61 @@
+{
+  "verified_at": "2026-11-03T16:59:50+08:00",
+  "train_rows": 2880,
+  "same_initial_weights_and_logits": true,
+  "runs": {
+    "SE-B-13": {
+      "loss": {
+        "loss": 2.0079872608184814,
+        "set_loss": 1.9177255630493164,
+        "count_loss": 0.9026169776916504
+      },
+      "first_batch_seconds": 1.652436800301075,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ],
+        [
+          32,
+          3200
+        ]
+      ],
+      "condition_counts": {
+        "original": 13,
+        "10dB": 2,
+        "5dB": 5,
+        "0dB": 4,
+        "-5dB": 3,
+        "-10dB": 5
+      },
+      "restored_update_exact": true
+    },
+    "SE-C-13": {
+      "loss": {
+        "loss": 2.0079872608184814,
+        "set_loss": 1.9177255630493164,
+        "count_loss": 0.9026169776916504
+      },
+      "first_batch_seconds": 0.1991312000900507,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ],
+        [
+          32,
+          3200
+        ]
+      ],
+      "condition_counts": {
+        "original": 13,
+        "10dB": 2,
+        "5dB": 5,
+        "0dB": 4,
+        "-5dB": 3,
+        "-10dB": 5
+      },
+      "restored_update_exact": true
+    }
+  }
+}

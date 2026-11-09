@@ -1,0 +1,338 @@
+[
+  {
+    "recording_id": "ShipsEar_6",
+    "name": "Mar de Cangas (Entering)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\nEntering port for docking.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_7",
+    "name": "Mar de Cangas (Waiting)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\n\nWaiting during passengers unloading.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_8",
+    "name": "Mar de Onza (Entering)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\nEntering the port for docking.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_9",
+    "name": "Mar de Onza (Waiting)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. \nQuite harbor noise.\nWaing for passengers loading.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_10",
+    "name": "Mar de Onza (Leaving)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\nShip leaves port.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_11",
+    "name": "Minho Uno (Entering)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\nEntering the port for docking.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_12",
+    "name": "Minho Uno (Leaving)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\nLeaving the port",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_13",
+    "name": "Pirata de Cies (Entering)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\nEntering the port for docking.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_14",
+    "name": "Pirata de Cies (Waiting)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\nWaiting for passengers loading",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_17",
+    "name": "Mar de Mouro (Entering)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "First series of recordings. There is not in situ wind speed measures. Quite harbor noise.\nEntering the port for docking.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_18",
+    "name": "Autopride (Entering)",
+    "original_vessel_type": "Ro-Ro",
+    "notes": "Recorded at Bouzas cove, at the end of the walk zone, in a place with rocks. Clear video, no apparent interferences.\nConsiderable rock noise.\nShip reaches the port.\n\nH2 saturated!",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_19",
+    "name": "Autopride(reverse)",
+    "original_vessel_type": "Ro-Ro",
+    "notes": "Recorded at Bouzas cove, at the end of the walk zone, in a place with rocks. Clear video, no apparent interferences.\nConsiderable rock noise.\nShip in reverse.\nH2 saturated!",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_20",
+    "name": "Autopride(preparing maneuver)",
+    "original_vessel_type": "Ro-Ro",
+    "notes": "Recorded at Bouzas cove, at the end of the walk zone, in a place with rocks. Clear video, no apparent interferences.\nConsiderable rock noise.\nShip prepares maneover for docking.\nH2 saturated!",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_21",
+    "name": "Motorboat",
+    "original_vessel_type": "Motorboat",
+    "notes": "Recorded at Bouzas cove, at the end of the walk zone, in a place with rocks. Clear video, no apparent interferences.\nConsiderable rock noise.\n\nH2 saturated!",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_26",
+    "name": "Motorboat",
+    "original_vessel_type": "Motorboat",
+    "notes": "Small background noise from ship \"Rio Caxil\", there's also some harbor noise,\nH2 saturated, only H1 was considerate.\n\nMotorboat passes, small signal.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_27",
+    "name": "Motorboat (close recording)",
+    "original_vessel_type": "Motorboat",
+    "notes": "Small background noise from ship \"Rio Caxil\", there's also some harbor noise,\nH2 saturated, only H1 was considerate.\n\nMotorboat start, good signal.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_32",
+    "name": "Arroios (arrives)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available\nArriving at port, Mar de Onza going out in the distance",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_33",
+    "name": "\"Duda\" (going out)",
+    "original_vessel_type": "Motorboat",
+    "notes": "Considerable harbour noise. \nH2 not available\n\nStart and stop of motorboat \"Duda\", good signal.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_34",
+    "name": "Mar de Onza (arrives)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available.\nMar de Onza arriving at port. Low signal, Minho uno in the distance.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_35",
+    "name": "Mar de Onza (going out)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nMar de Onza leaving port. Low signal. Arroios entering in the distance.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_36",
+    "name": "Minho uno (leaving)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nLow signal. Mar de Onza arriving in the distance.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_38",
+    "name": "Arroios",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nArroios leaves while Pirata de Cies and Mar de Ons arrive.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_39",
+    "name": "Motorboat \"Duda\" (arrives)",
+    "original_vessel_type": "Motorboat",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nMotorboat Duda arrives. Low signal.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_40",
+    "name": "Mar de Cangas (arrives, interference",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nMar de Cangas arrives followed by pirata de Cies. Arroios leaves in the distance.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_41",
+    "name": "Minho uno (arrives)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nMinho uno arrives at port, Pirata de Cies leaves in the distance. Low signal.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_42",
+    "name": "Pirata de Cies (leaves)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nPirata de Cies leaves after a reversal maneuver.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_43",
+    "name": "Pirata de Cies (arrives, interference)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nPirata de Cies arrives behind Mar de Cangas, Arrois leaves.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=0&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_45",
+    "name": "Yacht (leaves)",
+    "original_vessel_type": "Motorboat",
+    "notes": "Considerable harbour noise. \nH2 not available.\n\nUnidentified yacht leaving port. Low signal.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=1&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_50",
+    "name": "Motorboat1",
+    "original_vessel_type": "Motorboat",
+    "notes": "Zone 1 - in front of Moaña.\nRecording with better gain without clipping is presented. Other signals available.\n\nH3 signal, motorboat passes slow and relatively close.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_51",
+    "name": "Motorboat2 (interf)",
+    "original_vessel_type": "Motorboat",
+    "notes": "Zone 1 - in front of Moaña.\nRecording with better gain without clipping is presented. Other signals available.\nH3 signal. motoboat passes at high speed. Not always visible interferences from other ships.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_52",
+    "name": "Motorboat3 (interf)",
+    "original_vessel_type": "Motorboat",
+    "notes": "Zone 1 - in front of Moaña.\nRecording with better gain without clipping is presented. Other signals available.\n\nH3 signal, motorboat passes at high speed with interference from Mussel boat4.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_53",
+    "name": "Pirata de Salvora (arrives)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 1 - in front of Moaña.\nRecording with better gain without clipping is presented. Other signals available.\n\nH3 signal, recording of the port reaching including crossing speed and braking.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_54",
+    "name": "Pirata de Salvora (leaves)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 1 - in front of Moaña.\nRecording with better gain without clipping is presented. Other signals available.\nH3 signal, leaving the port. Less speed than the arrive.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_55",
+    "name": "Pirata de Salvora (leaves, 2nd take)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 1 - in front of Moaña.\nRecording with better gain without clipping is presented. Other signals available.\n\nH3 signal, leaving the port. Medium-close take.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_58",
+    "name": "Eimskip Reefer (interf)",
+    "original_vessel_type": "Ro-Ro",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\nSignal in H2, RORO passing with strong mussel boat interference.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_59",
+    "name": "Mar de Mouro (arrives)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H2, Marde Mouro sailing to port at considerable speed.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_60",
+    "name": "Mar de Cangas (arrives)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, at the beggining there's a far crossing with Mar de Onza. Arriving to port at considerable speed.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_61",
+    "name": "Mar de Cangas (leaves 2)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\nSignal in H3, leaving Cangas port.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_62",
+    "name": "Mar de Cangas (leaves)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, leaving Cangas port. This take is longer than the second one. At the en of the take there's a crossing with another ship but it seems to not interfere.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_63",
+    "name": "Mar de Onza (arrives)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, arriving to port.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_64",
+    "name": "Mar de Onza (leaves)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, leaving Cangas port.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_65",
+    "name": "Minho uno (arrives)",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, arriving to Cangas port.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_67",
+    "name": "Pirata de Cies",
+    "original_vessel_type": "Passenger ferry",
+    "notes": "Zone 2 - in front of Cangas. Choppy sea. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, Pirata de Cies sailing to Cies islands.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=2&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_70",
+    "name": "Small yacht",
+    "original_vessel_type": "Motorboat",
+    "notes": "Vigo sea loch - Zone 3 - in front of Alcabre beach. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H2, 6m length yacht passing.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_72",
+    "name": "Motorboat 2",
+    "original_vessel_type": "Motorboat",
+    "notes": "Vigo sea loch - Zone 3 - in front of Alcabre beach. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, motorboat passing. Possible interference at the end of the recording.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_77",
+    "name": "High speed motorboat",
+    "original_vessel_type": "Motorboat",
+    "notes": "Vigo sea loch - Zone 3 - in front of Alcabre beach. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, high power motorboat passing.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_78",
+    "name": "Viking Chance",
+    "original_vessel_type": "Ro-Ro",
+    "notes": "Vigo sea loch - Zone 3 - in front of Alcabre beach. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, big RORO passing followed by the pilot ship.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90"
+  },
+  {
+    "recording_id": "ShipsEar_79",
+    "name": "Zodiac",
+    "original_vessel_type": "Motorboat",
+    "notes": "Vigo sea loch - Zone 3 - in front of Alcabre beach. \nRecording with better gain without clipping is presented. Other signals available.\n\nSignal in H3, zodiac passing.",
+    "source_url": "https://underwaternoise.atlanttic.uvigo.es/indexDB.php?pageNum_leerMedidas=3&totalRows_leerMedidas=90"
+  }
+]

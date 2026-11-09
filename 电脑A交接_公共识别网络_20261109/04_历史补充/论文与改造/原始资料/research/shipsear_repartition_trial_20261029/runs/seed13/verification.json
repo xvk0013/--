@@ -1,0 +1,42 @@
+{
+  "parameter_updates": {
+    "O0": {
+      "encoder.backbone.stem.0.weight": 0.62192302942276,
+      "encoder.projection.weight": 4.0112080574035645,
+      "encoder.backbone.stages.2.blocks.2.mixer.frequency.0.weight": 0.3748112916946411,
+      "encoder.demon_encoder.proj.weight": 2.475447177886963,
+      "tabm.backbone.blocks.0.0.project.weight": 7.657403945922852,
+      "tabm.output.weight": 16.014184951782227
+    },
+    "A21": {
+      "encoder.backbone.stem.0.weight": 0.62192302942276,
+      "encoder.projection.weight": 4.0112080574035645,
+      "encoder.backbone.stages.2.blocks.2.mixer.frequency.0.weight": 0.3748112916946411,
+      "encoder.demon_encoder.proj.weight": 2.475447177886963,
+      "tabm.backbone.blocks.0.0.project.weight": 7.657403945922852,
+      "tabm.output.weight": 16.014184951782227
+    },
+    "B78": {
+      "encoder.backbone.stem.0.weight": 0.6301609873771667,
+      "encoder.projection.weight": 3.8001880645751953,
+      "encoder.backbone.stages.2.blocks.2.mixer.frequency.0.weight": 0.3996269702911377,
+      "encoder.demon_encoder.proj.weight": 2.628354787826538,
+      "tabm.backbone.blocks.0.0.project.weight": 7.867312908172607,
+      "tabm.output.weight": 16.82855796813965
+    }
+  },
+  "replay": {
+    "O0": {
+      "changed_predictions": 0,
+      "max_probability_difference": 1.1920928955078125e-07
+    },
+    "A21": {
+      "changed_predictions": 0,
+      "max_probability_difference": 1.1920928955078125e-07
+    },
+    "B78": {
+      "changed_predictions": 0,
+      "max_probability_difference": 2.384185791015625e-07
+    }
+  }
+}

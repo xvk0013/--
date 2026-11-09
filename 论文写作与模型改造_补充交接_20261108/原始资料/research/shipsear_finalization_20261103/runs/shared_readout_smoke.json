@@ -1,0 +1,39 @@
+{
+  "verified_at": "2026-11-04T05:48:08+08:00",
+  "train_rows": 2880,
+  "same_initial_backbone_background_and_single_parameters": true,
+  "runs": {
+    "SE-Q0-Shared-13": {
+      "loss": {
+        "loss": 2.0050411224365234,
+        "set_loss": 1.9149677753448486,
+        "count_loss": 0.9007333517074585
+      },
+      "first_batch_seconds": 1.6131207002326846,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ],
+        [
+          32,
+          3200
+        ]
+      ],
+      "condition_counts": {
+        "original": 13,
+        "10dB": 2,
+        "5dB": 5,
+        "0dB": 4,
+        "-5dB": 3,
+        "-10dB": 5
+      },
+      "restored_update_exact": true,
+      "pair_labels_checked": [
+        "PF+MB",
+        "PF+RV",
+        "MB+RV"
+      ]
+    }
+  }
+}

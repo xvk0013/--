@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-11-06T23:37:32+08:00",
+  "train_rows": 2877,
+  "short_local_weights_updated": true,
+  "runs": {
+    "SE-Q0-ShortLocal-L1-13": {
+      "loss": {
+        "loss": 1.9204059839248657,
+        "set_loss": 1.826999306678772,
+        "count_loss": 0.9340670108795166
+      },
+      "first_batch_seconds": 0.9959333995357156,
+      "feature_shapes": [
+        [
+          32,
+          3730
+        ],
+        [
+          32,
+          1,
+          128,
+          663
+        ]
+      ],
+      "condition_counts": {
+        "original": 13,
+        "10dB": 4,
+        "5dB": 5,
+        "0dB": 6,
+        "-5dB": 1,
+        "-10dB": 3
+      },
+      "restored_update_exact": true
+    }
+  }
+}

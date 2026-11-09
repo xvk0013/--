@@ -1,0 +1,113 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "representation": {
+    "long_fft": 8192,
+    "long_hop": 1024,
+    "short_fft": 2048,
+    "short_hop": 256,
+    "frequency_range_hz": [
+      0,
+      4000
+    ],
+    "channels": [
+      16,
+      32,
+      64
+    ],
+    "summary_grid": [
+      8,
+      4
+    ],
+    "summary_statistics": [
+      "mean",
+      "std"
+    ],
+    "per_resolution_output": 256,
+    "candidate_neural_output": 512,
+    "frequency_kernel": 5,
+    "time_kernel": 5
+  },
+  "spectral_scattering": {
+    "J": 2,
+    "L": 4,
+    "max_order": 2,
+    "summary_grid": [
+      8,
+      4
+    ],
+    "include_zeroth_order": true,
+    "subbatch": 8,
+    "input": "Current T1 native long/short logpower float16->float32, no resizing, fixed coefficients, all paths mean/std spatial grid"
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "compact_model_file": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\model.py",
+  "adaptation_checkpoint": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\weights\\current.pt",
+  "arms": [
+    "P1_restore_only"
+  ],
+  "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13\\V1_stored_single_best.pt",
+  "source_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13",
+  "source_arm": "V1_stored_single",
+  "source_epoch": 51,
+  "max_epochs": 20,
+  "classifier_lr": 3e-05,
+  "adapter_lr": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "shape_weight": 1.0,
+  "noise_probabilities": [
+    0.5,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "direction_adapter": {
+    "rank": 64,
+    "max_correction": 2.0,
+    "epsilon": 1e-06
+  },
+  "development_tolerance_pp": 1.0,
+  "original_single_tolerance_pp": 5.0,
+  "original_acc_tolerance_pp": 1.5,
+  "development_single_gain_pp": 2.0,
+  "development_acc_gain_pp": 1.0,
+  "training": "Full Train pure restoration, not minibatch continuation. Load the same V1global51 public task checkpoint and fresh S2 adapter initialization; keep TabM frozen. ONLY paired centered-direction cosine loss updates the adapter. No recognition or quantity-loss gradient, no classifier forward in a training step. Same row class budgets, online AWGN schedule/seed/order, two fixed views, normalization, adapter optimizer and20epoch budget as completed F1.",
+  "selection": "Unchanged Val protection and epoch score: source protection first, then mean5/0ACC,mean5/0Single,rawACC; actual epochs1..20. Labels are used for existing class budgets and validation/evaluation, not a recognition training loss.",
+  "reference": "Same Train mixture before additional AWGN, preserving native background and all Double sources. Reference only supplies the restoration target. No clean/count/SNR input during inference.",
+  "comparison_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_direction_adapter_20261101\\runs\\seed13",
+  "comparison_arm": "S1_direction",
+  "control_result_name": "C1_unconditioned",
+  "plain_reference_arm": "S0_continue",
+  "conditioning": "mu1,log(std1),mu2,log(std2) computed from the CURRENT source-normalized feature vectors. No clean reference, true SNR or count is used by the forward. Output observed moments are retained exactly as in S1. These are feature-vector moments, not physical noise powers.",
+  "partial_recovery_alphas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "fixed_train_noise_tag": 303,
+  "train_probe_every": 5,
+  "test_policy": "Only if task and mechanism Val gates pass, evaluate six observed-input Test conditions with one sealed checkpoint. No automatic joint adaptation or architecture changes.",
+  "diagnostic": "Partial clean-reference interpolation at the normalized input on Val5/0 only, never deployed. Fixed Train probes use stored waveforms with an independent fixed noise tag303; probe observations are not training targets. Train raw paired features remain training targets only. Forward has no clean/count/SNR inputs.",
+  "frozen_control_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_direction_isolation_20261101\\runs\\seed13",
+  "frozen_control_arm": "F1_frozen"
+}

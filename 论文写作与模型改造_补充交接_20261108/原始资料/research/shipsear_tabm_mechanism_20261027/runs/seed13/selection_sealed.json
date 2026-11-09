@@ -1,0 +1,100 @@
+{
+  "config": {
+    "seed": 13,
+    "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+    "arms": [
+      "P0_plain",
+      "P1_shared",
+      "P2_member"
+    ],
+    "sample_rate": 16000,
+    "duration_seconds": 5,
+    "scattering": {
+      "J": 10,
+      "Q": 8,
+      "max_order": 2
+    },
+    "model": {
+      "n_blocks": 3,
+      "d_block": 256,
+      "k": 32,
+      "dropout": 0.15
+    },
+    "encoder": {
+      "dims": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "depths": [
+        1,
+        1,
+        4,
+        2
+      ],
+      "heads": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "windows": [
+        7,
+        7
+      ],
+      "mlp_ratio": 2.0,
+      "drop_path": 0.0,
+      "scan_backend": "cuda",
+      "band_fusion": "early",
+      "input_channels": 2
+    },
+    "interaction_rank": 64,
+    "batch_size": 32,
+    "evaluation_batch_size": 64,
+    "max_epochs": 40,
+    "min_epochs": 20,
+    "joint_patience": 10,
+    "classifier_lr": 0.001,
+    "encoder_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "count_marginal_weight": 0.1,
+    "noise_probabilities": [
+      0.3,
+      0.1,
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "initialization": "Only encoder and Train normalization are inherited from C1 epoch8. All public TabM parameters are random common clones; cardinality readouts and interaction outputs are zero initialized. P1/P2 share exactly the same added parameters. No old public classifier or optimizer is loaded.",
+    "training": "Same online Train views, losses, seed13, dropout and update budget for three arms. Full encoder and public TabM co-adaptation. Minimum20 maximum40 epochs, joint patience10. Identical epoch0 is eligible.",
+    "selection": "0.5 original Val mean(Single,Double,background) + 0.5 mean of that score over five noisy conditions; tie original overall ACC. One trained checkpoint per arm; Test only after selection is sealed.",
+    "prediction": "All arms have the same seven-set output plus late cardinality residual, average member probabilities. P0 no interaction, P1 shared cross-view interaction, P2 member input-adapted interaction. No true count or SNR is supplied to inference.",
+    "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_tabm_internal_audit_20261027\\runs\\seed13\\C1_late_count_readout_best.pt"
+  },
+  "selections": {
+    "P0_plain": {
+      "epoch": 36,
+      "score": [
+        74.97826464962615,
+        72.90502793296089
+      ]
+    },
+    "P1_shared": {
+      "epoch": 38,
+      "score": [
+        74.78329855677272,
+        73.60335195530726
+      ]
+    },
+    "P2_member": {
+      "epoch": 36,
+      "score": [
+        73.91747087463051,
+        70.94972067039106
+      ]
+    }
+  }
+}

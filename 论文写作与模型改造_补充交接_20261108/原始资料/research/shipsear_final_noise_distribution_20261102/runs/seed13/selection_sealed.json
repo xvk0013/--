@@ -1,0 +1,70 @@
+{
+  "selections": {
+    "P25_noise75": {
+      "epoch": 0,
+      "global_epoch": 51,
+      "score": [
+        1,
+        62.95372543905408,
+        62.47672253258845,
+        55.01543209876544,
+        71.7877094972067
+      ],
+      "protection": {
+        "original_single_acc": true,
+        "original_double_acc": true,
+        "original_noise_acc": true,
+        "original_acc": true,
+        "10dB_acc": true,
+        "original_background": true,
+        "10dB_background": true,
+        "5dB_background": true,
+        "0dB_background": true,
+        "-5dB_background": true,
+        "-10dB_background": true
+      }
+    },
+    "P50_noise50": {
+      "epoch": 20,
+      "global_epoch": 71,
+      "score": [
+        1,
+        63.855199095809425,
+        63.01210428305401,
+        54.783950617283956,
+        71.22905027932961
+      ],
+      "protection": {
+        "original_single_acc": true,
+        "original_double_acc": true,
+        "original_noise_acc": true,
+        "original_acc": true,
+        "10dB_acc": true,
+        "original_background": true,
+        "10dB_background": true,
+        "5dB_background": true,
+        "0dB_background": true,
+        "-5dB_background": true,
+        "-10dB_background": true
+      }
+    }
+  },
+  "gate": {
+    "P25_noise75": {
+      "protection": true,
+      "balance_gain": false,
+      "negative_acc_gain": false
+    },
+    "P50_noise50": {
+      "protection": true,
+      "balance_gain": false,
+      "negative_acc_gain": true
+    }
+  },
+  "chosen_by_Val": null,
+  "selection": "Valonly. First all V1 guards: original Single within5pp,originalACC within1.5pp,originalDouble/background and10ACC within1pp; each of6background ACC within2pp. Then six-condition mean((Single+Double)/2),six-condition meanACC,min(six-condition meanSingle,meanDouble),originalACC. V1epoch0legalbest. NegativeSNRs included. Never rank onTest/Single>Double/monotonicity.",
+  "Test_permitted": [
+    "P25_noise75",
+    "P50_noise50"
+  ]
+}

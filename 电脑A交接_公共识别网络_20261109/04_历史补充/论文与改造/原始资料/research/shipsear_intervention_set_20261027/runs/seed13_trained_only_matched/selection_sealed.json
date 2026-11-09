@@ -1,0 +1,61 @@
+{
+  "config": {
+    "seed": 13,
+    "run_name": "seed13_trained_only_matched",
+    "h1_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_HeterogeneousTransfer_20261025",
+    "h1_checkpoint": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_HeterogeneousTransfer_20261025\\runs\\seed13\\H1_residual_transfer_best.pt",
+    "generator_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB",
+    "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+    "epochs": 30,
+    "minimum_epochs": 15,
+    "joint_early_stop_patience": 10,
+    "warmup_epochs": 3,
+    "batch_size": 32,
+    "pairs_per_batch": 12,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.001,
+    "gradient_clip": 5.0,
+    "aux_pair_weight": 0.25,
+    "intervention_weight": 0.25,
+    "set_loss_weight": 0.1,
+    "presence_loss_weight": 0.1,
+    "noise_probabilities": [
+      0.3,
+      0.1,
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "conditions": [
+      "original",
+      "10dB",
+      "5dB",
+      "0dB",
+      "-5dB",
+      "-10dB"
+    ],
+    "arms": [
+      "ordinary_pair_supervision",
+      "evidence_interchange"
+    ],
+    "selection": "Epoch 0 is a separate frozen-H1 replay reference. Each experimental arm selects one actually trained epoch by 0.5 original Val ACC + 0.5 mean noisy Val ACC; tie original Val ACC. Joint Val-only early stop after at least 15 epochs and 10 consecutive epochs without either arm improving. Test only after selection. No Test threshold tuning.",
+    "scope": "0/1/2 target task, fixed recording-level Train/Val/Test arrays, auxiliary matched views generated from same-split source components only. Both arms share data, interface, initialization, update count and equal auxiliary-label loss mass; candidate substitutes interchange outputs for an ordinary factual repeat. The reader starts from exact H1 replay and H1 remains frozen."
+  },
+  "selections": {
+    "ordinary_pair_supervision": {
+      "epoch": 2,
+      "score": [
+        68.50558659217876,
+        74.4413407821229
+      ]
+    },
+    "evidence_interchange": {
+      "epoch": 6,
+      "score": [
+        68.68715083798882,
+        74.86033519553072
+      ]
+    }
+  }
+}

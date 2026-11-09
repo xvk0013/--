@@ -1,0 +1,24 @@
+{
+  "official": {
+    "W1_sample_equal": {
+      "epoch": 8,
+      "global_epoch": 59,
+      "score": [
+        1,
+        66.96927374301676,
+        78.63849765258216,
+        71.7877094972067
+      ]
+    }
+  },
+  "auxiliary_no_Test": {
+    "epoch": 16,
+    "global_epoch": 67,
+    "score": [
+      67.31843575418995,
+      81.69014084507042,
+      71.36871508379889
+    ],
+    "passes_protection": false
+  }
+}

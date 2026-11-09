@@ -1,0 +1,101 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "scattering": {
+    "J": 10,
+    "Q": 8,
+    "max_order": 2
+  },
+  "representation": {
+    "long_fft": 8192,
+    "long_hop": 1024,
+    "short_fft": 2048,
+    "short_hop": 256,
+    "frequency_range_hz": [
+      0,
+      4000
+    ],
+    "channels": [
+      16,
+      32,
+      64
+    ],
+    "summary_grid": [
+      8,
+      4
+    ],
+    "summary_statistics": [
+      "mean",
+      "std"
+    ],
+    "per_resolution_output": 256,
+    "candidate_neural_output": 512,
+    "frequency_kernel": 5,
+    "time_kernel": 5
+  },
+  "spectral_scattering": {
+    "J": 2,
+    "L": 4,
+    "max_order": 2,
+    "summary_grid": [
+      8,
+      4
+    ],
+    "include_zeroth_order": true,
+    "subbatch": 8,
+    "input": "Current T1 native long/short logpower float16->float32, no resizing, fixed coefficients, all paths mean/std spatial grid"
+  },
+  "model": {
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 32,
+    "dropout": 0.15
+  },
+  "batch_size": 32,
+  "evaluation_batch_size": 64,
+  "compact_model_file": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\model.py",
+  "adaptation_checkpoint": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\weights\\current.pt",
+  "arms": [
+    "T1_mixed_residual",
+    "T2_separate_effects"
+  ],
+  "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13\\V1_stored_single_best.pt",
+  "source_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13",
+  "source_arm": "V1_stored_single",
+  "source_epoch": 51,
+  "max_epochs": 20,
+  "classifier_lr": 3e-05,
+  "adapter_lr": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "count_marginal_weight": 0.1,
+  "shape_weight": 1.0,
+  "noise_probabilities": [
+    0.5,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "direction_adapter": {
+    "rank": 64,
+    "max_correction": 2.0,
+    "epsilon": 1e-06
+  },
+  "development_tolerance_pp": 1.0,
+  "original_single_tolerance_pp": 5.0,
+  "original_acc_tolerance_pp": 1.5,
+  "development_single_gain_pp": 2.0,
+  "development_acc_gain_pp": 1.0,
+  "training": "Start both from complete V1global51. Add two zero-output64->256 bias-free projections each arm,32768parameters. Mixed control usesGELU((u+v)/sqrt2),GELU((u-v)/sqrt2); separate candidate usesGELU(u),GELU(v). Keep original direct path, cross product and gate. All TabM trains20epochs, original parameters3e-5,new projections3e-4. Original CE+0.1count, same original row budgets, online AWGN/dropout/order and Val rules as S0. No P1/restoration loss or architecture changes elsewhere.",
+  "selection": "Same V1 protection and mean5/0ACC,mean5/0Single,rawACC score, actual epochs1..20. Each candidate selected independently on Val. Rank finalists before Test, evaluate only task-passing candidates. Never choose the winning architecture from Test.",
+  "reference": "Pre-AWGN same-clip Train direction is only a loss target. No reference, true count or SNR enters the inference forward. Previously reported direction-swap diagnostic scores are not trained-model scores.",
+  "new_projection_lr": 0.0003,
+  "control_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_direction_adapter_20261101\\runs\\seed13",
+  "control_arm": "S0_continue",
+  "fixed_train_noise_tag": 303,
+  "source_idea": "Adapt main-effect/interaction separation within the first TabM layer, inspired by GAMI-Net(2021), not a reproduction of its complete model or identifiability constraints. https://doi.org/10.1016/j.patcog.2021.108192"
+}

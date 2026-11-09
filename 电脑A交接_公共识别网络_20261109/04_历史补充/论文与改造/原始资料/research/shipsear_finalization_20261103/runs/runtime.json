@@ -1,0 +1,18 @@
+{
+  "additive_interaction": false,
+  "stderr": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\runs\\train_20261104_151303.stderr.log",
+  "recording_swap": false,
+  "background_swap": false,
+  "evidence": false,
+  "aligned_dual": false,
+  "started": "2026-11-04T15:13:03.4514081+08:00",
+  "pid": 11736,
+  "decision": false,
+  "power_product": false,
+  "fixed_probe_blend": false,
+  "stdout": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\runs\\train_20261104_151303.log",
+  "shared_readout": false,
+  "mb_train_val_swap": true,
+  "script": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\train_formal.py",
+  "band_temporal": false
+}

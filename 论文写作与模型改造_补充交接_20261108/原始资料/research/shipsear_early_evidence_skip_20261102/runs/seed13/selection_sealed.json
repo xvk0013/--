@@ -1,0 +1,95 @@
+{
+  "selections": {
+    "A_continue": {
+      "epoch": 14,
+      "global_epoch": 65,
+      "score": [
+        1,
+        78.16901408450704,
+        83.76288659793815,
+        65.71229050279331,
+        71.22905027932961
+      ],
+      "protection": {
+        "original_single_acc": true,
+        "original_double_acc": true,
+        "original_noise_acc": true,
+        "original_acc": true,
+        "10dB_acc": true,
+        "5dB_double_acc": true,
+        "0dB_double_acc": true
+      }
+    },
+    "B_late_residual": {
+      "epoch": 16,
+      "global_epoch": 67,
+      "score": [
+        1,
+        77.69953051643192,
+        83.24742268041237,
+        66.20111731843575,
+        71.22905027932961
+      ],
+      "protection": {
+        "original_single_acc": true,
+        "original_double_acc": true,
+        "original_noise_acc": true,
+        "original_acc": true,
+        "10dB_acc": true,
+        "5dB_double_acc": true,
+        "0dB_double_acc": true
+      }
+    },
+    "C_early_skip": {
+      "epoch": 12,
+      "global_epoch": 63,
+      "score": [
+        1,
+        76.99530516431925,
+        82.4742268041237,
+        66.4804469273743,
+        71.92737430167597
+      ],
+      "protection": {
+        "original_single_acc": true,
+        "original_double_acc": true,
+        "original_noise_acc": true,
+        "original_acc": true,
+        "10dB_acc": true,
+        "5dB_double_acc": true,
+        "0dB_double_acc": true
+      }
+    }
+  },
+  "gate": {
+    "C_vs_A_continue": {
+      "single_gain": false,
+      "retention_gain": false,
+      "double_protection": true,
+      "acc_protection": true
+    },
+    "C_vs_B_late_residual": {
+      "single_gain": false,
+      "retention_gain": false,
+      "double_protection": true,
+      "acc_protection": true
+    },
+    "C_vs_V1": {
+      "original_single_acc": true,
+      "original_double_acc": true,
+      "original_noise_acc": true,
+      "original_acc": true,
+      "10dB_acc": true,
+      "5dB_double_acc": true,
+      "0dB_double_acc": true
+    }
+  },
+  "chosen_by_Val": null,
+  "Test_permitted": [
+    "A_continue",
+    "B_late_residual",
+    "C_early_skip"
+  ],
+  "candidate_predeclared": "C_early_skip",
+  "rule": "For every arm independently, actual epochs1..20, epoch0reference only. Rank by all source guards satisfied; mean5/0Single; mean5/0 retention on FIXED sourceV1 raw-correct Single cohort; mean5/0ACC; rawACC. Source guards rawSingle within5pp,rawACC within1.5pp, rawDouble/background/10ACC and each5/0Double within1pp. Candidate is predeclaredC, not selected fromTest. Seal all Val choices/gates before six-condition Test of all finalists."
+}

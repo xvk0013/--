@@ -1,0 +1,133 @@
+{
+  "config": {
+    "seed": 13,
+    "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+    "sample_rate": 16000,
+    "duration_seconds": 5,
+    "scattering": {
+      "J": 10,
+      "Q": 8,
+      "max_order": 2
+    },
+    "model": {
+      "n_blocks": 3,
+      "d_block": 256,
+      "k": 32,
+      "dropout": 0.15
+    },
+    "batch_size": 32,
+    "evaluation_batch_size": 64,
+    "representation": {
+      "long_fft": 8192,
+      "long_hop": 1024,
+      "short_fft": 2048,
+      "short_hop": 256,
+      "frequency_range_hz": [
+        0,
+        4000
+      ],
+      "channels": [
+        16,
+        32,
+        64
+      ],
+      "summary_grid": [
+        8,
+        4
+      ],
+      "summary_statistics": [
+        "mean",
+        "std"
+      ],
+      "per_resolution_output": 256,
+      "candidate_neural_output": 512,
+      "frequency_kernel": 5,
+      "time_kernel": 5
+    },
+    "replacement_kernel": 7,
+    "ffn_ratio": 2.0,
+    "ffn_dropout": 0.0,
+    "arms": [
+      "V1_stored_single"
+    ],
+    "compact_model_file": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\model.py",
+    "adaptation_checkpoint": "D:\\LSJ\\Code\\UART\\shipsear\\01_模型\\当前主线_T1第27轮\\weights\\current.pt",
+    "baseline_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_fixed_spectral_factorial_20261031\\runs\\seed13",
+    "baseline_arm": "F1M1",
+    "max_epochs": 20,
+    "min_epochs": 20,
+    "joint_patience": null,
+    "classifier_lr": 3e-05,
+    "count_readout_lr": 3e-05,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "count_marginal_weight": 0.1,
+    "noise_probabilities": [
+      0.5,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "selection_conditions": [
+      "original",
+      "10dB",
+      "5dB",
+      "0dB"
+    ],
+    "spectral_scattering": {
+      "J": 2,
+      "L": 4,
+      "max_order": 2,
+      "summary_grid": [
+        8,
+        4
+      ],
+      "include_zeroth_order": true,
+      "subbatch": 8,
+      "input": "Current T1 native long/short logpower float16->float32, no resizing, fixed coefficients, all paths mean/std spatial grid"
+    },
+    "selection": "Valonly: source originalSinglewithin5pp,originalDouble/BGwithin1pp,originalACCwithin1.5pp,10ACCwithin1pp;5/0Doublewithin1pp ofbothsourceandC1. Eligiblefirst thenmean5/0ACC,mean5/0Single,rawACC. Actualepochs1..20,epoch0reference. Re-scorecontrolhistoryundersamesharedguardsbeforeusingoldselectedweight. Testonlyafterseal.",
+    "training": "One newcandidate with allTrainSingle using stored waveform before sameonlineAWGN; Double/BG unchanged. Same F1M1e33start,20epochs,3e-5AdamW,uniform50/10x5,sourceepoch34..53,seed13order/noise/dropout,classweights/loss/sourceTrainnormalization. ReusecompletedC1balancedcontrol; no learnedlocalnormalization/newfeatures/heads.",
+    "initialization": "ExactsourceF1M1e33 classifier and fixedfeature architecture; freshsameAdamW. PublicTabM/count/interaction/gate allcontinue training. No new classifier parameters.",
+    "development_gain_pp": 1.0,
+    "development_tolerance_pp": 1.0,
+    "initial_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_fixed_spectral_factorial_20261031\\runs\\seed13\\F1M1_best.pt",
+    "source_epoch": 33,
+    "noise_probabilities_by_arm": null,
+    "monitor_conditions": [
+      "original",
+      "10dB",
+      "5dB",
+      "0dB",
+      "-5dB",
+      "-10dB"
+    ],
+    "normalization": "Exact saved F1M1 original-Train normalization unchanged.",
+    "new_protocol": "Two-level distribution shared across all labels: original probability0.5; conditional on augmentation sample five SNR levels uniformly. Probabilities, not exact per-epoch quotas.",
+    "comparison_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_f1m1_snr_balance_20261031\\runs\\seed13",
+    "comparison_arm": "C1_balanced",
+    "control_reused": true,
+    "original_single_tolerance_pp": 5.0,
+    "original_acc_tolerance_pp": 1.5,
+    "development_single_gain_pp": 2.0,
+    "view_change": "Disable artificialSingleenvelope for ALLSNRTrainSingle. RawandnegativeSingle alreadyusedstored; effectivechangeonlySingle10/5/0,nonflat. NoiseSNRandRMS unchanged. Double mixtureenvelopes are generateddata and unchanged."
+  },
+  "epochs": 20,
+  "selections": {
+    "V1_stored_single": {
+      "epoch": 18,
+      "global_epoch": 51,
+      "score": [
+        0,
+        65.85195530726257,
+        78.16901408450704,
+        71.7877094972067
+      ]
+    }
+  },
+  "source_epoch": 33,
+  "epoch0_eligible": false,
+  "comparison_reused": "C1_balanced"
+}

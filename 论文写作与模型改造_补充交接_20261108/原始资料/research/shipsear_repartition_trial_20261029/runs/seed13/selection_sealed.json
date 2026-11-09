@@ -1,0 +1,118 @@
+{
+  "config": {
+    "seed": 13,
+    "data_root": "",
+    "arms": [
+      "O0",
+      "A21",
+      "B78"
+    ],
+    "sample_rate": 16000,
+    "duration_seconds": 5,
+    "scattering": {
+      "J": 10,
+      "Q": 8,
+      "max_order": 2
+    },
+    "model": {
+      "n_blocks": 3,
+      "d_block": 256,
+      "k": 32,
+      "dropout": 0.15
+    },
+    "encoder": {
+      "dims": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "depths": [
+        1,
+        1,
+        4,
+        2
+      ],
+      "heads": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "windows": [
+        7,
+        7
+      ],
+      "mlp_ratio": 2.0,
+      "drop_path": 0.0,
+      "scan_backend": "cuda",
+      "band_fusion": "early",
+      "input_channels": 2
+    },
+    "interaction_rank": 64,
+    "batch_size": 32,
+    "evaluation_batch_size": 64,
+    "max_epochs": 80,
+    "min_epochs": 80,
+    "joint_patience": 80,
+    "classifier_lr": 0.001,
+    "encoder_lr": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "count_marginal_weight": 0.1,
+    "noise_probabilities": [
+      0.3,
+      0.1,
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "initialization": "L1 architecture only, same seed13 random parameters, no task/external checkpoint loaded. Center gain sqrt(7) is fixed analytic variance matching, not an old-data fit. Train-only normalization fitted separately for O0 and B78; A21 shares O0 Train exactly.",
+    "training": "Two full-model trajectories: O0 and B78, each80 epochs and90 steps/epoch. A21 has identical Train to O0 and selects a separate checkpoint on A21 Val; it does not need a duplicate training run. Entire encoder, DEMON and modified public TabM train. Same from-scratch learning rates and budget.",
+    "selection": "Epoch0 reference only. Epoch1+ prefer Val -10ACC>=55 and original background>=84.507%; then original mean(Single,Double,ACC), original background, mean noisy ACC. All three checkpoints sealed before Test.",
+    "prediction": "Same L1 seven-set plus count residual, mean32 member softmax then argmax. No true count or source recordings at inference.",
+    "count_readout_lr": 0.001,
+    "axis_kernel": 7,
+    "localized_block": 2,
+    "initial_center_gain": 2.6457513110645907,
+    "datasets": {
+      "O0": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+      "A21": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_repartition_trial_20261029\\data\\A21",
+      "B78": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_repartition_trial_20261029\\data\\B78"
+    },
+    "fallback": "Development comparison: retain all results. If B78 -10 Test ACC<55, background<95 or original ACC more than3pp below A21, prefer A21 when it meets the protection; if neither new protocol is suitable, preserve original dataset. No original files overwritten."
+  },
+  "selections": {
+    "O0": {
+      "epoch": 51,
+      "score": [
+        1,
+        71.22582640473505,
+        84.50704225352112,
+        62.79329608938548
+      ],
+      "eligible": true
+    },
+    "A21": {
+      "epoch": 51,
+      "score": [
+        1,
+        71.44937327433537,
+        84.50704225352112,
+        64.29378531073446
+      ],
+      "eligible": true
+    },
+    "B78": {
+      "epoch": 56,
+      "score": [
+        0,
+        66.45950788024173,
+        85.91549295774648,
+        58.99864682002707
+      ],
+      "eligible": false
+    }
+  }
+}

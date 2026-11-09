@@ -1,0 +1,52 @@
+{
+  "seed": 13,
+  "data_root": "D:\\LSJ\\Code\\UART\\shipsear\\ShipsEar_DataGen_Final_0dB\\datasets\\shipsear_pf_mb_rv_0db",
+  "source_checkpoint": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_single_stored_view_20261031\\runs\\seed13\\V1_stored_single_best.pt",
+  "paired_results_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_noise_target_factorial_20261102\\runs\\seed13",
+  "conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB"
+  ],
+  "strengths": [
+    "absent",
+    "equal",
+    "weak6dB"
+  ],
+  "power_modes": [
+    "anchor_fixed",
+    "total_snr"
+  ],
+  "sites": [
+    "first",
+    "second",
+    "last"
+  ],
+  "rank": 16,
+  "feature_batch_size": 32,
+  "classifier_batch_size": 64,
+  "train_noise_conditions": [
+    "original",
+    "0dB"
+  ],
+  "fit_weighting": "Equal anchor recording, equal source core within recording, equal repeated pair within core; no Val fitting.",
+  "scale_constant_threshold": 0.000001,
+  "noise_covariance": "Uncentered second moment of standardized (Train0dB absent - Trainoriginal absent), per member; retain mean noise shift.",
+  "basis_controls": [
+    "noise",
+    "random_rank",
+    "random_energy"
+  ],
+  "noise_seed_tag": 7602,
+  "random_seed_tag": 7701,
+  "training": false,
+  "test_used": false,
+  "reference_dependent": true,
+  "primary_noise_conditions": [
+    "5dB",
+    "0dB"
+  ],
+  "development_single_gain_pp": 2,
+  "development_double_cost_pp": 1
+}

@@ -1,0 +1,19 @@
+{
+  "epochs": 20,
+  "pair_weight": 0.5,
+  "formal_train": "fixed_six_views_of_double",
+  "formal_noise_probabilities": [
+    0.5,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "selection": [
+    "six_condition_single_double_balance",
+    "six_condition_acc_mean",
+    "min_six_condition_single_double_means",
+    "original_acc"
+  ]
+}

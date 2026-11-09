@@ -1,0 +1,108 @@
+{
+  "data_root": "D:/LSJ/Data/DeepShip_Multitarget_0dB_Energy80_SeenShip_v1",
+  "sample_rate": 16000,
+  "duration_seconds": 5,
+  "batch_size": 48,
+  "evaluation_batch_size": 64,
+  "protocol_id": "deepship-q0-formal-v1",
+  "dataset_version": "deepship_multitarget_0db_energy80_seen_ship_ptt_v1",
+  "split_sizes": {
+    "Train": 7500,
+    "Val": 1250,
+    "Test": 1250
+  },
+  "index_file": "DATA_INDEX.csv",
+  "set_names": [
+    "E",
+    "Passengership",
+    "Tanker",
+    "Tug",
+    "Passengership+Tanker",
+    "Passengership+Tug",
+    "Tanker+Tug"
+  ],
+  "count_map": [
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2
+  ],
+  "class_loss_budgets": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "seed": 13,
+  "evaluation_noise_seed": 13,
+  "evaluation_conditions": [
+    "original",
+    "10dB",
+    "5dB",
+    "0dB",
+    "-5dB",
+    "-10dB"
+  ],
+  "noise_probabilities": [
+    0.5,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "waveform_view": "stored",
+  "noise": {
+    "type": "AWGN",
+    "target_power_reference": "mean_square_stored_waveform",
+    "background_rms_reference": 0.05,
+    "noisy_output_rms": 0.05
+  },
+  "initialization": "model_constructor",
+  "optimizer": "Adam",
+  "classifier_lr": 0.001,
+  "weight_decay": 0.0,
+  "gradient_clip": 5.0,
+  "min_epochs": 40,
+  "max_epochs": 200,
+  "validation_every_epochs": 1,
+  "patience_epochs": 10,
+  "early_stop_min_delta_pp": 0.2,
+  "validation_rank": [
+    "six_condition_single_double_balance",
+    "six_condition_acc_mean",
+    "min_six_condition_single_double_means",
+    "original_acc"
+  ],
+  "exact_tie": "earlier_epoch",
+  "first_eligible_epoch": 1,
+  "class_names": [
+    "Passengership",
+    "Tanker",
+    "Tug"
+  ],
+  "single_envelope_augmentation": false,
+  "source_dataset_version": "deepship_multitarget_0db_energy80_seen_ship_v1",
+  "experiment_id": "DS-EXT-SFAC32-PTT-13",
+  "architecture": "ShuffleFAC-32",
+  "model_source": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\external_baselines_20261026\\05_ShuffleFACAuthor\\model.py",
+  "protocol_config": "D:\\LSJ\\Code\\UART\\deepship\\01_模型\\Q0_DeepShip\\config_ptt_seen_ship.json",
+  "smoke": false,
+  "weighted_set_loss": false,
+  "loss": "set cross entropy",
+  "decoding": "argmax over 7 legal target sets",
+  "runtime": {
+    "device": "NVIDIA GeForce RTX 5090",
+    "torch": "2.9.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.1.2",
+    "python": "C:\\Users\\Admin\\anaconda3\\envs\\zpfenv1\\python.exe"
+  },
+  "front_end": "author ShuffleFAC log-Mel at 16 kHz; Hamming FFT/window 4096, hop 2048; centered 128-band HTK magnitude Mel, 0–8000 Hz, clip to [−50, 80] dB"
+}

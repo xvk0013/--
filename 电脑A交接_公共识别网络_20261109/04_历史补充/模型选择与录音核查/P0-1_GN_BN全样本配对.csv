@@ -1,0 +1,13 @@
+﻿split,condition,gn_run,bn_run,n,gn_correct,bn_correct,gn_only_correct,bn_only_correct,both_correct,both_wrong,gn_minus_bn_correct,gn_win_share_among_discordant_pct
+Val,original,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,719,507,546,21,60,486,152,-39,25.925925925925927
+Val,10dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,719,476,506,27,57,449,186,-30,32.142857142857146
+Val,5dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,719,464,484,30,50,434,205,-20,37.5
+Val,0dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,719,448,450,45,47,403,224,-2,48.91304347826087
+Val,-5dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,719,419,419,56,56,363,244,0,50.0
+Val,-10dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,719,349,362,82,95,267,275,-13,46.32768361581921
+Test,original,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,877,747,742,30,25,717,105,5,54.54545454545455
+Test,10dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,877,735,739,36,40,699,102,-4,47.36842105263158
+Test,5dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,877,721,713,43,35,678,121,8,55.12820512820513
+Test,0dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,877,673,668,52,47,621,157,5,52.525252525252526
+Test,-5dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,877,597,623,48,74,549,206,-26,39.34426229508197
+Test,-10dB,SE-Q0-ShortLocal-GN-13,SE-Q0-ShortLocal-13,877,503,519,83,99,420,275,-16,45.604395604395606

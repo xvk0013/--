@@ -1,0 +1,41 @@
+{
+  "selections": {
+    "A_reused_continue": {
+      "epoch": 12,
+      "global_epoch": 63,
+      "score": [
+        1,
+        66.55027932960894,
+        76.99530516431925,
+        72.06703910614524
+      ]
+    },
+    "B_set_margin": {
+      "epoch": 12,
+      "global_epoch": 63,
+      "score": [
+        1,
+        66.62011173184356,
+        76.99530516431925,
+        71.92737430167597
+      ]
+    }
+  },
+  "candidate_checks": {
+    "original_single": true,
+    "original_acc": true,
+    "original_double": true,
+    "original_background": true,
+    "ten_acc": true,
+    "5dB_double": true,
+    "0dB_double": true,
+    "mean5_0_single_gain": false,
+    "mean5_0_retention_gain": false,
+    "mean5_0_acc_cost": true,
+    "5dB_single_not_lower": true,
+    "5dB_background": true,
+    "0dB_single_not_lower": true,
+    "0dB_background": true
+  },
+  "Test_policy": "One fixed checkpoint per source/A/B, all six conditions, no Test reselection."
+}

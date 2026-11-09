@@ -1,0 +1,34 @@
+{
+  "operation": "Skip discarded 128 ms STFT in ShortLocal views",
+  "noise_conditions": "all six in the waveform fixture",
+  "checks": {
+    "ShortLocal": {
+      "batch_sizes": [
+        32,
+        7
+      ],
+      "all_feature_tensors_exact": true
+    },
+    "L1": {
+      "batch_sizes": [
+        32,
+        7
+      ],
+      "all_feature_tensors_exact": true
+    },
+    "L2": {
+      "batch_sizes": [
+        32,
+        7
+      ],
+      "all_feature_tensors_exact": true
+    },
+    "L3": {
+      "batch_sizes": [
+        32,
+        7
+      ],
+      "all_feature_tensors_exact": true
+    }
+  }
+}

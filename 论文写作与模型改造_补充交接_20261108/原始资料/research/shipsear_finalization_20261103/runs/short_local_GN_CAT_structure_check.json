@@ -1,0 +1,15 @@
+{
+  "seed": 13,
+  "same_retained_initial_tensors": true,
+  "same_initial_logits": true,
+  "output_shape": [
+    2,
+    32,
+    7
+  ],
+  "parameters": {
+    "full": 2721537,
+    "cat": 2258464
+  },
+  "count_marginal_weight": 0.1
+}

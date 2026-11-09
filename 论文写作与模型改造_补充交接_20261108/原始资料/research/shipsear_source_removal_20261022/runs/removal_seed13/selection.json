@@ -1,0 +1,242 @@
+{
+  "ordinary": {
+    "best_trained_epoch": 20,
+    "best_trained_val": {
+      "n": 716,
+      "acc": 72.20670391061452,
+      "single_acc": 79.81220657276995,
+      "double_acc": 64.58333333333334,
+      "noise_acc": 95.77464788732394,
+      "count_acc": 90.22346368715084,
+      "single_to_double": 14,
+      "double_to_single": 53,
+      "single_type_errors": 29,
+      "double_pair_errors": 100,
+      "confusion": [
+        [
+          68,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          149,
+          4,
+          3,
+          5,
+          7,
+          0
+        ],
+        [
+          0,
+          17,
+          15,
+          5,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          2,
+          2,
+          82,
+          18,
+          8
+        ],
+        [
+          0,
+          2,
+          0,
+          6,
+          0,
+          99,
+          37
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          3,
+          34,
+          98
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          68,
+          0,
+          3
+        ],
+        [
+          0,
+          199,
+          14
+        ],
+        [
+          0,
+          53,
+          379
+        ]
+      ],
+      "double_C0_acc": 62.5,
+      "double_C1_acc": 67.5925925925926,
+      "double_C2_acc": 65.74074074074075,
+      "per_set_acc": {
+        "E": 95.77464788732394,
+        "PF": 88.69047619047619,
+        "MB": 38.46153846153847,
+        "RV": 100.0,
+        "PF+MB": 56.94444444444444,
+        "PF+RV": 68.75,
+        "MB+RV": 68.05555555555556
+      },
+      "conditional_single_acc": 84.03755868544602,
+      "conditional_double_acc": 74.53703703703704,
+      "conditional_single_per_class": {
+        "PF": 94.04761904761905,
+        "MB": 38.46153846153847,
+        "RV": 100.0
+      }
+    },
+    "qualified_epoch": null,
+    "qualified_val": null,
+    "updates": 3240,
+    "elapsed_seconds": 20.788279599510133
+  },
+  "source_removal": {
+    "best_trained_epoch": 13,
+    "best_trained_val": {
+      "n": 716,
+      "acc": 75.41899441340783,
+      "single_acc": 79.81220657276995,
+      "double_acc": 69.21296296296296,
+      "noise_acc": 100.0,
+      "count_acc": 91.62011173184358,
+      "single_to_double": 13,
+      "double_to_single": 47,
+      "single_type_errors": 30,
+      "double_pair_errors": 86,
+      "confusion": [
+        [
+          71,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          149,
+          4,
+          3,
+          5,
+          7,
+          0
+        ],
+        [
+          0,
+          17,
+          15,
+          6,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          26,
+          2,
+          2,
+          82,
+          17,
+          15
+        ],
+        [
+          0,
+          2,
+          0,
+          6,
+          0,
+          114,
+          22
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          1,
+          31,
+          103
+        ]
+      ],
+      "final_count_confusion": [
+        [
+          71,
+          0,
+          0
+        ],
+        [
+          0,
+          200,
+          13
+        ],
+        [
+          0,
+          47,
+          385
+        ]
+      ],
+      "double_C0_acc": 68.05555555555556,
+      "double_C1_acc": 66.66666666666666,
+      "double_C2_acc": 74.07407407407408,
+      "per_set_acc": {
+        "E": 100.0,
+        "PF": 88.69047619047619,
+        "MB": 38.46153846153847,
+        "RV": 100.0,
+        "PF+MB": 56.94444444444444,
+        "PF+RV": 79.16666666666666,
+        "MB+RV": 71.52777777777779
+      },
+      "conditional_single_acc": 84.03755868544602,
+      "conditional_double_acc": 78.93518518518519,
+      "conditional_single_per_class": {
+        "PF": 94.04761904761905,
+        "MB": 38.46153846153847,
+        "RV": 100.0
+      }
+    },
+    "qualified_epoch": null,
+    "qualified_val": null,
+    "updates": 3240,
+    "elapsed_seconds": 28.63061590027064
+  }
+}

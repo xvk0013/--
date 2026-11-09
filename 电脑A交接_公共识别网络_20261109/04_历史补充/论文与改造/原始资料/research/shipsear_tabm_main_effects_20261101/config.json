@@ -1,0 +1,13 @@
+{
+  "seed": 13,
+  "arms": ["T1_mixed_residual", "T2_separate_effects"],
+  "max_epochs": 20,
+  "classifier_lr": 0.00003,
+  "new_projection_lr": 0.0003,
+  "control_directory": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_direction_adapter_20261101\\runs\\seed13",
+  "control_arm": "S0_continue",
+  "fixed_train_noise_tag": 303,
+  "training": "Start both from complete V1global51. Add two zero-output64->256 bias-free projections each arm,32768parameters. Mixed control usesGELU((u+v)/sqrt2),GELU((u-v)/sqrt2); separate candidate usesGELU(u),GELU(v). Keep original direct path, cross product and gate. All TabM trains20epochs, original parameters3e-5,new projections3e-4. Original CE+0.1count, same original row budgets, online AWGN/dropout/order and Val rules as S0. No P1/restoration loss or architecture changes elsewhere.",
+  "selection": "Same V1 protection and mean5/0ACC,mean5/0Single,rawACC score, actual epochs1..20. Each candidate selected independently on Val. Rank finalists before Test, evaluate only task-passing candidates. Never choose the winning architecture from Test.",
+  "source_idea": "Adapt main-effect/interaction separation within the first TabM layer, inspired by GAMI-Net(2021), not a reproduction of its complete model or identifiability constraints. https://doi.org/10.1016/j.patcog.2021.108192"
+}

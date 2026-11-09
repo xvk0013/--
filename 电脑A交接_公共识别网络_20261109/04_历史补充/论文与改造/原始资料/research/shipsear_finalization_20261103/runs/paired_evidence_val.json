@@ -1,0 +1,325 @@
+{
+  "split": "Val",
+  "pairs": 432,
+  "anchor_recordings": 10,
+  "weak_second_db_relative_to_anchor": -6,
+  "checkpoints": {
+    "F": {
+      "experiment_id": "SE-F-13",
+      "epoch": 39,
+      "path": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\runs\\SE-F-13\\best.pt"
+    },
+    "B": {
+      "experiment_id": "SE-B-13",
+      "epoch": 39,
+      "path": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\runs\\SE-B-13\\best.pt"
+    },
+    "C": {
+      "experiment_id": "SE-C-13",
+      "epoch": 39,
+      "path": "D:\\LSJ\\Code\\UART\\final\\data_gen_v8_single_physical\\research\\shipsear_finalization_20261103\\runs\\SE-C-13\\best.pt"
+    }
+  },
+  "conditions": {
+    "original": {
+      "anchor_fixed": {
+        "F": {
+          "absent_exact": {
+            "correct_or_event_count": 364,
+            "percent": 84.25925925925925,
+            "recording_macro_percent": 80.17857142857142
+          },
+          "false_double": {
+            "correct_or_event_count": 26,
+            "percent": 6.018518518518518,
+            "recording_macro_percent": 3.125
+          },
+          "false_candidate": {
+            "correct_or_event_count": 31,
+            "percent": 7.175925925925926,
+            "recording_macro_percent": 9.10218253968254
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 224,
+            "percent": 51.85185185185185,
+            "recording_macro_percent": 57.115773115773116
+          },
+          "weak_exact": {
+            "correct_or_event_count": 154,
+            "percent": 35.648148148148145,
+            "recording_macro_percent": 33.82406331591114
+          },
+          "both_exact": {
+            "correct_or_event_count": 134,
+            "percent": 31.01851851851852,
+            "recording_macro_percent": 29.78438077622861
+          }
+        },
+        "B": {
+          "absent_exact": {
+            "correct_or_event_count": 364,
+            "percent": 84.25925925925925,
+            "recording_macro_percent": 80.17857142857142
+          },
+          "false_double": {
+            "correct_or_event_count": 26,
+            "percent": 6.018518518518518,
+            "recording_macro_percent": 3.125
+          },
+          "false_candidate": {
+            "correct_or_event_count": 31,
+            "percent": 7.175925925925926,
+            "recording_macro_percent": 9.10218253968254
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 225,
+            "percent": 52.083333333333336,
+            "recording_macro_percent": 56.00563325563325
+          },
+          "weak_exact": {
+            "correct_or_event_count": 156,
+            "percent": 36.11111111111111,
+            "recording_macro_percent": 33.443090122437944
+          },
+          "both_exact": {
+            "correct_or_event_count": 134,
+            "percent": 31.01851851851852,
+            "recording_macro_percent": 28.465907582755413
+          }
+        },
+        "C": {
+          "absent_exact": {
+            "correct_or_event_count": 356,
+            "percent": 82.4074074074074,
+            "recording_macro_percent": 77.5
+          },
+          "false_double": {
+            "correct_or_event_count": 26,
+            "percent": 6.018518518518518,
+            "recording_macro_percent": 3.125
+          },
+          "false_candidate": {
+            "correct_or_event_count": 36,
+            "percent": 8.333333333333332,
+            "recording_macro_percent": 10.79265873015873
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 229,
+            "percent": 53.00925925925925,
+            "recording_macro_percent": 57.557220557220546
+          },
+          "weak_exact": {
+            "correct_or_event_count": 159,
+            "percent": 36.80555555555556,
+            "recording_macro_percent": 34.508566312914134
+          },
+          "both_exact": {
+            "correct_or_event_count": 137,
+            "percent": 31.712962962962965,
+            "recording_macro_percent": 29.73971710656493
+          }
+        }
+      }
+    },
+    "5dB": {
+      "anchor_fixed": {
+        "F": {
+          "absent_exact": {
+            "correct_or_event_count": 342,
+            "percent": 79.16666666666666,
+            "recording_macro_percent": 71.77932273040969
+          },
+          "false_double": {
+            "correct_or_event_count": 34,
+            "percent": 7.87037037037037,
+            "recording_macro_percent": 6.851629650542693
+          },
+          "false_candidate": {
+            "correct_or_event_count": 42,
+            "percent": 9.722222222222223,
+            "recording_macro_percent": 13.391865079365079
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 186,
+            "percent": 43.05555555555556,
+            "recording_macro_percent": 49.789417104634495
+          },
+          "weak_exact": {
+            "correct_or_event_count": 125,
+            "percent": 28.935185185185187,
+            "recording_macro_percent": 29.06715174921696
+          },
+          "both_exact": {
+            "correct_or_event_count": 103,
+            "percent": 23.84259259259259,
+            "recording_macro_percent": 23.63362000318522
+          }
+        },
+        "B": {
+          "absent_exact": {
+            "correct_or_event_count": 340,
+            "percent": 78.70370370370371,
+            "recording_macro_percent": 72.66821161929859
+          },
+          "false_double": {
+            "correct_or_event_count": 35,
+            "percent": 8.101851851851851,
+            "recording_macro_percent": 6.921074094987137
+          },
+          "false_candidate": {
+            "correct_or_event_count": 43,
+            "percent": 9.953703703703704,
+            "recording_macro_percent": 12.815476190476192
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 183,
+            "percent": 42.36111111111111,
+            "recording_macro_percent": 49.08505202526941
+          },
+          "weak_exact": {
+            "correct_or_event_count": 123,
+            "percent": 28.47222222222222,
+            "recording_macro_percent": 29.053262860328076
+          },
+          "both_exact": {
+            "correct_or_event_count": 98,
+            "percent": 22.685185185185187,
+            "recording_macro_percent": 23.133620003185225
+          }
+        },
+        "C": {
+          "absent_exact": {
+            "correct_or_event_count": 338,
+            "percent": 78.24074074074075,
+            "recording_macro_percent": 71.24460050818746
+          },
+          "false_double": {
+            "correct_or_event_count": 37,
+            "percent": 8.564814814814815,
+            "recording_macro_percent": 7.2762328251458674
+          },
+          "false_candidate": {
+            "correct_or_event_count": 45,
+            "percent": 10.416666666666668,
+            "recording_macro_percent": 13.509920634920636
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 179,
+            "percent": 41.43518518518518,
+            "recording_macro_percent": 48.42433773955513
+          },
+          "weak_exact": {
+            "correct_or_event_count": 118,
+            "percent": 27.314814814814813,
+            "recording_macro_percent": 28.440426421404684
+          },
+          "both_exact": {
+            "correct_or_event_count": 93,
+            "percent": 21.52777777777778,
+            "recording_macro_percent": 22.451339119817376
+          }
+        }
+      }
+    },
+    "0dB": {
+      "anchor_fixed": {
+        "F": {
+          "absent_exact": {
+            "correct_or_event_count": 312,
+            "percent": 72.22222222222221,
+            "recording_macro_percent": 62.37354644148122
+          },
+          "false_double": {
+            "correct_or_event_count": 64,
+            "percent": 14.814814814814813,
+            "recording_macro_percent": 17.042343827669914
+          },
+          "false_candidate": {
+            "correct_or_event_count": 56,
+            "percent": 12.962962962962962,
+            "recording_macro_percent": 18.00832470669427
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 192,
+            "percent": 44.44444444444444,
+            "recording_macro_percent": 51.26683099509186
+          },
+          "weak_exact": {
+            "correct_or_event_count": 133,
+            "percent": 30.787037037037035,
+            "recording_macro_percent": 31.57307668177233
+          },
+          "both_exact": {
+            "correct_or_event_count": 100,
+            "percent": 23.14814814814815,
+            "recording_macro_percent": 22.83584410758324
+          }
+        },
+        "B": {
+          "absent_exact": {
+            "correct_or_event_count": 315,
+            "percent": 72.91666666666666,
+            "recording_macro_percent": 63.908527462875284
+          },
+          "false_double": {
+            "correct_or_event_count": 61,
+            "percent": 14.120370370370368,
+            "recording_macro_percent": 15.942145414971504
+          },
+          "false_candidate": {
+            "correct_or_event_count": 54,
+            "percent": 12.5,
+            "recording_macro_percent": 16.890010351966872
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 192,
+            "percent": 44.44444444444444,
+            "recording_macro_percent": 51.52502630220022
+          },
+          "weak_exact": {
+            "correct_or_event_count": 130,
+            "percent": 30.09259259259259,
+            "recording_macro_percent": 30.670816502338237
+          },
+          "both_exact": {
+            "correct_or_event_count": 97,
+            "percent": 22.453703703703702,
+            "recording_macro_percent": 22.881737827389998
+          }
+        },
+        "C": {
+          "absent_exact": {
+            "correct_or_event_count": 312,
+            "percent": 72.22222222222221,
+            "recording_macro_percent": 64.01457871838306
+          },
+          "false_double": {
+            "correct_or_event_count": 66,
+            "percent": 15.277777777777779,
+            "recording_macro_percent": 16.25276082613039
+          },
+          "false_candidate": {
+            "correct_or_event_count": 53,
+            "percent": 12.268518518518519,
+            "recording_macro_percent": 16.3640873015873
+          },
+          "weak_candidate": {
+            "correct_or_event_count": 193,
+            "percent": 44.675925925925924,
+            "recording_macro_percent": 51.607244808331764
+          },
+          "weak_exact": {
+            "correct_or_event_count": 132,
+            "percent": 30.555555555555557,
+            "recording_macro_percent": 30.785384904950124
+          },
+          "both_exact": {
+            "correct_or_event_count": 98,
+            "percent": 22.685185185185187,
+            "recording_macro_percent": 23.114620584729284
+          }
+        }
+      }
+    }
+  }
+}
